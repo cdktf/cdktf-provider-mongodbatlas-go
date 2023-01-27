@@ -1,0 +1,6 @@
+package datamongodbatlaseventtriggers
+
+
+type DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridge struct {
+}
+

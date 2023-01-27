@@ -1,0 +1,6 @@
+package datamongodbatlasprivatelinkendpointsserviceserverless
+
+
+type DataMongodbatlasPrivatelinkEndpointsServiceServerlessResults struct {
+}
+

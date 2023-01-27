@@ -1,0 +1,6 @@
+package datamongodbatlasfederatedsettingsidentityprovider
+
+
+type DataMongodbatlasFederatedSettingsIdentityProviderPemFileInfoCertificates struct {
+}
+

@@ -1,0 +1,6 @@
+package datamongodbatlasfederatedsettingsorgconfig
+
+
+type DataMongodbatlasFederatedSettingsOrgConfigUserConflicts struct {
+}
+

@@ -1,0 +1,6 @@
+package datamongodbatlasfederatedsettingsorgrolemapping
+
+
+type DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignments struct {
+}
+

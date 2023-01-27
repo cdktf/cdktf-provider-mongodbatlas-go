@@ -1,0 +1,6 @@
+package datamongodbatlasadvancedcluster
+
+
+type DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecs struct {
+}
+

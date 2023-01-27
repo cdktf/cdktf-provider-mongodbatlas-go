@@ -1,0 +1,6 @@
+package datamongodbatlascloudbackupsnapshotrestorejobs
+
+
+type DataMongodbatlasCloudBackupSnapshotRestoreJobsResults struct {
+}
+

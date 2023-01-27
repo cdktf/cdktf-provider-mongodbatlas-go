@@ -1,0 +1,6 @@
+package datamongodbatlasfederatedsettingsidentityproviders
+
+
+type DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsUserConflicts struct {
+}
+
