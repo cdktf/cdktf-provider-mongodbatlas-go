@@ -1,6 +1,0 @@
-package datamongodbatlasfederatedsettingsorgrolemappings
-
-
-type DataMongodbatlasFederatedSettingsOrgRoleMappingsResults struct {
-}
-

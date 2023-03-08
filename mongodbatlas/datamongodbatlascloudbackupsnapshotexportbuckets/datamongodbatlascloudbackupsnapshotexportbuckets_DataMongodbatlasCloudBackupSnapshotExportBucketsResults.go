@@ -1,6 +1,0 @@
-package datamongodbatlascloudbackupsnapshotexportbuckets
-
-
-type DataMongodbatlasCloudBackupSnapshotExportBucketsResults struct {
-}
-

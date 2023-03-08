@@ -1,6 +1,0 @@
-package datamongodbatlasadvancedclusters
-
-
-type DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfigsElectableSpecs struct {
-}
-

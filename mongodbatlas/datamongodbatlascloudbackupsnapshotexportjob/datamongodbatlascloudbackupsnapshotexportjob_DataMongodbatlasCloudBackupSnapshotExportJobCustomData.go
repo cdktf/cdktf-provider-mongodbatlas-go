@@ -1,6 +1,0 @@
-package datamongodbatlascloudbackupsnapshotexportjob
-
-
-type DataMongodbatlasCloudBackupSnapshotExportJobCustomData struct {
-}
-

@@ -1,6 +1,0 @@
-package datamongodbatlasfederatedsettingsidentityprovider
-
-
-type DataMongodbatlasFederatedSettingsIdentityProviderAssociatedOrgsRoleMappings struct {
-}
-

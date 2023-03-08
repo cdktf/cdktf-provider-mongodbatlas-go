@@ -1,0 +1,6 @@
+package datamongodbatlasfederatedsettingsorgconfigs
+
+
+type DataMongodbatlasFederatedSettingsOrgConfigsResultsRoleMappingsRoleAssignments struct {
+}
+

@@ -1,6 +1,0 @@
-package datamongodbatlasx509authenticationdatabaseuser
-
-
-type DataMongodbatlasX509AuthenticationDatabaseUserCertificates struct {
-}
-

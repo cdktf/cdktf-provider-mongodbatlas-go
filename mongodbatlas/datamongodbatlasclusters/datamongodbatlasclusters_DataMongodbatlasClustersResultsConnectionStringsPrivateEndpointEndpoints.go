@@ -1,6 +1,0 @@
-package datamongodbatlasclusters
-
-
-type DataMongodbatlasClustersResultsConnectionStringsPrivateEndpointEndpoints struct {
-}
-

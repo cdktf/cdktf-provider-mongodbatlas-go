@@ -1,0 +1,6 @@
+package datamongodbatlasadvancedclusters
+
+
+type DataMongodbatlasAdvancedClustersResultsAdvancedConfiguration struct {
+}
+

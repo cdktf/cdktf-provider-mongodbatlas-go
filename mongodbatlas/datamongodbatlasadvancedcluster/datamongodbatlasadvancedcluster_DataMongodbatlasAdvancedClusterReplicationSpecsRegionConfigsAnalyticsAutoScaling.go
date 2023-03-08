@@ -1,6 +1,0 @@
-package datamongodbatlasadvancedcluster
-
-
-type DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyticsAutoScaling struct {
-}
-
