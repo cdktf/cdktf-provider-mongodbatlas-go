@@ -76,6 +76,10 @@ func (j *jsiiProxy_OnlineArchive) validateSetClusterNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_OnlineArchive) validateSetCollectionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OnlineArchive) validateSetCollNameParameters(val *string) error {
 	return nil
 }

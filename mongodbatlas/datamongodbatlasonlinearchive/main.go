@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterNameInput", GoGetter: "ClusterNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "collectionType", GoGetter: "CollectionType"},
 			_jsii_.MemberProperty{JsiiProperty: "collName", GoGetter: "CollName"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

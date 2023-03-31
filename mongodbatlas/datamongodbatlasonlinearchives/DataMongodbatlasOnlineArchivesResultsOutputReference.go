@@ -12,6 +12,7 @@ type DataMongodbatlasOnlineArchivesResultsOutputReference interface {
 	cdktf.ComplexObject
 	ArchiveId() *string
 	ClusterName() *string
+	CollectionType() *string
 	CollName() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -100,6 +101,16 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) Cluster
 	_jsii_.Get(
 		j,
 		"clusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) CollectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionType",
 		&returns,
 	)
 	return returns

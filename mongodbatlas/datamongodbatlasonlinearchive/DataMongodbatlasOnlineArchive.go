@@ -20,6 +20,7 @@ type DataMongodbatlasOnlineArchive interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	CollectionType() *string
 	CollName() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchive) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOnlineArchive) CollectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionType",
 		&returns,
 	)
 	return returns

@@ -31,6 +31,8 @@ type OnlineArchiveConfig struct {
 	DbName *string `field:"required" json:"dbName" yaml:"dbName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/online_archive#project_id OnlineArchive#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/online_archive#collection_type OnlineArchive#collection_type}.
+	CollectionType *string `field:"optional" json:"collectionType" yaml:"collectionType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/online_archive#id OnlineArchive#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

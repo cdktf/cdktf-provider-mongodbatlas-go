@@ -153,6 +153,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveId", GoGetter: "ArchiveId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
+			_jsii_.MemberProperty{JsiiProperty: "collectionType", GoGetter: "CollectionType"},
 			_jsii_.MemberProperty{JsiiProperty: "collName", GoGetter: "CollName"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

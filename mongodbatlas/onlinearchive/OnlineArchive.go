@@ -18,6 +18,9 @@ type OnlineArchive interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	CollectionType() *string
+	SetCollectionType(val *string)
+	CollectionTypeInput() *string
 	CollName() *string
 	SetCollName(val *string)
 	CollNameInput() *string
@@ -112,6 +115,7 @@ type OnlineArchive interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCriteria(value *OnlineArchiveCriteria)
 	PutPartitionFields(value interface{})
+	ResetCollectionType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -169,6 +173,26 @@ func (j *jsiiProxy_OnlineArchive) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineArchive) CollectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineArchive) CollectionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionTypeInput",
 		&returns,
 	)
 	return returns
@@ -531,6 +555,17 @@ func (j *jsiiProxy_OnlineArchive)SetClusterName(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OnlineArchive)SetCollectionType(val *string) {
+	if err := j.validateSetCollectionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"collectionType",
 		val,
 	)
 }
@@ -951,6 +986,14 @@ func (o *jsiiProxy_OnlineArchive) PutPartitionFields(value interface{}) {
 		o,
 		"putPartitionFields",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OnlineArchive) ResetCollectionType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCollectionType",
+		nil, // no parameters
 	)
 }
 
