@@ -64,6 +64,10 @@ func validateDataMongodbatlasThirdPartyIntegration_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

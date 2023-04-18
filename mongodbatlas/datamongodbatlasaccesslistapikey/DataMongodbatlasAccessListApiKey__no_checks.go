@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasAccessListApiKey) validateSetApiKeyIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAccessListApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasAccessListApiKey) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,9 +2,9 @@ package datalake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datalake/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datalake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

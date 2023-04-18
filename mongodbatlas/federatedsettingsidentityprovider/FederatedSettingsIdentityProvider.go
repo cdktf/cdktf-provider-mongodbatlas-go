@@ -2,14 +2,14 @@ package federatedsettingsidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federatedsettingsidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/federatedsettingsidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
 type FederatedSettingsIdentityProvider interface {
 	cdktf.TerraformResource
 	AssociatedDomains() *[]*string
@@ -24,9 +24,9 @@ type FederatedSettingsIdentityProvider interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_FederatedSettingsIdentityProvider) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -505,7 +505,7 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) FederatedSettingsIdentityProvider {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider_Override(f FederatedSettingsIdentityProvider, scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -556,7 +556,10 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetCount(val *float64) {
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

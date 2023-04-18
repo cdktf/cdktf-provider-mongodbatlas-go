@@ -2,14 +2,14 @@ package serverlessinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/serverlessinstance/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/serverlessinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/serverless_instance mongodbatlas_serverless_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
 type ServerlessInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type ServerlessInstance interface {
 	SetContinuousBackupEnabled(val interface{})
 	ContinuousBackupEnabledInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ServerlessInstance) ContinuousBackupEnabledInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ServerlessInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServerlessInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -541,7 +541,7 @@ func (j *jsiiProxy_ServerlessInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance(scope constructs.Construct, id *string, config *ServerlessInstanceConfig) ServerlessInstance {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewServerlessInstance(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance_Override(s ServerlessInstance, scope constructs.Construct, id *string, config *ServerlessInstanceConfig) {
 	_init_.Initialize()
 
@@ -592,7 +592,10 @@ func (j *jsiiProxy_ServerlessInstance)SetContinuousBackupEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ServerlessInstance)SetCount(val *float64) {
+func (j *jsiiProxy_ServerlessInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

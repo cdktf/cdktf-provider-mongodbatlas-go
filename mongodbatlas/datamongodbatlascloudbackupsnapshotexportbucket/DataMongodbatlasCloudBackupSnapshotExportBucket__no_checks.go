@@ -64,6 +64,10 @@ func validateDataMongodbatlasCloudBackupSnapshotExportBucket_IsTerraformElementP
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucket) validateSetExportBucketIdParameters(val *string) error {
 	return nil
 }

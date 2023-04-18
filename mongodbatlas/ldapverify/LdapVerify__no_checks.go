@@ -84,6 +84,10 @@ func (j *jsiiProxy_LdapVerify) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LdapVerify) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapVerify) validateSetHostnameParameters(val *string) error {
 	return nil
 }

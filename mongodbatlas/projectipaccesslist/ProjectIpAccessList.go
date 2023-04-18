@@ -2,14 +2,14 @@ package projectipaccesslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectipaccesslist/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectipaccesslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type ProjectIpAccessList interface {
 	cdktf.TerraformResource
 	AwsSecurityGroup() *string
@@ -30,9 +30,9 @@ type ProjectIpAccessList interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ProjectIpAccessList) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIpAccessList) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectIpAccessList) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ProjectIpAccessList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList(scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) ProjectIpAccessList {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewProjectIpAccessList(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList_Override(p ProjectIpAccessList, scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_ProjectIpAccessList)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIpAccessList)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectIpAccessList)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package encryptionatrest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/encryptionatrest/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/encryptionatrest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/encryption_at_rest mongodbatlas_encryption_at_rest}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 type EncryptionAtRest interface {
 	cdktf.TerraformResource
 	AwsKms() *map[string]*string
@@ -31,9 +31,9 @@ type EncryptionAtRest interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_EncryptionAtRest) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EncryptionAtRest) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_EncryptionAtRest) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest(scope constructs.Construct, id *string, config *EncryptionAtRestConfig) EncryptionAtRest {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewEncryptionAtRest(scope constructs.Construct, id *string, config *Encrypt
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest_Override(e EncryptionAtRest, scope constructs.Construct, id *string, config *EncryptionAtRestConfig) {
 	_init_.Initialize()
 
@@ -515,7 +515,10 @@ func (j *jsiiProxy_EncryptionAtRest)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EncryptionAtRest)SetCount(val *float64) {
+func (j *jsiiProxy_EncryptionAtRest)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

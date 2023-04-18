@@ -2,14 +2,14 @@ package datamongodbatlasadvancedclusters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasadvancedclusters/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasadvancedclusters/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/advanced_clusters mongodbatlas_advanced_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters}.
 type DataMongodbatlasAdvancedClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasAdvancedClusters interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
 func NewDataMongodbatlasAdvancedClusters(scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClustersConfig) DataMongodbatlasAdvancedClusters {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataMongodbatlasAdvancedClusters(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
 func NewDataMongodbatlasAdvancedClusters_Override(d DataMongodbatlasAdvancedClusters, scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClustersConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataMongodbatlasAdvancedClusters_Override(d DataMongodbatlasAdvancedClus
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasAdvancedClusters)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

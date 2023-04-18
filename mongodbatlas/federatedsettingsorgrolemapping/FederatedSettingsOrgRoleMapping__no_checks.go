@@ -72,6 +72,10 @@ func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) validateSetExternalGroupNameParameters(val *string) error {
 	return nil
 }

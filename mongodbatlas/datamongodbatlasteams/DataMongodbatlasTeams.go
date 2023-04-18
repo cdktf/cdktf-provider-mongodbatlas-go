@@ -2,14 +2,14 @@ package datamongodbatlasteams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasteams/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasteams/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/teams mongodbatlas_teams}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/teams mongodbatlas_teams}.
 type DataMongodbatlasTeams interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasTeams interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataMongodbatlasTeams) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasTeams) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasTeams) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataMongodbatlasTeams) Usernames() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/teams mongodbatlas_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/teams mongodbatlas_teams} Data Source.
 func NewDataMongodbatlasTeams(scope constructs.Construct, id *string, config *DataMongodbatlasTeamsConfig) DataMongodbatlasTeams {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataMongodbatlasTeams(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/teams mongodbatlas_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/teams mongodbatlas_teams} Data Source.
 func NewDataMongodbatlasTeams_Override(d DataMongodbatlasTeams, scope constructs.Construct, id *string, config *DataMongodbatlasTeamsConfig) {
 	_init_.Initialize()
 
@@ -369,7 +369,10 @@ func NewDataMongodbatlasTeams_Override(d DataMongodbatlasTeams, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasTeams)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasTeams)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

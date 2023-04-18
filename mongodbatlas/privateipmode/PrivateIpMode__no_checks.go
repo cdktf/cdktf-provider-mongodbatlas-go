@@ -68,6 +68,10 @@ func (j *jsiiProxy_PrivateIpMode) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_PrivateIpMode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateIpMode) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchives) validateSetClusterNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasOnlineArchives) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasOnlineArchives) validateSetIdParameters(val *string) error {
 	return nil
 }

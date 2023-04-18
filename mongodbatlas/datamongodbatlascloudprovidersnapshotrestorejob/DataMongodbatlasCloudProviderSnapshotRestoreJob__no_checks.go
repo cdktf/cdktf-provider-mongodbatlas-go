@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotRestoreJob) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotRestoreJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotRestoreJob) validateSetIdParameters(val *string) error {
 	return nil
 }

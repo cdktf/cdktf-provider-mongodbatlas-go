@@ -68,6 +68,10 @@ func validateDataMongodbatlasCustomDbRole_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCustomDbRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasCustomDbRole) validateSetIdParameters(val *string) error {
 	return nil
 }

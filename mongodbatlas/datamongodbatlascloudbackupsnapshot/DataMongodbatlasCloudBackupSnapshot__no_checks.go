@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshot) validateSetClusterNamePa
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshot) validateSetIdParameters(val *string) error {
 	return nil
 }

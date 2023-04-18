@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser) validateSetAuthDatabaseNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasDatabaseUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasDatabaseUser) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

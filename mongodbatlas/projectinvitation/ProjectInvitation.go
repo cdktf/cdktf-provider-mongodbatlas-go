@@ -2,14 +2,14 @@ package projectinvitation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/projectinvitation/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/projectinvitation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation mongodbatlas_project_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation mongodbatlas_project_invitation}.
 type ProjectInvitation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ProjectInvitation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ProjectInvitation) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectInvitation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectInvitation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ProjectInvitation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation(scope constructs.Construct, id *string, config *ProjectInvitationConfig) ProjectInvitation {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewProjectInvitation(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation_Override(p ProjectInvitation, scope constructs.Construct, id *string, config *ProjectInvitationConfig) {
 	_init_.Initialize()
 
@@ -439,7 +439,10 @@ func (j *jsiiProxy_ProjectInvitation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectInvitation)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectInvitation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

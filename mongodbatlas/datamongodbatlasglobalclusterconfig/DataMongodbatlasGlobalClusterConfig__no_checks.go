@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataMongodbatlasGlobalClusterConfig) validateSetClusterNamePa
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasGlobalClusterConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasGlobalClusterConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

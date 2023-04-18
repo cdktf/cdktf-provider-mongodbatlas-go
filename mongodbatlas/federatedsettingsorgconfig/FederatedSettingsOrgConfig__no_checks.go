@@ -68,6 +68,10 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetDomainAllowListParameters(val *[]*string) error {
 	return nil
 }

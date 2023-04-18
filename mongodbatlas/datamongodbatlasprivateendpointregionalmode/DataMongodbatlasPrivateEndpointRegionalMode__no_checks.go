@@ -64,6 +64,10 @@ func validateDataMongodbatlasPrivateEndpointRegionalMode_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

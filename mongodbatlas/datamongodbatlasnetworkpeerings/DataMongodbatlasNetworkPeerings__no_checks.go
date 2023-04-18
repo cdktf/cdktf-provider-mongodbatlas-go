@@ -64,6 +64,10 @@ func validateDataMongodbatlasNetworkPeerings_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasNetworkPeerings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasNetworkPeerings) validateSetIdParameters(val *string) error {
 	return nil
 }

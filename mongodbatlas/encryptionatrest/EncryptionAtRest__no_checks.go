@@ -88,6 +88,10 @@ func (j *jsiiProxy_EncryptionAtRest) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EncryptionAtRest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EncryptionAtRest) validateSetGoogleCloudKmsParameters(val *map[string]*string) error {
 	return nil
 }

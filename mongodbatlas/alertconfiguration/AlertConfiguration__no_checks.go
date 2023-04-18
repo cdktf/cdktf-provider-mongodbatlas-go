@@ -84,6 +84,10 @@ func (j *jsiiProxy_AlertConfiguration) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AlertConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertConfiguration) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package federatedsettingsorgconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/federatedsettingsorgconfig/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/federatedsettingsorgconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
 type FederatedSettingsOrgConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type FederatedSettingsOrgConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_FederatedSettingsOrgConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FederatedSettingsOrgConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) FederatedSettingsOrgConfig {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig_Override(f FederatedSettingsOrgConfig, scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FederatedSettingsOrgConfig)SetCount(val *float64) {
+func (j *jsiiProxy_FederatedSettingsOrgConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

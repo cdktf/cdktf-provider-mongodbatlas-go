@@ -8,7 +8,7 @@ type DataLakeConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,17 +21,17 @@ type DataLakeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// aws block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/data_lake#aws DataLake#aws}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/data_lake#aws DataLake#aws}
 	Aws *DataLakeAws `field:"required" json:"aws" yaml:"aws"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/data_lake#name DataLake#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/data_lake#name DataLake#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/data_lake#project_id DataLake#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/data_lake#project_id DataLake#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// data_process_region block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/data_lake#data_process_region DataLake#data_process_region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/data_lake#data_process_region DataLake#data_process_region}
 	DataProcessRegion *DataLakeDataProcessRegion `field:"optional" json:"dataProcessRegion" yaml:"dataProcessRegion"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/mongodbatlas/r/data_lake#id DataLake#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/data_lake#id DataLake#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

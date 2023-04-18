@@ -76,6 +76,10 @@ func (j *jsiiProxy_CustomDbRole) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CustomDbRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomDbRole) validateSetIdParameters(val *string) error {
 	return nil
 }

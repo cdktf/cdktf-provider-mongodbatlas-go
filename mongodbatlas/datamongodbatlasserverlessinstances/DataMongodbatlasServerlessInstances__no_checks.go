@@ -64,6 +64,10 @@ func validateDataMongodbatlasServerlessInstances_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasServerlessInstances) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasServerlessInstances) validateSetIdParameters(val *string) error {
 	return nil
 }

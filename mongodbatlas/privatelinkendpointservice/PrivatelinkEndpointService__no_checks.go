@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrivatelinkEndpointService) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_PrivatelinkEndpointService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatelinkEndpointService) validateSetEndpointServiceIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudProviderSnapshotRestoreJob) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_CloudProviderSnapshotRestoreJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudProviderSnapshotRestoreJob) validateSetDeliveryTypeParameters(val *map[string]*string) error {
 	return nil
 }

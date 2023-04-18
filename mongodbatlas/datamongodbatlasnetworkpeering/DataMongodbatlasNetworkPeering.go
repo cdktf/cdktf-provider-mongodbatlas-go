@@ -2,14 +2,14 @@ package datamongodbatlasnetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasnetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasnetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_peering mongodbatlas_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_peering mongodbatlas_network_peering}.
 type DataMongodbatlasNetworkPeering interface {
 	cdktf.TerraformDataSource
 	AccepterRegionName() *string
@@ -25,9 +25,9 @@ type DataMongodbatlasNetworkPeering interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerId() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -223,8 +223,8 @@ func (j *jsiiProxy_DataMongodbatlasNetworkPeering) ContainerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasNetworkPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasNetworkPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_DataMongodbatlasNetworkPeering) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_peering mongodbatlas_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
 func NewDataMongodbatlasNetworkPeering(scope constructs.Construct, id *string, config *DataMongodbatlasNetworkPeeringConfig) DataMongodbatlasNetworkPeering {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewDataMongodbatlasNetworkPeering(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/network_peering mongodbatlas_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
 func NewDataMongodbatlasNetworkPeering_Override(d DataMongodbatlasNetworkPeering, scope constructs.Construct, id *string, config *DataMongodbatlasNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -553,7 +553,10 @@ func NewDataMongodbatlasNetworkPeering_Override(d DataMongodbatlasNetworkPeering
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasNetworkPeering)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasNetworkPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GlobalClusterConfig) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GlobalClusterConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalClusterConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

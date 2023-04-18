@@ -2,14 +2,14 @@ package cloudbackupsnapshotrestorejob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotrestorejob/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/cloudbackupsnapshotrestorejob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
 type CloudBackupSnapshotRestoreJob interface {
 	cdktf.TerraformResource
 	Cancelled() cdktf.IResolvable
@@ -25,9 +25,9 @@ type CloudBackupSnapshotRestoreJob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	DeliveryType() *map[string]*string
 	SetDeliveryType(val *map[string]*string)
@@ -190,8 +190,8 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -491,7 +491,7 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) Timestamp() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
 func NewCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, config *CloudBackupSnapshotRestoreJobConfig) CloudBackupSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -509,7 +509,7 @@ func NewCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
 func NewCloudBackupSnapshotRestoreJob_Override(c CloudBackupSnapshotRestoreJob, scope constructs.Construct, id *string, config *CloudBackupSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 
@@ -542,7 +542,10 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob)SetCount(val *float64) {
+func (j *jsiiProxy_CloudBackupSnapshotRestoreJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

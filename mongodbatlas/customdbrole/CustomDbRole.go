@@ -2,14 +2,14 @@ package customdbrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/customdbrole/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/customdbrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/custom_db_role mongodbatlas_custom_db_role}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
 type CustomDbRole interface {
 	cdktf.TerraformResource
 	Actions() CustomDbRoleActionsList
@@ -23,9 +23,9 @@ type CustomDbRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CustomDbRole) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_CustomDbRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomDbRole) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CustomDbRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRoleConfig) CustomDbRole {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRol
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole_Override(c CustomDbRole, scope constructs.Construct, id *string, config *CustomDbRoleConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_CustomDbRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomDbRole)SetCount(val *float64) {
+func (j *jsiiProxy_CustomDbRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

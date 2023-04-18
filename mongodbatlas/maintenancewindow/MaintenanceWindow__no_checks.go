@@ -76,6 +76,10 @@ func (j *jsiiProxy_MaintenanceWindow) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MaintenanceWindow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceWindow) validateSetDayOfWeekParameters(val *float64) error {
 	return nil
 }

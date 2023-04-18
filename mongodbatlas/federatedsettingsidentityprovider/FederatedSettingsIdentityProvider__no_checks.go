@@ -72,6 +72,10 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetFederationSettingsIdParameters(val *string) error {
 	return nil
 }

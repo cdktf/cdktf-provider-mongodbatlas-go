@@ -2,14 +2,14 @@ package datamongodbatlasprivateendpointregionalmode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivateendpointregionalmode/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivateendpointregionalmode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
 type DataMongodbatlasPrivateEndpointRegionalMode interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasPrivateEndpointRegionalMode interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) TerraformResourc
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
 func NewDataMongodbatlasPrivateEndpointRegionalMode(scope constructs.Construct, id *string, config *DataMongodbatlasPrivateEndpointRegionalModeConfig) DataMongodbatlasPrivateEndpointRegionalMode {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataMongodbatlasPrivateEndpointRegionalMode(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
 func NewDataMongodbatlasPrivateEndpointRegionalMode_Override(d DataMongodbatlasPrivateEndpointRegionalMode, scope constructs.Construct, id *string, config *DataMongodbatlasPrivateEndpointRegionalModeConfig) {
 	_init_.Initialize()
 
@@ -334,7 +334,10 @@ func NewDataMongodbatlasPrivateEndpointRegionalMode_Override(d DataMongodbatlasP
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

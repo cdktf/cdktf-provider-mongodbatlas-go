@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudProviderAccessAuthorization) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_CloudProviderAccessAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudProviderAccessAuthorization) validateSetIdParameters(val *string) error {
 	return nil
 }

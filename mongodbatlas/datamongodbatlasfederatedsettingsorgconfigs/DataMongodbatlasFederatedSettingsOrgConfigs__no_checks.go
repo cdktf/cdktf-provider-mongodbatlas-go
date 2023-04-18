@@ -64,6 +64,10 @@ func validateDataMongodbatlasFederatedSettingsOrgConfigs_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfigs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfigs) validateSetFederationSettingsIdParameters(val *string) error {
 	return nil
 }

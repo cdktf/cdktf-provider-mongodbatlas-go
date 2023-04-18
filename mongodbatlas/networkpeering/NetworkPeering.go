@@ -2,14 +2,14 @@ package networkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkpeering/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/networkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_peering mongodbatlas_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_peering mongodbatlas_network_peering}.
 type NetworkPeering interface {
 	cdktf.TerraformResource
 	AccepterRegionName() *string
@@ -47,9 +47,9 @@ type NetworkPeering interface {
 	SetContainerId(val *string)
 	ContainerIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -384,8 +384,8 @@ func (j *jsiiProxy_NetworkPeering) ContainerIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -755,7 +755,7 @@ func (j *jsiiProxy_NetworkPeering) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_peering mongodbatlas_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_peering mongodbatlas_network_peering} Resource.
 func NewNetworkPeering(scope constructs.Construct, id *string, config *NetworkPeeringConfig) NetworkPeering {
 	_init_.Initialize()
 
@@ -773,7 +773,7 @@ func NewNetworkPeering(scope constructs.Construct, id *string, config *NetworkPe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_peering mongodbatlas_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_peering mongodbatlas_network_peering} Resource.
 func NewNetworkPeering_Override(n NetworkPeering, scope constructs.Construct, id *string, config *NetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -883,7 +883,10 @@ func (j *jsiiProxy_NetworkPeering)SetContainerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkPeering)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetCidrBlockPara
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetIdParameters(val *string) error {
 	return nil
 }

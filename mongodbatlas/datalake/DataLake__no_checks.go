@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataLake) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataLake) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLake) validateSetIdParameters(val *string) error {
 	return nil
 }

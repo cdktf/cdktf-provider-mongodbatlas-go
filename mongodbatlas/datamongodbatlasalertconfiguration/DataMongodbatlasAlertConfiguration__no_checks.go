@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetAlertConfigura
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

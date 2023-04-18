@@ -2,14 +2,14 @@ package networkcontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/networkcontainer/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/networkcontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_container mongodbatlas_network_container}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_container mongodbatlas_network_container}.
 type NetworkContainer interface {
 	cdktf.TerraformResource
 	AtlasCidrBlock() *string
@@ -26,9 +26,9 @@ type NetworkContainer interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerId() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,8 +204,8 @@ func (j *jsiiProxy_NetworkContainer) ContainerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkContainer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkContainer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -505,7 +505,7 @@ func (j *jsiiProxy_NetworkContainer) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_container mongodbatlas_network_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_container mongodbatlas_network_container} Resource.
 func NewNetworkContainer(scope constructs.Construct, id *string, config *NetworkContainerConfig) NetworkContainer {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewNetworkContainer(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/network_container mongodbatlas_network_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/network_container mongodbatlas_network_container} Resource.
 func NewNetworkContainer_Override(n NetworkContainer, scope constructs.Construct, id *string, config *NetworkContainerConfig) {
 	_init_.Initialize()
 
@@ -556,7 +556,10 @@ func (j *jsiiProxy_NetworkContainer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkContainer)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkContainer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

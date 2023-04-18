@@ -72,6 +72,10 @@ func (j *jsiiProxy_PrivateEndpointRegionalMode) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_PrivateEndpointRegionalMode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateEndpointRegionalMode) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

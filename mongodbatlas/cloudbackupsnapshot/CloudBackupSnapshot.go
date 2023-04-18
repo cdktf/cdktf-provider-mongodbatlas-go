@@ -2,14 +2,14 @@ package cloudbackupsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/cloudbackupsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
 type CloudBackupSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type CloudBackupSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -190,8 +190,8 @@ func (j *jsiiProxy_CloudBackupSnapshot) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CloudBackupSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudBackupSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CloudBackupSnapshot) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) CloudBackupSnapshot {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot_Override(c CloudBackupSnapshot, scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) {
 	_init_.Initialize()
 
@@ -572,7 +572,10 @@ func (j *jsiiProxy_CloudBackupSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudBackupSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_CloudBackupSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

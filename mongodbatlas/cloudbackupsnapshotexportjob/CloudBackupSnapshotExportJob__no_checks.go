@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_CloudBackupSnapshotExportJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudBackupSnapshotExportJob) validateSetExportBucketIdParameters(val *string) error {
 	return nil
 }

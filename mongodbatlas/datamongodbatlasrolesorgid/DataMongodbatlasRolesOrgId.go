@@ -2,14 +2,14 @@ package datamongodbatlasrolesorgid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasrolesorgid/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasrolesorgid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id mongodbatlas_roles_org_id}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}.
 type DataMongodbatlasRolesOrgId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasRolesOrgId interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataMongodbatlasRolesOrgId) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasRolesOrgId) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasRolesOrgId) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataMongodbatlasRolesOrgId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id mongodbatlas_roles_org_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
 func NewDataMongodbatlasRolesOrgId(scope constructs.Construct, id *string, config *DataMongodbatlasRolesOrgIdConfig) DataMongodbatlasRolesOrgId {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataMongodbatlasRolesOrgId(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/roles_org_id mongodbatlas_roles_org_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
 func NewDataMongodbatlasRolesOrgId_Override(d DataMongodbatlasRolesOrgId, scope constructs.Construct, id *string, config *DataMongodbatlasRolesOrgIdConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataMongodbatlasRolesOrgId_Override(d DataMongodbatlasRolesOrgId, scope 
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasRolesOrgId)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasRolesOrgId)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

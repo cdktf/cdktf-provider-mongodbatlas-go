@@ -88,6 +88,10 @@ func (j *jsiiProxy_DatabaseUser) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseUser) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

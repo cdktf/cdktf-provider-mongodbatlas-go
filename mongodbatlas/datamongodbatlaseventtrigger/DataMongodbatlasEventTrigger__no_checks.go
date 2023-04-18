@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasEventTrigger) validateSetAppIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasEventTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasEventTrigger) validateSetIdParameters(val *string) error {
 	return nil
 }

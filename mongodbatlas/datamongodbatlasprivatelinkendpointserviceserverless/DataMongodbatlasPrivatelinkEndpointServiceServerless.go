@@ -2,14 +2,14 @@ package datamongodbatlasprivatelinkendpointserviceserverless
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprivatelinkendpointserviceserverless/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprivatelinkendpointserviceserverless/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
 type DataMongodbatlasPrivatelinkEndpointServiceServerless interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -19,9 +19,9 @@ type DataMongodbatlasPrivatelinkEndpointServiceServerless interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless) Constru
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless) Terrafo
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceServerless(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig) DataMongodbatlasPrivatelinkEndpointServiceServerless {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceServerless(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceServerless_Override(d DataMongodbatlasPrivatelinkEndpointServiceServerless, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig) {
 	_init_.Initialize()
 
@@ -433,7 +433,10 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceServerless_Override(d DataMong
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

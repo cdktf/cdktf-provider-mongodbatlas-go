@@ -2,14 +2,14 @@ package auditing
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/auditing/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/auditing/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/auditing mongodbatlas_auditing}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/auditing mongodbatlas_auditing}.
 type Auditing interface {
 	cdktf.TerraformResource
 	AuditAuthorizationSuccess() interface{}
@@ -28,9 +28,9 @@ type Auditing interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -201,8 +201,8 @@ func (j *jsiiProxy_Auditing) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Auditing) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Auditing) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Auditing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/auditing mongodbatlas_auditing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/auditing mongodbatlas_auditing} Resource.
 func NewAuditing(scope constructs.Construct, id *string, config *AuditingConfig) Auditing {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewAuditing(scope constructs.Construct, id *string, config *AuditingConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/auditing mongodbatlas_auditing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/auditing mongodbatlas_auditing} Resource.
 func NewAuditing_Override(a Auditing, scope constructs.Construct, id *string, config *AuditingConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_Auditing)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Auditing)SetCount(val *float64) {
+func (j *jsiiProxy_Auditing)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

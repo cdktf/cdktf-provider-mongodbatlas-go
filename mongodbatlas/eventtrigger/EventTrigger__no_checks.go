@@ -120,6 +120,10 @@ func (j *jsiiProxy_EventTrigger) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_EventTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventTrigger) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }

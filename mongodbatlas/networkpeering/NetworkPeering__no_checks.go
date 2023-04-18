@@ -100,6 +100,10 @@ func (j *jsiiProxy_NetworkPeering) validateSetContainerIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_NetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkPeering) validateSetGcpProjectIdParameters(val *string) error {
 	return nil
 }

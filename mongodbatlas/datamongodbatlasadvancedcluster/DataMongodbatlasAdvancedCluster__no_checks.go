@@ -64,6 +64,10 @@ func validateDataMongodbatlasAdvancedCluster_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

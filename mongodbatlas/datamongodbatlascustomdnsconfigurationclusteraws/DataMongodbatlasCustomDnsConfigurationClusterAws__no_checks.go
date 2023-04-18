@@ -64,6 +64,10 @@ func validateDataMongodbatlasCustomDnsConfigurationClusterAws_IsTerraformElement
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) validateSetIdParameters(val *string) error {
 	return nil
 }

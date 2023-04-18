@@ -2,14 +2,14 @@ package datamongodbatlaseventtriggers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlaseventtriggers/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlaseventtriggers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/event_triggers mongodbatlas_event_triggers}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/event_triggers mongodbatlas_event_triggers}.
 type DataMongodbatlasEventTriggers interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -20,9 +20,9 @@ type DataMongodbatlasEventTriggers interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataMongodbatlasEventTriggers) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasEventTriggers) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasEventTriggers) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataMongodbatlasEventTriggers) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/event_triggers mongodbatlas_event_triggers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/event_triggers mongodbatlas_event_triggers} Data Source.
 func NewDataMongodbatlasEventTriggers(scope constructs.Construct, id *string, config *DataMongodbatlasEventTriggersConfig) DataMongodbatlasEventTriggers {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataMongodbatlasEventTriggers(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/event_triggers mongodbatlas_event_triggers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/event_triggers mongodbatlas_event_triggers} Data Source.
 func NewDataMongodbatlasEventTriggers_Override(d DataMongodbatlasEventTriggers, scope constructs.Construct, id *string, config *DataMongodbatlasEventTriggersConfig) {
 	_init_.Initialize()
 
@@ -355,7 +355,10 @@ func (j *jsiiProxy_DataMongodbatlasEventTriggers)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasEventTriggers)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasEventTriggers)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

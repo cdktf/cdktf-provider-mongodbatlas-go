@@ -2,14 +2,14 @@ package datamongodbatlasdatalake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasdatalake/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasdatalake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/data_lake mongodbatlas_data_lake}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake mongodbatlas_data_lake}.
 type DataMongodbatlasDataLake interface {
 	cdktf.TerraformDataSource
 	Aws() DataMongodbatlasDataLakeAwsList
@@ -18,9 +18,9 @@ type DataMongodbatlasDataLake interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataProcessRegion() DataMongodbatlasDataLakeDataProcessRegionList
 	// Experimental.
 	DependsOn() *[]*string
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataMongodbatlasDataLake) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasDataLake) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasDataLake) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataMongodbatlasDataLake) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/data_lake mongodbatlas_data_lake} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake mongodbatlas_data_lake} Data Source.
 func NewDataMongodbatlasDataLake(scope constructs.Construct, id *string, config *DataMongodbatlasDataLakeConfig) DataMongodbatlasDataLake {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataMongodbatlasDataLake(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/data_lake mongodbatlas_data_lake} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/data_lake mongodbatlas_data_lake} Data Source.
 func NewDataMongodbatlasDataLake_Override(d DataMongodbatlasDataLake, scope constructs.Construct, id *string, config *DataMongodbatlasDataLakeConfig) {
 	_init_.Initialize()
 
@@ -399,7 +399,10 @@ func NewDataMongodbatlasDataLake_Override(d DataMongodbatlasDataLake, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasDataLake)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasDataLake)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

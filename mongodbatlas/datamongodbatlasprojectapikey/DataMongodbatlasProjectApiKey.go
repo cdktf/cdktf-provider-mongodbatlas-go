@@ -2,14 +2,14 @@ package datamongodbatlasprojectapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectapikey/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprojectapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_key mongodbatlas_project_api_key}.
 type DataMongodbatlasProjectApiKey interface {
 	cdktf.TerraformDataSource
 	ApiKeyId() *string
@@ -20,9 +20,9 @@ type DataMongodbatlasProjectApiKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKey) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectApiKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasProjectApiKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKey) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_api_key mongodbatlas_project_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_key mongodbatlas_project_api_key} Data Source.
 func NewDataMongodbatlasProjectApiKey(scope constructs.Construct, id *string, config *DataMongodbatlasProjectApiKeyConfig) DataMongodbatlasProjectApiKey {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataMongodbatlasProjectApiKey(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_api_key mongodbatlas_project_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_api_key mongodbatlas_project_api_key} Data Source.
 func NewDataMongodbatlasProjectApiKey_Override(d DataMongodbatlasProjectApiKey, scope constructs.Construct, id *string, config *DataMongodbatlasProjectApiKeyConfig) {
 	_init_.Initialize()
 
@@ -388,7 +388,10 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKey)SetApiKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectApiKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasProjectApiKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

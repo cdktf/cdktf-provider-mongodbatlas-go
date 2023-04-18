@@ -2,14 +2,14 @@ package cloudbackupsnapshotexportjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportjob/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/cloudbackupsnapshotexportjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
 type CloudBackupSnapshotExportJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type CloudBackupSnapshotExportJob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	CustomData() CloudBackupSnapshotExportJobCustomDataList
 	CustomDataInput() interface{}
@@ -186,8 +186,8 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotExportJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudBackupSnapshotExportJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -487,7 +487,7 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) CloudBackupSnapshotExportJob {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob_Override(c CloudBackupSnapshotExportJob, scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) {
 	_init_.Initialize()
 
@@ -538,7 +538,10 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotExportJob)SetCount(val *float64) {
+func (j *jsiiProxy_CloudBackupSnapshotExportJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

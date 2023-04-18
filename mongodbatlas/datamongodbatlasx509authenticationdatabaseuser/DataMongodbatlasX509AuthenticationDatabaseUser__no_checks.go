@@ -64,6 +64,10 @@ func validateDataMongodbatlasX509AuthenticationDatabaseUser_IsTerraformElementPa
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUser) validateSetIdParameters(val *string) error {
 	return nil
 }

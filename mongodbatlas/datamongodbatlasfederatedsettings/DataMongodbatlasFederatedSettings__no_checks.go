@@ -64,6 +64,10 @@ func validateDataMongodbatlasFederatedSettings_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package privatelinkendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/privatelinkendpoint/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/privatelinkendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
 type PrivatelinkEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PrivatelinkEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_PrivatelinkEndpoint) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_PrivatelinkEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PrivatelinkEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -500,7 +500,7 @@ func (j *jsiiProxy_PrivatelinkEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
 func NewPrivatelinkEndpoint(scope constructs.Construct, id *string, config *PrivatelinkEndpointConfig) PrivatelinkEndpoint {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewPrivatelinkEndpoint(scope constructs.Construct, id *string, config *Priv
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
 func NewPrivatelinkEndpoint_Override(p PrivatelinkEndpoint, scope constructs.Construct, id *string, config *PrivatelinkEndpointConfig) {
 	_init_.Initialize()
 
@@ -540,7 +540,10 @@ func (j *jsiiProxy_PrivatelinkEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivatelinkEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_PrivatelinkEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

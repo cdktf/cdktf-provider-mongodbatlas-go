@@ -88,6 +88,10 @@ func (j *jsiiProxy_OnlineArchive) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_OnlineArchive) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OnlineArchive) validateSetDbNameParameters(val *string) error {
 	return nil
 }

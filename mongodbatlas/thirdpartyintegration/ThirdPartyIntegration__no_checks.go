@@ -84,6 +84,10 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ThirdPartyIntegration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datamongodbatlasauditing
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasauditing/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasauditing/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/auditing mongodbatlas_auditing}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/auditing mongodbatlas_auditing}.
 type DataMongodbatlasAuditing interface {
 	cdktf.TerraformDataSource
 	AuditAuthorizationSuccess() cdktf.IResolvable
@@ -20,9 +20,9 @@ type DataMongodbatlasAuditing interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataMongodbatlasAuditing) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasAuditing) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasAuditing) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataMongodbatlasAuditing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/auditing mongodbatlas_auditing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
 func NewDataMongodbatlasAuditing(scope constructs.Construct, id *string, config *DataMongodbatlasAuditingConfig) DataMongodbatlasAuditing {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataMongodbatlasAuditing(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/auditing mongodbatlas_auditing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
 func NewDataMongodbatlasAuditing_Override(d DataMongodbatlasAuditing, scope constructs.Construct, id *string, config *DataMongodbatlasAuditingConfig) {
 	_init_.Initialize()
 
@@ -354,7 +354,10 @@ func NewDataMongodbatlasAuditing_Override(d DataMongodbatlasAuditing, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasAuditing)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasAuditing)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

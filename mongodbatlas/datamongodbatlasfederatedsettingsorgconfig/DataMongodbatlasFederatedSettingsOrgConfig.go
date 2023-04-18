@@ -2,14 +2,14 @@ package datamongodbatlasfederatedsettingsorgconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasfederatedsettingsorgconfig/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasfederatedsettingsorgconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
 type DataMongodbatlasFederatedSettingsOrgConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasFederatedSettingsOrgConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig) UserConflicts() D
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgConfig(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgConfigConfig) DataMongodbatlasFederatedSettingsOrgConfig {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataMongodbatlasFederatedSettingsOrgConfig(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgConfig_Override(d DataMongodbatlasFederatedSettingsOrgConfig, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgConfigConfig) {
 	_init_.Initialize()
 
@@ -399,7 +399,10 @@ func NewDataMongodbatlasFederatedSettingsOrgConfig_Override(d DataMongodbatlasFe
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

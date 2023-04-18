@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServerlessInstance) validateSetContinuousBackupEnabledParamet
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataMongodbatlasServerlessInstance) validateSetContinuousBack
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasServerlessInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasServerlessInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

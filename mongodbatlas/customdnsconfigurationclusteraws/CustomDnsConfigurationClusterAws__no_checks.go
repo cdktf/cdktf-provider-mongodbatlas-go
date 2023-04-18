@@ -68,6 +68,10 @@ func (j *jsiiProxy_CustomDnsConfigurationClusterAws) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_CustomDnsConfigurationClusterAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomDnsConfigurationClusterAws) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

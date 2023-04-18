@@ -2,14 +2,14 @@ package datamongodbatlasthirdpartyintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasthirdpartyintegrations/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasthirdpartyintegrations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/third_party_integrations mongodbatlas_third_party_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}.
 type DataMongodbatlasThirdPartyIntegrations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasThirdPartyIntegrations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations) TerraformResourceType
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
 func NewDataMongodbatlasThirdPartyIntegrations(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationsConfig) DataMongodbatlasThirdPartyIntegrations {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataMongodbatlasThirdPartyIntegrations(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
 func NewDataMongodbatlasThirdPartyIntegrations_Override(d DataMongodbatlasThirdPartyIntegrations, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataMongodbatlasThirdPartyIntegrations_Override(d DataMongodbatlasThirdP
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

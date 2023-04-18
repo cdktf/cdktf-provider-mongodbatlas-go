@@ -2,14 +2,14 @@ package datamongodbatlascloudbackupschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudbackupschedule/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudbackupschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type DataMongodbatlasCloudBackupSchedule interface {
 	cdktf.TerraformDataSource
 	AutoExportEnabled() cdktf.IResolvable
@@ -23,9 +23,9 @@ type DataMongodbatlasCloudBackupSchedule interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CopySettings() DataMongodbatlasCloudBackupScheduleCopySettingsList
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) CopySettings() DataMongo
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseOrgAndGroupNamesInExp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) DataMongodbatlasCloudBackupSchedule {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule_Override(d DataMongodbatlasCloudBackupSchedule, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -498,7 +498,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule)SetClusterName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

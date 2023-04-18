@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetCollectionNameParam
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

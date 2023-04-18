@@ -120,6 +120,10 @@ func (j *jsiiProxy_Cluster) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetDiskSizeGbParameters(val *float64) error {
 	return nil
 }

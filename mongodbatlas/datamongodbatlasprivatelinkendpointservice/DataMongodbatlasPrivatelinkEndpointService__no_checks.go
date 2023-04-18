@@ -64,6 +64,10 @@ func validateDataMongodbatlasPrivatelinkEndpointService_IsTerraformElementParame
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointService) validateSetEndpointServiceIdParameters(val *string) error {
 	return nil
 }

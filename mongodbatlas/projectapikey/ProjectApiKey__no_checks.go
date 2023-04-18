@@ -68,6 +68,10 @@ func (j *jsiiProxy_ProjectApiKey) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ProjectApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectApiKey) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

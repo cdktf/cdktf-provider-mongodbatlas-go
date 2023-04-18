@@ -2,14 +2,14 @@ package datamongodbatlascloudprovideraccesssetup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovideraccesssetup/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovideraccesssetup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
 type DataMongodbatlasCloudProviderAccessSetup interface {
 	cdktf.TerraformDataSource
 	Aws() cdktf.StringMap
@@ -19,9 +19,9 @@ type DataMongodbatlasCloudProviderAccessSetup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) TerraformResourceTy
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
 func NewDataMongodbatlasCloudProviderAccessSetup(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessSetupConfig) DataMongodbatlasCloudProviderAccessSetup {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataMongodbatlasCloudProviderAccessSetup(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
 func NewDataMongodbatlasCloudProviderAccessSetup_Override(d DataMongodbatlasCloudProviderAccessSetup, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessSetupConfig) {
 	_init_.Initialize()
 
@@ -389,7 +389,10 @@ func NewDataMongodbatlasCloudProviderAccessSetup_Override(d DataMongodbatlasClou
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

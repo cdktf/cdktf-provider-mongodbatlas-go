@@ -2,14 +2,14 @@ package cloudbackupsnapshotexportbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/cloudbackupsnapshotexportbucket/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/cloudbackupsnapshotexportbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
 type CloudBackupSnapshotExportBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -27,9 +27,9 @@ type CloudBackupSnapshotExportBucket interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotExportBucket) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -376,7 +376,7 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
 func NewCloudBackupSnapshotExportBucket(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportBucketConfig) CloudBackupSnapshotExportBucket {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewCloudBackupSnapshotExportBucket(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
 func NewCloudBackupSnapshotExportBucket_Override(c CloudBackupSnapshotExportBucket, scope constructs.Construct, id *string, config *CloudBackupSnapshotExportBucketConfig) {
 	_init_.Initialize()
 
@@ -438,7 +438,10 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetCount(val *float64) {
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

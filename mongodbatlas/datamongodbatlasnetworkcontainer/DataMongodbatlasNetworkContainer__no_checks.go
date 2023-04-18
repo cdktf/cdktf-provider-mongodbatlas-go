@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataMongodbatlasNetworkContainer) validateSetContainerIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasNetworkContainer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasNetworkContainer) validateSetIdParameters(val *string) error {
 	return nil
 }

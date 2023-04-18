@@ -68,6 +68,10 @@ func (j *jsiiProxy_X509AuthenticationDatabaseUser) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_X509AuthenticationDatabaseUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_X509AuthenticationDatabaseUser) validateSetCustomerX509CasParameters(val *string) error {
 	return nil
 }

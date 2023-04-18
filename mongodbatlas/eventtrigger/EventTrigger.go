@@ -2,14 +2,14 @@ package eventtrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/eventtrigger/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/eventtrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/event_trigger mongodbatlas_event_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/event_trigger mongodbatlas_event_trigger}.
 type EventTrigger interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -58,9 +58,9 @@ type EventTrigger interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -460,8 +460,8 @@ func (j *jsiiProxy_EventTrigger) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_EventTrigger) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventTrigger) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -771,7 +771,7 @@ func (j *jsiiProxy_EventTrigger) UnorderedInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/event_trigger mongodbatlas_event_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
 func NewEventTrigger(scope constructs.Construct, id *string, config *EventTriggerConfig) EventTrigger {
 	_init_.Initialize()
 
@@ -789,7 +789,7 @@ func NewEventTrigger(scope constructs.Construct, id *string, config *EventTrigge
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/event_trigger mongodbatlas_event_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
 func NewEventTrigger_Override(e EventTrigger, scope constructs.Construct, id *string, config *EventTriggerConfig) {
 	_init_.Initialize()
 
@@ -943,7 +943,10 @@ func (j *jsiiProxy_EventTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventTrigger)SetCount(val *float64) {
+func (j *jsiiProxy_EventTrigger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

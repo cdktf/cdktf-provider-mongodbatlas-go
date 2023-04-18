@@ -64,6 +64,10 @@ func validateDataMongodbatlasLdapConfiguration_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasLdapConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasLdapConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

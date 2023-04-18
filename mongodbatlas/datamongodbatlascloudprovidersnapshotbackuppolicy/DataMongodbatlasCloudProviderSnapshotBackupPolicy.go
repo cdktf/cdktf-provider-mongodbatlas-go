@@ -2,14 +2,14 @@ package datamongodbatlascloudprovidersnapshotbackuppolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascloudprovidersnapshotbackuppolicy/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascloudprovidersnapshotbackuppolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy}.
 type DataMongodbatlasCloudProviderSnapshotBackupPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataMongodbatlasCloudProviderSnapshotBackupPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy) ConstructN
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy) UpdateSnap
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotBackupPolicyConfig) DataMongodbatlasCloudProviderSnapshotBackupPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy_Override(d DataMongodbatlasCloudProviderSnapshotBackupPolicy, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotBackupPolicyConfig) {
 	_init_.Initialize()
 
@@ -421,7 +421,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy)SetClusterN
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

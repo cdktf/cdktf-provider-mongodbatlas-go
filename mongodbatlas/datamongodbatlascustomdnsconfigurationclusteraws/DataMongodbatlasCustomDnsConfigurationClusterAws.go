@@ -2,14 +2,14 @@ package datamongodbatlascustomdnsconfigurationclusteraws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlascustomdnsconfigurationclusteraws/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlascustomdnsconfigurationclusteraws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 type DataMongodbatlasCustomDnsConfigurationClusterAws interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasCustomDnsConfigurationClusterAws interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) TerraformRe
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
 func NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope constructs.Construct, id *string, config *DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) DataMongodbatlasCustomDnsConfigurationClusterAws {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
 func NewDataMongodbatlasCustomDnsConfigurationClusterAws_Override(d DataMongodbatlasCustomDnsConfigurationClusterAws, scope constructs.Construct, id *string, config *DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataMongodbatlasCustomDnsConfigurationClusterAws_Override(d DataMongodba
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

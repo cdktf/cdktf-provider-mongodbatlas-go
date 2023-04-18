@@ -2,14 +2,14 @@ package x509authenticationdatabaseuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/x509authenticationdatabaseuser/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/x509authenticationdatabaseuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/r/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
 type X509AuthenticationDatabaseUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type X509AuthenticationDatabaseUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CurrentCertificate() *string
 	CustomerX509Cas() *string
 	SetCustomerX509Cas(val *string)
@@ -162,8 +162,8 @@ func (j *jsiiProxy_X509AuthenticationDatabaseUser) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_X509AuthenticationDatabaseUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_X509AuthenticationDatabaseUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_X509AuthenticationDatabaseUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
 func NewX509AuthenticationDatabaseUser(scope constructs.Construct, id *string, config *X509AuthenticationDatabaseUserConfig) X509AuthenticationDatabaseUser {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewX509AuthenticationDatabaseUser(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/r/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
 func NewX509AuthenticationDatabaseUser_Override(x X509AuthenticationDatabaseUser, scope constructs.Construct, id *string, config *X509AuthenticationDatabaseUserConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func (j *jsiiProxy_X509AuthenticationDatabaseUser)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_X509AuthenticationDatabaseUser)SetCount(val *float64) {
+func (j *jsiiProxy_X509AuthenticationDatabaseUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

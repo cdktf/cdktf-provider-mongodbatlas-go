@@ -2,14 +2,14 @@ package datamongodbatlasprojectinvitation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/datamongodbatlasprojectinvitation/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v2/datamongodbatlasprojectinvitation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_invitation mongodbatlas_project_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_invitation mongodbatlas_project_invitation}.
 type DataMongodbatlasProjectInvitation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataMongodbatlasProjectInvitation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataMongodbatlasProjectInvitation) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectInvitation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataMongodbatlasProjectInvitation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectInvitation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_invitation mongodbatlas_project_invitation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
 func NewDataMongodbatlasProjectInvitation(scope constructs.Construct, id *string, config *DataMongodbatlasProjectInvitationConfig) DataMongodbatlasProjectInvitation {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataMongodbatlasProjectInvitation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/mongodbatlas/d/project_invitation mongodbatlas_project_invitation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
 func NewDataMongodbatlasProjectInvitation_Override(d DataMongodbatlasProjectInvitation, scope constructs.Construct, id *string, config *DataMongodbatlasProjectInvitationConfig) {
 	_init_.Initialize()
 
@@ -400,7 +400,10 @@ func NewDataMongodbatlasProjectInvitation_Override(d DataMongodbatlasProjectInvi
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectInvitation)SetCount(val *float64) {
+func (j *jsiiProxy_DataMongodbatlasProjectInvitation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
