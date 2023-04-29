@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/online_archive mongodbatlas_online_archive}.
 type OnlineArchive interface {
 	cdktf.TerraformResource
 	ArchiveId() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_OnlineArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArchiveConfig) OnlineArchive {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive_Override(o OnlineArchive, scope constructs.Construct, id *string, config *OnlineArchiveConfig) {
 	_init_.Initialize()
 

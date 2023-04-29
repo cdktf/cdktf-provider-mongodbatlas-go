@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}.
 type DataMongodbatlasCloudProviderSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshot) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshot(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotConfig) DataMongodbatlasCloudProviderSnapshot {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataMongodbatlasCloudProviderSnapshot(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshot_Override(d DataMongodbatlasCloudProviderSnapshot, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotConfig) {
 	_init_.Initialize()
 

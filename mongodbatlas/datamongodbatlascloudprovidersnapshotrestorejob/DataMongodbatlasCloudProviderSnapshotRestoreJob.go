@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job}.
 type DataMongodbatlasCloudProviderSnapshotRestoreJob interface {
 	cdktf.TerraformDataSource
 	Cancelled() cdktf.IResolvable
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotRestoreJob) Timestamp() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotRestoreJobConfig) DataMongodbatlasCloudProviderSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewDataMongodbatlasCloudProviderSnapshotRestoreJob(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_restore_job mongodbatlas_cloud_provider_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotRestoreJob_Override(d DataMongodbatlasCloudProviderSnapshotRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 

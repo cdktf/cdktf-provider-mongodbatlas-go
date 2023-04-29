@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy}.
 type DataMongodbatlasCloudProviderSnapshotBackupPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderSnapshotBackupPolicy) UpdateSnap
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotBackupPolicyConfig) DataMongodbatlasCloudProviderSnapshotBackupPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_snapshot_backup_policy mongodbatlas_cloud_provider_snapshot_backup_policy} Data Source.
 func NewDataMongodbatlasCloudProviderSnapshotBackupPolicy_Override(d DataMongodbatlasCloudProviderSnapshotBackupPolicy, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderSnapshotBackupPolicyConfig) {
 	_init_.Initialize()
 

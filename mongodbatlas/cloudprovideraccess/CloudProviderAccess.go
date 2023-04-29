@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access}.
 type CloudProviderAccess interface {
 	cdktf.TerraformResource
 	AtlasAssumedRoleExternalId() *string
@@ -422,7 +422,7 @@ func (j *jsiiProxy_CloudProviderAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access} Resource.
 func NewCloudProviderAccess(scope constructs.Construct, id *string, config *CloudProviderAccessConfig) CloudProviderAccess {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewCloudProviderAccess(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access mongodbatlas_cloud_provider_access} Resource.
 func NewCloudProviderAccess_Override(c CloudProviderAccess, scope constructs.Construct, id *string, config *CloudProviderAccessConfig) {
 	_init_.Initialize()
 

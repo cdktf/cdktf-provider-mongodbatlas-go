@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
 type ServerlessInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_ServerlessInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance(scope constructs.Construct, id *string, config *ServerlessInstanceConfig) ServerlessInstance {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewServerlessInstance(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance_Override(s ServerlessInstance, scope constructs.Construct, id *string, config *ServerlessInstanceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type DataMongodbatlasCloudBackupSchedule interface {
 	cdktf.TerraformDataSource
 	AutoExportEnabled() cdktf.IResolvable
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseOrgAndGroupNamesInExp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) DataMongodbatlasCloudBackupSchedule {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule_Override(d DataMongodbatlasCloudBackupSchedule, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) {
 	_init_.Initialize()
 

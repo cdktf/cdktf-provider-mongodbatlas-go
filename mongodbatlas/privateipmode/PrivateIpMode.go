@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode mongodbatlas_private_ip_mode}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode mongodbatlas_private_ip_mode}.
 type PrivateIpMode interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_PrivateIpMode) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode mongodbatlas_private_ip_mode} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode mongodbatlas_private_ip_mode} Resource.
 func NewPrivateIpMode(scope constructs.Construct, id *string, config *PrivateIpModeConfig) PrivateIpMode {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewPrivateIpMode(scope constructs.Construct, id *string, config *PrivateIpM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/private_ip_mode mongodbatlas_private_ip_mode} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/private_ip_mode mongodbatlas_private_ip_mode} Resource.
 func NewPrivateIpMode_Override(p PrivateIpMode, scope constructs.Construct, id *string, config *PrivateIpModeConfig) {
 	_init_.Initialize()
 

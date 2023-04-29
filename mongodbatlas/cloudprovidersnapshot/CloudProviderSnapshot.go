@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot}.
 type CloudProviderSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -501,7 +501,7 @@ func (j *jsiiProxy_CloudProviderSnapshot) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource.
 func NewCloudProviderSnapshot(scope constructs.Construct, id *string, config *CloudProviderSnapshotConfig) CloudProviderSnapshot {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewCloudProviderSnapshot(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.8.2/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_snapshot mongodbatlas_cloud_provider_snapshot} Resource.
 func NewCloudProviderSnapshot_Override(c CloudProviderSnapshot, scope constructs.Construct, id *string, config *CloudProviderSnapshotConfig) {
 	_init_.Initialize()
 
