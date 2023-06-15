@@ -2,14 +2,14 @@ package federatedsettingsorgconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/federatedsettingsorgconfig/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/federatedsettingsorgconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
 type FederatedSettingsOrgConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) FederatedSettingsOrgConfig {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig_Override(f FederatedSettingsOrgConfig, scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) {
 	_init_.Initialize()
 

@@ -92,6 +92,10 @@ func (j *jsiiProxy_Project) validateSetIsDataExplorerEnabledParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetIsExtendedStorageSizesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetIsPerformanceAdvisorEnabledParameters(val interface{}) error {
 	return nil
 }

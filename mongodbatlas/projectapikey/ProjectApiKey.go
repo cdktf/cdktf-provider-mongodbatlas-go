@@ -2,14 +2,14 @@ package projectapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/projectapikey/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/projectapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
 type ProjectApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -50,6 +50,8 @@ type ProjectApiKey interface {
 	// The tree node.
 	Node() constructs.Node
 	PrivateKey() *string
+	ProjectAssignment() ProjectApiKeyProjectAssignmentList
+	ProjectAssignmentInput() interface{}
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -98,10 +100,13 @@ type ProjectApiKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProjectAssignment(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectAssignment()
+	ResetRoleNames()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -277,6 +282,26 @@ func (j *jsiiProxy_ProjectApiKey) PrivateKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ProjectApiKey) ProjectAssignment() ProjectApiKeyProjectAssignmentList {
+	var returns ProjectApiKeyProjectAssignmentList
+	_jsii_.Get(
+		j,
+		"projectAssignment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectApiKey) ProjectAssignmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"projectAssignmentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ProjectApiKey) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -388,7 +413,7 @@ func (j *jsiiProxy_ProjectApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) ProjectApiKey {
 	_init_.Initialize()
 
@@ -406,7 +431,7 @@ func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey_Override(p ProjectApiKey, scope constructs.Construct, id *string, config *ProjectApiKeyConfig) {
 	_init_.Initialize()
 
@@ -795,6 +820,17 @@ func (p *jsiiProxy_ProjectApiKey) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_ProjectApiKey) PutProjectAssignment(value interface{}) {
+	if err := p.validatePutProjectAssignmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProjectAssignment",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_ProjectApiKey) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -807,6 +843,22 @@ func (p *jsiiProxy_ProjectApiKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectApiKey) ResetProjectAssignment() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProjectAssignment",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectApiKey) ResetRoleNames() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRoleNames",
 		nil, // no parameters
 	)
 }

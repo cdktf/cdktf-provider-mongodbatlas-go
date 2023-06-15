@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/provider/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs mongodbatlas}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs mongodbatlas}.
 type MongodbatlasProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -468,7 +468,7 @@ func (j *jsiiProxy_MongodbatlasProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) MongodbatlasProvider {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *Mon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider_Override(m MongodbatlasProvider, scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) {
 	_init_.Initialize()
 

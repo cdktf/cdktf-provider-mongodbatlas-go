@@ -2,14 +2,14 @@ package customdbrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/customdbrole/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/customdbrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
 type CustomDbRole interface {
 	cdktf.TerraformResource
 	Actions() CustomDbRoleActionsList
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CustomDbRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRoleConfig) CustomDbRole {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole_Override(c CustomDbRole, scope constructs.Construct, id *string, config *CustomDbRoleConfig) {
 	_init_.Initialize()
 

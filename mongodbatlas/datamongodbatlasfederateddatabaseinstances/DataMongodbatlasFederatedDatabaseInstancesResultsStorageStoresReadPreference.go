@@ -1,0 +1,6 @@
+package datamongodbatlasfederateddatabaseinstances
+
+
+type DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreference struct {
+}
+

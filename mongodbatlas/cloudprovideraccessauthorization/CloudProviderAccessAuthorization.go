@@ -2,14 +2,14 @@ package cloudprovideraccessauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudprovideraccessauthorization/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudprovideraccessauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
 type CloudProviderAccessAuthorization interface {
 	cdktf.TerraformResource
 	AuthorizedDate() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_CloudProviderAccessAuthorization) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) CloudProviderAccessAuthorization {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization_Override(c CloudProviderAccessAuthorization, scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) {
 	_init_.Initialize()
 

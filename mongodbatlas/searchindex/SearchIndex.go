@@ -2,14 +2,14 @@ package searchindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/searchindex/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/searchindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/search_index mongodbatlas_search_index}.
 type SearchIndex interface {
 	cdktf.TerraformResource
 	Analyzer() *string
@@ -129,6 +129,7 @@ type SearchIndex interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSynonyms(value interface{})
 	PutTimeouts(value *SearchIndexTimeouts)
+	ResetAnalyzer()
 	ResetAnalyzers()
 	ResetId()
 	ResetMappingsDynamic()
@@ -627,7 +628,7 @@ func (j *jsiiProxy_SearchIndex) WaitForIndexBuildCompletionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexConfig) SearchIndex {
 	_init_.Initialize()
 
@@ -645,7 +646,7 @@ func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex_Override(s SearchIndex, scope constructs.Construct, id *string, config *SearchIndexConfig) {
 	_init_.Initialize()
 
@@ -1152,6 +1153,14 @@ func (s *jsiiProxy_SearchIndex) PutTimeouts(value *SearchIndexTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SearchIndex) ResetAnalyzer() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAnalyzer",
+		nil, // no parameters
 	)
 }
 

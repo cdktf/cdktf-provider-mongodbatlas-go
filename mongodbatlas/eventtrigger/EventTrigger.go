@@ -2,14 +2,14 @@ package eventtrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/eventtrigger/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/eventtrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/event_trigger mongodbatlas_event_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/event_trigger mongodbatlas_event_trigger}.
 type EventTrigger interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -771,7 +771,7 @@ func (j *jsiiProxy_EventTrigger) UnorderedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
 func NewEventTrigger(scope constructs.Construct, id *string, config *EventTriggerConfig) EventTrigger {
 	_init_.Initialize()
 
@@ -789,7 +789,7 @@ func NewEventTrigger(scope constructs.Construct, id *string, config *EventTrigge
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/event_trigger mongodbatlas_event_trigger} Resource.
 func NewEventTrigger_Override(e EventTrigger, scope constructs.Construct, id *string, config *EventTriggerConfig) {
 	_init_.Initialize()
 

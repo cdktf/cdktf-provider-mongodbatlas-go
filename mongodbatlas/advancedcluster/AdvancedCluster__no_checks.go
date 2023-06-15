@@ -144,6 +144,10 @@ func (j *jsiiProxy_AdvancedCluster) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedCluster) validateSetRetainBackupsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedCluster) validateSetRootCertTypeParameters(val *string) error {
 	return nil
 }

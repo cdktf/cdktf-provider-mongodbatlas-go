@@ -2,14 +2,14 @@ package cloudbackupsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudbackupsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudbackupsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
 type CloudBackupSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CloudBackupSnapshot) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) CloudBackupSnapshot {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot_Override(c CloudBackupSnapshot, scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) {
 	_init_.Initialize()
 

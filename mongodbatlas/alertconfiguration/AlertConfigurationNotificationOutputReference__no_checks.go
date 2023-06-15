@@ -84,14 +84,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetEma
 	return nil
 }
 
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetFlowdockApiTokenParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetFlowNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -113,10 +105,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOps
 }
 
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOpsGenieRegionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOrgNameParameters(val *string) error {
 	return nil
 }
 

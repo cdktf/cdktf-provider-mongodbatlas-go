@@ -2,25 +2,19 @@ package thirdpartyintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/thirdpartyintegration/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/thirdpartyintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
 type ThirdPartyIntegration interface {
 	cdktf.TerraformResource
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	ApiKey() *string
 	SetApiKey(val *string)
 	ApiKeyInput() *string
-	ApiToken() *string
-	SetApiToken(val *string)
-	ApiTokenInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ChannelName() *string
@@ -43,9 +37,6 @@ type ThirdPartyIntegration interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	FlowName() *string
-	SetFlowName(val *string)
-	FlowNameInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,9 +48,6 @@ type ThirdPartyIntegration interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LicenseKey() *string
-	SetLicenseKey(val *string)
-	LicenseKeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,9 +57,6 @@ type ThirdPartyIntegration interface {
 	MicrosoftTeamsWebhookUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OrgName() *string
-	SetOrgName(val *string)
-	OrgNameInput() *string
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -88,9 +73,6 @@ type ThirdPartyIntegration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ReadToken() *string
-	SetReadToken(val *string)
-	ReadTokenInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -127,9 +109,6 @@ type ThirdPartyIntegration interface {
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
-	WriteToken() *string
-	SetWriteToken(val *string)
-	WriteTokenInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -155,21 +134,15 @@ type ThirdPartyIntegration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetApiKey()
-	ResetApiToken()
 	ResetChannelName()
 	ResetEnabled()
-	ResetFlowName()
 	ResetId()
-	ResetLicenseKey()
 	ResetMicrosoftTeamsWebhookUrl()
-	ResetOrgName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
-	ResetReadToken()
 	ResetRegion()
 	ResetRoutingKey()
 	ResetScheme()
@@ -179,7 +152,6 @@ type ThirdPartyIntegration interface {
 	ResetTeamName()
 	ResetUrl()
 	ResetUserName()
-	ResetWriteToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -193,26 +165,6 @@ type ThirdPartyIntegration interface {
 // The jsii proxy struct for ThirdPartyIntegration
 type jsiiProxy_ThirdPartyIntegration struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) AccountId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ThirdPartyIntegration) ApiKey() *string {
@@ -230,26 +182,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) ApiKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"apiKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) ApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) ApiTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiTokenInput",
 		&returns,
 	)
 	return returns
@@ -345,26 +277,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) FlowName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) FlowNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -415,26 +327,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) LicenseKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) LicenseKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -470,26 +362,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) OrgName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) OrgNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgNameInput",
 		&returns,
 	)
 	return returns
@@ -560,26 +432,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) ReadToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) ReadTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readTokenInput",
 		&returns,
 	)
 	return returns
@@ -815,28 +667,8 @@ func (j *jsiiProxy_ThirdPartyIntegration) UserNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) WriteToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"writeToken",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ThirdPartyIntegration) WriteTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"writeTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) ThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -854,7 +686,7 @@ func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration_Override(t ThirdPartyIntegration, scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
@@ -865,17 +697,6 @@ func NewThirdPartyIntegration_Override(t ThirdPartyIntegration, scope constructs
 	)
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration)SetApiKey(val *string) {
 	if err := j.validateSetApiKeyParameters(val); err != nil {
 		panic(err)
@@ -883,17 +704,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration)SetApiToken(val *string) {
-	if err := j.validateSetApiTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"apiToken",
 		val,
 	)
 }
@@ -950,17 +760,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration)SetFlowName(val *string) {
-	if err := j.validateSetFlowNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"flowName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -976,17 +775,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration)SetLicenseKey(val *string) {
-	if err := j.validateSetLicenseKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"licenseKey",
 		val,
 	)
 }
@@ -1009,17 +797,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetMicrosoftTeamsWebhookUrl(val *string
 	_jsii_.Set(
 		j,
 		"microsoftTeamsWebhookUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration)SetOrgName(val *string) {
-	if err := j.validateSetOrgNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"orgName",
 		val,
 	)
 }
@@ -1061,17 +838,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration)SetReadToken(val *string) {
-	if err := j.validateSetReadTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"readToken",
 		val,
 	)
 }
@@ -1182,17 +948,6 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetUserName(val *string) {
 	_jsii_.Set(
 		j,
 		"userName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration)SetWriteToken(val *string) {
-	if err := j.validateSetWriteTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"writeToken",
 		val,
 	)
 }
@@ -1463,26 +1218,10 @@ func (t *jsiiProxy_ThirdPartyIntegration) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (t *jsiiProxy_ThirdPartyIntegration) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
 func (t *jsiiProxy_ThirdPartyIntegration) ResetApiKey() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetApiKey",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_ThirdPartyIntegration) ResetApiToken() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetApiToken",
 		nil, // no parameters
 	)
 }
@@ -1503,14 +1242,6 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetEnabled() {
 	)
 }
 
-func (t *jsiiProxy_ThirdPartyIntegration) ResetFlowName() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetFlowName",
-		nil, // no parameters
-	)
-}
-
 func (t *jsiiProxy_ThirdPartyIntegration) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1519,26 +1250,10 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetId() {
 	)
 }
 
-func (t *jsiiProxy_ThirdPartyIntegration) ResetLicenseKey() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetLicenseKey",
-		nil, // no parameters
-	)
-}
-
 func (t *jsiiProxy_ThirdPartyIntegration) ResetMicrosoftTeamsWebhookUrl() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetMicrosoftTeamsWebhookUrl",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_ThirdPartyIntegration) ResetOrgName() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetOrgName",
 		nil, // no parameters
 	)
 }
@@ -1555,14 +1270,6 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetPassword() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPassword",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_ThirdPartyIntegration) ResetReadToken() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetReadToken",
 		nil, // no parameters
 	)
 }
@@ -1635,14 +1342,6 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetUserName() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetUserName",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_ThirdPartyIntegration) ResetWriteToken() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetWriteToken",
 		nil, // no parameters
 	)
 }

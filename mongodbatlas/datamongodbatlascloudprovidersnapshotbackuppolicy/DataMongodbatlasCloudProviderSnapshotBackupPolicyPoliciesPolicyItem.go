@@ -1,6 +1,0 @@
-package datamongodbatlascloudprovidersnapshotbackuppolicy
-
-
-type DataMongodbatlasCloudProviderSnapshotBackupPolicyPoliciesPolicyItem struct {
-}
-

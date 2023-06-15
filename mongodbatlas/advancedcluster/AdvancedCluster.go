@@ -2,14 +2,14 @@ package advancedcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/advancedcluster/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/advancedcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AdvancedConfiguration() AdvancedClusterAdvancedConfigurationOutputReference
@@ -96,6 +96,9 @@ type AdvancedCluster interface {
 	RawOverrides() interface{}
 	ReplicationSpecs() AdvancedClusterReplicationSpecsList
 	ReplicationSpecsInput() interface{}
+	RetainBackupsEnabled() interface{}
+	SetRetainBackupsEnabled(val interface{})
+	RetainBackupsEnabledInput() interface{}
 	RootCertType() *string
 	SetRootCertType(val *string)
 	RootCertTypeInput() *string
@@ -159,6 +162,7 @@ type AdvancedCluster interface {
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetPitEnabled()
+	ResetRetainBackupsEnabled()
 	ResetRootCertType()
 	ResetTerminationProtectionEnabled()
 	ResetTimeouts()
@@ -648,6 +652,26 @@ func (j *jsiiProxy_AdvancedCluster) ReplicationSpecsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AdvancedCluster) RetainBackupsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) RetainBackupsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retainBackupsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AdvancedCluster) RootCertType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -769,7 +793,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -787,7 +811,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -972,6 +996,17 @@ func (j *jsiiProxy_AdvancedCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetRetainBackupsEnabled(val interface{}) {
+	if err := j.validateSetRetainBackupsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retainBackupsEnabled",
 		val,
 	)
 }
@@ -1433,6 +1468,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetPitEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPitEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetRetainBackupsEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRetainBackupsEnabled",
 		nil, // no parameters
 	)
 }

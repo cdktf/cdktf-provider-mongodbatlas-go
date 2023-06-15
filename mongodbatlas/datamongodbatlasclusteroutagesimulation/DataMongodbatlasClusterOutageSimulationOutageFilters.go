@@ -1,0 +1,6 @@
+package datamongodbatlasclusteroutagesimulation
+
+
+type DataMongodbatlasClusterOutageSimulationOutageFilters struct {
+}
+

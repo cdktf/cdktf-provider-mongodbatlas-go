@@ -2,14 +2,14 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/project/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	ApiKeys() ProjectApiKeysList
@@ -49,6 +49,9 @@ type Project interface {
 	IsDataExplorerEnabled() interface{}
 	SetIsDataExplorerEnabled(val interface{})
 	IsDataExplorerEnabledInput() interface{}
+	IsExtendedStorageSizesEnabled() interface{}
+	SetIsExtendedStorageSizesEnabled(val interface{})
+	IsExtendedStorageSizesEnabledInput() interface{}
 	IsPerformanceAdvisorEnabled() interface{}
 	SetIsPerformanceAdvisorEnabled(val interface{})
 	IsPerformanceAdvisorEnabledInput() interface{}
@@ -128,6 +131,7 @@ type Project interface {
 	ResetId()
 	ResetIsCollectDatabaseSpecificsStatisticsEnabled()
 	ResetIsDataExplorerEnabled()
+	ResetIsExtendedStorageSizesEnabled()
 	ResetIsPerformanceAdvisorEnabled()
 	ResetIsRealtimePerformancePanelEnabled()
 	ResetIsSchemaAdvisorEnabled()
@@ -328,6 +332,26 @@ func (j *jsiiProxy_Project) IsDataExplorerEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"isDataExplorerEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) IsExtendedStorageSizesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isExtendedStorageSizesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) IsExtendedStorageSizesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isExtendedStorageSizesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -594,7 +618,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -612,7 +636,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -690,6 +714,17 @@ func (j *jsiiProxy_Project)SetIsDataExplorerEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isDataExplorerEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetIsExtendedStorageSizesEnabled(val interface{}) {
+	if err := j.validateSetIsExtendedStorageSizesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isExtendedStorageSizesEnabled",
 		val,
 	)
 }
@@ -1128,6 +1163,14 @@ func (p *jsiiProxy_Project) ResetIsDataExplorerEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIsDataExplorerEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetIsExtendedStorageSizesEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIsExtendedStorageSizesEnabled",
 		nil, // no parameters
 	)
 }

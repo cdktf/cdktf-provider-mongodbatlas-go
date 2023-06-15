@@ -2,14 +2,14 @@ package datamongodbatlasonlinearchive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasonlinearchive/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasonlinearchive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/online_archive mongodbatlas_online_archive}.
 type DataMongodbatlasOnlineArchive interface {
 	cdktf.TerraformDataSource
 	ArchiveId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchive) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
 func NewDataMongodbatlasOnlineArchive(scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchiveConfig) DataMongodbatlasOnlineArchive {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataMongodbatlasOnlineArchive(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
 func NewDataMongodbatlasOnlineArchive_Override(d DataMongodbatlasOnlineArchive, scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchiveConfig) {
 	_init_.Initialize()
 

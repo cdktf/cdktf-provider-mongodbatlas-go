@@ -165,6 +165,8 @@ func (j *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateSetC
 
 func (j *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LdapConfigurationUserToDnMapping:
 		val := val.(*LdapConfigurationUserToDnMapping)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LdapConfigurationUserToDnMapping, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LdapConfigurationUserToDnMapping; received %#v (a %T)", val, val)
 		}
 	}
 

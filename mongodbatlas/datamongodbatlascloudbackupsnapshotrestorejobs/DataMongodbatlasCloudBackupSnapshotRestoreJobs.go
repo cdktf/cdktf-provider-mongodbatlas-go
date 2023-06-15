@@ -2,14 +2,14 @@ package datamongodbatlascloudbackupsnapshotrestorejobs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudbackupsnapshotrestorejobs/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlascloudbackupsnapshotrestorejobs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs}.
 type DataMongodbatlasCloudBackupSnapshotRestoreJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJobs) TotalCount() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJobs(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig) DataMongodbatlasCloudBackupSnapshotRestoreJobs {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataMongodbatlasCloudBackupSnapshotRestoreJobs(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_backup_snapshot_restore_jobs mongodbatlas_cloud_backup_snapshot_restore_jobs} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJobs_Override(d DataMongodbatlasCloudBackupSnapshotRestoreJobs, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobsConfig) {
 	_init_.Initialize()
 

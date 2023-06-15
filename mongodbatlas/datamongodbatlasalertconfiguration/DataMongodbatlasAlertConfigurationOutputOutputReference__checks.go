@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationOutputOutputReference) vali
 
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationOutputOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataMongodbatlasAlertConfigurationOutput:
 		val := val.(*DataMongodbatlasAlertConfigurationOutput)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationOutputOutputReference) vali
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataMongodbatlasAlertConfigurationOutput, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataMongodbatlasAlertConfigurationOutput; received %#v (a %T)", val, val)
 		}
 	}
 

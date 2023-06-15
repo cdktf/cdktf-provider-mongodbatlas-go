@@ -2,14 +2,14 @@ package datamongodbatlascluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascluster/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlascluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cluster mongodbatlas_cluster}.
 type DataMongodbatlasCluster interface {
 	cdktf.TerraformDataSource
 	AdvancedConfiguration() DataMongodbatlasClusterAdvancedConfigurationList
@@ -744,7 +744,7 @@ func (j *jsiiProxy_DataMongodbatlasCluster) VersionReleaseSystem() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) DataMongodbatlasCluster {
 	_init_.Initialize()
 
@@ -762,7 +762,7 @@ func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster_Override(d DataMongodbatlasCluster, scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) {
 	_init_.Initialize()
 

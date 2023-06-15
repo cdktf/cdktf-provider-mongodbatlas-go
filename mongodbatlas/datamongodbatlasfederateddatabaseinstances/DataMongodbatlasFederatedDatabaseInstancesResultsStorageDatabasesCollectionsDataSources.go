@@ -1,0 +1,6 @@
+package datamongodbatlasfederateddatabaseinstances
+
+
+type DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsDataSources struct {
+}
+

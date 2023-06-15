@@ -2,14 +2,14 @@ package cloudbackupschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/cloudbackupschedule/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/cloudbackupschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type CloudBackupSchedule interface {
 	cdktf.TerraformResource
 	AutoExportEnabled() interface{}
@@ -653,7 +653,7 @@ func (j *jsiiProxy_CloudBackupSchedule) UseOrgAndGroupNamesInExportPrefixInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
 func NewCloudBackupSchedule(scope constructs.Construct, id *string, config *CloudBackupScheduleConfig) CloudBackupSchedule {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewCloudBackupSchedule(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
 func NewCloudBackupSchedule_Override(c CloudBackupSchedule, scope constructs.Construct, id *string, config *CloudBackupScheduleConfig) {
 	_init_.Initialize()
 

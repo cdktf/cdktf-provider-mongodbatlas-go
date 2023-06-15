@@ -2,9 +2,9 @@ package datamongodbatlasthirdpartyintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasthirdpartyintegrations/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasthirdpartyintegrations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,16 +30,13 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Enabled() cdktf.IResolvable
-	FlowName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataMongodbatlasThirdPartyIntegrationsResults
 	SetInternalValue(val *DataMongodbatlasThirdPartyIntegrationsResults)
 	LicenseKey() *string
 	MicrosoftTeamsWebhookUrl() *string
-	OrgName() *string
 	ProjectId() *string
-	ReadToken() *string
 	Region() *string
 	RoutingKey() *string
 	Scheme() *string
@@ -58,7 +55,6 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	Type() *string
 	Url() *string
 	UserName() *string
-	WriteToken() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -178,16 +174,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) FlowName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,31 +214,11 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) OrgName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"projectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) ReadToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readToken",
 		&returns,
 	)
 	return returns
@@ -373,16 +339,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	_jsii_.Get(
 		j,
 		"userName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) WriteToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"writeToken",
 		&returns,
 	)
 	return returns

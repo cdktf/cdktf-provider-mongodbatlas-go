@@ -231,24 +231,10 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetEma
 	return nil
 }
 
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetFlowdockApiTokenParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetFlowNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AlertConfigurationNotification:
 		val := val.(*AlertConfigurationNotification)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -260,11 +246,9 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AlertConfigurationNotification, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlertConfigurationNotification; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -304,14 +288,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOps
 }
 
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOpsGenieRegionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOrgNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -2,14 +2,14 @@ package datamongodbatlascloudprovideraccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascloudprovideraccess/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlascloudprovideraccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access}.
 type DataMongodbatlasCloudProviderAccess interface {
 	cdktf.TerraformDataSource
 	AwsIamRoles() DataMongodbatlasCloudProviderAccessAwsIamRolesList
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccess) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access} Data Source.
 func NewDataMongodbatlasCloudProviderAccess(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessConfig) DataMongodbatlasCloudProviderAccess {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataMongodbatlasCloudProviderAccess(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/cloud_provider_access mongodbatlas_cloud_provider_access} Data Source.
 func NewDataMongodbatlasCloudProviderAccess_Override(d DataMongodbatlasCloudProviderAccess, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessConfig) {
 	_init_.Initialize()
 

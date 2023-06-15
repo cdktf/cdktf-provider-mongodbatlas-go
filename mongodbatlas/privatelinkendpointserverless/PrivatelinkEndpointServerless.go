@@ -2,14 +2,14 @@ package privatelinkendpointserverless
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privatelinkendpointserverless/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privatelinkendpointserverless/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless}.
 type PrivatelinkEndpointServerless interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServerless) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource.
 func NewPrivatelinkEndpointServerless(scope constructs.Construct, id *string, config *PrivatelinkEndpointServerlessConfig) PrivatelinkEndpointServerless {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewPrivatelinkEndpointServerless(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint_serverless mongodbatlas_privatelink_endpoint_serverless} Resource.
 func NewPrivatelinkEndpointServerless_Override(p PrivatelinkEndpointServerless, scope constructs.Construct, id *string, config *PrivatelinkEndpointServerlessConfig) {
 	_init_.Initialize()
 

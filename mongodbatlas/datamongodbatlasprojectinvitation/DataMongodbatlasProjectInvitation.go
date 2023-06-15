@@ -2,14 +2,14 @@ package datamongodbatlasprojectinvitation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasprojectinvitation/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasprojectinvitation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_invitation mongodbatlas_project_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_invitation mongodbatlas_project_invitation}.
 type DataMongodbatlasProjectInvitation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectInvitation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
 func NewDataMongodbatlasProjectInvitation(scope constructs.Construct, id *string, config *DataMongodbatlasProjectInvitationConfig) DataMongodbatlasProjectInvitation {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataMongodbatlasProjectInvitation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_invitation mongodbatlas_project_invitation} Data Source.
 func NewDataMongodbatlasProjectInvitation_Override(d DataMongodbatlasProjectInvitation, scope constructs.Construct, id *string, config *DataMongodbatlasProjectInvitationConfig) {
 	_init_.Initialize()
 

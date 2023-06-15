@@ -1,0 +1,6 @@
+package datamongodbatlasdatalakepipelines
+
+
+type DataMongodbatlasDataLakePipelinesResultsSinkPartitionFields struct {
+}
+

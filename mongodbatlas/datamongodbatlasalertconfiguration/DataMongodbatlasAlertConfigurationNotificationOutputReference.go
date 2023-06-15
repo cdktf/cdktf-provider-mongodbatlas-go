@@ -2,9 +2,9 @@ package datamongodbatlasalertconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasalertconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasalertconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,8 +32,6 @@ type DataMongodbatlasAlertConfigurationNotificationOutputReference interface {
 	DelayMin() *float64
 	EmailAddress() *string
 	EmailEnabled() cdktf.IResolvable
-	FlowdockApiToken() *string
-	FlowName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataMongodbatlasAlertConfigurationNotification
@@ -43,7 +41,6 @@ type DataMongodbatlasAlertConfigurationNotificationOutputReference interface {
 	MobileNumber() *string
 	OpsGenieApiKey() *string
 	OpsGenieRegion() *string
-	OrgName() *string
 	Roles() *[]*string
 	ServiceKey() *string
 	SmsEnabled() cdktf.IResolvable
@@ -202,26 +199,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference) FlowdockApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowdockApiToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference) FlowName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,16 +264,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference
 	_jsii_.Get(
 		j,
 		"opsGenieRegion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurationNotificationOutputReference) OrgName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgName",
 		&returns,
 	)
 	return returns

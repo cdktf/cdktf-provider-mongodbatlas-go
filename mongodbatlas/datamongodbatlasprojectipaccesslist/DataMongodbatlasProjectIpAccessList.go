@@ -2,14 +2,14 @@ package datamongodbatlasprojectipaccesslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasprojectipaccesslist/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasprojectipaccesslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type DataMongodbatlasProjectIpAccessList interface {
 	cdktf.TerraformDataSource
 	AwsSecurityGroup() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
 func NewDataMongodbatlasProjectIpAccessList(scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAccessListConfig) DataMongodbatlasProjectIpAccessList {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataMongodbatlasProjectIpAccessList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
 func NewDataMongodbatlasProjectIpAccessList_Override(d DataMongodbatlasProjectIpAccessList, scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAccessListConfig) {
 	_init_.Initialize()
 

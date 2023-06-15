@@ -173,6 +173,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isCollectDatabaseSpecificsStatisticsEnabled", GoGetter: "IsCollectDatabaseSpecificsStatisticsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isDataExplorerEnabled", GoGetter: "IsDataExplorerEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isExtendedStorageSizesEnabled", GoGetter: "IsExtendedStorageSizesEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isPerformanceAdvisorEnabled", GoGetter: "IsPerformanceAdvisorEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isRealtimePerformancePanelEnabled", GoGetter: "IsRealtimePerformancePanelEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isSchemaAdvisorEnabled", GoGetter: "IsSchemaAdvisorEnabled"},

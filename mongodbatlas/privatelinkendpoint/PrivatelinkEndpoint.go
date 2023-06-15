@@ -2,14 +2,14 @@ package privatelinkendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/privatelinkendpoint/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/privatelinkendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint}.
 type PrivatelinkEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -500,7 +500,7 @@ func (j *jsiiProxy_PrivatelinkEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
 func NewPrivatelinkEndpoint(scope constructs.Construct, id *string, config *PrivatelinkEndpointConfig) PrivatelinkEndpoint {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewPrivatelinkEndpoint(scope constructs.Construct, id *string, config *Priv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/privatelink_endpoint mongodbatlas_privatelink_endpoint} Resource.
 func NewPrivatelinkEndpoint_Override(p PrivatelinkEndpoint, scope constructs.Construct, id *string, config *PrivatelinkEndpointConfig) {
 	_init_.Initialize()
 

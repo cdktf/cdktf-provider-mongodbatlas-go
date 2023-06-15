@@ -2,14 +2,14 @@ package datamongodbatlasthirdpartyintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasthirdpartyintegration/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasthirdpartyintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
 type DataMongodbatlasThirdPartyIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -31,7 +31,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	FlowName() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,7 +52,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	MicrosoftTeamsWebhookUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OrgName() *string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -63,7 +61,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	ReadToken() *string
 	Region() *string
 	RoutingKey() *string
 	Scheme() *string
@@ -88,7 +85,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
-	WriteToken() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -238,16 +234,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) EnabledInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) FlowName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -348,16 +334,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) Node() constructs.Node
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) OrgName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -393,16 +369,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) RawOverrides() interfa
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ReadToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readToken",
 		&returns,
 	)
 	return returns
@@ -578,18 +544,8 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) UserNameInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) WriteToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"writeToken",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) DataMongodbatlasThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -607,7 +563,7 @@ func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration_Override(d DataMongodbatlasThirdPartyIntegration, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 

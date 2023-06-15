@@ -52,6 +52,10 @@ func (p *jsiiProxy_ProjectApiKey) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (p *jsiiProxy_ProjectApiKey) validatePutProjectAssignmentParameters(value interface{}) error {
+	return nil
+}
+
 func validateProjectApiKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

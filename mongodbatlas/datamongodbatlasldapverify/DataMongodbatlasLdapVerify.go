@@ -2,14 +2,14 @@ package datamongodbatlasldapverify
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasldapverify/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasldapverify/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify}.
 type DataMongodbatlasLdapVerify interface {
 	cdktf.TerraformDataSource
 	BindUsername() *string
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataMongodbatlasLdapVerify) Validations() DataMongodbatlasLda
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
 func NewDataMongodbatlasLdapVerify(scope constructs.Construct, id *string, config *DataMongodbatlasLdapVerifyConfig) DataMongodbatlasLdapVerify {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataMongodbatlasLdapVerify(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
 func NewDataMongodbatlasLdapVerify_Override(d DataMongodbatlasLdapVerify, scope constructs.Construct, id *string, config *DataMongodbatlasLdapVerifyConfig) {
 	_init_.Initialize()
 

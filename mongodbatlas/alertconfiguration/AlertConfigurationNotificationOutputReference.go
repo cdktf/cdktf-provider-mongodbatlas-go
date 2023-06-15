@@ -2,9 +2,9 @@ package alertconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/alertconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/alertconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,12 +46,6 @@ type AlertConfigurationNotificationOutputReference interface {
 	EmailEnabled() interface{}
 	SetEmailEnabled(val interface{})
 	EmailEnabledInput() interface{}
-	FlowdockApiToken() *string
-	SetFlowdockApiToken(val *string)
-	FlowdockApiTokenInput() *string
-	FlowName() *string
-	SetFlowName(val *string)
-	FlowNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,9 +65,6 @@ type AlertConfigurationNotificationOutputReference interface {
 	OpsGenieRegion() *string
 	SetOpsGenieRegion(val *string)
 	OpsGenieRegionInput() *string
-	OrgName() *string
-	SetOrgName(val *string)
-	OrgNameInput() *string
 	Roles() *[]*string
 	SetRoles(val *[]*string)
 	RolesInput() *[]*string
@@ -144,14 +135,11 @@ type AlertConfigurationNotificationOutputReference interface {
 	ResetDelayMin()
 	ResetEmailAddress()
 	ResetEmailEnabled()
-	ResetFlowdockApiToken()
-	ResetFlowName()
 	ResetIntervalMin()
 	ResetMicrosoftTeamsWebhookUrl()
 	ResetMobileNumber()
 	ResetOpsGenieApiKey()
 	ResetOpsGenieRegion()
-	ResetOrgName()
 	ResetRoles()
 	ResetServiceKey()
 	ResetSmsEnabled()
@@ -347,46 +335,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) EmailEnabledIn
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) FlowdockApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowdockApiToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) FlowdockApiTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowdockApiTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) FlowName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) FlowNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flowNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -502,26 +450,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) OpsGenieRegion
 	_jsii_.Get(
 		j,
 		"opsGenieRegionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) OrgName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) OrgNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"orgNameInput",
 		&returns,
 	)
 	return returns
@@ -884,28 +812,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetEmailEnabled
 	)
 }
 
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetFlowdockApiToken(val *string) {
-	if err := j.validateSetFlowdockApiTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"flowdockApiToken",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetFlowName(val *string) {
-	if err := j.validateSetFlowNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"flowName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -968,17 +874,6 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetOpsGenieRegi
 	_jsii_.Set(
 		j,
 		"opsGenieRegion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetOrgName(val *string) {
-	if err := j.validateSetOrgNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"orgName",
 		val,
 	)
 }
@@ -1357,22 +1252,6 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetEmailEnab
 	)
 }
 
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetFlowdockApiToken() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFlowdockApiToken",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetFlowName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFlowName",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetIntervalMin() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1409,14 +1288,6 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetOpsGenieR
 	_jsii_.InvokeVoid(
 		a,
 		"resetOpsGenieRegion",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetOrgName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetOrgName",
 		nil, // no parameters
 	)
 }

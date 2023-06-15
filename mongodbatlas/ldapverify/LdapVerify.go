@@ -2,14 +2,14 @@ package ldapverify
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/ldapverify/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/ldapverify/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/ldap_verify mongodbatlas_ldap_verify}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/ldap_verify mongodbatlas_ldap_verify}.
 type LdapVerify interface {
 	cdktf.TerraformResource
 	AuthzQueryTemplate() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_LdapVerify) Validations() LdapVerifyValidationsList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
 func NewLdapVerify(scope constructs.Construct, id *string, config *LdapVerifyConfig) LdapVerify {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewLdapVerify(scope constructs.Construct, id *string, config *LdapVerifyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
 func NewLdapVerify_Override(l LdapVerify, scope constructs.Construct, id *string, config *LdapVerifyConfig) {
 	_init_.Initialize()
 

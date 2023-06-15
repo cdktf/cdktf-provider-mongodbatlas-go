@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSynonyms", GoMethod: "PutSynonyms"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnalyzer", GoMethod: "ResetAnalyzer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnalyzers", GoMethod: "ResetAnalyzers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMappingsDynamic", GoMethod: "ResetMappingsDynamic"},

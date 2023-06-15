@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3
+module github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4
 
 go 1.18
 

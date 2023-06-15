@@ -212,6 +212,10 @@ func (j *jsiiProxy_Cluster) validateSetReplicationFactorParameters(val *float64)
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetRetainBackupsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetTerminationProtectionEnabledParameters(val interface{}) error {
 	return nil
 }

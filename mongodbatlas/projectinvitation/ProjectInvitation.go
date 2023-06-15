@@ -2,14 +2,14 @@ package projectinvitation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/projectinvitation/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/projectinvitation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_invitation mongodbatlas_project_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_invitation mongodbatlas_project_invitation}.
 type ProjectInvitation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ProjectInvitation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation(scope constructs.Construct, id *string, config *ProjectInvitationConfig) ProjectInvitation {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewProjectInvitation(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation_Override(p ProjectInvitation, scope constructs.Construct, id *string, config *ProjectInvitationConfig) {
 	_init_.Initialize()
 

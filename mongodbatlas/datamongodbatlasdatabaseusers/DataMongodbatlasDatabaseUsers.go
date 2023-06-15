@@ -2,14 +2,14 @@ package datamongodbatlasdatabaseusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasdatabaseusers/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasdatabaseusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/database_users mongodbatlas_database_users}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/database_users mongodbatlas_database_users}.
 type DataMongodbatlasDatabaseUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUsers) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
 func NewDataMongodbatlasDatabaseUsers(scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUsersConfig) DataMongodbatlasDatabaseUsers {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataMongodbatlasDatabaseUsers(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
 func NewDataMongodbatlasDatabaseUsers_Override(d DataMongodbatlasDatabaseUsers, scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUsersConfig) {
 	_init_.Initialize()
 

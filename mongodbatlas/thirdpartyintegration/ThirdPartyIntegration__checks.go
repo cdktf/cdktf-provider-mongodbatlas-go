@@ -135,23 +135,7 @@ func validateThirdPartyIntegration_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetAccountIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetApiKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetApiTokenParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -277,23 +261,7 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetEnabledParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetFlowNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetLicenseKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,14 +278,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetLifecycleParameters(val *cd
 }
 
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetMicrosoftTeamsWebhookUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetOrgNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -382,14 +342,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetProvisionersParameters(val 
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetReadTokenParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -468,14 +420,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetUrlParameters(val *string) 
 }
 
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetUserNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetWriteTokenParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

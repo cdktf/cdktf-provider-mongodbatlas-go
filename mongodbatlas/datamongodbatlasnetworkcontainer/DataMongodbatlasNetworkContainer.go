@@ -2,14 +2,14 @@ package datamongodbatlasnetworkcontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasnetworkcontainer/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasnetworkcontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/network_container mongodbatlas_network_container}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/network_container mongodbatlas_network_container}.
 type DataMongodbatlasNetworkContainer interface {
 	cdktf.TerraformDataSource
 	AtlasCidrBlock() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataMongodbatlasNetworkContainer) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/network_container mongodbatlas_network_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/network_container mongodbatlas_network_container} Data Source.
 func NewDataMongodbatlasNetworkContainer(scope constructs.Construct, id *string, config *DataMongodbatlasNetworkContainerConfig) DataMongodbatlasNetworkContainer {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDataMongodbatlasNetworkContainer(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/network_container mongodbatlas_network_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/network_container mongodbatlas_network_container} Data Source.
 func NewDataMongodbatlasNetworkContainer_Override(d DataMongodbatlasNetworkContainer, scope constructs.Construct, id *string, config *DataMongodbatlasNetworkContainerConfig) {
 	_init_.Initialize()
 

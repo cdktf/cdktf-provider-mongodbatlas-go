@@ -1,0 +1,6 @@
+package datamongodbatlasprivatelinkendpointservicedatafederationonlinearchives
+
+
+type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResults struct {
+}
+

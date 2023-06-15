@@ -2,14 +2,14 @@ package datamongodbatlasprivatelinkendpointservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasprivatelinkendpointservice/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasprivatelinkendpointservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service}.
 type DataMongodbatlasPrivatelinkEndpointService interface {
 	cdktf.TerraformDataSource
 	AwsConnectionStatus() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointService) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointService(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceConfig) DataMongodbatlasPrivatelinkEndpointService {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDataMongodbatlasPrivatelinkEndpointService(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/privatelink_endpoint_service mongodbatlas_privatelink_endpoint_service} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointService_Override(d DataMongodbatlasPrivatelinkEndpointService, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceConfig) {
 	_init_.Initialize()
 

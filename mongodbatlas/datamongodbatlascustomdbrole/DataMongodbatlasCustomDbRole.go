@@ -2,14 +2,14 @@ package datamongodbatlascustomdbrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlascustomdbrole/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlascustomdbrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role}.
 type DataMongodbatlasCustomDbRole interface {
 	cdktf.TerraformDataSource
 	Actions() DataMongodbatlasCustomDbRoleActionsList
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataMongodbatlasCustomDbRole) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role} Data Source.
 func NewDataMongodbatlasCustomDbRole(scope constructs.Construct, id *string, config *DataMongodbatlasCustomDbRoleConfig) DataMongodbatlasCustomDbRole {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataMongodbatlasCustomDbRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/custom_db_role mongodbatlas_custom_db_role} Data Source.
 func NewDataMongodbatlasCustomDbRole_Override(d DataMongodbatlasCustomDbRole, scope constructs.Construct, id *string, config *DataMongodbatlasCustomDbRoleConfig) {
 	_init_.Initialize()
 

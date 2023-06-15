@@ -2,14 +2,14 @@ package projectipaccesslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/projectipaccesslist/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/projectipaccesslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type ProjectIpAccessList interface {
 	cdktf.TerraformResource
 	AwsSecurityGroup() *string
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ProjectIpAccessList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList(scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) ProjectIpAccessList {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewProjectIpAccessList(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList_Override(p ProjectIpAccessList, scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) {
 	_init_.Initialize()
 

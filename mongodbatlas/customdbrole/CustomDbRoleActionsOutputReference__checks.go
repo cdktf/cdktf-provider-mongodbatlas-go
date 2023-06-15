@@ -204,6 +204,8 @@ func (j *jsiiProxy_CustomDbRoleActionsOutputReference) validateSetComplexObjectI
 
 func (j *jsiiProxy_CustomDbRoleActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CustomDbRoleActions:
 		val := val.(*CustomDbRoleActions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_CustomDbRoleActionsOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CustomDbRoleActions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CustomDbRoleActions; received %#v (a %T)", val, val)
 		}
 	}
 

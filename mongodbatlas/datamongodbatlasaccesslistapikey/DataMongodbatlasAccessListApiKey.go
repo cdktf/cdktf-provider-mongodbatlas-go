@@ -2,14 +2,14 @@ package datamongodbatlasaccesslistapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasaccesslistapikey/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasaccesslistapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key}.
 type DataMongodbatlasAccessListApiKey interface {
 	cdktf.TerraformDataSource
 	AccessCount() *float64
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataMongodbatlasAccessListApiKey) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key} Data Source.
 func NewDataMongodbatlasAccessListApiKey(scope constructs.Construct, id *string, config *DataMongodbatlasAccessListApiKeyConfig) DataMongodbatlasAccessListApiKey {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataMongodbatlasAccessListApiKey(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.9.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/access_list_api_key mongodbatlas_access_list_api_key} Data Source.
 func NewDataMongodbatlasAccessListApiKey_Override(d DataMongodbatlasAccessListApiKey, scope constructs.Construct, id *string, config *DataMongodbatlasAccessListApiKeyConfig) {
 	_init_.Initialize()
 

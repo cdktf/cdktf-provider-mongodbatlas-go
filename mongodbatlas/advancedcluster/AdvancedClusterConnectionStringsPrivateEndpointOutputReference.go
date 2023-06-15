@@ -2,9 +2,9 @@ package advancedcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/advancedcluster/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/advancedcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,7 @@ type AdvancedClusterConnectionStringsPrivateEndpointOutputReference interface {
 	InternalValue() *AdvancedClusterConnectionStringsPrivateEndpoint
 	SetInternalValue(val *AdvancedClusterConnectionStringsPrivateEndpoint)
 	SrvConnectionString() *string
+	SrvShardOptimizedConnectionString() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointOutputReferenc
 	_jsii_.Get(
 		j,
 		"srvConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointOutputReference) SrvShardOptimizedConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"srvShardOptimizedConnectionString",
 		&returns,
 	)
 	return returns

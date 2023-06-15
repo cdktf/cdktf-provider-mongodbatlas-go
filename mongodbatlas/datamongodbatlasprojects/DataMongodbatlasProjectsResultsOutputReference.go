@@ -2,9 +2,9 @@ package datamongodbatlasprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v3/datamongodbatlasprojects/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v4/datamongodbatlasprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	SetInternalValue(val *DataMongodbatlasProjectsResults)
 	IsCollectDatabaseSpecificsStatisticsEnabled() cdktf.IResolvable
 	IsDataExplorerEnabled() cdktf.IResolvable
+	IsExtendedStorageSizesEnabled() cdktf.IResolvable
 	IsPerformanceAdvisorEnabled() cdktf.IResolvable
 	IsRealtimePerformancePanelEnabled() cdktf.IResolvable
 	IsSchemaAdvisorEnabled() cdktf.IResolvable
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IsDataExplore
 	_jsii_.Get(
 		j,
 		"isDataExplorerEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IsExtendedStorageSizesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isExtendedStorageSizesEnabled",
 		&returns,
 	)
 	return returns
