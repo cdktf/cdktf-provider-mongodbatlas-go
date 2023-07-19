@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type Organization interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	FederationSettingsId() *string
+	SetFederationSettingsId(val *string)
+	FederationSettingsIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -101,6 +104,7 @@ type Organization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetFederationSettingsId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -185,6 +189,26 @@ func (j *jsiiProxy_Organization) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) FederationSettingsId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federationSettingsId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) FederationSettingsIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federationSettingsIdInput",
 		&returns,
 	)
 	return returns
@@ -411,7 +435,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -429,7 +453,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -477,6 +501,17 @@ func (j *jsiiProxy_Organization)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetFederationSettingsId(val *string) {
+	if err := j.validateSetFederationSettingsIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"federationSettingsId",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (o *jsiiProxy_Organization) OverrideLogicalId(newLogicalId *string) {
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetFederationSettingsId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFederationSettingsId",
+		nil, // no parameters
 	)
 }
 

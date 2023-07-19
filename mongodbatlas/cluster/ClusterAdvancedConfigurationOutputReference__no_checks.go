@@ -108,6 +108,10 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) validateSetTransactionLifetimeLimitSecondsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewClusterAdvancedConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

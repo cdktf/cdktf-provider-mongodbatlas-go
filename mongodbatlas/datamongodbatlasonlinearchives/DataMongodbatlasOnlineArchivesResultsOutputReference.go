@@ -38,6 +38,7 @@ type DataMongodbatlasOnlineArchivesResultsOutputReference interface {
 	PartitionFields() DataMongodbatlasOnlineArchivesResultsPartitionFieldsList
 	Paused() cdktf.IResolvable
 	ProjectId() *string
+	Schedule() DataMongodbatlasOnlineArchivesResultsScheduleList
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) Project
 	_jsii_.Get(
 		j,
 		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) Schedule() DataMongodbatlasOnlineArchivesResultsScheduleList {
+	var returns DataMongodbatlasOnlineArchivesResultsScheduleList
+	_jsii_.Get(
+		j,
+		"schedule",
 		&returns,
 	)
 	return returns

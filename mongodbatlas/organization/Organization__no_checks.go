@@ -76,6 +76,10 @@ func (j *jsiiProxy_Organization) validateSetDescriptionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetFederationSettingsIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetIdParameters(val *string) error {
 	return nil
 }

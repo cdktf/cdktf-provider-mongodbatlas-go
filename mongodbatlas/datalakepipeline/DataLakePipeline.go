@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline}.
 type DataLakePipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DataLakePipeline) TransformationsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource.
 func NewDataLakePipeline(scope constructs.Construct, id *string, config *DataLakePipelineConfig) DataLakePipeline {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewDataLakePipeline(scope constructs.Construct, id *string, config *DataLak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/data_lake_pipeline mongodbatlas_data_lake_pipeline} Resource.
 func NewDataLakePipeline_Override(d DataLakePipeline, scope constructs.Construct, id *string, config *DataLakePipelineConfig) {
 	_init_.Initialize()
 

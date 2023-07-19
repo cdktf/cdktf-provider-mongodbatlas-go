@@ -60,6 +60,10 @@ func (o *jsiiProxy_OnlineArchive) validatePutPartitionFieldsParameters(value int
 	return nil
 }
 
+func (o *jsiiProxy_OnlineArchive) validatePutScheduleParameters(value *OnlineArchiveSchedule) error {
+	return nil
+}
+
 func validateOnlineArchive_IsConstructParameters(x interface{}) error {
 	return nil
 }

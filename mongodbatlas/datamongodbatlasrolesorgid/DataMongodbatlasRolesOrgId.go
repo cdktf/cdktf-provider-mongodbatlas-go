@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/roles_org_id mongodbatlas_roles_org_id}.
 type DataMongodbatlasRolesOrgId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataMongodbatlasRolesOrgId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
 func NewDataMongodbatlasRolesOrgId(scope constructs.Construct, id *string, config *DataMongodbatlasRolesOrgIdConfig) DataMongodbatlasRolesOrgId {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataMongodbatlasRolesOrgId(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/roles_org_id mongodbatlas_roles_org_id} Data Source.
 func NewDataMongodbatlasRolesOrgId_Override(d DataMongodbatlasRolesOrgId, scope constructs.Construct, id *string, config *DataMongodbatlasRolesOrgIdConfig) {
 	_init_.Initialize()
 

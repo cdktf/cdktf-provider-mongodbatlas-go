@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}.
 type DataMongodbatlasFederatedSettingsOrgRoleMapping interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMapping) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgRoleMapping(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgRoleMappingConfig) DataMongodbatlasFederatedSettingsOrgRoleMapping {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataMongodbatlasFederatedSettingsOrgRoleMapping(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgRoleMapping_Override(d DataMongodbatlasFederatedSettingsOrgRoleMapping, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgRoleMappingConfig) {
 	_init_.Initialize()
 

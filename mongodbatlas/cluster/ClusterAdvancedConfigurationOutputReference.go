@@ -67,6 +67,9 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransactionLifetimeLimitSeconds() *float64
+	SetTransactionLifetimeLimitSeconds(val *float64)
+	TransactionLifetimeLimitSecondsInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -101,6 +104,7 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	ResetOplogSizeMb()
 	ResetSampleRefreshIntervalBiConnector()
 	ResetSampleSizeBiConnector()
+	ResetTransactionLifetimeLimitSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -386,6 +390,26 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TransactionLifetimeLimitSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"transactionLifetimeLimitSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TransactionLifetimeLimitSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"transactionLifetimeLimitSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewClusterAdvancedConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterAdvancedConfigurationOutputReference {
 	_init_.Initialize()
@@ -575,6 +599,17 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetTransactionLifetimeLimitSeconds(val *float64) {
+	if err := j.validateSetTransactionLifetimeLimitSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transactionLifetimeLimitSeconds",
 		val,
 	)
 }
@@ -841,6 +876,14 @@ func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetSampleSizeB
 	_jsii_.InvokeVoid(
 		c,
 		"resetSampleSizeBiConnector",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetTransactionLifetimeLimitSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTransactionLifetimeLimitSeconds",
 		nil, // no parameters
 	)
 }

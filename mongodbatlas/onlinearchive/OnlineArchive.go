@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive mongodbatlas_online_archive}.
 type OnlineArchive interface {
 	cdktf.TerraformResource
 	ArchiveId() *string
@@ -78,6 +78,8 @@ type OnlineArchive interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Schedule() OnlineArchiveScheduleOutputReference
+	ScheduleInput() *OnlineArchiveSchedule
 	State() *string
 	SyncCreation() interface{}
 	SetSyncCreation(val interface{})
@@ -115,6 +117,7 @@ type OnlineArchive interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCriteria(value *OnlineArchiveCriteria)
 	PutPartitionFields(value interface{})
+	PutSchedule(value *OnlineArchiveSchedule)
 	ResetCollectionType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -122,6 +125,7 @@ type OnlineArchive interface {
 	ResetOverrideLogicalId()
 	ResetPartitionFields()
 	ResetPaused()
+	ResetSchedule()
 	ResetSyncCreation()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -458,6 +462,26 @@ func (j *jsiiProxy_OnlineArchive) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OnlineArchive) Schedule() OnlineArchiveScheduleOutputReference {
+	var returns OnlineArchiveScheduleOutputReference
+	_jsii_.Get(
+		j,
+		"schedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineArchive) ScheduleInput() *OnlineArchiveSchedule {
+	var returns *OnlineArchiveSchedule
+	_jsii_.Get(
+		j,
+		"scheduleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OnlineArchive) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_OnlineArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArchiveConfig) OnlineArchive {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.0/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive_Override(o OnlineArchive, scope constructs.Construct, id *string, config *OnlineArchiveConfig) {
 	_init_.Initialize()
 
@@ -992,6 +1016,17 @@ func (o *jsiiProxy_OnlineArchive) PutPartitionFields(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OnlineArchive) PutSchedule(value *OnlineArchiveSchedule) {
+	if err := o.validatePutScheduleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSchedule",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OnlineArchive) ResetCollectionType() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1028,6 +1063,14 @@ func (o *jsiiProxy_OnlineArchive) ResetPaused() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnlineArchive) ResetSchedule() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSchedule",
 		nil, // no parameters
 	)
 }

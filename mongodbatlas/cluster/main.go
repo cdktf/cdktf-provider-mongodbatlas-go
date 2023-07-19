@@ -222,6 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOplogSizeMb", GoMethod: "ResetOplogSizeMb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSampleRefreshIntervalBiConnector", GoMethod: "ResetSampleRefreshIntervalBiConnector"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSampleSizeBiConnector", GoMethod: "ResetSampleSizeBiConnector"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransactionLifetimeLimitSeconds", GoMethod: "ResetTransactionLifetimeLimitSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sampleRefreshIntervalBiConnector", GoGetter: "SampleRefreshIntervalBiConnector"},
 			_jsii_.MemberProperty{JsiiProperty: "sampleRefreshIntervalBiConnectorInput", GoGetter: "SampleRefreshIntervalBiConnectorInput"},
@@ -230,6 +231,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transactionLifetimeLimitSeconds", GoGetter: "TransactionLifetimeLimitSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "transactionLifetimeLimitSecondsInput", GoGetter: "TransactionLifetimeLimitSecondsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterAdvancedConfigurationOutputReference{}

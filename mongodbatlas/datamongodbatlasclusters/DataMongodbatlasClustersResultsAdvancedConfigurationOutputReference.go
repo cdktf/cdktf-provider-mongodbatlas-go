@@ -47,6 +47,7 @@ type DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransactionLifetimeLimitSeconds() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -251,6 +252,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference) TransactionLifetimeLimitSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"transactionLifetimeLimitSeconds",
 		&returns,
 	)
 	return returns
