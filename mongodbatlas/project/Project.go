@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	ApiKeys() ProjectApiKeysList
@@ -618,7 +618,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
 type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Type()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) PrivatelinkEndpointServiceDataFederationOnlineArchive {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive_Override(p PrivatelinkEndpointServiceDataFederationOnlineArchive, scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) {
 	_init_.Initialize()
 

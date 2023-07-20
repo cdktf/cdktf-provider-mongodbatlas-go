@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/search_index mongodbatlas_search_index}.
 type DataMongodbatlasSearchIndex interface {
 	cdktf.TerraformDataSource
 	Analyzer() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) DataMongodbatlasSearchIndex {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.1/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex_Override(d DataMongodbatlasSearchIndex, scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) {
 	_init_.Initialize()
 
