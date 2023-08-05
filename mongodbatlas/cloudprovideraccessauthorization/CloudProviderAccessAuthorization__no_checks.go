@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudProviderAccessAuthorization) validatePutAwsParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validatePutAzureParameters(value *CloudProviderAccessAuthorizationAzure) error {
+	return nil
+}
+
 func validateCloudProviderAccessAuthorization_IsConstructParameters(x interface{}) error {
 	return nil
 }

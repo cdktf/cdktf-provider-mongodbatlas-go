@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
 type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,8 @@ type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -99,11 +101,13 @@ type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts)
 	ResetComment()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -379,6 +383,26 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Terraf
 	return returns
 }
 
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Timeouts() PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference {
+	var returns PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Type()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) PrivatelinkEndpointServiceDataFederationOnlineArchive {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive_Override(p PrivatelinkEndpointServiceDataFederationOnlineArchive, scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) {
 	_init_.Initialize()
 
@@ -808,6 +832,17 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Overri
 	)
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) PutTimeouts(value *PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetComment() {
 	_jsii_.InvokeVoid(
 		p,
@@ -828,6 +863,14 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetO
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

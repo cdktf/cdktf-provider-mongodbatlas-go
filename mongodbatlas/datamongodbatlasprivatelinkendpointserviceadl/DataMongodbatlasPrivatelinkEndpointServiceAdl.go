@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
 type DataMongodbatlasPrivatelinkEndpointServiceAdl interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceAdl) Type() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceAdl(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceAdlConfig) DataMongodbatlasPrivatelinkEndpointServiceAdl {
 	_init_.Initialize()
 
@@ -355,7 +355,7 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceAdl(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceAdl_Override(d DataMongodbatlasPrivatelinkEndpointServiceAdl, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceAdlConfig) {
 	_init_.Initialize()
 

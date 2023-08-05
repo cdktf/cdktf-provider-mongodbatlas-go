@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type ProjectIpAccessList interface {
 	cdktf.TerraformResource
 	AwsSecurityGroup() *string
@@ -429,7 +429,7 @@ func (j *jsiiProxy_ProjectIpAccessList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList(scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) ProjectIpAccessList {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewProjectIpAccessList(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList_Override(p ProjectIpAccessList, scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) {
 	_init_.Initialize()
 

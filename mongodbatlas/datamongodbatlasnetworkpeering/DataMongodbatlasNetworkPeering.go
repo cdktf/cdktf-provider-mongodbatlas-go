@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/network_peering mongodbatlas_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/network_peering mongodbatlas_network_peering}.
 type DataMongodbatlasNetworkPeering interface {
 	cdktf.TerraformDataSource
 	AccepterRegionName() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_DataMongodbatlasNetworkPeering) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
 func NewDataMongodbatlasNetworkPeering(scope constructs.Construct, id *string, config *DataMongodbatlasNetworkPeeringConfig) DataMongodbatlasNetworkPeering {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewDataMongodbatlasNetworkPeering(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/network_peering mongodbatlas_network_peering} Data Source.
 func NewDataMongodbatlasNetworkPeering_Override(d DataMongodbatlasNetworkPeering, scope constructs.Construct, id *string, config *DataMongodbatlasNetworkPeeringConfig) {
 	_init_.Initialize()
 

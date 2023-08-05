@@ -9,12 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
 type CloudProviderAccessAuthorization interface {
 	cdktf.TerraformResource
 	AuthorizedDate() *string
 	Aws() CloudProviderAccessAuthorizationAwsOutputReference
 	AwsInput() *CloudProviderAccessAuthorizationAws
+	Azure() CloudProviderAccessAuthorizationAzureOutputReference
+	AzureInput() *CloudProviderAccessAuthorizationAzure
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -97,7 +99,9 @@ type CloudProviderAccessAuthorization interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAws(value *CloudProviderAccessAuthorizationAws)
+	PutAzure(value *CloudProviderAccessAuthorizationAzure)
 	ResetAws()
+	ResetAzure()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_CloudProviderAccessAuthorization) AwsInput() *CloudProviderAc
 	_jsii_.Get(
 		j,
 		"awsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudProviderAccessAuthorization) Azure() CloudProviderAccessAuthorizationAzureOutputReference {
+	var returns CloudProviderAccessAuthorizationAzureOutputReference
+	_jsii_.Get(
+		j,
+		"azure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudProviderAccessAuthorization) AzureInput() *CloudProviderAccessAuthorizationAzure {
+	var returns *CloudProviderAccessAuthorizationAzure
+	_jsii_.Get(
+		j,
+		"azureInput",
 		&returns,
 	)
 	return returns
@@ -378,7 +402,7 @@ func (j *jsiiProxy_CloudProviderAccessAuthorization) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) CloudProviderAccessAuthorization {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization_Override(c CloudProviderAccessAuthorization, scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -785,10 +809,29 @@ func (c *jsiiProxy_CloudProviderAccessAuthorization) PutAws(value *CloudProvider
 	)
 }
 
+func (c *jsiiProxy_CloudProviderAccessAuthorization) PutAzure(value *CloudProviderAccessAuthorizationAzure) {
+	if err := c.validatePutAzureParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAzure",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudProviderAccessAuthorization) ResetAws() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAws",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudProviderAccessAuthorization) ResetAzure() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAzure",
 		nil, // no parameters
 	)
 }

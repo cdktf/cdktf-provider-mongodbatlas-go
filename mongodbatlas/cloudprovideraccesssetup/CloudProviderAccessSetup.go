@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
 type CloudProviderAccessSetup interface {
 	cdktf.TerraformResource
 	Aws() cdktf.StringMap
 	AwsConfig() CloudProviderAccessSetupAwsConfigList
+	AzureConfig() CloudProviderAccessSetupAzureConfigList
+	AzureConfigInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -42,6 +44,7 @@ type CloudProviderAccessSetup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LastUpdatedDate() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -96,6 +99,8 @@ type CloudProviderAccessSetup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureConfig(value interface{})
+	ResetAzureConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -130,6 +135,26 @@ func (j *jsiiProxy_CloudProviderAccessSetup) AwsConfig() CloudProviderAccessSetu
 	_jsii_.Get(
 		j,
 		"awsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudProviderAccessSetup) AzureConfig() CloudProviderAccessSetupAzureConfigList {
+	var returns CloudProviderAccessSetupAzureConfigList
+	_jsii_.Get(
+		j,
+		"azureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudProviderAccessSetup) AzureConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureConfigInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +265,16 @@ func (j *jsiiProxy_CloudProviderAccessSetup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudProviderAccessSetup) LastUpdatedDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdatedDate",
 		&returns,
 	)
 	return returns
@@ -376,7 +411,7 @@ func (j *jsiiProxy_CloudProviderAccessSetup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
 func NewCloudProviderAccessSetup(scope constructs.Construct, id *string, config *CloudProviderAccessSetupConfig) CloudProviderAccessSetup {
 	_init_.Initialize()
 
@@ -394,7 +429,7 @@ func NewCloudProviderAccessSetup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
 func NewCloudProviderAccessSetup_Override(c CloudProviderAccessSetup, scope constructs.Construct, id *string, config *CloudProviderAccessSetupConfig) {
 	_init_.Initialize()
 
@@ -769,6 +804,25 @@ func (c *jsiiProxy_CloudProviderAccessSetup) OverrideLogicalId(newLogicalId *str
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudProviderAccessSetup) PutAzureConfig(value interface{}) {
+	if err := c.validatePutAzureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAzureConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudProviderAccessSetup) ResetAzureConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAzureConfig",
+		nil, // no parameters
 	)
 }
 

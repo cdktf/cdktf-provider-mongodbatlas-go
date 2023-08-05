@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
 type DataMongodbatlasCloudProviderAccessSetup interface {
 	cdktf.TerraformDataSource
 	Aws() cdktf.StringMap
 	AwsConfig() DataMongodbatlasCloudProviderAccessSetupAwsConfigList
+	AzureConfig() DataMongodbatlasCloudProviderAccessSetupAzureConfigList
+	AzureConfigInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -38,6 +40,7 @@ type DataMongodbatlasCloudProviderAccessSetup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LastUpdatedDate() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -90,6 +93,8 @@ type DataMongodbatlasCloudProviderAccessSetup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureConfig(value interface{})
+	ResetAzureConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -124,6 +129,26 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) AwsConfig() DataMon
 	_jsii_.Get(
 		j,
 		"awsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) AzureConfig() DataMongodbatlasCloudProviderAccessSetupAzureConfigList {
+	var returns DataMongodbatlasCloudProviderAccessSetupAzureConfigList
+	_jsii_.Get(
+		j,
+		"azureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) AzureConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureConfigInput",
 		&returns,
 	)
 	return returns
@@ -224,6 +249,16 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) LastUpdatedDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdatedDate",
 		&returns,
 	)
 	return returns
@@ -360,7 +395,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
 func NewDataMongodbatlasCloudProviderAccessSetup(scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessSetupConfig) DataMongodbatlasCloudProviderAccessSetup {
 	_init_.Initialize()
 
@@ -378,7 +413,7 @@ func NewDataMongodbatlasCloudProviderAccessSetup(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Data Source.
 func NewDataMongodbatlasCloudProviderAccessSetup_Override(d DataMongodbatlasCloudProviderAccessSetup, scope constructs.Construct, id *string, config *DataMongodbatlasCloudProviderAccessSetupConfig) {
 	_init_.Initialize()
 
@@ -742,6 +777,25 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) OverrideLogicalId(n
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) PutAzureConfig(value interface{}) {
+	if err := d.validatePutAzureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAzureConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) ResetAzureConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAzureConfig",
+		nil, // no parameters
 	)
 }
 

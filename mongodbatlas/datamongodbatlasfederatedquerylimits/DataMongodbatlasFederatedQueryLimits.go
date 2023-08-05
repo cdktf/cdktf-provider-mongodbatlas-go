@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits}.
 type DataMongodbatlasFederatedQueryLimits interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedQueryLimits) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source.
 func NewDataMongodbatlasFederatedQueryLimits(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedQueryLimitsConfig) DataMongodbatlasFederatedQueryLimits {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataMongodbatlasFederatedQueryLimits(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/federated_query_limits mongodbatlas_federated_query_limits} Data Source.
 func NewDataMongodbatlasFederatedQueryLimits_Override(d DataMongodbatlasFederatedQueryLimits, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedQueryLimitsConfig) {
 	_init_.Initialize()
 

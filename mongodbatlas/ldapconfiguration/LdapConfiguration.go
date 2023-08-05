@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/ldap_configuration mongodbatlas_ldap_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/ldap_configuration mongodbatlas_ldap_configuration}.
 type LdapConfiguration interface {
 	cdktf.TerraformResource
 	AuthenticationEnabled() interface{}
@@ -521,7 +521,7 @@ func (j *jsiiProxy_LdapConfiguration) UserToDnMappingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource.
 func NewLdapConfiguration(scope constructs.Construct, id *string, config *LdapConfigurationConfig) LdapConfiguration {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewLdapConfiguration(scope constructs.Construct, id *string, config *LdapCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/ldap_configuration mongodbatlas_ldap_configuration} Resource.
 func NewLdapConfiguration_Override(l LdapConfiguration, scope constructs.Construct, id *string, config *LdapConfigurationConfig) {
 	_init_.Initialize()
 

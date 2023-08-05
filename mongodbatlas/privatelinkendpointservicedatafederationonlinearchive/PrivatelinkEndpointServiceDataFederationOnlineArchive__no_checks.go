@@ -52,6 +52,10 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 	return nil
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validatePutTimeoutsParameters(value *PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts) error {
+	return nil
+}
+
 func validatePrivatelinkEndpointServiceDataFederationOnlineArchive_IsConstructParameters(x interface{}) error {
 	return nil
 }

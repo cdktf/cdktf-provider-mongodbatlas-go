@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/custom_db_role mongodbatlas_custom_db_role}.
 type CustomDbRole interface {
 	cdktf.TerraformResource
 	Actions() CustomDbRoleActionsList
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CustomDbRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRoleConfig) CustomDbRole {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCustomDbRole(scope constructs.Construct, id *string, config *CustomDbRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/custom_db_role mongodbatlas_custom_db_role} Resource.
 func NewCustomDbRole_Override(c CustomDbRole, scope constructs.Construct, id *string, config *CustomDbRoleConfig) {
 	_init_.Initialize()
 

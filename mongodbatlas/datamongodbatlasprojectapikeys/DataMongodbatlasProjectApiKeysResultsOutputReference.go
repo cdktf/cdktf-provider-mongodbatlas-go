@@ -32,6 +32,7 @@ type DataMongodbatlasProjectApiKeysResultsOutputReference interface {
 	InternalValue() *DataMongodbatlasProjectApiKeysResults
 	SetInternalValue(val *DataMongodbatlasProjectApiKeysResults)
 	PrivateKey() *string
+	ProjectAssignment() DataMongodbatlasProjectApiKeysResultsProjectAssignmentList
 	PublicKey() *string
 	RoleNames() *[]*string
 	// Experimental.
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKeysResultsOutputReference) Private
 	_jsii_.Get(
 		j,
 		"privateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectApiKeysResultsOutputReference) ProjectAssignment() DataMongodbatlasProjectApiKeysResultsProjectAssignmentList {
+	var returns DataMongodbatlasProjectApiKeysResultsProjectAssignmentList
+	_jsii_.Get(
+		j,
+		"projectAssignment",
 		&returns,
 	)
 	return returns

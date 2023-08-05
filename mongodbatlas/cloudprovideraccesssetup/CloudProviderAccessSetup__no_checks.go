@@ -52,6 +52,10 @@ func (c *jsiiProxy_CloudProviderAccessSetup) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudProviderAccessSetup) validatePutAzureConfigParameters(value interface{}) error {
+	return nil
+}
+
 func validateCloudProviderAccessSetup_IsConstructParameters(x interface{}) error {
 	return nil
 }

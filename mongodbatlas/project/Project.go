@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	ApiKeys() ProjectApiKeysList
@@ -65,6 +65,8 @@ type Project interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Limits() ProjectLimitsList
+	LimitsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -126,6 +128,7 @@ type Project interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApiKeys(value interface{})
+	PutLimits(value interface{})
 	PutTeams(value interface{})
 	ResetApiKeys()
 	ResetId()
@@ -135,6 +138,7 @@ type Project interface {
 	ResetIsPerformanceAdvisorEnabled()
 	ResetIsRealtimePerformancePanelEnabled()
 	ResetIsSchemaAdvisorEnabled()
+	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -427,6 +431,26 @@ func (j *jsiiProxy_Project) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Project) Limits() ProjectLimitsList {
+	var returns ProjectLimitsList
+	_jsii_.Get(
+		j,
+		"limits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) LimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"limitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -618,7 +642,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -1124,6 +1148,17 @@ func (p *jsiiProxy_Project) PutApiKeys(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_Project) PutLimits(value interface{}) {
+	if err := p.validatePutLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLimits",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_Project) PutTeams(value interface{}) {
 	if err := p.validatePutTeamsParameters(value); err != nil {
 		panic(err)
@@ -1195,6 +1230,14 @@ func (p *jsiiProxy_Project) ResetIsSchemaAdvisorEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIsSchemaAdvisorEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetLimits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLimits",
 		nil, // no parameters
 	)
 }

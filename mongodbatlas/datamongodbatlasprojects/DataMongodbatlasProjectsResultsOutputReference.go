@@ -39,6 +39,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	IsPerformanceAdvisorEnabled() cdktf.IResolvable
 	IsRealtimePerformancePanelEnabled() cdktf.IResolvable
 	IsSchemaAdvisorEnabled() cdktf.IResolvable
+	Limits() DataMongodbatlasProjectsResultsLimitsList
 	Name() *string
 	OrgId() *string
 	RegionUsageRestrictions() *string
@@ -235,6 +236,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IsSchemaAdvis
 	_jsii_.Get(
 		j,
 		"isSchemaAdvisorEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) Limits() DataMongodbatlasProjectsResultsLimitsList {
+	var returns DataMongodbatlasProjectsResultsLimitsList
+	_jsii_.Get(
+		j,
+		"limits",
 		&returns,
 	)
 	return returns

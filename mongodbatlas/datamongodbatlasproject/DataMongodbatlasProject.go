@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project mongodbatlas_project}.
 type DataMongodbatlasProject interface {
 	cdktf.TerraformDataSource
 	ApiKeys() DataMongodbatlasProjectApiKeysList
@@ -48,6 +48,7 @@ type DataMongodbatlasProject interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Limits() DataMongodbatlasProjectLimitsList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -307,6 +308,16 @@ func (j *jsiiProxy_DataMongodbatlasProject) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasProject) Limits() DataMongodbatlasProjectLimitsList {
+	var returns DataMongodbatlasProjectLimitsList
+	_jsii_.Get(
+		j,
+		"limits",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasProject) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -438,7 +449,7 @@ func (j *jsiiProxy_DataMongodbatlasProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) DataMongodbatlasProject {
 	_init_.Initialize()
 
@@ -456,7 +467,7 @@ func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.10.2/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject_Override(d DataMongodbatlasProject, scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) {
 	_init_.Initialize()
 

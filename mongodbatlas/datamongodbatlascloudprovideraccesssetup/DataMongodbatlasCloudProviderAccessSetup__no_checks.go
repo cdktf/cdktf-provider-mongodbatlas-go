@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) validatePutAzureConfigParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataMongodbatlasCloudProviderAccessSetup_IsConstructParameters(x interface{}) error {
 	return nil
 }

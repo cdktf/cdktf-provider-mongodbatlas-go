@@ -56,6 +56,10 @@ func (p *jsiiProxy_Project) validatePutApiKeysParameters(value interface{}) erro
 	return nil
 }
 
+func (p *jsiiProxy_Project) validatePutLimitsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Project) validatePutTeamsParameters(value interface{}) error {
 	return nil
 }
