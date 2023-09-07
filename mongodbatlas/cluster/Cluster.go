@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	AdvancedConfiguration() ClusterAdvancedConfigurationOutputReference
@@ -1246,7 +1246,7 @@ func (j *jsiiProxy_Cluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1264,7 +1264,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 

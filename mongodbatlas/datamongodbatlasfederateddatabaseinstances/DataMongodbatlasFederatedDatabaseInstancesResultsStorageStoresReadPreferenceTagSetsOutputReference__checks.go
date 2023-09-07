@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -21,7 +21,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -29,7 +29,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -37,7 +37,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -45,7 +45,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -53,7 +53,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -61,7 +61,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -69,7 +69,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -77,7 +77,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -85,7 +85,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -93,7 +93,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTags) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSets) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return nil
 }
 
-func validateNewDataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

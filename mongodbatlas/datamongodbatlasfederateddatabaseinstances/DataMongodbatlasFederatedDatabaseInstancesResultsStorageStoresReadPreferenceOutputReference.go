@@ -34,7 +34,7 @@ type DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenc
 	SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreference)
 	MaxStalenessSeconds() *float64
 	Mode() *string
-	Tags() DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsList
+	TagSets() DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -152,11 +152,11 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceOutputReference) Tags() DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsList {
-	var returns DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagsList
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceOutputReference) TagSets() DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsList {
+	var returns DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresReadPreferenceTagSetsList
 	_jsii_.Get(
 		j,
-		"tags",
+		"tagSets",
 		&returns,
 	)
 	return returns

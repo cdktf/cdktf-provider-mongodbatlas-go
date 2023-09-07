@@ -47,6 +47,10 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputRef
 	return nil
 }
 
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) validatePutTagSetsParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

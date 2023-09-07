@@ -256,6 +256,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "databaseInput", GoGetter: "DatabaseInput"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseRegex", GoGetter: "DatabaseRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseRegexInput", GoGetter: "DatabaseRegexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetName", GoGetter: "DatasetName"},
+			_jsii_.MemberProperty{JsiiProperty: "datasetNameInput", GoGetter: "DatasetNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultFormat", GoGetter: "DefaultFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultFormatInput", GoGetter: "DefaultFormatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -280,6 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCollectionRegex", GoMethod: "ResetCollectionRegex"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabase", GoMethod: "ResetDatabase"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseRegex", GoMethod: "ResetDatabaseRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatasetName", GoMethod: "ResetDatasetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultFormat", GoMethod: "ResetDefaultFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvenanceFieldName", GoMethod: "ResetProvenanceFieldName"},
@@ -620,10 +623,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxStalenessSecondsInput", GoGetter: "MaxStalenessSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putTagSets", GoMethod: "PutTagSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxStalenessSeconds", GoMethod: "ResetMaxStalenessSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTagSets", GoMethod: "ResetTagSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
+			_jsii_.MemberProperty{JsiiProperty: "tagSets", GoGetter: "TagSets"},
+			_jsii_.MemberProperty{JsiiProperty: "tagSetsInput", GoGetter: "TagSetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -635,17 +641,18 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTags",
-		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTags)(nil)).Elem(),
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList",
-		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList)(nil)).Elem(),
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -653,14 +660,74 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList{}
+			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference",
-		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)(nil)).Elem(),
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
+			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.federatedDatabaseInstance.FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference",
+		reflect.TypeOf((*FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -680,14 +747,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference{}
+			j := jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

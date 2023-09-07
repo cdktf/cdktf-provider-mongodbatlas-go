@@ -169,6 +169,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "ldapAuthType", GoGetter: "LdapAuthType"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcAuthType", GoGetter: "OidcAuthType"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "roles", GoGetter: "Roles"},

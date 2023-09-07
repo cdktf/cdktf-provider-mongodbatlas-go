@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ldapAuthType", GoGetter: "LdapAuthType"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "oidcAuthType", GoGetter: "OidcAuthType"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},

@@ -4,6 +4,6 @@
 package datamongodbatlasfederateddatabaseinstance
 
 
-type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags struct {
+type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets struct {
 }
 

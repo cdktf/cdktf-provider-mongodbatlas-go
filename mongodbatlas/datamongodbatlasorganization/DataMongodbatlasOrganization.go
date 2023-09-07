@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization mongodbatlas_organization}.
 type DataMongodbatlasOrganization interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataMongodbatlasOrganization) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/organization mongodbatlas_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization mongodbatlas_organization} Data Source.
 func NewDataMongodbatlasOrganization(scope constructs.Construct, id *string, config *DataMongodbatlasOrganizationConfig) DataMongodbatlasOrganization {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataMongodbatlasOrganization(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/data-sources/organization mongodbatlas_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/organization mongodbatlas_organization} Data Source.
 func NewDataMongodbatlasOrganization_Override(d DataMongodbatlasOrganization, scope constructs.Construct, id *string, config *DataMongodbatlasOrganizationConfig) {
 	_init_.Initialize()
 

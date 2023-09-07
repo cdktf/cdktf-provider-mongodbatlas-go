@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
 type AlertConfiguration interface {
 	cdktf.TerraformResource
 	AlertConfigurationId() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_AlertConfiguration) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
 func NewAlertConfiguration(scope constructs.Construct, id *string, config *AlertConfigurationConfig) AlertConfiguration {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewAlertConfiguration(scope constructs.Construct, id *string, config *Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
 func NewAlertConfiguration_Override(a AlertConfiguration, scope constructs.Construct, id *string, config *AlertConfigurationConfig) {
 	_init_.Initialize()
 

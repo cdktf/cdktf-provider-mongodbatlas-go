@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference interface {
+type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,9 +30,9 @@ type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOut
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags
-	SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags)
-	Name() *string
+	InternalValue() *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets
+	SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets)
+	Tags() DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,7 +41,6 @@ type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOut
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,12 +75,12 @@ type DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOut
 	ToString() *string
 }
 
-// The jsii proxy struct for DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference
-type jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference struct {
+// The jsii proxy struct for DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference
+type jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -91,7 +90,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -101,7 +100,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -111,7 +110,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -121,8 +120,8 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) InternalValue() *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags {
-	var returns *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) InternalValue() *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets {
+	var returns *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -131,17 +130,17 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) Name() *string {
-	var returns *string
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) Tags() DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList {
+	var returns DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList
 	_jsii_.Get(
 		j,
-		"name",
+		"tags",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -151,7 +150,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -161,27 +160,17 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) Value() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"value",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference {
+func NewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference{}
+	j := jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference",
+		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -189,17 +178,17 @@ func NewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags
 	return &j
 }
 
-func NewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference_Override(d DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference_Override(d DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference",
+		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -210,7 +199,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -221,7 +210,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTags) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSets) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +221,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +232,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +243,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -267,7 +256,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -283,7 +272,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -299,7 +288,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -315,7 +304,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -331,7 +320,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -347,7 +336,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -363,7 +352,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -379,7 +368,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -395,7 +384,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -411,7 +400,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,7 +413,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -440,7 +429,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -456,7 +445,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPre
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagsOutputReference) ToString() *string {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

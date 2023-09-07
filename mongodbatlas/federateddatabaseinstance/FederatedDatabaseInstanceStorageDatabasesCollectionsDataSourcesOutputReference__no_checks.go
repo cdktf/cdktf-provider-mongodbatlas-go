@@ -79,6 +79,10 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourc
 	return nil
 }
 
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference) validateSetDatasetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference) validateSetDefaultFormatParameters(val *string) error {
 	return nil
 }

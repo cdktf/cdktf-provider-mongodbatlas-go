@@ -38,7 +38,8 @@ type FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference interfa
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
-	Tags() FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList
+	TagSets() FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList
+	TagSetsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,8 +72,10 @@ type FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTagSets(value interface{})
 	ResetMaxStalenessSeconds()
 	ResetMode()
+	ResetTagSets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -178,11 +181,21 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) Tags() FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList {
-	var returns FederatedDatabaseInstanceStorageStoresReadPreferenceTagsList
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) TagSets() FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList {
+	var returns FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsList
 	_jsii_.Get(
 		j,
-		"tags",
+		"tagSets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) TagSetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagSetsInput",
 		&returns,
 	)
 	return returns
@@ -499,6 +512,17 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputRef
 	return returns
 }
 
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) PutTagSets(value interface{}) {
+	if err := f.validatePutTagSetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTagSets",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) ResetMaxStalenessSeconds() {
 	_jsii_.InvokeVoid(
 		f,
@@ -511,6 +535,14 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputRef
 	_jsii_.InvokeVoid(
 		f,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceOutputReference) ResetTagSets() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTagSets",
 		nil, // no parameters
 	)
 }

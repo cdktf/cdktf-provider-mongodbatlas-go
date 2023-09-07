@@ -33,6 +33,7 @@ type DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollection
 	CreationStack() *[]*string
 	Database() *string
 	DatabaseRegex() *string
+	DatasetName() *string
 	DefaultFormat() *string
 	// Experimental.
 	Fqn() *string
@@ -164,6 +165,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatab
 	_jsii_.Get(
 		j,
 		"databaseRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesCollectionsDataSourcesOutputReference) DatasetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetName",
 		&returns,
 	)
 	return returns

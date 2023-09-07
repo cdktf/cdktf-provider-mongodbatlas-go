@@ -36,6 +36,7 @@ type DataMongodbatlasDatabaseUsersResultsOutputReference interface {
 	SetInternalValue(val *DataMongodbatlasDatabaseUsersResults)
 	Labels() DataMongodbatlasDatabaseUsersResultsLabelsList
 	LdapAuthType() *string
+	OidcAuthType() *string
 	ProjectId() *string
 	Roles() DataMongodbatlasDatabaseUsersResultsRolesList
 	Scopes() DataMongodbatlasDatabaseUsersResultsScopesList
@@ -173,6 +174,16 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) LdapAuth
 	_jsii_.Get(
 		j,
 		"ldapAuthType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) OidcAuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcAuthType",
 		&returns,
 	)
 	return returns

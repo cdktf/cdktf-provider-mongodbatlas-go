@@ -43,6 +43,9 @@ type FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputRefere
 	DatabaseRegex() *string
 	SetDatabaseRegex(val *string)
 	DatabaseRegexInput() *string
+	DatasetName() *string
+	SetDatasetName(val *string)
+	DatasetNameInput() *string
 	DefaultFormat() *string
 	SetDefaultFormat(val *string)
 	DefaultFormatInput() *string
@@ -99,6 +102,7 @@ type FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputRefere
 	ResetCollectionRegex()
 	ResetDatabase()
 	ResetDatabaseRegex()
+	ResetDatasetName()
 	ResetDefaultFormat()
 	ResetPath()
 	ResetProvenanceFieldName()
@@ -244,6 +248,26 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourc
 	_jsii_.Get(
 		j,
 		"databaseRegexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference) DatasetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference) DatasetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datasetNameInput",
 		&returns,
 	)
 	return returns
@@ -490,6 +514,17 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourc
 	_jsii_.Set(
 		j,
 		"databaseRegex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference)SetDatasetName(val *string) {
+	if err := j.validateSetDatasetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datasetName",
 		val,
 	)
 }
@@ -804,6 +839,14 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourc
 	_jsii_.InvokeVoid(
 		f,
 		"resetDatabaseRegex",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesCollectionsDataSourcesOutputReference) ResetDatasetName() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDatasetName",
 		nil, // no parameters
 	)
 }

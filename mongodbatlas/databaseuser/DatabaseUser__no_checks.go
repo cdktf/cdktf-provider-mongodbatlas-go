@@ -111,6 +111,10 @@ func (j *jsiiProxy_DatabaseUser) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseUser) validateSetOidcAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseUser) validateSetPasswordParameters(val *string) error {
 	return nil
 }
