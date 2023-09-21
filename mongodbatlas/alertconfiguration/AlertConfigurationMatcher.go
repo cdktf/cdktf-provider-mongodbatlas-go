@@ -5,11 +5,11 @@ package alertconfiguration
 
 
 type AlertConfigurationMatcher struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}.
-	FieldName *string `field:"optional" json:"fieldName" yaml:"fieldName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
-	Operator *string `field:"optional" json:"operator" yaml:"operator"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration#value AlertConfiguration#value}.
-	Value *string `field:"optional" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#field_name AlertConfiguration#field_name}.
+	FieldName *string `field:"required" json:"fieldName" yaml:"fieldName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#operator AlertConfiguration#operator}.
+	Operator *string `field:"required" json:"operator" yaml:"operator"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration#value AlertConfiguration#value}.
+	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

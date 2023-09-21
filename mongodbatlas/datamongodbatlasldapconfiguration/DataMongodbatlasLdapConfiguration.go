@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration}.
 type DataMongodbatlasLdapConfiguration interface {
 	cdktf.TerraformDataSource
 	AuthenticationEnabled() cdktf.IResolvable
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataMongodbatlasLdapConfiguration) UserToDnMapping() DataMong
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration} Data Source.
 func NewDataMongodbatlasLdapConfiguration(scope constructs.Construct, id *string, config *DataMongodbatlasLdapConfigurationConfig) DataMongodbatlasLdapConfiguration {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataMongodbatlasLdapConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/ldap_configuration mongodbatlas_ldap_configuration} Data Source.
 func NewDataMongodbatlasLdapConfiguration_Override(d DataMongodbatlasLdapConfiguration, scope constructs.Construct, id *string, config *DataMongodbatlasLdapConfigurationConfig) {
 	_init_.Initialize()
 

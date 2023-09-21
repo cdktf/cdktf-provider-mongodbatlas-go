@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user}.
 type DatabaseUser interface {
 	cdktf.TerraformResource
 	AuthDatabaseName() *string
@@ -33,9 +33,6 @@ type DatabaseUser interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DatabaseName() *string
-	SetDatabaseName(val *string)
-	DatabaseNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,8 +46,6 @@ type DatabaseUser interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Labels() DatabaseUserLabelsList
 	LabelsInput() interface{}
 	LdapAuthType() *string
@@ -125,10 +120,7 @@ type DatabaseUser interface {
 	PutLabels(value interface{})
 	PutRoles(value interface{})
 	PutScopes(value interface{})
-	ResetAuthDatabaseName()
 	ResetAwsIamType()
-	ResetDatabaseName()
-	ResetId()
 	ResetLabels()
 	ResetLdapAuthType()
 	ResetOidcAuthType()
@@ -136,6 +128,7 @@ type DatabaseUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetRoles()
 	ResetScopes()
 	ResetX509Type()
 	SynthesizeAttributes() *map[string]interface{}
@@ -233,26 +226,6 @@ func (j *jsiiProxy_DatabaseUser) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseUser) DatabaseName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseUser) DatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DatabaseUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -298,16 +271,6 @@ func (j *jsiiProxy_DatabaseUser) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DatabaseUser) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -574,7 +537,7 @@ func (j *jsiiProxy_DatabaseUser) X509TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user} Resource.
 func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUserConfig) DatabaseUser {
 	_init_.Initialize()
 
@@ -592,7 +555,7 @@ func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/database_user mongodbatlas_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/database_user mongodbatlas_database_user} Resource.
 func NewDatabaseUser_Override(d DatabaseUser, scope constructs.Construct, id *string, config *DatabaseUserConfig) {
 	_init_.Initialize()
 
@@ -647,17 +610,6 @@ func (j *jsiiProxy_DatabaseUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseUser)SetDatabaseName(val *string) {
-	if err := j.validateSetDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DatabaseUser)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -670,17 +622,6 @@ func (j *jsiiProxy_DatabaseUser)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DatabaseUser)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1080,34 +1021,10 @@ func (d *jsiiProxy_DatabaseUser) PutScopes(value interface{}) {
 	)
 }
 
-func (d *jsiiProxy_DatabaseUser) ResetAuthDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAuthDatabaseName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DatabaseUser) ResetAwsIamType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAwsIamType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseUser) ResetDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabaseName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseUser) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -1148,6 +1065,14 @@ func (d *jsiiProxy_DatabaseUser) ResetPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseUser) ResetRoles() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

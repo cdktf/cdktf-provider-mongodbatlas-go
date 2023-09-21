@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration mongodbatlas_alert_configuration}.
 type AlertConfiguration interface {
 	cdktf.TerraformResource
 	AlertConfigurationId() *string
@@ -48,19 +48,14 @@ type AlertConfiguration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Matcher() AlertConfigurationMatcherList
 	MatcherInput() interface{}
-	MetricThreshold() *map[string]*string
-	SetMetricThreshold(val *map[string]*string)
-	MetricThresholdConfig() AlertConfigurationMetricThresholdConfigOutputReference
-	MetricThresholdConfigInput() *AlertConfigurationMetricThresholdConfig
-	MetricThresholdInput() *map[string]*string
+	MetricThresholdConfig() AlertConfigurationMetricThresholdConfigList
+	MetricThresholdConfigInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Notification() AlertConfigurationNotificationList
@@ -84,11 +79,8 @@ type AlertConfiguration interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Threshold() *map[string]*string
-	SetThreshold(val *map[string]*string)
-	ThresholdConfig() AlertConfigurationThresholdConfigOutputReference
-	ThresholdConfigInput() *AlertConfigurationThresholdConfig
-	ThresholdInput() *map[string]*string
+	ThresholdConfig() AlertConfigurationThresholdConfigList
+	ThresholdConfigInput() interface{}
 	Updated() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -116,18 +108,16 @@ type AlertConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMatcher(value interface{})
-	PutMetricThresholdConfig(value *AlertConfigurationMetricThresholdConfig)
+	PutMetricThresholdConfig(value interface{})
 	PutNotification(value interface{})
-	PutThresholdConfig(value *AlertConfigurationThresholdConfig)
+	PutThresholdConfig(value interface{})
 	ResetEnabled()
-	ResetId()
 	ResetMatcher()
-	ResetMetricThreshold()
 	ResetMetricThresholdConfig()
+	ResetNotification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetThreshold()
 	ResetThresholdConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -294,16 +284,6 @@ func (j *jsiiProxy_AlertConfiguration) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfiguration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AlertConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -334,18 +314,8 @@ func (j *jsiiProxy_AlertConfiguration) MatcherInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfiguration) MetricThreshold() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"metricThreshold",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfiguration) MetricThresholdConfig() AlertConfigurationMetricThresholdConfigOutputReference {
-	var returns AlertConfigurationMetricThresholdConfigOutputReference
+func (j *jsiiProxy_AlertConfiguration) MetricThresholdConfig() AlertConfigurationMetricThresholdConfigList {
+	var returns AlertConfigurationMetricThresholdConfigList
 	_jsii_.Get(
 		j,
 		"metricThresholdConfig",
@@ -354,21 +324,11 @@ func (j *jsiiProxy_AlertConfiguration) MetricThresholdConfig() AlertConfiguratio
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfiguration) MetricThresholdConfigInput() *AlertConfigurationMetricThresholdConfig {
-	var returns *AlertConfigurationMetricThresholdConfig
+func (j *jsiiProxy_AlertConfiguration) MetricThresholdConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"metricThresholdConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfiguration) MetricThresholdInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"metricThresholdInput",
 		&returns,
 	)
 	return returns
@@ -484,18 +444,8 @@ func (j *jsiiProxy_AlertConfiguration) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfiguration) Threshold() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"threshold",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfiguration) ThresholdConfig() AlertConfigurationThresholdConfigOutputReference {
-	var returns AlertConfigurationThresholdConfigOutputReference
+func (j *jsiiProxy_AlertConfiguration) ThresholdConfig() AlertConfigurationThresholdConfigList {
+	var returns AlertConfigurationThresholdConfigList
 	_jsii_.Get(
 		j,
 		"thresholdConfig",
@@ -504,21 +454,11 @@ func (j *jsiiProxy_AlertConfiguration) ThresholdConfig() AlertConfigurationThres
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfiguration) ThresholdConfigInput() *AlertConfigurationThresholdConfig {
-	var returns *AlertConfigurationThresholdConfig
+func (j *jsiiProxy_AlertConfiguration) ThresholdConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"thresholdConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlertConfiguration) ThresholdInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"thresholdInput",
 		&returns,
 	)
 	return returns
@@ -535,7 +475,7 @@ func (j *jsiiProxy_AlertConfiguration) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
 func NewAlertConfiguration(scope constructs.Construct, id *string, config *AlertConfigurationConfig) AlertConfiguration {
 	_init_.Initialize()
 
@@ -553,7 +493,7 @@ func NewAlertConfiguration(scope constructs.Construct, id *string, config *Alert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/alert_configuration mongodbatlas_alert_configuration} Resource.
 func NewAlertConfiguration_Override(a AlertConfiguration, scope constructs.Construct, id *string, config *AlertConfigurationConfig) {
 	_init_.Initialize()
 
@@ -624,17 +564,6 @@ func (j *jsiiProxy_AlertConfiguration)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlertConfiguration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AlertConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -642,17 +571,6 @@ func (j *jsiiProxy_AlertConfiguration)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertConfiguration)SetMetricThreshold(val *map[string]*string) {
-	if err := j.validateSetMetricThresholdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metricThreshold",
 		val,
 	)
 }
@@ -683,17 +601,6 @@ func (j *jsiiProxy_AlertConfiguration)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AlertConfiguration)SetThreshold(val *map[string]*string) {
-	if err := j.validateSetThresholdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"threshold",
 		val,
 	)
 }
@@ -975,7 +882,7 @@ func (a *jsiiProxy_AlertConfiguration) PutMatcher(value interface{}) {
 	)
 }
 
-func (a *jsiiProxy_AlertConfiguration) PutMetricThresholdConfig(value *AlertConfigurationMetricThresholdConfig) {
+func (a *jsiiProxy_AlertConfiguration) PutMetricThresholdConfig(value interface{}) {
 	if err := a.validatePutMetricThresholdConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -997,7 +904,7 @@ func (a *jsiiProxy_AlertConfiguration) PutNotification(value interface{}) {
 	)
 }
 
-func (a *jsiiProxy_AlertConfiguration) PutThresholdConfig(value *AlertConfigurationThresholdConfig) {
+func (a *jsiiProxy_AlertConfiguration) PutThresholdConfig(value interface{}) {
 	if err := a.validatePutThresholdConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -1016,26 +923,10 @@ func (a *jsiiProxy_AlertConfiguration) ResetEnabled() {
 	)
 }
 
-func (a *jsiiProxy_AlertConfiguration) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlertConfiguration) ResetMatcher() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMatcher",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfiguration) ResetMetricThreshold() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMetricThreshold",
 		nil, // no parameters
 	)
 }
@@ -1048,18 +939,18 @@ func (a *jsiiProxy_AlertConfiguration) ResetMetricThresholdConfig() {
 	)
 }
 
-func (a *jsiiProxy_AlertConfiguration) ResetOverrideLogicalId() {
+func (a *jsiiProxy_AlertConfiguration) ResetNotification() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetOverrideLogicalId",
+		"resetNotification",
 		nil, // no parameters
 	)
 }
 
-func (a *jsiiProxy_AlertConfiguration) ResetThreshold() {
+func (a *jsiiProxy_AlertConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetThreshold",
+		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,7 @@ type DataMongodbatlasServerlessInstancesResultsOutputReference interface {
 	ProviderSettingsProviderName() *string
 	ProviderSettingsRegionName() *string
 	StateName() *string
+	Tags() DataMongodbatlasServerlessInstancesResultsTagsList
 	TerminationProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -268,6 +269,16 @@ func (j *jsiiProxy_DataMongodbatlasServerlessInstancesResultsOutputReference) St
 	_jsii_.Get(
 		j,
 		"stateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasServerlessInstancesResultsOutputReference) Tags() DataMongodbatlasServerlessInstancesResultsTagsList {
+	var returns DataMongodbatlasServerlessInstancesResultsTagsList
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

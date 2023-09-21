@@ -99,10 +99,6 @@ func (j *jsiiProxy_ProjectApiKey) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_ProjectApiKey) validateSetRoleNamesParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewProjectApiKeyParameters(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) error {
 	return nil
 }

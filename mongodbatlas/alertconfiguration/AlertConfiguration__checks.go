@@ -145,12 +145,32 @@ func (a *jsiiProxy_AlertConfiguration) validatePutMatcherParameters(value interf
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfiguration) validatePutMetricThresholdConfigParameters(value *AlertConfigurationMetricThresholdConfig) error {
+func (a *jsiiProxy_AlertConfiguration) validatePutMetricThresholdConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AlertConfigurationMetricThresholdConfig:
+		value := value.(*[]*AlertConfigurationMetricThresholdConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AlertConfigurationMetricThresholdConfig:
+		value_ := value.([]*AlertConfigurationMetricThresholdConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlertConfigurationMetricThresholdConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -187,12 +207,32 @@ func (a *jsiiProxy_AlertConfiguration) validatePutNotificationParameters(value i
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfiguration) validatePutThresholdConfigParameters(value *AlertConfigurationThresholdConfig) error {
+func (a *jsiiProxy_AlertConfiguration) validatePutThresholdConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AlertConfigurationThresholdConfig:
+		value := value.(*[]*AlertConfigurationThresholdConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AlertConfigurationThresholdConfig:
+		value_ := value.([]*AlertConfigurationThresholdConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlertConfigurationThresholdConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -340,25 +380,9 @@ func (j *jsiiProxy_AlertConfiguration) validateSetEventTypeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AlertConfiguration) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AlertConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfiguration) validateSetMetricThresholdParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -413,14 +437,6 @@ func (j *jsiiProxy_AlertConfiguration) validateSetProvisionersParameters(val *[]
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfiguration) validateSetThresholdParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

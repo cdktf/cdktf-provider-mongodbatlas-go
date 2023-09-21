@@ -12,10 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project mongodbatlas_project}.
 type DataMongodbatlasProject interface {
 	cdktf.TerraformDataSource
-	ApiKeys() DataMongodbatlasProjectApiKeysList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterCount() *float64
@@ -39,8 +38,6 @@ type DataMongodbatlasProject interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsCollectDatabaseSpecificsStatisticsEnabled() cdktf.IResolvable
 	IsDataExplorerEnabled() cdktf.IResolvable
 	IsExtendedStorageSizesEnabled() cdktf.IResolvable
@@ -100,7 +97,6 @@ type DataMongodbatlasProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -119,16 +115,6 @@ type DataMongodbatlasProject interface {
 // The jsii proxy struct for DataMongodbatlasProject
 type jsiiProxy_DataMongodbatlasProject struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataMongodbatlasProject) ApiKeys() DataMongodbatlasProjectApiKeysList {
-	var returns DataMongodbatlasProjectApiKeysList
-	_jsii_.Get(
-		j,
-		"apiKeys",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataMongodbatlasProject) CdktfStack() cdktf.TerraformStack {
@@ -226,16 +212,6 @@ func (j *jsiiProxy_DataMongodbatlasProject) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasProject) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +428,7 @@ func (j *jsiiProxy_DataMongodbatlasProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) DataMongodbatlasProject {
 	_init_.Initialize()
 
@@ -470,7 +446,7 @@ func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject_Override(d DataMongodbatlasProject, scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) {
 	_init_.Initialize()
 
@@ -504,17 +480,6 @@ func (j *jsiiProxy_DataMongodbatlasProject)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasProject)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -823,14 +788,6 @@ func (d *jsiiProxy_DataMongodbatlasProject) OverrideLogicalId(newLogicalId *stri
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasProject) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

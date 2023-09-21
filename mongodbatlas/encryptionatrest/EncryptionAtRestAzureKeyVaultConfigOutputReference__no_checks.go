@@ -71,7 +71,7 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateSetInternalValueParameters(val *EncryptionAtRestAzureKeyVaultConfig) error {
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -107,7 +107,7 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateS
 	return nil
 }
 
-func validateNewEncryptionAtRestAzureKeyVaultConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEncryptionAtRestAzureKeyVaultConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

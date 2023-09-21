@@ -58,9 +58,29 @@ func validateMongodbatlasProvider_IsTerraformProviderParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_MongodbatlasProvider) validateSetAssumeRoleParameters(val *MongodbatlasProviderAssumeRole) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_MongodbatlasProvider) validateSetAssumeRoleParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MongodbatlasProviderAssumeRole:
+		val := val.(*[]*MongodbatlasProviderAssumeRole)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*MongodbatlasProviderAssumeRole:
+		val_ := val.([]*MongodbatlasProviderAssumeRole)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*MongodbatlasProviderAssumeRole; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
 type ServerlessInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,8 @@ type ServerlessInstance interface {
 	StateName() *string
 	SetStateName(val *string)
 	StateNameInput() *string
+	Tags() ServerlessInstanceTagsList
+	TagsInput() interface{}
 	TerminationProtectionEnabled() interface{}
 	SetTerminationProtectionEnabled(val interface{})
 	TerminationProtectionEnabledInput() interface{}
@@ -120,6 +122,7 @@ type ServerlessInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLinks(value interface{})
+	PutTags(value interface{})
 	ResetContinuousBackupEnabled()
 	ResetId()
 	ResetLinks()
@@ -127,6 +130,7 @@ type ServerlessInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStateName()
+	ResetTags()
 	ResetTerminationProtectionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -493,6 +497,26 @@ func (j *jsiiProxy_ServerlessInstance) StateNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServerlessInstance) Tags() ServerlessInstanceTagsList {
+	var returns ServerlessInstanceTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerlessInstance) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerlessInstance) TerminationProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -544,7 +568,7 @@ func (j *jsiiProxy_ServerlessInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance(scope constructs.Construct, id *string, config *ServerlessInstanceConfig) ServerlessInstance {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewServerlessInstance(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance_Override(s ServerlessInstance, scope constructs.Construct, id *string, config *ServerlessInstanceConfig) {
 	_init_.Initialize()
 
@@ -1017,6 +1041,17 @@ func (s *jsiiProxy_ServerlessInstance) PutLinks(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_ServerlessInstance) PutTags(value interface{}) {
+	if err := s.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_ServerlessInstance) ResetContinuousBackupEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1053,6 +1088,14 @@ func (s *jsiiProxy_ServerlessInstance) ResetStateName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStateName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerlessInstance) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
 		nil, // no parameters
 	)
 }

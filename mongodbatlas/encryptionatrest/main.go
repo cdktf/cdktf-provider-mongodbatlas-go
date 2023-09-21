@@ -15,14 +15,10 @@ func init() {
 		reflect.TypeOf((*EncryptionAtRest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "awsKms", GoGetter: "AwsKms"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKmsConfig", GoGetter: "AwsKmsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKmsConfigInput", GoGetter: "AwsKmsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "awsKmsInput", GoGetter: "AwsKmsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "azureKeyVault", GoGetter: "AzureKeyVault"},
 			_jsii_.MemberProperty{JsiiProperty: "azureKeyVaultConfig", GoGetter: "AzureKeyVaultConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "azureKeyVaultConfigInput", GoGetter: "AzureKeyVaultConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "azureKeyVaultInput", GoGetter: "AzureKeyVaultInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -40,12 +36,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "googleCloudKms", GoGetter: "GoogleCloudKms"},
 			_jsii_.MemberProperty{JsiiProperty: "googleCloudKmsConfig", GoGetter: "GoogleCloudKmsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "googleCloudKmsConfigInput", GoGetter: "GoogleCloudKmsConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "googleCloudKmsInput", GoGetter: "GoogleCloudKmsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
@@ -58,13 +51,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAzureKeyVaultConfig", GoMethod: "PutAzureKeyVaultConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGoogleCloudKmsConfig", GoMethod: "PutGoogleCloudKmsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAwsKms", GoMethod: "ResetAwsKms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsKmsConfig", GoMethod: "ResetAwsKmsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAzureKeyVault", GoMethod: "ResetAzureKeyVault"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureKeyVaultConfig", GoMethod: "ResetAzureKeyVaultConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGoogleCloudKms", GoMethod: "ResetGoogleCloudKms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleCloudKmsConfig", GoMethod: "ResetGoogleCloudKmsConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -83,6 +72,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfig",
 		reflect.TypeOf((*EncryptionAtRestAwsKmsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigList",
+		reflect.TypeOf((*EncryptionAtRestAwsKmsConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EncryptionAtRestAwsKmsConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference",
@@ -139,6 +149,27 @@ func init() {
 		reflect.TypeOf((*EncryptionAtRestAzureKeyVaultConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfigList",
+		reflect.TypeOf((*EncryptionAtRestAzureKeyVaultConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EncryptionAtRestAzureKeyVaultConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfigOutputReference",
 		reflect.TypeOf((*EncryptionAtRestAzureKeyVaultConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -171,6 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultNameInput", GoGetter: "KeyVaultNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureEnvironment", GoMethod: "ResetAzureEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyIdentifier", GoMethod: "ResetKeyIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultName", GoMethod: "ResetKeyVaultName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroupName", GoMethod: "ResetResourceGroupName"},
@@ -203,6 +235,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfig",
 		reflect.TypeOf((*EncryptionAtRestGoogleCloudKmsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfigList",
+		reflect.TypeOf((*EncryptionAtRestGoogleCloudKmsConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfigOutputReference",

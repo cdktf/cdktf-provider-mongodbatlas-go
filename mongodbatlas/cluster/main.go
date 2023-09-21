@@ -27,10 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "backingProviderNameInput", GoGetter: "BackingProviderNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backupEnabled", GoGetter: "BackupEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "backupEnabledInput", GoGetter: "BackupEnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "biConnector", GoGetter: "BiConnector"},
 			_jsii_.MemberProperty{JsiiProperty: "biConnectorConfig", GoGetter: "BiConnectorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "biConnectorConfigInput", GoGetter: "BiConnectorConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "biConnectorInput", GoGetter: "BiConnectorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudBackup", GoGetter: "CloudBackup"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudBackupInput", GoGetter: "CloudBackupInput"},
@@ -88,8 +86,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerAutoScalingComputeMaxInstanceSizeInput", GoGetter: "ProviderAutoScalingComputeMaxInstanceSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "providerAutoScalingComputeMinInstanceSize", GoGetter: "ProviderAutoScalingComputeMinInstanceSize"},
 			_jsii_.MemberProperty{JsiiProperty: "providerAutoScalingComputeMinInstanceSizeInput", GoGetter: "ProviderAutoScalingComputeMinInstanceSizeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "providerBackupEnabled", GoGetter: "ProviderBackupEnabled"},
-			_jsii_.MemberProperty{JsiiProperty: "providerBackupEnabledInput", GoGetter: "ProviderBackupEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "providerDiskIops", GoGetter: "ProviderDiskIops"},
 			_jsii_.MemberProperty{JsiiProperty: "providerDiskIopsInput", GoGetter: "ProviderDiskIopsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "providerDiskTypeName", GoGetter: "ProviderDiskTypeName"},
@@ -110,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBiConnectorConfig", GoMethod: "PutBiConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplicationSpecs", GoMethod: "PutReplicationSpecs"},
+			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationFactor", GoGetter: "ReplicationFactor"},
@@ -122,7 +119,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalingDiskGbEnabled", GoMethod: "ResetAutoScalingDiskGbEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackingProviderName", GoMethod: "ResetBackingProviderName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupEnabled", GoMethod: "ResetBackupEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBiConnector", GoMethod: "ResetBiConnector"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBiConnectorConfig", GoMethod: "ResetBiConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudBackup", GoMethod: "ResetCloudBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterType", GoMethod: "ResetClusterType"},
@@ -137,7 +133,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPitEnabled", GoMethod: "ResetPitEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderAutoScalingComputeMaxInstanceSize", GoMethod: "ResetProviderAutoScalingComputeMaxInstanceSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderAutoScalingComputeMinInstanceSize", GoMethod: "ResetProviderAutoScalingComputeMinInstanceSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProviderBackupEnabled", GoMethod: "ResetProviderBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderDiskIops", GoMethod: "ResetProviderDiskIops"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderDiskTypeName", GoMethod: "ResetProviderDiskTypeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProviderEncryptEbsVolume", GoMethod: "ResetProviderEncryptEbsVolume"},
@@ -146,6 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicationFactor", GoMethod: "ResetReplicationFactor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicationSpecs", GoMethod: "ResetReplicationSpecs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetainBackupsEnabled", GoMethod: "ResetRetainBackupsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTerminationProtectionEnabled", GoMethod: "ResetTerminationProtectionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionReleaseSystem", GoMethod: "ResetVersionReleaseSystem"},
@@ -155,6 +151,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "srvAddress", GoGetter: "SrvAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "stateName", GoGetter: "StateName"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
+			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terminationProtectionEnabled", GoGetter: "TerminationProtectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "terminationProtectionEnabledInput", GoGetter: "TerminationProtectionEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -317,8 +315,6 @@ func init() {
 		"@cdktf/provider-mongodbatlas.cluster.ClusterConnectionStringsOutputReference",
 		reflect.TypeOf((*ClusterConnectionStringsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "awsPrivateLink", GoGetter: "AwsPrivateLink"},
-			_jsii_.MemberProperty{JsiiProperty: "awsPrivateLinkSrv", GoGetter: "AwsPrivateLinkSrv"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -854,6 +850,67 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClusterSnapshotBackupPolicyPoliciesPolicyItemOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-mongodbatlas.cluster.ClusterTags",
+		reflect.TypeOf((*ClusterTags)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cluster.ClusterTagsList",
+		reflect.TypeOf((*ClusterTagsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClusterTagsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cluster.ClusterTagsOutputReference",
+		reflect.TypeOf((*ClusterTagsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClusterTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

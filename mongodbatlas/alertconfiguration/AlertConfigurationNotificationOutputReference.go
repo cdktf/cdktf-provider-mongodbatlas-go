@@ -147,7 +147,6 @@ type AlertConfigurationNotificationOutputReference interface {
 	ResetServiceKey()
 	ResetSmsEnabled()
 	ResetTeamId()
-	ResetTypeName()
 	ResetUsername()
 	ResetVictorOpsApiKey()
 	ResetVictorOpsRoutingKey()
@@ -1323,14 +1322,6 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetTeamId() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetTeamId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetTypeName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTypeName",
 		nil, // no parameters
 	)
 }

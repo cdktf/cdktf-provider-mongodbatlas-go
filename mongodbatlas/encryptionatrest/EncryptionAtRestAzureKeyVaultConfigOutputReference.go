@@ -39,8 +39,8 @@ type EncryptionAtRestAzureKeyVaultConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *EncryptionAtRestAzureKeyVaultConfig
-	SetInternalValue(val *EncryptionAtRestAzureKeyVaultConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeyIdentifier() *string
 	SetKeyIdentifier(val *string)
 	KeyIdentifierInput() *string
@@ -93,6 +93,7 @@ type EncryptionAtRestAzureKeyVaultConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAzureEnvironment()
 	ResetClientId()
+	ResetEnabled()
 	ResetKeyIdentifier()
 	ResetKeyVaultName()
 	ResetResourceGroupName()
@@ -214,8 +215,8 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) InternalValue() *EncryptionAtRestAzureKeyVaultConfig {
-	var returns *EncryptionAtRestAzureKeyVaultConfig
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -365,29 +366,29 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) Terraform
 }
 
 
-func NewEncryptionAtRestAzureKeyVaultConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EncryptionAtRestAzureKeyVaultConfigOutputReference {
+func NewEncryptionAtRestAzureKeyVaultConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EncryptionAtRestAzureKeyVaultConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewEncryptionAtRestAzureKeyVaultConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewEncryptionAtRestAzureKeyVaultConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewEncryptionAtRestAzureKeyVaultConfigOutputReference_Override(e EncryptionAtRestAzureKeyVaultConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEncryptionAtRestAzureKeyVaultConfigOutputReference_Override(e EncryptionAtRestAzureKeyVaultConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAzureKeyVaultConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
@@ -447,7 +448,7 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference)SetEnabled
 	)
 }
 
-func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference)SetInternalValue(val *EncryptionAtRestAzureKeyVaultConfig) {
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,6 +745,14 @@ func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) ResetClie
 	_jsii_.InvokeVoid(
 		e,
 		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

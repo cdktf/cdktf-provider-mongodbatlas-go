@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AdvancedConfiguration() AdvancedClusterAdvancedConfigurationOutputReference
@@ -20,10 +20,8 @@ type AdvancedCluster interface {
 	BackupEnabled() interface{}
 	SetBackupEnabled(val interface{})
 	BackupEnabledInput() interface{}
-	BiConnector() AdvancedClusterBiConnectorOutputReference
 	BiConnectorConfig() AdvancedClusterBiConnectorConfigOutputReference
 	BiConnectorConfigInput() *AdvancedClusterBiConnectorConfig
-	BiConnectorInput() *AdvancedClusterBiConnector
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterId() *string
@@ -106,6 +104,8 @@ type AdvancedCluster interface {
 	SetRootCertType(val *string)
 	RootCertTypeInput() *string
 	StateName() *string
+	Tags() AdvancedClusterTagsList
+	TagsInput() interface{}
 	TerminationProtectionEnabled() interface{}
 	SetTerminationProtectionEnabled(val interface{})
 	TerminationProtectionEnabledInput() interface{}
@@ -146,14 +146,13 @@ type AdvancedCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedConfiguration(value *AdvancedClusterAdvancedConfiguration)
-	PutBiConnector(value *AdvancedClusterBiConnector)
 	PutBiConnectorConfig(value *AdvancedClusterBiConnectorConfig)
 	PutLabels(value interface{})
 	PutReplicationSpecs(value interface{})
+	PutTags(value interface{})
 	PutTimeouts(value *AdvancedClusterTimeouts)
 	ResetAdvancedConfiguration()
 	ResetBackupEnabled()
-	ResetBiConnector()
 	ResetBiConnectorConfig()
 	ResetDiskSizeGb()
 	ResetEncryptionAtRestProvider()
@@ -167,6 +166,7 @@ type AdvancedCluster interface {
 	ResetPitEnabled()
 	ResetRetainBackupsEnabled()
 	ResetRootCertType()
+	ResetTags()
 	ResetTerminationProtectionEnabled()
 	ResetTimeouts()
 	ResetVersionReleaseSystem()
@@ -225,16 +225,6 @@ func (j *jsiiProxy_AdvancedCluster) BackupEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdvancedCluster) BiConnector() AdvancedClusterBiConnectorOutputReference {
-	var returns AdvancedClusterBiConnectorOutputReference
-	_jsii_.Get(
-		j,
-		"biConnector",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AdvancedCluster) BiConnectorConfig() AdvancedClusterBiConnectorConfigOutputReference {
 	var returns AdvancedClusterBiConnectorConfigOutputReference
 	_jsii_.Get(
@@ -250,16 +240,6 @@ func (j *jsiiProxy_AdvancedCluster) BiConnectorConfigInput() *AdvancedClusterBiC
 	_jsii_.Get(
 		j,
 		"biConnectorConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AdvancedCluster) BiConnectorInput() *AdvancedClusterBiConnector {
-	var returns *AdvancedClusterBiConnector
-	_jsii_.Get(
-		j,
-		"biConnectorInput",
 		&returns,
 	)
 	return returns
@@ -705,6 +685,26 @@ func (j *jsiiProxy_AdvancedCluster) StateName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AdvancedCluster) Tags() AdvancedClusterTagsList {
+	var returns AdvancedClusterTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AdvancedCluster) TerminationProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -796,7 +796,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -814,7 +814,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -1324,17 +1324,6 @@ func (a *jsiiProxy_AdvancedCluster) PutAdvancedConfiguration(value *AdvancedClus
 	)
 }
 
-func (a *jsiiProxy_AdvancedCluster) PutBiConnector(value *AdvancedClusterBiConnector) {
-	if err := a.validatePutBiConnectorParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putBiConnector",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AdvancedCluster) PutBiConnectorConfig(value *AdvancedClusterBiConnectorConfig) {
 	if err := a.validatePutBiConnectorConfigParameters(value); err != nil {
 		panic(err)
@@ -1368,6 +1357,17 @@ func (a *jsiiProxy_AdvancedCluster) PutReplicationSpecs(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AdvancedCluster) PutTags(value interface{}) {
+	if err := a.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AdvancedCluster) PutTimeouts(value *AdvancedClusterTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1391,14 +1391,6 @@ func (a *jsiiProxy_AdvancedCluster) ResetBackupEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBackupEnabled",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AdvancedCluster) ResetBiConnector() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetBiConnector",
 		nil, // no parameters
 	)
 }
@@ -1487,6 +1479,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetRootCertType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRootCertType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
 		nil, // no parameters
 	)
 }

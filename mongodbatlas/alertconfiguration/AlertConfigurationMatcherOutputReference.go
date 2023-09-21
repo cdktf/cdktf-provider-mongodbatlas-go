@@ -73,9 +73,6 @@ type AlertConfigurationMatcherOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetFieldName()
-	ResetOperator()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (a *jsiiProxy_AlertConfigurationMatcherOutputReference) InterpolationForAtt
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AlertConfigurationMatcherOutputReference) ResetFieldName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFieldName",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfigurationMatcherOutputReference) ResetOperator() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetOperator",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlertConfigurationMatcherOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AlertConfigurationMatcherOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

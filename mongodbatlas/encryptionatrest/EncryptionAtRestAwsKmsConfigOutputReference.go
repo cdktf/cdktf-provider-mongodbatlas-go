@@ -39,8 +39,8 @@ type EncryptionAtRestAwsKmsConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *EncryptionAtRestAwsKmsConfig
-	SetInternalValue(val *EncryptionAtRestAwsKmsConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -203,8 +203,8 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) InternalValue() *EncryptionAtRestAwsKmsConfig {
-	var returns *EncryptionAtRestAwsKmsConfig
+func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -294,29 +294,29 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) TerraformResourc
 }
 
 
-func NewEncryptionAtRestAwsKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EncryptionAtRestAwsKmsConfigOutputReference {
+func NewEncryptionAtRestAwsKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EncryptionAtRestAwsKmsConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewEncryptionAtRestAwsKmsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewEncryptionAtRestAwsKmsConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewEncryptionAtRestAwsKmsConfigOutputReference_Override(e EncryptionAtRestAwsKmsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEncryptionAtRestAwsKmsConfigOutputReference_Override(e EncryptionAtRestAwsKmsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestAwsKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
@@ -376,7 +376,7 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference)SetEnabled(val in
 	)
 }
 
-func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference)SetInternalValue(val *EncryptionAtRestAwsKmsConfig) {
+func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

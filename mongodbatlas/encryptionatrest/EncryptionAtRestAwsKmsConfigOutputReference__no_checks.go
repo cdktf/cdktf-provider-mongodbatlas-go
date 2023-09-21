@@ -71,7 +71,7 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetEnabl
 	return nil
 }
 
-func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetInternalValueParameters(val *EncryptionAtRestAwsKmsConfig) error {
+func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewEncryptionAtRestAwsKmsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEncryptionAtRestAwsKmsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

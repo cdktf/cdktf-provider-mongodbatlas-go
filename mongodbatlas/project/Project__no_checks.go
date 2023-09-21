@@ -55,10 +55,6 @@ func (p *jsiiProxy_Project) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func (p *jsiiProxy_Project) validatePutApiKeysParameters(value interface{}) error {
-	return nil
-}
-
 func (p *jsiiProxy_Project) validatePutLimitsParameters(value interface{}) error {
 	return nil
 }
@@ -84,10 +80,6 @@ func (j *jsiiProxy_Project) validateSetConnectionParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_Project) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Project) validateSetIdParameters(val *string) error {
 	return nil
 }
 

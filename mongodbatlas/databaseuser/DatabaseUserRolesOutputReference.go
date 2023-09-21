@@ -74,8 +74,6 @@ type DatabaseUserRolesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCollectionName()
-	ResetDatabaseName()
-	ResetRoleName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -527,22 +525,6 @@ func (d *jsiiProxy_DatabaseUserRolesOutputReference) ResetCollectionName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCollectionName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseUserRolesOutputReference) ResetDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabaseName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DatabaseUserRolesOutputReference) ResetRoleName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRoleName",
 		nil, // no parameters
 	)
 }

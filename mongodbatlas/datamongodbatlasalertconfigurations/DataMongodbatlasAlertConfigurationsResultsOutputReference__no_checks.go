@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) validateSetAlertConfigurationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,6 +64,10 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) va
 }
 
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasAlertConfigurationsResults) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 

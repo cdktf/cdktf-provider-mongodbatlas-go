@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
 type ProjectApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -69,9 +69,6 @@ type ProjectApiKey interface {
 	PublicKey() *string
 	// Experimental.
 	RawOverrides() interface{}
-	RoleNames() *[]*string
-	SetRoleNames(val *[]*string)
-	RoleNamesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,7 +106,6 @@ type ProjectApiKey interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectAssignment()
-	ResetRoleNames()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -365,26 +361,6 @@ func (j *jsiiProxy_ProjectApiKey) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectApiKey) RoleNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"roleNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectApiKey) RoleNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"roleNamesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectApiKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -416,7 +392,7 @@ func (j *jsiiProxy_ProjectApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) ProjectApiKey {
 	_init_.Initialize()
 
@@ -434,7 +410,7 @@ func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey_Override(p ProjectApiKey, scope constructs.Construct, id *string, config *ProjectApiKeyConfig) {
 	_init_.Initialize()
 
@@ -542,17 +518,6 @@ func (j *jsiiProxy_ProjectApiKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectApiKey)SetRoleNames(val *[]*string) {
-	if err := j.validateSetRoleNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"roleNames",
 		val,
 	)
 }
@@ -854,14 +819,6 @@ func (p *jsiiProxy_ProjectApiKey) ResetProjectAssignment() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProjectAssignment",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectApiKey) ResetRoleNames() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetRoleNames",
 		nil, // no parameters
 	)
 }

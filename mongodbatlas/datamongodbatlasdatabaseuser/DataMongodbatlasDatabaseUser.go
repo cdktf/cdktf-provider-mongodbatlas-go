@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_user mongodbatlas_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user mongodbatlas_database_user}.
 type DataMongodbatlasDatabaseUser interface {
 	cdktf.TerraformDataSource
 	AuthDatabaseName() *string
@@ -27,9 +27,6 @@ type DataMongodbatlasDatabaseUser interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DatabaseName() *string
-	SetDatabaseName(val *string)
-	DatabaseNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,8 +40,6 @@ type DataMongodbatlasDatabaseUser interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Labels() DataMongodbatlasDatabaseUserLabelsList
 	LdapAuthType() *string
 	// Experimental.
@@ -54,6 +49,7 @@ type DataMongodbatlasDatabaseUser interface {
 	// The tree node.
 	Node() constructs.Node
 	OidcAuthType() *string
+	Password() *string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -100,9 +96,6 @@ type DataMongodbatlasDatabaseUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAuthDatabaseName()
-	ResetDatabaseName()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -181,26 +174,6 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasDatabaseUser) DatabaseName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasDatabaseUser) DatabaseNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasDatabaseUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -251,16 +224,6 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasDatabaseUser) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasDatabaseUser) Labels() DataMongodbatlasDatabaseUserLabelsList {
 	var returns DataMongodbatlasDatabaseUserLabelsList
 	_jsii_.Get(
@@ -306,6 +269,16 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser) OidcAuthType() *string {
 	_jsii_.Get(
 		j,
 		"oidcAuthType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasDatabaseUser) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
 		&returns,
 	)
 	return returns
@@ -432,7 +405,7 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser) X509Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_user mongodbatlas_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user mongodbatlas_database_user} Data Source.
 func NewDataMongodbatlasDatabaseUser(scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUserConfig) DataMongodbatlasDatabaseUser {
 	_init_.Initialize()
 
@@ -450,7 +423,7 @@ func NewDataMongodbatlasDatabaseUser(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/database_user mongodbatlas_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/database_user mongodbatlas_database_user} Data Source.
 func NewDataMongodbatlasDatabaseUser_Override(d DataMongodbatlasDatabaseUser, scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUserConfig) {
 	_init_.Initialize()
 
@@ -483,17 +456,6 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasDatabaseUser)SetDatabaseName(val *string) {
-	if err := j.validateSetDatabaseNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"databaseName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasDatabaseUser)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -506,17 +468,6 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUser)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasDatabaseUser)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -825,30 +776,6 @@ func (d *jsiiProxy_DataMongodbatlasDatabaseUser) OverrideLogicalId(newLogicalId 
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasDatabaseUser) ResetAuthDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAuthDatabaseName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasDatabaseUser) ResetDatabaseName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabaseName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasDatabaseUser) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

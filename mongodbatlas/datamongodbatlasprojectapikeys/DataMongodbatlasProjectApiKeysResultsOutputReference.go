@@ -37,7 +37,6 @@ type DataMongodbatlasProjectApiKeysResultsOutputReference interface {
 	PrivateKey() *string
 	ProjectAssignment() DataMongodbatlasProjectApiKeysResultsProjectAssignmentList
 	PublicKey() *string
-	RoleNames() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -180,16 +179,6 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKeysResultsOutputReference) PublicK
 	_jsii_.Get(
 		j,
 		"publicKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasProjectApiKeysResultsOutputReference) RoleNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"roleNames",
 		&returns,
 	)
 	return returns

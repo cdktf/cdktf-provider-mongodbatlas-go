@@ -91,10 +91,6 @@ func (j *jsiiProxy_ProjectIpAccessList) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ProjectIpAccessList) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectIpAccessList) validateSetIpAddressParameters(val *string) error {
 	return nil
 }

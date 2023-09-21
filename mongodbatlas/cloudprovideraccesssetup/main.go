@@ -15,7 +15,6 @@ func init() {
 		reflect.TypeOf((*CloudProviderAccessSetup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "aws", GoGetter: "Aws"},
 			_jsii_.MemberProperty{JsiiProperty: "awsConfig", GoGetter: "AwsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "azureConfig", GoGetter: "AzureConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "azureConfigInput", GoGetter: "AzureConfigInput"},

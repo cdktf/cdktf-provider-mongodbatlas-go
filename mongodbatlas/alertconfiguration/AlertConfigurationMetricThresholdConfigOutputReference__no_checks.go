@@ -59,7 +59,7 @@ func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateSetInternalValueParameters(val *AlertConfigurationMetricThresholdConfig) error {
+func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) valid
 	return nil
 }
 
-func validateNewAlertConfigurationMetricThresholdConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertConfigurationMetricThresholdConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

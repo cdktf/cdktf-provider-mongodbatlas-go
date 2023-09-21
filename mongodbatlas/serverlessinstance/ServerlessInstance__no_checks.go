@@ -59,6 +59,10 @@ func (s *jsiiProxy_ServerlessInstance) validatePutLinksParameters(value interfac
 	return nil
 }
 
+func (s *jsiiProxy_ServerlessInstance) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func validateServerlessInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

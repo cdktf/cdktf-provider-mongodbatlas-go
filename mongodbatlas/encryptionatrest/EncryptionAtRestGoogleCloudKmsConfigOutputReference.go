@@ -33,8 +33,8 @@ type EncryptionAtRestGoogleCloudKmsConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *EncryptionAtRestGoogleCloudKmsConfig
-	SetInternalValue(val *EncryptionAtRestGoogleCloudKmsConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeyVersionResourceId() *string
 	SetKeyVersionResourceId(val *string)
 	KeyVersionResourceIdInput() *string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) InternalValue() *EncryptionAtRestGoogleCloudKmsConfig {
-	var returns *EncryptionAtRestGoogleCloudKmsConfig
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) Terrafor
 }
 
 
-func NewEncryptionAtRestGoogleCloudKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EncryptionAtRestGoogleCloudKmsConfigOutputReference {
+func NewEncryptionAtRestGoogleCloudKmsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EncryptionAtRestGoogleCloudKmsConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewEncryptionAtRestGoogleCloudKmsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewEncryptionAtRestGoogleCloudKmsConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewEncryptionAtRestGoogleCloudKmsConfigOutputReference_Override(e EncryptionAtRestGoogleCloudKmsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEncryptionAtRestGoogleCloudKmsConfigOutputReference_Override(e EncryptionAtRestGoogleCloudKmsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRestGoogleCloudKmsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
@@ -282,7 +282,7 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference)SetInternalValue(val *EncryptionAtRestGoogleCloudKmsConfig) {
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

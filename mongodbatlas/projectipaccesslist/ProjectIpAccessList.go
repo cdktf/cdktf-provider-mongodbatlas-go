@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type ProjectIpAccessList interface {
 	cdktf.TerraformResource
 	AwsSecurityGroup() *string
@@ -49,8 +49,6 @@ type ProjectIpAccessList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -110,7 +108,6 @@ type ProjectIpAccessList interface {
 	ResetAwsSecurityGroup()
 	ResetCidrBlock()
 	ResetComment()
-	ResetId()
 	ResetIpAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -281,16 +278,6 @@ func (j *jsiiProxy_ProjectIpAccessList) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIpAccessList) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectIpAccessList) IpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -432,7 +419,7 @@ func (j *jsiiProxy_ProjectIpAccessList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList(scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) ProjectIpAccessList {
 	_init_.Initialize()
 
@@ -450,7 +437,7 @@ func NewProjectIpAccessList(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList_Override(p ProjectIpAccessList, scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) {
 	_init_.Initialize()
 
@@ -528,17 +515,6 @@ func (j *jsiiProxy_ProjectIpAccessList)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectIpAccessList)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -892,14 +868,6 @@ func (p *jsiiProxy_ProjectIpAccessList) ResetComment() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetComment",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectIpAccessList) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -27,7 +27,7 @@ func validateMongodbatlasProvider_IsTerraformProviderParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_MongodbatlasProvider) validateSetAssumeRoleParameters(val *MongodbatlasProviderAssumeRole) error {
+func (j *jsiiProxy_MongodbatlasProvider) validateSetAssumeRoleParameters(val interface{}) error {
 	return nil
 }
 

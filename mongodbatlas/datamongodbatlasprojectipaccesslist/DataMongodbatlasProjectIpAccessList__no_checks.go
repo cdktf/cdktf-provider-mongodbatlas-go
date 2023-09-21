@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetCountParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) validateSetIpAddressParameters(val *string) error {
 	return nil
 }

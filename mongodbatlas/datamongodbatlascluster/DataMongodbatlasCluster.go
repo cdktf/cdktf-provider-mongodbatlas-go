@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster}.
 type DataMongodbatlasCluster interface {
 	cdktf.TerraformDataSource
 	AdvancedConfiguration() DataMongodbatlasClusterAdvancedConfigurationList
@@ -21,7 +21,6 @@ type DataMongodbatlasCluster interface {
 	AutoScalingDiskGbEnabled() cdktf.IResolvable
 	BackingProviderName() *string
 	BackupEnabled() cdktf.IResolvable
-	BiConnector() cdktf.StringMap
 	BiConnectorConfig() DataMongodbatlasClusterBiConnectorConfigList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -94,6 +93,7 @@ type DataMongodbatlasCluster interface {
 	SnapshotBackupPolicy() DataMongodbatlasClusterSnapshotBackupPolicyList
 	SrvAddress() *string
 	StateName() *string
+	Tags() DataMongodbatlasClusterTagsList
 	TerminationProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -201,16 +201,6 @@ func (j *jsiiProxy_DataMongodbatlasCluster) BackupEnabled() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"backupEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasCluster) BiConnector() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"biConnector",
 		&returns,
 	)
 	return returns
@@ -696,6 +686,16 @@ func (j *jsiiProxy_DataMongodbatlasCluster) StateName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasCluster) Tags() DataMongodbatlasClusterTagsList {
+	var returns DataMongodbatlasClusterTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasCluster) TerminationProtectionEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -747,7 +747,7 @@ func (j *jsiiProxy_DataMongodbatlasCluster) VersionReleaseSystem() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) DataMongodbatlasCluster {
 	_init_.Initialize()
 
@@ -765,7 +765,7 @@ func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster_Override(d DataMongodbatlasCluster, scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) {
 	_init_.Initialize()
 

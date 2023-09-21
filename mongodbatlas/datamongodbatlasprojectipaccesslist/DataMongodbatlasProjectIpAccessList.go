@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type DataMongodbatlasProjectIpAccessList interface {
 	cdktf.TerraformDataSource
 	AwsSecurityGroup() *string
@@ -43,8 +43,6 @@ type DataMongodbatlasProjectIpAccessList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -96,7 +94,6 @@ type DataMongodbatlasProjectIpAccessList interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAwsSecurityGroup()
 	ResetCidrBlock()
-	ResetId()
 	ResetIpAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -246,16 +243,6 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) IpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +354,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
 func NewDataMongodbatlasProjectIpAccessList(scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAccessListConfig) DataMongodbatlasProjectIpAccessList {
 	_init_.Initialize()
 
@@ -385,7 +372,7 @@ func NewDataMongodbatlasProjectIpAccessList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/project_ip_access_list mongodbatlas_project_ip_access_list} Data Source.
 func NewDataMongodbatlasProjectIpAccessList_Override(d DataMongodbatlasProjectIpAccessList, scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAccessListConfig) {
 	_init_.Initialize()
 
@@ -441,17 +428,6 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList)SetForEach(val cdktf.ITer
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasProjectIpAccessList)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -775,14 +751,6 @@ func (d *jsiiProxy_DataMongodbatlasProjectIpAccessList) ResetCidrBlock() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCidrBlock",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasProjectIpAccessList) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

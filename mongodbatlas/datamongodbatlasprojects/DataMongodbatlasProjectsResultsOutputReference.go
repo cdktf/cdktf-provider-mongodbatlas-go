@@ -13,7 +13,6 @@ import (
 
 type DataMongodbatlasProjectsResultsOutputReference interface {
 	cdktf.ComplexObject
-	ApiKeys() DataMongodbatlasProjectsResultsApiKeysList
 	ClusterCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -45,6 +44,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	Limits() DataMongodbatlasProjectsResultsLimitsList
 	Name() *string
 	OrgId() *string
+	ProjectId() *string
 	RegionUsageRestrictions() *string
 	Teams() DataMongodbatlasProjectsResultsTeamsList
 	// Experimental.
@@ -92,16 +92,6 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 // The jsii proxy struct for DataMongodbatlasProjectsResultsOutputReference
 type jsiiProxy_DataMongodbatlasProjectsResultsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) ApiKeys() DataMongodbatlasProjectsResultsApiKeysList {
-	var returns DataMongodbatlasProjectsResultsApiKeysList
-	_jsii_.Get(
-		j,
-		"apiKeys",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) ClusterCount() *float64 {
@@ -269,6 +259,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) OrgId() *stri
 	_jsii_.Get(
 		j,
 		"orgId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
 		&returns,
 	)
 	return returns

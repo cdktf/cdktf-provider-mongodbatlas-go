@@ -32,11 +32,13 @@ type DataMongodbatlasDatabaseUsersResultsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataMongodbatlasDatabaseUsersResults
 	SetInternalValue(val *DataMongodbatlasDatabaseUsersResults)
 	Labels() DataMongodbatlasDatabaseUsersResultsLabelsList
 	LdapAuthType() *string
 	OidcAuthType() *string
+	Password() *string
 	ProjectId() *string
 	Roles() DataMongodbatlasDatabaseUsersResultsRolesList
 	Scopes() DataMongodbatlasDatabaseUsersResultsScopesList
@@ -149,6 +151,16 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) InternalValue() *DataMongodbatlasDatabaseUsersResults {
 	var returns *DataMongodbatlasDatabaseUsersResults
 	_jsii_.Get(
@@ -184,6 +196,16 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) OidcAuth
 	_jsii_.Get(
 		j,
 		"oidcAuthType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasDatabaseUsersResultsOutputReference) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
 		&returns,
 	)
 	return returns

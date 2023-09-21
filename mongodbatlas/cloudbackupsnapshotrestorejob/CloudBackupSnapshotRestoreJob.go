@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
 type CloudBackupSnapshotRestoreJob interface {
 	cdktf.TerraformResource
 	Cancelled() cdktf.IResolvable
@@ -32,11 +32,8 @@ type CloudBackupSnapshotRestoreJob interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
-	DeliveryType() *map[string]*string
-	SetDeliveryType(val *map[string]*string)
 	DeliveryTypeConfig() CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference
 	DeliveryTypeConfigInput() *CloudBackupSnapshotRestoreJobDeliveryTypeConfig
-	DeliveryTypeInput() *map[string]*string
 	DeliveryUrl() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
@@ -112,7 +109,6 @@ type CloudBackupSnapshotRestoreJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDeliveryTypeConfig(value *CloudBackupSnapshotRestoreJobDeliveryTypeConfig)
-	ResetDeliveryType()
 	ResetDeliveryTypeConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -213,16 +209,6 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) CreatedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) DeliveryType() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"deliveryType",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) DeliveryTypeConfig() CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference {
 	var returns CloudBackupSnapshotRestoreJobDeliveryTypeConfigOutputReference
 	_jsii_.Get(
@@ -238,16 +224,6 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) DeliveryTypeConfigInput() *Clo
 	_jsii_.Get(
 		j,
 		"deliveryTypeConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) DeliveryTypeInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"deliveryTypeInput",
 		&returns,
 	)
 	return returns
@@ -494,7 +470,7 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) Timestamp() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
 func NewCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, config *CloudBackupSnapshotRestoreJobConfig) CloudBackupSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -512,7 +488,7 @@ func NewCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Resource.
 func NewCloudBackupSnapshotRestoreJob_Override(c CloudBackupSnapshotRestoreJob, scope constructs.Construct, id *string, config *CloudBackupSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 
@@ -552,17 +528,6 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob)SetDeliveryType(val *map[string]*string) {
-	if err := j.validateSetDeliveryTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"deliveryType",
 		val,
 	)
 }
@@ -920,14 +885,6 @@ func (c *jsiiProxy_CloudBackupSnapshotRestoreJob) PutDeliveryTypeConfig(value *C
 		c,
 		"putDeliveryTypeConfig",
 		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_CloudBackupSnapshotRestoreJob) ResetDeliveryType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetDeliveryType",
-		nil, // no parameters
 	)
 }
 

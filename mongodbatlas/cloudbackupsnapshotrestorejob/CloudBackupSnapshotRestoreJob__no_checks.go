@@ -83,10 +83,6 @@ func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) validateSetDeliveryTypeParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudBackupSnapshotRestoreJob) validateSetIdParameters(val *string) error {
 	return nil
 }

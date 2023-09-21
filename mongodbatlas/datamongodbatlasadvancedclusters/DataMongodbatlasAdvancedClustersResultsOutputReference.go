@@ -49,6 +49,7 @@ type DataMongodbatlasAdvancedClustersResultsOutputReference interface {
 	ReplicationSpecs() DataMongodbatlasAdvancedClustersResultsReplicationSpecsList
 	RootCertType() *string
 	StateName() *string
+	Tags() DataMongodbatlasAdvancedClustersResultsTagsList
 	TerminationProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -313,6 +314,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) State
 	_jsii_.Get(
 		j,
 		"stateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) Tags() DataMongodbatlasAdvancedClustersResultsTagsList {
+	var returns DataMongodbatlasAdvancedClustersResultsTagsList
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

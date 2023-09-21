@@ -12,15 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas}.
 type MongodbatlasProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
-	AssumeRole() *MongodbatlasProviderAssumeRole
-	SetAssumeRole(val *MongodbatlasProviderAssumeRole)
-	AssumeRoleInput() *MongodbatlasProviderAssumeRole
+	AssumeRole() interface{}
+	SetAssumeRole(val interface{})
+	AssumeRoleInput() interface{}
 	AwsAccessKeyId() *string
 	SetAwsAccessKeyId(val *string)
 	AwsAccessKeyIdInput() *string
@@ -130,8 +130,8 @@ func (j *jsiiProxy_MongodbatlasProvider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MongodbatlasProvider) AssumeRole() *MongodbatlasProviderAssumeRole {
-	var returns *MongodbatlasProviderAssumeRole
+func (j *jsiiProxy_MongodbatlasProvider) AssumeRole() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRole",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_MongodbatlasProvider) AssumeRole() *MongodbatlasProviderAssum
 	return returns
 }
 
-func (j *jsiiProxy_MongodbatlasProvider) AssumeRoleInput() *MongodbatlasProviderAssumeRole {
-	var returns *MongodbatlasProviderAssumeRole
+func (j *jsiiProxy_MongodbatlasProvider) AssumeRoleInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRoleInput",
@@ -471,7 +471,7 @@ func (j *jsiiProxy_MongodbatlasProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) MongodbatlasProvider {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *Mon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider_Override(m MongodbatlasProvider, scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func (j *jsiiProxy_MongodbatlasProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MongodbatlasProvider)SetAssumeRole(val *MongodbatlasProviderAssumeRole) {
+func (j *jsiiProxy_MongodbatlasProvider)SetAssumeRole(val interface{}) {
 	if err := j.validateSetAssumeRoleParameters(val); err != nil {
 		panic(err)
 	}

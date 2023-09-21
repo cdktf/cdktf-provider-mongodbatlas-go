@@ -59,7 +59,7 @@ func (a *jsiiProxy_AlertConfiguration) validatePutMatcherParameters(value interf
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfiguration) validatePutMetricThresholdConfigParameters(value *AlertConfigurationMetricThresholdConfig) error {
+func (a *jsiiProxy_AlertConfiguration) validatePutMetricThresholdConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_AlertConfiguration) validatePutNotificationParameters(value i
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfiguration) validatePutThresholdConfigParameters(value *AlertConfigurationThresholdConfig) error {
+func (a *jsiiProxy_AlertConfiguration) validatePutThresholdConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -99,15 +99,7 @@ func (j *jsiiProxy_AlertConfiguration) validateSetEventTypeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AlertConfiguration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AlertConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfiguration) validateSetMetricThresholdParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -116,10 +108,6 @@ func (j *jsiiProxy_AlertConfiguration) validateSetProjectIdParameters(val *strin
 }
 
 func (j *jsiiProxy_AlertConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AlertConfiguration) validateSetThresholdParameters(val *map[string]*string) error {
 	return nil
 }
 

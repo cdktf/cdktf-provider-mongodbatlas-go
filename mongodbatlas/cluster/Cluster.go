@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster mongodbatlas_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	AdvancedConfiguration() ClusterAdvancedConfigurationOutputReference
@@ -32,11 +32,8 @@ type Cluster interface {
 	BackupEnabled() interface{}
 	SetBackupEnabled(val interface{})
 	BackupEnabledInput() interface{}
-	BiConnector() *map[string]*string
-	SetBiConnector(val *map[string]*string)
 	BiConnectorConfig() ClusterBiConnectorConfigOutputReference
 	BiConnectorConfigInput() *ClusterBiConnectorConfig
-	BiConnectorInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudBackup() interface{}
@@ -119,9 +116,6 @@ type Cluster interface {
 	ProviderAutoScalingComputeMinInstanceSize() *string
 	SetProviderAutoScalingComputeMinInstanceSize(val *string)
 	ProviderAutoScalingComputeMinInstanceSizeInput() *string
-	ProviderBackupEnabled() interface{}
-	SetProviderBackupEnabled(val interface{})
-	ProviderBackupEnabledInput() interface{}
 	ProviderDiskIops() *float64
 	SetProviderDiskIops(val *float64)
 	ProviderDiskIopsInput() *float64
@@ -161,6 +155,8 @@ type Cluster interface {
 	SnapshotBackupPolicy() ClusterSnapshotBackupPolicyList
 	SrvAddress() *string
 	StateName() *string
+	Tags() ClusterTagsList
+	TagsInput() interface{}
 	TerminationProtectionEnabled() interface{}
 	SetTerminationProtectionEnabled(val interface{})
 	TerminationProtectionEnabledInput() interface{}
@@ -204,6 +200,7 @@ type Cluster interface {
 	PutBiConnectorConfig(value *ClusterBiConnectorConfig)
 	PutLabels(value interface{})
 	PutReplicationSpecs(value interface{})
+	PutTags(value interface{})
 	PutTimeouts(value *ClusterTimeouts)
 	ResetAdvancedConfiguration()
 	ResetAutoScalingComputeEnabled()
@@ -211,7 +208,6 @@ type Cluster interface {
 	ResetAutoScalingDiskGbEnabled()
 	ResetBackingProviderName()
 	ResetBackupEnabled()
-	ResetBiConnector()
 	ResetBiConnectorConfig()
 	ResetCloudBackup()
 	ResetClusterType()
@@ -228,7 +224,6 @@ type Cluster interface {
 	ResetPitEnabled()
 	ResetProviderAutoScalingComputeMaxInstanceSize()
 	ResetProviderAutoScalingComputeMinInstanceSize()
-	ResetProviderBackupEnabled()
 	ResetProviderDiskIops()
 	ResetProviderDiskTypeName()
 	ResetProviderEncryptEbsVolume()
@@ -237,6 +232,7 @@ type Cluster interface {
 	ResetReplicationFactor()
 	ResetReplicationSpecs()
 	ResetRetainBackupsEnabled()
+	ResetTags()
 	ResetTerminationProtectionEnabled()
 	ResetTimeouts()
 	ResetVersionReleaseSystem()
@@ -375,16 +371,6 @@ func (j *jsiiProxy_Cluster) BackupEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) BiConnector() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"biConnector",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Cluster) BiConnectorConfig() ClusterBiConnectorConfigOutputReference {
 	var returns ClusterBiConnectorConfigOutputReference
 	_jsii_.Get(
@@ -400,16 +386,6 @@ func (j *jsiiProxy_Cluster) BiConnectorConfigInput() *ClusterBiConnectorConfig {
 	_jsii_.Get(
 		j,
 		"biConnectorConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Cluster) BiConnectorInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"biConnectorInput",
 		&returns,
 	)
 	return returns
@@ -875,26 +851,6 @@ func (j *jsiiProxy_Cluster) ProviderAutoScalingComputeMinInstanceSizeInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) ProviderBackupEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"providerBackupEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Cluster) ProviderBackupEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"providerBackupEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Cluster) ProviderDiskIops() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1155,6 +1111,26 @@ func (j *jsiiProxy_Cluster) StateName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) Tags() ClusterTagsList {
+	var returns ClusterTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) TerminationProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1246,7 +1222,7 @@ func (j *jsiiProxy_Cluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1264,7 +1240,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1326,17 +1302,6 @@ func (j *jsiiProxy_Cluster)SetBackupEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"backupEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Cluster)SetBiConnector(val *map[string]*string) {
-	if err := j.validateSetBiConnectorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"biConnector",
 		val,
 	)
 }
@@ -1537,17 +1502,6 @@ func (j *jsiiProxy_Cluster)SetProviderAutoScalingComputeMinInstanceSize(val *str
 	_jsii_.Set(
 		j,
 		"providerAutoScalingComputeMinInstanceSize",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Cluster)SetProviderBackupEnabled(val interface{}) {
-	if err := j.validateSetProviderBackupEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"providerBackupEnabled",
 		val,
 	)
 }
@@ -1994,6 +1948,17 @@ func (c *jsiiProxy_Cluster) PutReplicationSpecs(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutTags(value interface{}) {
+	if err := c.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutTimeouts(value *ClusterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2049,14 +2014,6 @@ func (c *jsiiProxy_Cluster) ResetBackupEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBackupEnabled",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_Cluster) ResetBiConnector() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetBiConnector",
 		nil, // no parameters
 	)
 }
@@ -2173,14 +2130,6 @@ func (c *jsiiProxy_Cluster) ResetProviderAutoScalingComputeMinInstanceSize() {
 	)
 }
 
-func (c *jsiiProxy_Cluster) ResetProviderBackupEnabled() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetProviderBackupEnabled",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_Cluster) ResetProviderDiskIops() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2241,6 +2190,14 @@ func (c *jsiiProxy_Cluster) ResetRetainBackupsEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetainBackupsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTags",
 		nil, // no parameters
 	)
 }

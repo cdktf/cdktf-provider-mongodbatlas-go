@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

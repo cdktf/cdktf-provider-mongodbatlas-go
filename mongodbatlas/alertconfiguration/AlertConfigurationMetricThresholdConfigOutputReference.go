@@ -30,8 +30,8 @@ type AlertConfigurationMetricThresholdConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AlertConfigurationMetricThresholdConfig
-	SetInternalValue(val *AlertConfigurationMetricThresholdConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MetricName() *string
 	SetMetricName(val *string)
 	MetricNameInput() *string
@@ -79,7 +79,6 @@ type AlertConfigurationMetricThresholdConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMetricName()
 	ResetMode()
 	ResetOperator()
 	ResetThreshold()
@@ -139,8 +138,8 @@ func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) InternalValue() *AlertConfigurationMetricThresholdConfig {
-	var returns *AlertConfigurationMetricThresholdConfig
+func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -270,29 +269,29 @@ func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) Units
 }
 
 
-func NewAlertConfigurationMetricThresholdConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertConfigurationMetricThresholdConfigOutputReference {
+func NewAlertConfigurationMetricThresholdConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertConfigurationMetricThresholdConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAlertConfigurationMetricThresholdConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAlertConfigurationMetricThresholdConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAlertConfigurationMetricThresholdConfigOutputReference_Override(a AlertConfigurationMetricThresholdConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertConfigurationMetricThresholdConfigOutputReference_Override(a AlertConfigurationMetricThresholdConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -319,7 +318,7 @@ func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference)SetInternalValue(val *AlertConfigurationMetricThresholdConfig) {
+func (j *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,14 +590,6 @@ func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) ResetMetricName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMetricName",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) ResetMode() {

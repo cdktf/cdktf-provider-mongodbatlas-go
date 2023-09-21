@@ -15,6 +15,10 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsList) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -55,15 +55,15 @@ func (e *jsiiProxy_EncryptionAtRest) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutAwsKmsConfigParameters(value *EncryptionAtRestAwsKmsConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutAwsKmsConfigParameters(value interface{}) error {
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutAzureKeyVaultConfigParameters(value *EncryptionAtRestAzureKeyVaultConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutAzureKeyVaultConfigParameters(value interface{}) error {
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutGoogleCloudKmsConfigParameters(value *EncryptionAtRestGoogleCloudKmsConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutGoogleCloudKmsConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -79,27 +79,11 @@ func validateEncryptionAtRest_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_EncryptionAtRest) validateSetAwsKmsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetAzureKeyVaultParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_EncryptionAtRest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_EncryptionAtRest) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetGoogleCloudKmsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetIdParameters(val *string) error {
 	return nil
 }
 

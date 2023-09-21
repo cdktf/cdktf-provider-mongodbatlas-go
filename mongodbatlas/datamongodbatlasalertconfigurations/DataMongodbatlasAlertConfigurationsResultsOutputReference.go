@@ -14,6 +14,8 @@ import (
 type DataMongodbatlasAlertConfigurationsResultsOutputReference interface {
 	cdktf.ComplexObject
 	AlertConfigurationId() *string
+	SetAlertConfigurationId(val *string)
+	AlertConfigurationIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,14 +36,16 @@ type DataMongodbatlasAlertConfigurationsResultsOutputReference interface {
 	EventType() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataMongodbatlasAlertConfigurationsResults
 	SetInternalValue(val *DataMongodbatlasAlertConfigurationsResults)
 	Matcher() DataMongodbatlasAlertConfigurationsResultsMatcherList
-	MetricThreshold() cdktf.StringMap
 	MetricThresholdConfig() DataMongodbatlasAlertConfigurationsResultsMetricThresholdConfigList
 	Notification() DataMongodbatlasAlertConfigurationsResultsNotificationList
 	Output() DataMongodbatlasAlertConfigurationsResultsOutputList
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,7 +54,6 @@ type DataMongodbatlasAlertConfigurationsResultsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Threshold() cdktf.StringMap
 	ThresholdConfig() DataMongodbatlasAlertConfigurationsResultsThresholdConfigList
 	Updated() *string
 	// Experimental.
@@ -97,6 +100,16 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Al
 	_jsii_.Get(
 		j,
 		"alertConfigurationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) AlertConfigurationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alertConfigurationIdInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +185,16 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Fq
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) InternalValue() *DataMongodbatlasAlertConfigurationsResults {
 	var returns *DataMongodbatlasAlertConfigurationsResults
 	_jsii_.Get(
@@ -187,16 +210,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Ma
 	_jsii_.Get(
 		j,
 		"matcher",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) MetricThreshold() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"metricThreshold",
 		&returns,
 	)
 	return returns
@@ -242,6 +255,16 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Pr
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -257,16 +280,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference) Threshold() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"threshold",
 		&returns,
 	)
 	return returns
@@ -320,6 +333,17 @@ func NewDataMongodbatlasAlertConfigurationsResultsOutputReference_Override(d Dat
 	)
 }
 
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference)SetAlertConfigurationId(val *string) {
+	if err := j.validateSetAlertConfigurationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertConfigurationId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -349,6 +373,17 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsOutputReference)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }

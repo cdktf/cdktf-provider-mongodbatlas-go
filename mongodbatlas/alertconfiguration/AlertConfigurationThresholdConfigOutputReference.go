@@ -30,8 +30,8 @@ type AlertConfigurationThresholdConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AlertConfigurationThresholdConfig
-	SetInternalValue(val *AlertConfigurationThresholdConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference) InternalValue() *AlertConfigurationThresholdConfig {
-	var returns *AlertConfigurationThresholdConfig
+func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference) UnitsInput(
 }
 
 
-func NewAlertConfigurationThresholdConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertConfigurationThresholdConfigOutputReference {
+func NewAlertConfigurationThresholdConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertConfigurationThresholdConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAlertConfigurationThresholdConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAlertConfigurationThresholdConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AlertConfigurationThresholdConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAlertConfigurationThresholdConfigOutputReference_Override(a AlertConfigurationThresholdConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlertConfigurationThresholdConfigOutputReference_Override(a AlertConfigurationThresholdConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference)SetInternalValue(val *AlertConfigurationThresholdConfig) {
+func (j *jsiiProxy_AlertConfigurationThresholdConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

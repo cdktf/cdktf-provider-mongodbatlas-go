@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}.
 type DataMongodbatlasAlertConfiguration interface {
 	cdktf.TerraformDataSource
 	AlertConfigurationId() *string
@@ -42,14 +42,11 @@ type DataMongodbatlasAlertConfiguration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Matcher() DataMongodbatlasAlertConfigurationMatcherList
-	MetricThreshold() cdktf.StringMap
 	MetricThresholdConfig() DataMongodbatlasAlertConfigurationMetricThresholdConfigList
 	// The tree node.
 	Node() constructs.Node
@@ -71,7 +68,6 @@ type DataMongodbatlasAlertConfiguration interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Threshold() cdktf.StringMap
 	ThresholdConfig() DataMongodbatlasAlertConfigurationThresholdConfigList
 	Updated() *string
 	// Experimental.
@@ -100,7 +96,6 @@ type DataMongodbatlasAlertConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOutput(value interface{})
-	ResetId()
 	ResetOutput()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -250,16 +245,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -275,16 +260,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Matcher() DataMongodbatla
 	_jsii_.Get(
 		j,
 		"matcher",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) MetricThreshold() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"metricThreshold",
 		&returns,
 	)
 	return returns
@@ -410,16 +385,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) TerraformResourceType() *
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Threshold() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"threshold",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) ThresholdConfig() DataMongodbatlasAlertConfigurationThresholdConfigList {
 	var returns DataMongodbatlasAlertConfigurationThresholdConfigList
 	_jsii_.Get(
@@ -441,7 +406,7 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
 func NewDataMongodbatlasAlertConfiguration(scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationConfig) DataMongodbatlasAlertConfiguration {
 	_init_.Initialize()
 
@@ -459,7 +424,7 @@ func NewDataMongodbatlasAlertConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
 func NewDataMongodbatlasAlertConfiguration_Override(d DataMongodbatlasAlertConfiguration, scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationConfig) {
 	_init_.Initialize()
 
@@ -504,17 +469,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration)SetForEach(val cdktf.ITerr
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfiguration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -823,14 +777,6 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfiguration) PutOutput(value interface
 		d,
 		"putOutput",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasAlertConfiguration) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

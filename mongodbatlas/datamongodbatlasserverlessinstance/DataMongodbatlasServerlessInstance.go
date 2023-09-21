@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instance mongodbatlas_serverless_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instance mongodbatlas_serverless_instance}.
 type DataMongodbatlasServerlessInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,7 @@ type DataMongodbatlasServerlessInstance interface {
 	StateName() *string
 	SetStateName(val *string)
 	StateNameInput() *string
+	Tags() DataMongodbatlasServerlessInstanceTagsList
 	TerminationProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -413,6 +414,16 @@ func (j *jsiiProxy_DataMongodbatlasServerlessInstance) StateNameInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasServerlessInstance) Tags() DataMongodbatlasServerlessInstanceTagsList {
+	var returns DataMongodbatlasServerlessInstanceTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasServerlessInstance) TerminationProtectionEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -454,7 +465,7 @@ func (j *jsiiProxy_DataMongodbatlasServerlessInstance) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instance mongodbatlas_serverless_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instance mongodbatlas_serverless_instance} Data Source.
 func NewDataMongodbatlasServerlessInstance(scope constructs.Construct, id *string, config *DataMongodbatlasServerlessInstanceConfig) DataMongodbatlasServerlessInstance {
 	_init_.Initialize()
 
@@ -472,7 +483,7 @@ func NewDataMongodbatlasServerlessInstance(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/serverless_instance mongodbatlas_serverless_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/serverless_instance mongodbatlas_serverless_instance} Data Source.
 func NewDataMongodbatlasServerlessInstance_Override(d DataMongodbatlasServerlessInstance, scope constructs.Construct, id *string, config *DataMongodbatlasServerlessInstanceConfig) {
 	_init_.Initialize()
 

@@ -337,14 +337,6 @@ func (j *jsiiProxy_ProjectApiKey) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_ProjectApiKey) validateSetRoleNamesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewProjectApiKeyParameters(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

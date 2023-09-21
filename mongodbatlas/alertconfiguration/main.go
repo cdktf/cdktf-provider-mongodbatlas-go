@@ -39,15 +39,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "matcher", GoGetter: "Matcher"},
 			_jsii_.MemberProperty{JsiiProperty: "matcherInput", GoGetter: "MatcherInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metricThreshold", GoGetter: "MetricThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "metricThresholdConfig", GoGetter: "MetricThresholdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "metricThresholdConfigInput", GoGetter: "MetricThresholdConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "metricThresholdInput", GoGetter: "MetricThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notification", GoGetter: "Notification"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationInput", GoGetter: "NotificationInput"},
@@ -62,21 +59,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putThresholdConfig", GoMethod: "PutThresholdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMatcher", GoMethod: "ResetMatcher"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetricThreshold", GoMethod: "ResetMetricThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricThresholdConfig", GoMethod: "ResetMetricThresholdConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotification", GoMethod: "ResetNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdConfig", GoMethod: "ResetThresholdConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
 			_jsii_.MemberProperty{JsiiProperty: "thresholdConfig", GoGetter: "ThresholdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "thresholdConfigInput", GoGetter: "ThresholdConfigInput"},
-			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -142,9 +135,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFieldName", GoMethod: "ResetFieldName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
-			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -161,6 +151,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfig",
 		reflect.TypeOf((*AlertConfigurationMetricThresholdConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigList",
+		reflect.TypeOf((*AlertConfigurationMetricThresholdConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlertConfigurationMetricThresholdConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationMetricThresholdConfigOutputReference",
@@ -189,7 +200,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMetricName", GoMethod: "ResetMetricName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
@@ -295,7 +305,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceKey", GoMethod: "ResetServiceKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmsEnabled", GoMethod: "ResetSmsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamId", GoMethod: "ResetTeamId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTypeName", GoMethod: "ResetTypeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsername", GoMethod: "ResetUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVictorOpsApiKey", GoMethod: "ResetVictorOpsApiKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVictorOpsRoutingKey", GoMethod: "ResetVictorOpsRoutingKey"},
@@ -336,6 +345,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfig",
 		reflect.TypeOf((*AlertConfigurationThresholdConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigList",
+		reflect.TypeOf((*AlertConfigurationThresholdConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlertConfigurationThresholdConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.alertConfiguration.AlertConfigurationThresholdConfigOutputReference",

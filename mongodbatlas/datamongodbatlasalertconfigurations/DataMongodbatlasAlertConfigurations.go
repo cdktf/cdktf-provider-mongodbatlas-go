@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations}.
 type DataMongodbatlasAlertConfigurations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataMongodbatlasAlertConfigurations interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,7 +90,6 @@ type DataMongodbatlasAlertConfigurations interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutListOptions(value interface{})
-	ResetId()
 	ResetListOptions()
 	ResetOutputType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -188,16 +185,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurations) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurations) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -354,7 +341,7 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurations) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source.
 func NewDataMongodbatlasAlertConfigurations(scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationsConfig) DataMongodbatlasAlertConfigurations {
 	_init_.Initialize()
 
@@ -372,7 +359,7 @@ func NewDataMongodbatlasAlertConfigurations(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/alert_configurations mongodbatlas_alert_configurations} Data Source.
 func NewDataMongodbatlasAlertConfigurations_Override(d DataMongodbatlasAlertConfigurations, scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationsConfig) {
 	_init_.Initialize()
 
@@ -406,17 +393,6 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurations)SetForEach(val cdktf.ITer
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasAlertConfigurations)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -736,14 +712,6 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurations) PutListOptions(value int
 		d,
 		"putListOptions",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasAlertConfigurations) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

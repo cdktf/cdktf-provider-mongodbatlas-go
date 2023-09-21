@@ -71,10 +71,6 @@ func (j *jsiiProxy_DataMongodbatlasProjects) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasProjects) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasProjects) validateSetItemsPerPageParameters(val *float64) error {
 	return nil
 }

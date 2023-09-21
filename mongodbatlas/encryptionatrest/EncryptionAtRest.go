@@ -12,19 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 type EncryptionAtRest interface {
 	cdktf.TerraformResource
-	AwsKms() *map[string]*string
-	SetAwsKms(val *map[string]*string)
-	AwsKmsConfig() EncryptionAtRestAwsKmsConfigOutputReference
-	AwsKmsConfigInput() *EncryptionAtRestAwsKmsConfig
-	AwsKmsInput() *map[string]*string
-	AzureKeyVault() *map[string]*string
-	SetAzureKeyVault(val *map[string]*string)
-	AzureKeyVaultConfig() EncryptionAtRestAzureKeyVaultConfigOutputReference
-	AzureKeyVaultConfigInput() *EncryptionAtRestAzureKeyVaultConfig
-	AzureKeyVaultInput() *map[string]*string
+	AwsKmsConfig() EncryptionAtRestAwsKmsConfigList
+	AwsKmsConfigInput() interface{}
+	AzureKeyVaultConfig() EncryptionAtRestAzureKeyVaultConfigList
+	AzureKeyVaultConfigInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -49,14 +43,9 @@ type EncryptionAtRest interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GoogleCloudKms() *map[string]*string
-	SetGoogleCloudKms(val *map[string]*string)
-	GoogleCloudKmsConfig() EncryptionAtRestGoogleCloudKmsConfigOutputReference
-	GoogleCloudKmsConfigInput() *EncryptionAtRestGoogleCloudKmsConfig
-	GoogleCloudKmsInput() *map[string]*string
+	GoogleCloudKmsConfig() EncryptionAtRestGoogleCloudKmsConfigList
+	GoogleCloudKmsConfigInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -107,16 +96,12 @@ type EncryptionAtRest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAwsKmsConfig(value *EncryptionAtRestAwsKmsConfig)
-	PutAzureKeyVaultConfig(value *EncryptionAtRestAzureKeyVaultConfig)
-	PutGoogleCloudKmsConfig(value *EncryptionAtRestGoogleCloudKmsConfig)
-	ResetAwsKms()
+	PutAwsKmsConfig(value interface{})
+	PutAzureKeyVaultConfig(value interface{})
+	PutGoogleCloudKmsConfig(value interface{})
 	ResetAwsKmsConfig()
-	ResetAzureKeyVault()
 	ResetAzureKeyVaultConfig()
-	ResetGoogleCloudKms()
 	ResetGoogleCloudKmsConfig()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -135,18 +120,8 @@ type jsiiProxy_EncryptionAtRest struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_EncryptionAtRest) AwsKms() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"awsKms",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfig() EncryptionAtRestAwsKmsConfigOutputReference {
-	var returns EncryptionAtRestAwsKmsConfigOutputReference
+func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfig() EncryptionAtRestAwsKmsConfigList {
+	var returns EncryptionAtRestAwsKmsConfigList
 	_jsii_.Get(
 		j,
 		"awsKmsConfig",
@@ -155,8 +130,8 @@ func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfig() EncryptionAtRestAwsKmsConfig
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfigInput() *EncryptionAtRestAwsKmsConfig {
-	var returns *EncryptionAtRestAwsKmsConfig
+func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"awsKmsConfigInput",
@@ -165,28 +140,8 @@ func (j *jsiiProxy_EncryptionAtRest) AwsKmsConfigInput() *EncryptionAtRestAwsKms
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) AwsKmsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"awsKmsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) AzureKeyVault() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"azureKeyVault",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultConfig() EncryptionAtRestAzureKeyVaultConfigOutputReference {
-	var returns EncryptionAtRestAzureKeyVaultConfigOutputReference
+func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultConfig() EncryptionAtRestAzureKeyVaultConfigList {
+	var returns EncryptionAtRestAzureKeyVaultConfigList
 	_jsii_.Get(
 		j,
 		"azureKeyVaultConfig",
@@ -195,21 +150,11 @@ func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultConfig() EncryptionAtRestAzure
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultConfigInput() *EncryptionAtRestAzureKeyVaultConfig {
-	var returns *EncryptionAtRestAzureKeyVaultConfig
+func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"azureKeyVaultConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) AzureKeyVaultInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"azureKeyVaultInput",
 		&returns,
 	)
 	return returns
@@ -295,18 +240,8 @@ func (j *jsiiProxy_EncryptionAtRest) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKms() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"googleCloudKms",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsConfig() EncryptionAtRestGoogleCloudKmsConfigOutputReference {
-	var returns EncryptionAtRestGoogleCloudKmsConfigOutputReference
+func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsConfig() EncryptionAtRestGoogleCloudKmsConfigList {
+	var returns EncryptionAtRestGoogleCloudKmsConfigList
 	_jsii_.Get(
 		j,
 		"googleCloudKmsConfig",
@@ -315,21 +250,11 @@ func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsConfig() EncryptionAtRestGoog
 	return returns
 }
 
-func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsConfigInput() *EncryptionAtRestGoogleCloudKmsConfig {
-	var returns *EncryptionAtRestGoogleCloudKmsConfig
+func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"googleCloudKmsConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) GoogleCloudKmsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"googleCloudKmsInput",
 		&returns,
 	)
 	return returns
@@ -340,16 +265,6 @@ func (j *jsiiProxy_EncryptionAtRest) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EncryptionAtRest) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -456,7 +371,7 @@ func (j *jsiiProxy_EncryptionAtRest) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest(scope constructs.Construct, id *string, config *EncryptionAtRestConfig) EncryptionAtRest {
 	_init_.Initialize()
 
@@ -474,7 +389,7 @@ func NewEncryptionAtRest(scope constructs.Construct, id *string, config *Encrypt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest_Override(e EncryptionAtRest, scope constructs.Construct, id *string, config *EncryptionAtRestConfig) {
 	_init_.Initialize()
 
@@ -482,28 +397,6 @@ func NewEncryptionAtRest_Override(e EncryptionAtRest, scope constructs.Construct
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest",
 		[]interface{}{scope, id, config},
 		e,
-	)
-}
-
-func (j *jsiiProxy_EncryptionAtRest)SetAwsKms(val *map[string]*string) {
-	if err := j.validateSetAwsKmsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"awsKms",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EncryptionAtRest)SetAzureKeyVault(val *map[string]*string) {
-	if err := j.validateSetAzureKeyVaultParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"azureKeyVault",
-		val,
 	)
 }
 
@@ -541,28 +434,6 @@ func (j *jsiiProxy_EncryptionAtRest)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EncryptionAtRest)SetGoogleCloudKms(val *map[string]*string) {
-	if err := j.validateSetGoogleCloudKmsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"googleCloudKms",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EncryptionAtRest)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -874,7 +745,7 @@ func (e *jsiiProxy_EncryptionAtRest) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (e *jsiiProxy_EncryptionAtRest) PutAwsKmsConfig(value *EncryptionAtRestAwsKmsConfig) {
+func (e *jsiiProxy_EncryptionAtRest) PutAwsKmsConfig(value interface{}) {
 	if err := e.validatePutAwsKmsConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -885,7 +756,7 @@ func (e *jsiiProxy_EncryptionAtRest) PutAwsKmsConfig(value *EncryptionAtRestAwsK
 	)
 }
 
-func (e *jsiiProxy_EncryptionAtRest) PutAzureKeyVaultConfig(value *EncryptionAtRestAzureKeyVaultConfig) {
+func (e *jsiiProxy_EncryptionAtRest) PutAzureKeyVaultConfig(value interface{}) {
 	if err := e.validatePutAzureKeyVaultConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -896,7 +767,7 @@ func (e *jsiiProxy_EncryptionAtRest) PutAzureKeyVaultConfig(value *EncryptionAtR
 	)
 }
 
-func (e *jsiiProxy_EncryptionAtRest) PutGoogleCloudKmsConfig(value *EncryptionAtRestGoogleCloudKmsConfig) {
+func (e *jsiiProxy_EncryptionAtRest) PutGoogleCloudKmsConfig(value interface{}) {
 	if err := e.validatePutGoogleCloudKmsConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -907,26 +778,10 @@ func (e *jsiiProxy_EncryptionAtRest) PutGoogleCloudKmsConfig(value *EncryptionAt
 	)
 }
 
-func (e *jsiiProxy_EncryptionAtRest) ResetAwsKms() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAwsKms",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_EncryptionAtRest) ResetAwsKmsConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAwsKmsConfig",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EncryptionAtRest) ResetAzureKeyVault() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAzureKeyVault",
 		nil, // no parameters
 	)
 }
@@ -939,26 +794,10 @@ func (e *jsiiProxy_EncryptionAtRest) ResetAzureKeyVaultConfig() {
 	)
 }
 
-func (e *jsiiProxy_EncryptionAtRest) ResetGoogleCloudKms() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetGoogleCloudKms",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_EncryptionAtRest) ResetGoogleCloudKmsConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetGoogleCloudKmsConfig",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EncryptionAtRest) ResetId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetId",
 		nil, // no parameters
 	)
 }

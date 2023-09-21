@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/teams mongodbatlas_teams}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/teams mongodbatlas_teams}.
 type Teams interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_Teams) UsernamesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/teams mongodbatlas_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/teams mongodbatlas_teams} Resource.
 func NewTeams(scope constructs.Construct, id *string, config *TeamsConfig) Teams {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewTeams(scope constructs.Construct, id *string, config *TeamsConfig) Teams
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/teams mongodbatlas_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/teams mongodbatlas_teams} Resource.
 func NewTeams_Override(t Teams, scope constructs.Construct, id *string, config *TeamsConfig) {
 	_init_.Initialize()
 

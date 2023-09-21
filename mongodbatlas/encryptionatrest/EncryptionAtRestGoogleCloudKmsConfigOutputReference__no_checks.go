@@ -63,7 +63,7 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validateSetInternalValueParameters(val *EncryptionAtRestGoogleCloudKmsConfig) error {
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validate
 	return nil
 }
 
-func validateNewEncryptionAtRestGoogleCloudKmsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEncryptionAtRestGoogleCloudKmsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

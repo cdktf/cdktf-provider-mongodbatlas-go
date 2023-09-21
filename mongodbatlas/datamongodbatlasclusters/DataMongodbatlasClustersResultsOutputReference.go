@@ -19,7 +19,6 @@ type DataMongodbatlasClustersResultsOutputReference interface {
 	AutoScalingDiskGbEnabled() cdktf.IResolvable
 	BackingProviderName() *string
 	BackupEnabled() cdktf.IResolvable
-	BiConnector() cdktf.StringMap
 	BiConnectorConfig() DataMongodbatlasClustersResultsBiConnectorConfigList
 	ClusterType() *string
 	// the index of the complex object in a list.
@@ -70,6 +69,7 @@ type DataMongodbatlasClustersResultsOutputReference interface {
 	SnapshotBackupPolicy() DataMongodbatlasClustersResultsSnapshotBackupPolicyList
 	SrvAddress() *string
 	StateName() *string
+	Tags() DataMongodbatlasClustersResultsTagsList
 	TerminationProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -174,16 +174,6 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) BackupEnabled
 	_jsii_.Get(
 		j,
 		"backupEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) BiConnector() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"biConnector",
 		&returns,
 	)
 	return returns
@@ -544,6 +534,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) StateName() *
 	_jsii_.Get(
 		j,
 		"stateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) Tags() DataMongodbatlasClustersResultsTagsList {
+	var returns DataMongodbatlasClustersResultsTagsList
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

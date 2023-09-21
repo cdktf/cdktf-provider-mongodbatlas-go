@@ -12,11 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
-	ApiKeys() ProjectApiKeysList
-	ApiKeysInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterCount() *float64
@@ -44,8 +42,6 @@ type Project interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsCollectDatabaseSpecificsStatisticsEnabled() interface{}
 	SetIsCollectDatabaseSpecificsStatisticsEnabled(val interface{})
 	IsCollectDatabaseSpecificsStatisticsEnabledInput() interface{}
@@ -130,11 +126,8 @@ type Project interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApiKeys(value interface{})
 	PutLimits(value interface{})
 	PutTeams(value interface{})
-	ResetApiKeys()
-	ResetId()
 	ResetIsCollectDatabaseSpecificsStatisticsEnabled()
 	ResetIsDataExplorerEnabled()
 	ResetIsExtendedStorageSizesEnabled()
@@ -162,26 +155,6 @@ type Project interface {
 // The jsii proxy struct for Project
 type jsiiProxy_Project struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_Project) ApiKeys() ProjectApiKeysList {
-	var returns ProjectApiKeysList
-	_jsii_.Get(
-		j,
-		"apiKeys",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) ApiKeysInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"apiKeysInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_Project) CdktfStack() cdktf.TerraformStack {
@@ -289,16 +262,6 @@ func (j *jsiiProxy_Project) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -645,7 +608,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -663,7 +626,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -708,17 +671,6 @@ func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Project)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1140,17 +1092,6 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_Project) PutApiKeys(value interface{}) {
-	if err := p.validatePutApiKeysParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putApiKeys",
-		[]interface{}{value},
-	)
-}
-
 func (p *jsiiProxy_Project) PutLimits(value interface{}) {
 	if err := p.validatePutLimitsParameters(value); err != nil {
 		panic(err)
@@ -1170,22 +1111,6 @@ func (p *jsiiProxy_Project) PutTeams(value interface{}) {
 		p,
 		"putTeams",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_Project) ResetApiKeys() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetApiKeys",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Project) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

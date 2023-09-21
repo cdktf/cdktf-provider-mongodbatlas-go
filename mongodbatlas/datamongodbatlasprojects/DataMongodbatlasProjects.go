@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/projects mongodbatlas_projects}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/projects mongodbatlas_projects}.
 type DataMongodbatlasProjects interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,8 +36,6 @@ type DataMongodbatlasProjects interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	ItemsPerPage() *float64
 	SetItemsPerPage(val *float64)
 	ItemsPerPageInput() *float64
@@ -89,7 +87,6 @@ type DataMongodbatlasProjects interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	ResetItemsPerPage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -185,16 +182,6 @@ func (j *jsiiProxy_DataMongodbatlasProjects) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasProjects) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -331,7 +318,7 @@ func (j *jsiiProxy_DataMongodbatlasProjects) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/projects mongodbatlas_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/projects mongodbatlas_projects} Data Source.
 func NewDataMongodbatlasProjects(scope constructs.Construct, id *string, config *DataMongodbatlasProjectsConfig) DataMongodbatlasProjects {
 	_init_.Initialize()
 
@@ -349,7 +336,7 @@ func NewDataMongodbatlasProjects(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.11.1/docs/data-sources/projects mongodbatlas_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/projects mongodbatlas_projects} Data Source.
 func NewDataMongodbatlasProjects_Override(d DataMongodbatlasProjects, scope constructs.Construct, id *string, config *DataMongodbatlasProjectsConfig) {
 	_init_.Initialize()
 
@@ -383,17 +370,6 @@ func (j *jsiiProxy_DataMongodbatlasProjects)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasProjects)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -702,14 +678,6 @@ func (d *jsiiProxy_DataMongodbatlasProjects) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasProjects) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

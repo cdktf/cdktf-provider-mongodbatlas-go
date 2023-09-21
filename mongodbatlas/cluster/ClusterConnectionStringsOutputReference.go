@@ -13,8 +13,6 @@ import (
 
 type ClusterConnectionStringsOutputReference interface {
 	cdktf.ComplexObject
-	AwsPrivateLink() cdktf.StringMap
-	AwsPrivateLinkSrv() cdktf.StringMap
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -84,26 +82,6 @@ type ClusterConnectionStringsOutputReference interface {
 // The jsii proxy struct for ClusterConnectionStringsOutputReference
 type jsiiProxy_ClusterConnectionStringsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_ClusterConnectionStringsOutputReference) AwsPrivateLink() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"awsPrivateLink",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ClusterConnectionStringsOutputReference) AwsPrivateLinkSrv() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"awsPrivateLinkSrv",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ClusterConnectionStringsOutputReference) ComplexObjectIndex() interface{} {

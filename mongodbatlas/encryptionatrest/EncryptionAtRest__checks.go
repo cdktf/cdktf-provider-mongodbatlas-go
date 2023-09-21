@@ -114,34 +114,94 @@ func (e *jsiiProxy_EncryptionAtRest) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutAwsKmsConfigParameters(value *EncryptionAtRestAwsKmsConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutAwsKmsConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*EncryptionAtRestAwsKmsConfig:
+		value := value.(*[]*EncryptionAtRestAwsKmsConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*EncryptionAtRestAwsKmsConfig:
+		value_ := value.([]*EncryptionAtRestAwsKmsConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EncryptionAtRestAwsKmsConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutAzureKeyVaultConfigParameters(value *EncryptionAtRestAzureKeyVaultConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutAzureKeyVaultConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*EncryptionAtRestAzureKeyVaultConfig:
+		value := value.(*[]*EncryptionAtRestAzureKeyVaultConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*EncryptionAtRestAzureKeyVaultConfig:
+		value_ := value.([]*EncryptionAtRestAzureKeyVaultConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EncryptionAtRestAzureKeyVaultConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRest) validatePutGoogleCloudKmsConfigParameters(value *EncryptionAtRestGoogleCloudKmsConfig) error {
+func (e *jsiiProxy_EncryptionAtRest) validatePutGoogleCloudKmsConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*EncryptionAtRestGoogleCloudKmsConfig:
+		value := value.(*[]*EncryptionAtRestGoogleCloudKmsConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*EncryptionAtRestGoogleCloudKmsConfig:
+		value_ := value.([]*EncryptionAtRestGoogleCloudKmsConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EncryptionAtRestGoogleCloudKmsConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -166,22 +226,6 @@ func validateEncryptionAtRest_IsTerraformElementParameters(x interface{}) error 
 func validateEncryptionAtRest_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetAwsKmsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetAzureKeyVaultParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -272,22 +316,6 @@ func (j *jsiiProxy_EncryptionAtRest) validateSetCountParameters(val interface{})
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetGoogleCloudKmsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EncryptionAtRest) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

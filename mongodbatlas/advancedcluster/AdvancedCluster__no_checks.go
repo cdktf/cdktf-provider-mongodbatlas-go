@@ -59,10 +59,6 @@ func (a *jsiiProxy_AdvancedCluster) validatePutAdvancedConfigurationParameters(v
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedCluster) validatePutBiConnectorParameters(value *AdvancedClusterBiConnector) error {
-	return nil
-}
-
 func (a *jsiiProxy_AdvancedCluster) validatePutBiConnectorConfigParameters(value *AdvancedClusterBiConnectorConfig) error {
 	return nil
 }
@@ -72,6 +68,10 @@ func (a *jsiiProxy_AdvancedCluster) validatePutLabelsParameters(value interface{
 }
 
 func (a *jsiiProxy_AdvancedCluster) validatePutReplicationSpecsParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdvancedCluster) validatePutTagsParameters(value interface{}) error {
 	return nil
 }
 

@@ -71,6 +71,10 @@ func (c *jsiiProxy_Cluster) validatePutReplicationSpecsParameters(value interfac
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutTimeoutsParameters(value *ClusterTimeouts) error {
 	return nil
 }
@@ -104,10 +108,6 @@ func (j *jsiiProxy_Cluster) validateSetBackingProviderNameParameters(val *string
 }
 
 func (j *jsiiProxy_Cluster) validateSetBackupEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Cluster) validateSetBiConnectorParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -172,10 +172,6 @@ func (j *jsiiProxy_Cluster) validateSetProviderAutoScalingComputeMaxInstanceSize
 }
 
 func (j *jsiiProxy_Cluster) validateSetProviderAutoScalingComputeMinInstanceSizeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Cluster) validateSetProviderBackupEnabledParameters(val interface{}) error {
 	return nil
 }
 
