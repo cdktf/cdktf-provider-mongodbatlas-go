@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cluster mongodbatlas_cluster}.
 type DataMongodbatlasCluster interface {
 	cdktf.TerraformDataSource
 	AdvancedConfiguration() DataMongodbatlasClusterAdvancedConfigurationList
@@ -747,7 +747,7 @@ func (j *jsiiProxy_DataMongodbatlasCluster) VersionReleaseSystem() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) DataMongodbatlasCluster {
 	_init_.Initialize()
 
@@ -765,7 +765,7 @@ func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster_Override(d DataMongodbatlasCluster, scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) {
 	_init_.Initialize()
 

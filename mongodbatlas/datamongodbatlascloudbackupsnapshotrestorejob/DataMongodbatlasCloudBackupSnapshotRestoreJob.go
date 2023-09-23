@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
 type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	cdktf.TerraformDataSource
 	Cancelled() cdktf.IResolvable
@@ -484,7 +484,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) Timestamp() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) DataMongodbatlasCloudBackupSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob_Override(d DataMongodbatlasCloudBackupSnapshotRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 

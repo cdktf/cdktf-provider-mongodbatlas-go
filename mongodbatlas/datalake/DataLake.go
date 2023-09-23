@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/data_lake mongodbatlas_data_lake}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/data_lake mongodbatlas_data_lake}.
 type DataLake interface {
 	cdktf.TerraformResource
 	Aws() DataLakeAwsOutputReference
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataLake) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/data_lake mongodbatlas_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/data_lake mongodbatlas_data_lake} Resource.
 func NewDataLake(scope constructs.Construct, id *string, config *DataLakeConfig) DataLake {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataLake(scope constructs.Construct, id *string, config *DataLakeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/data_lake mongodbatlas_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/data_lake mongodbatlas_data_lake} Resource.
 func NewDataLake_Override(d DataLake, scope constructs.Construct, id *string, config *DataLakeConfig) {
 	_init_.Initialize()
 

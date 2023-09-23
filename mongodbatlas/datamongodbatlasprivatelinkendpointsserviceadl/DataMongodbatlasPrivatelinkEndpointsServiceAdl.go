@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl}.
 type DataMongodbatlasPrivatelinkEndpointsServiceAdl interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceAdl) TotalCount() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointsServiceAdl(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointsServiceAdlConfig) DataMongodbatlasPrivatelinkEndpointsServiceAdl {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataMongodbatlasPrivatelinkEndpointsServiceAdl(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/privatelink_endpoints_service_adl mongodbatlas_privatelink_endpoints_service_adl} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointsServiceAdl_Override(d DataMongodbatlasPrivatelinkEndpointsServiceAdl, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointsServiceAdlConfig) {
 	_init_.Initialize()
 

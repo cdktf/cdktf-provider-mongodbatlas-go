@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/network_containers mongodbatlas_network_containers}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/network_containers mongodbatlas_network_containers}.
 type DataMongodbatlasNetworkContainers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataMongodbatlasNetworkContainers) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/network_containers mongodbatlas_network_containers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/network_containers mongodbatlas_network_containers} Data Source.
 func NewDataMongodbatlasNetworkContainers(scope constructs.Construct, id *string, config *DataMongodbatlasNetworkContainersConfig) DataMongodbatlasNetworkContainers {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataMongodbatlasNetworkContainers(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/data-sources/network_containers mongodbatlas_network_containers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/network_containers mongodbatlas_network_containers} Data Source.
 func NewDataMongodbatlasNetworkContainers_Override(d DataMongodbatlasNetworkContainers, scope constructs.Construct, id *string, config *DataMongodbatlasNetworkContainersConfig) {
 	_init_.Initialize()
 

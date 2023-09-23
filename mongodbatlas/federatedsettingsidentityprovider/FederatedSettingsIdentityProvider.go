@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
 type FederatedSettingsIdentityProvider interface {
 	cdktf.TerraformResource
 	AssociatedDomains() *[]*string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) FederatedSettingsIdentityProvider {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider_Override(f FederatedSettingsIdentityProvider, scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl}.
 type PrivatelinkEndpointServiceAdl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceAdl) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Resource.
 func NewPrivatelinkEndpointServiceAdl(scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceAdlConfig) PrivatelinkEndpointServiceAdl {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewPrivatelinkEndpointServiceAdl(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.0/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/privatelink_endpoint_service_adl mongodbatlas_privatelink_endpoint_service_adl} Resource.
 func NewPrivatelinkEndpointServiceAdl_Override(p PrivatelinkEndpointServiceAdl, scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceAdlConfig) {
 	_init_.Initialize()
 
