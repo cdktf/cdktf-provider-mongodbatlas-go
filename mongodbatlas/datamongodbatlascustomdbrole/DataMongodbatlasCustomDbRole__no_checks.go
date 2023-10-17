@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasCustomDbRole) validatePutInheritedRolesParame
 	return nil
 }
 
+func validateDataMongodbatlasCustomDbRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCustomDbRole_IsConstructParameters(x interface{}) error {
 	return nil
 }

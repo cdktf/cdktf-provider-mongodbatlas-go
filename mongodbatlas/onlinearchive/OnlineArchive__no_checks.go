@@ -7,6 +7,10 @@ package onlinearchive
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OnlineArchive) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnlineArchive) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OnlineArchive) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (o *jsiiProxy_OnlineArchive) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnlineArchive) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OnlineArchive) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OnlineArchive) validatePutPartitionFieldsParameters(value int
 }
 
 func (o *jsiiProxy_OnlineArchive) validatePutScheduleParameters(value *OnlineArchiveSchedule) error {
+	return nil
+}
+
+func validateOnlineArchive_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

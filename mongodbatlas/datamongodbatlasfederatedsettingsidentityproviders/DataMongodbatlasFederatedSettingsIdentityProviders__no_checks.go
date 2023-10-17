@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) validateO
 	return nil
 }
 
+func validateDataMongodbatlasFederatedSettingsIdentityProviders_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasFederatedSettingsIdentityProviders_IsConstructParameters(x interface{}) error {
 	return nil
 }

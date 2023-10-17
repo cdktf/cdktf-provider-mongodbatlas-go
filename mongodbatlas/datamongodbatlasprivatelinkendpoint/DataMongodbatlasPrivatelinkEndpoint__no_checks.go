@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpoint) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataMongodbatlasPrivatelinkEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasPrivatelinkEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

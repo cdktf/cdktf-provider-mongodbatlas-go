@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasAccessListApiKeys) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataMongodbatlasAccessListApiKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasAccessListApiKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

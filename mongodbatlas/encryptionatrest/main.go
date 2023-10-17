@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-mongodbatlas.encryptionAtRest.EncryptionAtRest",
 		reflect.TypeOf((*EncryptionAtRest)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKmsConfig", GoGetter: "AwsKmsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKmsConfigInput", GoGetter: "AwsKmsConfigInput"},
@@ -39,8 +40,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "googleCloudKmsConfig", GoGetter: "GoogleCloudKmsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "googleCloudKmsConfigInput", GoGetter: "GoogleCloudKmsConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},

@@ -7,6 +7,10 @@ package cloudprovideraccessauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudProviderAccessAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudProviderAccessAuthorization) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudProviderAccessAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CloudProviderAccessAuthorization) validatePutAwsParameters(va
 }
 
 func (c *jsiiProxy_CloudProviderAccessAuthorization) validatePutAzureParameters(value *CloudProviderAccessAuthorizationAzure) error {
+	return nil
+}
+
+func validateCloudProviderAccessAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

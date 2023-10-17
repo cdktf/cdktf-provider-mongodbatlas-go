@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validatePutCloudPr
 	return nil
 }
 
+func validateDataMongodbatlasFederatedDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasFederatedDatabaseInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

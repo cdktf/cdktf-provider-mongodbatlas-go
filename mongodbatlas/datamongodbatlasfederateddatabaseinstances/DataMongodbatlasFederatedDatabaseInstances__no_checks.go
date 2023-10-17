@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstances) validateOverrideL
 	return nil
 }
 
+func validateDataMongodbatlasFederatedDatabaseInstances_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasFederatedDatabaseInstances_IsConstructParameters(x interface{}) error {
 	return nil
 }

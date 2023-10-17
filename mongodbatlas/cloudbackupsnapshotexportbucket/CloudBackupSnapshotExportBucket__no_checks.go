@@ -7,6 +7,10 @@ package cloudbackupsnapshotexportbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateGetStringMapAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudBackupSnapshotExportBucket) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudBackupSnapshotExportBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

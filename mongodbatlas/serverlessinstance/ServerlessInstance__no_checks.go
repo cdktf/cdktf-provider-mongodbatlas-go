@@ -7,6 +7,10 @@ package serverlessinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServerlessInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerlessInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServerlessInstance) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_ServerlessInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerlessInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServerlessInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_ServerlessInstance) validatePutLinksParameters(value interfac
 }
 
 func (s *jsiiProxy_ServerlessInstance) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
+func validateServerlessInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

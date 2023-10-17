@@ -7,6 +7,10 @@ package networkcontainer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkContainer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkContainer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NetworkContainer) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (n *jsiiProxy_NetworkContainer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkContainer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NetworkContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkContainer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNetworkContainer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMapping) validateOver
 	return nil
 }
 
+func validateDataMongodbatlasFederatedSettingsOrgRoleMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasFederatedSettingsOrgRoleMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }

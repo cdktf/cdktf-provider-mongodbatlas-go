@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster",
 		reflect.TypeOf((*AdvancedCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedConfiguration", GoGetter: "AdvancedConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedConfigurationInput", GoGetter: "AdvancedConfigurationInput"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mongoDbMajorVersion", GoGetter: "MongoDbMajorVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "mongoDbMajorVersionInput", GoGetter: "MongoDbMajorVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mongoDbVersion", GoGetter: "MongoDbVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

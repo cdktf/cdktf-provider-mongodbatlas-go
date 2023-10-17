@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasNetworkPeerings) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataMongodbatlasNetworkPeerings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasNetworkPeerings_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasGlobalClusterConfig) validatePutManagedNamesp
 	return nil
 }
 
+func validateDataMongodbatlasGlobalClusterConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasGlobalClusterConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

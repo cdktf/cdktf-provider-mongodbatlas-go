@@ -7,6 +7,10 @@ package databaseuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseUser) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DatabaseUser) validatePutRolesParameters(value interface{}) e
 }
 
 func (d *jsiiProxy_DatabaseUser) validatePutScopesParameters(value interface{}) error {
+	return nil
+}
+
+func validateDatabaseUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobs) validateOverrideLogica
 	return nil
 }
 
+func validateDataMongodbatlasSharedTierRestoreJobs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasSharedTierRestoreJobs_IsConstructParameters(x interface{}) error {
 	return nil
 }

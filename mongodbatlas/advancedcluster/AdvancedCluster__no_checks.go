@@ -7,6 +7,10 @@ package advancedcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AdvancedCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdvancedCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AdvancedCluster) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AdvancedCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdvancedCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdvancedCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (a *jsiiProxy_AdvancedCluster) validatePutTagsParameters(value interface{})
 }
 
 func (a *jsiiProxy_AdvancedCluster) validatePutTimeoutsParameters(value *AdvancedClusterTimeouts) error {
+	return nil
+}
+
+func validateAdvancedCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

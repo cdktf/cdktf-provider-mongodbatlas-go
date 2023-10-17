@@ -7,6 +7,10 @@ package privatelinkendpointserverless
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatelinkEndpointServerless) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServerless) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivatelinkEndpointServerless) validateGetStringMapAttributeP
 	return nil
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServerless) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServerless) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatelinkEndpointServerless) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PrivatelinkEndpointServerless) validateOverrideLogicalIdParam
 }
 
 func (p *jsiiProxy_PrivatelinkEndpointServerless) validatePutTimeoutsParameters(value *PrivatelinkEndpointServerlessTimeouts) error {
+	return nil
+}
+
+func validatePrivatelinkEndpointServerless_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

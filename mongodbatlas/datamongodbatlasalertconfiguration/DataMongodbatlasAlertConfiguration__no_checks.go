@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfiguration) validatePutOutputParamete
 	return nil
 }
 
+func validateDataMongodbatlasAlertConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasAlertConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package datamongodbatlasdatalakes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasdatalakes/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasdatalakes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -390,6 +390,25 @@ func (j *jsiiProxy_DataMongodbatlasDataLakes)SetProvider(val cdktf.TerraformProv
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataMongodbatlasDataLakes resource upon running "cdktf plan <stack-name>".
+func DataMongodbatlasDataLakes_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataMongodbatlasDataLakes_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-mongodbatlas.dataMongodbatlasDataLakes.DataMongodbatlasDataLakes",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

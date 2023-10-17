@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasAtlasUsers) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataMongodbatlasAtlasUsers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasAtlasUsers_IsConstructParameters(x interface{}) error {
 	return nil
 }

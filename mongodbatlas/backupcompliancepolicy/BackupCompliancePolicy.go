@@ -5,10 +5,10 @@ package backupcompliancepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/backupcompliancepolicy/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/backupcompliancepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -95,6 +95,9 @@ type BackupCompliancePolicy interface {
 	TerraformResourceType() *string
 	UpdatedDate() *string
 	UpdatedUser() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -116,7 +119,12 @@ type BackupCompliancePolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -754,6 +762,25 @@ func (j *jsiiProxy_BackupCompliancePolicy)SetRestoreWindowDays(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a BackupCompliancePolicy resource upon running "cdktf plan <stack-name>".
+func BackupCompliancePolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBackupCompliancePolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-mongodbatlas.backupCompliancePolicy.BackupCompliancePolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -836,6 +863,17 @@ func BackupCompliancePolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BackupCompliancePolicy) AddOverride(path *string, value interface{}) {
@@ -993,6 +1031,17 @@ func (b *jsiiProxy_BackupCompliancePolicy) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BackupCompliancePolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1007,6 +1056,17 @@ func (b *jsiiProxy_BackupCompliancePolicy) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (b *jsiiProxy_BackupCompliancePolicy) OverrideLogicalId(newLogicalId *string) {

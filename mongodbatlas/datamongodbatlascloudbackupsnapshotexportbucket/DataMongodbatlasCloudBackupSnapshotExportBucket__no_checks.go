@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucket) validateOver
 	return nil
 }
 
+func validateDataMongodbatlasCloudBackupSnapshotExportBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCloudBackupSnapshotExportBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }

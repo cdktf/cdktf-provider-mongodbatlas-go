@@ -7,6 +7,10 @@ package projectinvitation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectInvitation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInvitation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_ProjectInvitation) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (p *jsiiProxy_ProjectInvitation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInvitation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectInvitation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectInvitation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectInvitation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

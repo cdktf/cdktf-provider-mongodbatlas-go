@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) validateOve
 	return nil
 }
 
+func validateDataMongodbatlasCustomDnsConfigurationClusterAws_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCustomDnsConfigurationClusterAws_IsConstructParameters(x interface{}) error {
 	return nil
 }

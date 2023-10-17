@@ -7,6 +7,10 @@ package ldapverify
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LdapVerify) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapVerify) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LdapVerify) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (l *jsiiProxy_LdapVerify) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapVerify) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LdapVerify) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapVerify) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLdapVerify_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	return nil
 }
 
+func validateDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package federateddatabaseinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FederatedDatabaseInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FederatedDatabaseInstance) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (f *jsiiProxy_FederatedDatabaseInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (f *jsiiProxy_FederatedDatabaseInstance) validatePutStorageDatabasesParamet
 }
 
 func (f *jsiiProxy_FederatedDatabaseInstance) validatePutStorageStoresParameters(value interface{}) error {
+	return nil
+}
+
+func validateFederatedDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

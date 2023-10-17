@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUser) validateOverr
 	return nil
 }
 
+func validateDataMongodbatlasX509AuthenticationDatabaseUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasX509AuthenticationDatabaseUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

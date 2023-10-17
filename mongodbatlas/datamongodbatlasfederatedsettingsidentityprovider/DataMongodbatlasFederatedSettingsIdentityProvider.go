@@ -5,10 +5,10 @@ package datamongodbatlasfederatedsettingsidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v5/datamongodbatlasfederatedsettingsidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/v6/datamongodbatlasfederatedsettingsidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -556,6 +556,25 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider)SetProvider
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataMongodbatlasFederatedSettingsIdentityProvider resource upon running "cdktf plan <stack-name>".
+func DataMongodbatlasFederatedSettingsIdentityProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataMongodbatlasFederatedSettingsIdentityProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedSettingsIdentityProvider.DataMongodbatlasFederatedSettingsIdentityProvider",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

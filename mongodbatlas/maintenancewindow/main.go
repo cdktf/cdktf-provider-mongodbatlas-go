@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-mongodbatlas.maintenanceWindow.MaintenanceWindow",
 		reflect.TypeOf((*MaintenanceWindow)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDefer", GoGetter: "AutoDefer"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeferInput", GoGetter: "AutoDeferInput"},
@@ -44,8 +45,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hourOfDayInput", GoGetter: "HourOfDayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfDeferrals", GoGetter: "NumberOfDeferrals"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfDeferralsInput", GoGetter: "NumberOfDeferralsInput"},

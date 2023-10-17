@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurations) validatePutListOptionsPa
 	return nil
 }
 
+func validateDataMongodbatlasAlertConfigurations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasAlertConfigurations_IsConstructParameters(x interface{}) error {
 	return nil
 }

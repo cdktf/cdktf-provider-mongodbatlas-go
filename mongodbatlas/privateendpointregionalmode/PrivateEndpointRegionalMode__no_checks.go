@@ -7,6 +7,10 @@ package privateendpointregionalmode
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateEndpointRegionalMode) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateEndpointRegionalMode) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) validateGetStringMapAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PrivateEndpointRegionalMode) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateEndpointRegionalMode) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateEndpointRegionalMode) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) validateOverrideLogicalIdParamet
 }
 
 func (p *jsiiProxy_PrivateEndpointRegionalMode) validatePutTimeoutsParameters(value *PrivateEndpointRegionalModeTimeouts) error {
+	return nil
+}
+
+func validatePrivateEndpointRegionalMode_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

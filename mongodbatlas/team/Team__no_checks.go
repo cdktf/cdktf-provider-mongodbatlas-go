@@ -7,6 +7,10 @@ package team
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_Team) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Team) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_Team) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
+func (t *jsiiProxy_Team) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Team) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_Team) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_Team) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTeam_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

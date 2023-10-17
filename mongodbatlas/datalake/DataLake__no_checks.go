@@ -7,6 +7,10 @@ package datalake
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLake) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLake) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataLake) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_DataLake) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLake) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLake) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataLake) validatePutAwsParameters(value *DataLakeAws) error 
 }
 
 func (d *jsiiProxy_DataLake) validatePutDataProcessRegionParameters(value *DataLakeDataProcessRegion) error {
+	return nil
+}
+
+func validateDataLake_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

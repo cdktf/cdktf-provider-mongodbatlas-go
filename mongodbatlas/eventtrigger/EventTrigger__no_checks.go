@@ -7,6 +7,10 @@ package eventtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventTrigger) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (e *jsiiProxy_EventTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventTrigger) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (e *jsiiProxy_EventTrigger) validatePutEventProcessorsParameters(value *EventTriggerEventProcessors) error {
+	return nil
+}
+
+func validateEventTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

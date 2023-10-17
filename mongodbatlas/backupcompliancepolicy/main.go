@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-mongodbatlas.backupCompliancePolicy.BackupCompliancePolicy",
 		reflect.TypeOf((*BackupCompliancePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedEmail", GoGetter: "AuthorizedEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedEmailInput", GoGetter: "AuthorizedEmailInput"},
@@ -40,8 +41,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "onDemandPolicyItem", GoGetter: "OnDemandPolicyItem"},
 			_jsii_.MemberProperty{JsiiProperty: "onDemandPolicyItemInput", GoGetter: "OnDemandPolicyItemInput"},

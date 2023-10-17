@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateOverrideLogica
 	return nil
 }
 
+func validateDataMongodbatlasThirdPartyIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasThirdPartyIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }

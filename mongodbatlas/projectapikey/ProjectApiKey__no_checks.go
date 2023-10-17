@@ -7,6 +7,10 @@ package projectapikey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectApiKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectApiKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_ProjectApiKey) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (p *jsiiProxy_ProjectApiKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectApiKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectApiKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_ProjectApiKey) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (p *jsiiProxy_ProjectApiKey) validatePutProjectAssignmentParameters(value interface{}) error {
+	return nil
+}
+
+func validateProjectApiKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

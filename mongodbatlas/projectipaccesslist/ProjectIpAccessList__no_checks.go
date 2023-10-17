@@ -7,6 +7,10 @@ package projectipaccesslist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectIpAccessList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIpAccessList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_ProjectIpAccessList) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_ProjectIpAccessList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIpAccessList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectIpAccessList) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_ProjectIpAccessList) validateOverrideLogicalIdParameters(newL
 }
 
 func (p *jsiiProxy_ProjectIpAccessList) validatePutTimeoutsParameters(value *ProjectIpAccessListTimeouts) error {
+	return nil
+}
+
+func validateProjectIpAccessList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

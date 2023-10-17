@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) validateOverri
 	return nil
 }
 
+func validateDataMongodbatlasCloudBackupSnapshotRestoreJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCloudBackupSnapshotRestoreJob_IsConstructParameters(x interface{}) error {
 	return nil
 }

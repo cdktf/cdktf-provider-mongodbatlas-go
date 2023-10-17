@@ -7,6 +7,10 @@ package customdbrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomDbRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomDbRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CustomDbRole) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CustomDbRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomDbRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomDbRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CustomDbRole) validatePutActionsParameters(value interface{})
 }
 
 func (c *jsiiProxy_CustomDbRole) validatePutInheritedRolesParameters(value interface{}) error {
+	return nil
+}
+
+func validateCustomDbRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

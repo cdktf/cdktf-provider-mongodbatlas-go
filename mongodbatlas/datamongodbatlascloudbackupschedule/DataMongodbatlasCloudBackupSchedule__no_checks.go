@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedule) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataMongodbatlasCloudBackupSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCloudBackupSchedule_IsConstructParameters(x interface{}) error {
 	return nil
 }

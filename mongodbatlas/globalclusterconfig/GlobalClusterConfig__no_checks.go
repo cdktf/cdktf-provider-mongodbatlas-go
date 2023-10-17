@@ -7,6 +7,10 @@ package globalclusterconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalClusterConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalClusterConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlobalClusterConfig) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GlobalClusterConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalClusterConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalClusterConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GlobalClusterConfig) validatePutCustomZoneMappingsParameters(
 }
 
 func (g *jsiiProxy_GlobalClusterConfig) validatePutManagedNamespacesParameters(value interface{}) error {
+	return nil
+}
+
+func validateGlobalClusterConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

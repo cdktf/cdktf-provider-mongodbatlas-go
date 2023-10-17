@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) valida
 	return nil
 }
 
+func validateDataMongodbatlasPrivatelinkEndpointsServiceServerless_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasPrivatelinkEndpointsServiceServerless_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package federatedquerylimit
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FederatedQueryLimit) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (f *jsiiProxy_FederatedQueryLimit) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FederatedQueryLimit) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (f *jsiiProxy_FederatedQueryLimit) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateFederatedQueryLimit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -15,6 +15,10 @@ func (m *jsiiProxy_MongodbatlasProvider) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateMongodbatlasProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateMongodbatlasProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package cluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Cluster) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (c *jsiiProxy_Cluster) validatePutTagsParameters(value interface{}) error {
 }
 
 func (c *jsiiProxy_Cluster) validatePutTimeoutsParameters(value *ClusterTimeouts) error {
+	return nil
+}
+
+func validateCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

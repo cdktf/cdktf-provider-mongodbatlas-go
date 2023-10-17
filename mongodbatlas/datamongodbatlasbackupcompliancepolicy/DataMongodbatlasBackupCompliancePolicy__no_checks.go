@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutPolicyItem
 	return nil
 }
 
+func validateDataMongodbatlasBackupCompliancePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasBackupCompliancePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

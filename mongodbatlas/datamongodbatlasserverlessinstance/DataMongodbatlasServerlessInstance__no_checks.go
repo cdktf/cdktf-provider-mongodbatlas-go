@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasServerlessInstance) validatePutLinksParameter
 	return nil
 }
 
+func validateDataMongodbatlasServerlessInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasServerlessInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

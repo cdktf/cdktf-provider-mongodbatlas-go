@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetup) validatePutAzureCon
 	return nil
 }
 
+func validateDataMongodbatlasCloudProviderAccessSetup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasCloudProviderAccessSetup_IsConstructParameters(x interface{}) error {
 	return nil
 }

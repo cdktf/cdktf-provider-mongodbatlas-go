@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRun) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataMongodbatlasDataLakePipelineRun_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataMongodbatlasDataLakePipelineRun_IsConstructParameters(x interface{}) error {
 	return nil
 }
