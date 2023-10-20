@@ -33,6 +33,7 @@ type DataMongodbatlasOnlineArchivesResultsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Criteria() DataMongodbatlasOnlineArchivesResultsCriteriaList
+	DataExpirationRule() DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList
 	DbName() *string
 	// Experimental.
 	Fqn() *string
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) Criteri
 	_jsii_.Get(
 		j,
 		"criteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOnlineArchivesResultsOutputReference) DataExpirationRule() DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList {
+	var returns DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList
+	_jsii_.Get(
+		j,
+		"dataExpirationRule",
 		&returns,
 	)
 	return returns

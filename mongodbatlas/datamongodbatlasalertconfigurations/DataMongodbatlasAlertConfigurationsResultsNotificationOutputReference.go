@@ -42,6 +42,7 @@ type DataMongodbatlasAlertConfigurationsResultsNotificationOutputReference inter
 	IntervalMin() *float64
 	MicrosoftTeamsWebhookUrl() *string
 	MobileNumber() *string
+	NotifierId() *string
 	OpsGenieApiKey() *string
 	OpsGenieRegion() *string
 	Roles() *[]*string
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsNotificationOutputR
 	_jsii_.Get(
 		j,
 		"mobileNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsNotificationOutputReference) NotifierId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notifierId",
 		&returns,
 	)
 	return returns

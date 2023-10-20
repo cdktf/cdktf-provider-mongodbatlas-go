@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing mongodbatlas_auditing}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing mongodbatlas_auditing}.
 type Auditing interface {
 	cdktf.TerraformResource
 	AuditAuthorizationSuccess() interface{}
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Auditing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing mongodbatlas_auditing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing mongodbatlas_auditing} Resource.
 func NewAuditing(scope constructs.Construct, id *string, config *AuditingConfig) Auditing {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewAuditing(scope constructs.Construct, id *string, config *AuditingConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/auditing mongodbatlas_auditing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/auditing mongodbatlas_auditing} Resource.
 func NewAuditing_Override(a Auditing, scope constructs.Construct, id *string, config *AuditingConfig) {
 	_init_.Initialize()
 

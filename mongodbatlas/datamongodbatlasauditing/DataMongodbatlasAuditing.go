@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/auditing mongodbatlas_auditing}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/auditing mongodbatlas_auditing}.
 type DataMongodbatlasAuditing interface {
 	cdktf.TerraformDataSource
 	AuditAuthorizationSuccess() cdktf.IResolvable
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataMongodbatlasAuditing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
 func NewDataMongodbatlasAuditing(scope constructs.Construct, id *string, config *DataMongodbatlasAuditingConfig) DataMongodbatlasAuditing {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataMongodbatlasAuditing(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/auditing mongodbatlas_auditing} Data Source.
 func NewDataMongodbatlasAuditing_Override(d DataMongodbatlasAuditing, scope constructs.Construct, id *string, config *DataMongodbatlasAuditingConfig) {
 	_init_.Initialize()
 

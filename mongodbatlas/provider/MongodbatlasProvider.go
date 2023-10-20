@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs mongodbatlas}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs mongodbatlas}.
 type MongodbatlasProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_MongodbatlasProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) MongodbatlasProvider {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewMongodbatlasProvider(scope constructs.Construct, id *string, config *Mon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs mongodbatlas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs mongodbatlas} Resource.
 func NewMongodbatlasProvider_Override(m MongodbatlasProvider, scope constructs.Construct, id *string, config *MongodbatlasProviderConfig) {
 	_init_.Initialize()
 

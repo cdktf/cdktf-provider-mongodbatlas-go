@@ -62,6 +62,9 @@ type AlertConfigurationNotificationOutputReference interface {
 	MobileNumber() *string
 	SetMobileNumber(val *string)
 	MobileNumberInput() *string
+	NotifierId() *string
+	SetNotifierId(val *string)
+	NotifierIdInput() *string
 	OpsGenieApiKey() *string
 	SetOpsGenieApiKey(val *string)
 	OpsGenieApiKeyInput() *string
@@ -141,6 +144,7 @@ type AlertConfigurationNotificationOutputReference interface {
 	ResetIntervalMin()
 	ResetMicrosoftTeamsWebhookUrl()
 	ResetMobileNumber()
+	ResetNotifierId()
 	ResetOpsGenieApiKey()
 	ResetOpsGenieRegion()
 	ResetRoles()
@@ -412,6 +416,26 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) MobileNumberIn
 	_jsii_.Get(
 		j,
 		"mobileNumberInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) NotifierId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notifierId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) NotifierIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notifierIdInput",
 		&returns,
 	)
 	return returns
@@ -858,6 +882,17 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetMobileNumber
 	)
 }
 
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetNotifierId(val *string) {
+	if err := j.validateSetNotifierIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notifierId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetOpsGenieApiKey(val *string) {
 	if err := j.validateSetOpsGenieApiKeyParameters(val); err != nil {
 		panic(err)
@@ -1274,6 +1309,14 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetMobileNum
 	_jsii_.InvokeVoid(
 		a,
 		"resetMobileNumber",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetNotifierId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNotifierId",
 		nil, // no parameters
 	)
 }

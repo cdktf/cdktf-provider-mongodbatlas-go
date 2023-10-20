@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive mongodbatlas_online_archive}.
 type OnlineArchive interface {
 	cdktf.TerraformResource
 	ArchiveId() *string
@@ -39,6 +39,8 @@ type OnlineArchive interface {
 	SetCount(val interface{})
 	Criteria() OnlineArchiveCriteriaOutputReference
 	CriteriaInput() *OnlineArchiveCriteria
+	DataExpirationRule() OnlineArchiveDataExpirationRuleOutputReference
+	DataExpirationRuleInput() *OnlineArchiveDataExpirationRule
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -127,9 +129,11 @@ type OnlineArchive interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCriteria(value *OnlineArchiveCriteria)
+	PutDataExpirationRule(value *OnlineArchiveDataExpirationRule)
 	PutPartitionFields(value interface{})
 	PutSchedule(value *OnlineArchiveSchedule)
 	ResetCollectionType()
+	ResetDataExpirationRule()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_OnlineArchive) CriteriaInput() *OnlineArchiveCriteria {
 	_jsii_.Get(
 		j,
 		"criteriaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineArchive) DataExpirationRule() OnlineArchiveDataExpirationRuleOutputReference {
+	var returns OnlineArchiveDataExpirationRuleOutputReference
+	_jsii_.Get(
+		j,
+		"dataExpirationRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnlineArchive) DataExpirationRuleInput() *OnlineArchiveDataExpirationRule {
+	var returns *OnlineArchiveDataExpirationRule
+	_jsii_.Get(
+		j,
+		"dataExpirationRuleInput",
 		&returns,
 	)
 	return returns
@@ -554,7 +578,7 @@ func (j *jsiiProxy_OnlineArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArchiveConfig) OnlineArchive {
 	_init_.Initialize()
 
@@ -572,7 +596,7 @@ func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive_Override(o OnlineArchive, scope constructs.Construct, id *string, config *OnlineArchiveConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1092,17 @@ func (o *jsiiProxy_OnlineArchive) PutCriteria(value *OnlineArchiveCriteria) {
 	)
 }
 
+func (o *jsiiProxy_OnlineArchive) PutDataExpirationRule(value *OnlineArchiveDataExpirationRule) {
+	if err := o.validatePutDataExpirationRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDataExpirationRule",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OnlineArchive) PutPartitionFields(value interface{}) {
 	if err := o.validatePutPartitionFieldsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (o *jsiiProxy_OnlineArchive) ResetCollectionType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetCollectionType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnlineArchive) ResetDataExpirationRule() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDataExpirationRule",
 		nil, // no parameters
 	)
 }

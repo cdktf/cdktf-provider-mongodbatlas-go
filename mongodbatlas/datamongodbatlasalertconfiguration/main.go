@@ -248,6 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "intervalMin", GoGetter: "IntervalMin"},
 			_jsii_.MemberProperty{JsiiProperty: "microsoftTeamsWebhookUrl", GoGetter: "MicrosoftTeamsWebhookUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "mobileNumber", GoGetter: "MobileNumber"},
+			_jsii_.MemberProperty{JsiiProperty: "notifierId", GoGetter: "NotifierId"},
 			_jsii_.MemberProperty{JsiiProperty: "opsGenieApiKey", GoGetter: "OpsGenieApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "opsGenieRegion", GoGetter: "OpsGenieRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

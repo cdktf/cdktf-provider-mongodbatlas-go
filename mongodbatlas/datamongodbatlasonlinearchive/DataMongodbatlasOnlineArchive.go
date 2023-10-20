@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archive mongodbatlas_online_archive}.
 type DataMongodbatlasOnlineArchive interface {
 	cdktf.TerraformDataSource
 	ArchiveId() *string
@@ -32,6 +32,7 @@ type DataMongodbatlasOnlineArchive interface {
 	// Experimental.
 	SetCount(val interface{})
 	Criteria() DataMongodbatlasOnlineArchiveCriteriaList
+	DataExpirationRule() DataMongodbatlasOnlineArchiveDataExpirationRuleList
 	DbName() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchive) Criteria() DataMongodbatlasOnl
 	_jsii_.Get(
 		j,
 		"criteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOnlineArchive) DataExpirationRule() DataMongodbatlasOnlineArchiveDataExpirationRuleList {
+	var returns DataMongodbatlasOnlineArchiveDataExpirationRuleList
+	_jsii_.Get(
+		j,
+		"dataExpirationRule",
 		&returns,
 	)
 	return returns
@@ -418,7 +429,7 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchive) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
 func NewDataMongodbatlasOnlineArchive(scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchiveConfig) DataMongodbatlasOnlineArchive {
 	_init_.Initialize()
 
@@ -436,7 +447,7 @@ func NewDataMongodbatlasOnlineArchive(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/online_archive mongodbatlas_online_archive} Data Source.
 func NewDataMongodbatlasOnlineArchive_Override(d DataMongodbatlasOnlineArchive, scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchiveConfig) {
 	_init_.Initialize()
 

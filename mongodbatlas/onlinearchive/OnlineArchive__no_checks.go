@@ -71,6 +71,10 @@ func (o *jsiiProxy_OnlineArchive) validatePutCriteriaParameters(value *OnlineArc
 	return nil
 }
 
+func (o *jsiiProxy_OnlineArchive) validatePutDataExpirationRuleParameters(value *OnlineArchiveDataExpirationRule) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnlineArchive) validatePutPartitionFieldsParameters(value interface{}) error {
 	return nil
 }

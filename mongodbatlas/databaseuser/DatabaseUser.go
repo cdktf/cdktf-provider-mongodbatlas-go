@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/database_user mongodbatlas_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/database_user mongodbatlas_database_user}.
 type DatabaseUser interface {
 	cdktf.TerraformResource
 	AuthDatabaseName() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_DatabaseUser) X509TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/database_user mongodbatlas_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/database_user mongodbatlas_database_user} Resource.
 func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUserConfig) DatabaseUser {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewDatabaseUser(scope constructs.Construct, id *string, config *DatabaseUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.1/docs/resources/database_user mongodbatlas_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/database_user mongodbatlas_database_user} Resource.
 func NewDatabaseUser_Override(d DatabaseUser, scope constructs.Construct, id *string, config *DatabaseUserConfig) {
 	_init_.Initialize()
 

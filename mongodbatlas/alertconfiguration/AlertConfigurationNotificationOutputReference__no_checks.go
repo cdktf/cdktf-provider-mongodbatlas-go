@@ -103,6 +103,10 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetMob
 	return nil
 }
 
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetNotifierIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetOpsGenieApiKeyParameters(val *string) error {
 	return nil
 }
