@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/project_invitation mongodbatlas_project_invitation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/project_invitation mongodbatlas_project_invitation}.
 type ProjectInvitation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ProjectInvitation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation(scope constructs.Construct, id *string, config *ProjectInvitationConfig) ProjectInvitation {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewProjectInvitation(scope constructs.Construct, id *string, config *Projec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/project_invitation mongodbatlas_project_invitation} Resource.
 func NewProjectInvitation_Override(p ProjectInvitation, scope constructs.Construct, id *string, config *ProjectInvitationConfig) {
 	_init_.Initialize()
 

@@ -191,23 +191,63 @@ func (c *jsiiProxy_Cluster) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value *ClusterAdvancedConfiguration) error {
+func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ClusterAdvancedConfiguration:
+		value := value.(*[]*ClusterAdvancedConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ClusterAdvancedConfiguration:
+		value_ := value.([]*ClusterAdvancedConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ClusterAdvancedConfiguration; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value *ClusterBiConnectorConfig) error {
+func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ClusterBiConnectorConfig:
+		value := value.(*[]*ClusterBiConnectorConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ClusterBiConnectorConfig:
+		value_ := value.([]*ClusterBiConnectorConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ClusterBiConnectorConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -352,6 +392,14 @@ func validateCluster_IsTerraformElementParameters(x interface{}) error {
 func validateCluster_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetAcceptDataRisksAndForceReplicaSetReconfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

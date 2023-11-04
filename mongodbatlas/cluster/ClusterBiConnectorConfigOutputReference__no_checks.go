@@ -63,7 +63,7 @@ func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) validateSetEnabledPa
 	return nil
 }
 
-func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) validateSetInternalValueParameters(val *ClusterBiConnectorConfig) error {
+func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewClusterBiConnectorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClusterBiConnectorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

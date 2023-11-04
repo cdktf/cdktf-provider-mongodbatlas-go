@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives}.
 type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig) DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives(s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/privatelink_endpoint_service_data_federation_online_archives mongodbatlas_privatelink_endpoint_service_data_federation_online_archives} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives_Override(d DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchives, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesConfig) {
 	_init_.Initialize()
 

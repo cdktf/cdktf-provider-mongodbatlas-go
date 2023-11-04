@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
-	AdvancedConfiguration() AdvancedClusterAdvancedConfigurationOutputReference
-	AdvancedConfigurationInput() *AdvancedClusterAdvancedConfiguration
+	AcceptDataRisksAndForceReplicaSetReconfig() *string
+	SetAcceptDataRisksAndForceReplicaSetReconfig(val *string)
+	AcceptDataRisksAndForceReplicaSetReconfigInput() *string
+	AdvancedConfiguration() AdvancedClusterAdvancedConfigurationList
+	AdvancedConfigurationInput() interface{}
 	BackupEnabled() interface{}
 	SetBackupEnabled(val interface{})
 	BackupEnabledInput() interface{}
@@ -153,12 +156,13 @@ type AdvancedCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdvancedConfiguration(value *AdvancedClusterAdvancedConfiguration)
+	PutAdvancedConfiguration(value interface{})
 	PutBiConnectorConfig(value *AdvancedClusterBiConnectorConfig)
 	PutLabels(value interface{})
 	PutReplicationSpecs(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *AdvancedClusterTimeouts)
+	ResetAcceptDataRisksAndForceReplicaSetReconfig()
 	ResetAdvancedConfiguration()
 	ResetBackupEnabled()
 	ResetBiConnectorConfig()
@@ -193,8 +197,28 @@ type jsiiProxy_AdvancedCluster struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_AdvancedCluster) AdvancedConfiguration() AdvancedClusterAdvancedConfigurationOutputReference {
-	var returns AdvancedClusterAdvancedConfigurationOutputReference
+func (j *jsiiProxy_AdvancedCluster) AcceptDataRisksAndForceReplicaSetReconfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) AcceptDataRisksAndForceReplicaSetReconfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) AdvancedConfiguration() AdvancedClusterAdvancedConfigurationList {
+	var returns AdvancedClusterAdvancedConfigurationList
 	_jsii_.Get(
 		j,
 		"advancedConfiguration",
@@ -203,8 +227,8 @@ func (j *jsiiProxy_AdvancedCluster) AdvancedConfiguration() AdvancedClusterAdvan
 	return returns
 }
 
-func (j *jsiiProxy_AdvancedCluster) AdvancedConfigurationInput() *AdvancedClusterAdvancedConfiguration {
-	var returns *AdvancedClusterAdvancedConfiguration
+func (j *jsiiProxy_AdvancedCluster) AdvancedConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"advancedConfigurationInput",
@@ -804,7 +828,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -822,7 +846,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -830,6 +854,17 @@ func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, 
 		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedCluster",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetAcceptDataRisksAndForceReplicaSetReconfig(val *string) {
+	if err := j.validateSetAcceptDataRisksAndForceReplicaSetReconfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfig",
+		val,
 	)
 }
 
@@ -1373,7 +1408,7 @@ func (a *jsiiProxy_AdvancedCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_AdvancedCluster) PutAdvancedConfiguration(value *AdvancedClusterAdvancedConfiguration) {
+func (a *jsiiProxy_AdvancedCluster) PutAdvancedConfiguration(value interface{}) {
 	if err := a.validatePutAdvancedConfigurationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1436,6 +1471,14 @@ func (a *jsiiProxy_AdvancedCluster) PutTimeouts(value *AdvancedClusterTimeouts) 
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetAcceptDataRisksAndForceReplicaSetReconfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAcceptDataRisksAndForceReplicaSetReconfig",
+		nil, // no parameters
 	)
 }
 

@@ -67,7 +67,7 @@ func (a *jsiiProxy_AdvancedCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedCluster) validatePutAdvancedConfigurationParameters(value *AdvancedClusterAdvancedConfiguration) error {
+func (a *jsiiProxy_AdvancedCluster) validatePutAdvancedConfigurationParameters(value interface{}) error {
 	return nil
 }
 
@@ -104,6 +104,10 @@ func validateAdvancedCluster_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateAdvancedCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AdvancedCluster) validateSetAcceptDataRisksAndForceReplicaSetReconfigParameters(val *string) error {
 	return nil
 }
 

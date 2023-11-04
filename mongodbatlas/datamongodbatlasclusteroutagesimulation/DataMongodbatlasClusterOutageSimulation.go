@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}.
 type DataMongodbatlasClusterOutageSimulation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataMongodbatlasClusterOutageSimulation) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Data Source.
 func NewDataMongodbatlasClusterOutageSimulation(scope constructs.Construct, id *string, config *DataMongodbatlasClusterOutageSimulationConfig) DataMongodbatlasClusterOutageSimulation {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataMongodbatlasClusterOutageSimulation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Data Source.
 func NewDataMongodbatlasClusterOutageSimulation_Override(d DataMongodbatlasClusterOutageSimulation, scope constructs.Construct, id *string, config *DataMongodbatlasClusterOutageSimulationConfig) {
 	_init_.Initialize()
 

@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-mongodbatlas.cluster.Cluster",
 		reflect.TypeOf((*Cluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceptDataRisksAndForceReplicaSetReconfig", GoGetter: "AcceptDataRisksAndForceReplicaSetReconfig"},
+			_jsii_.MemberProperty{JsiiProperty: "acceptDataRisksAndForceReplicaSetReconfigInput", GoGetter: "AcceptDataRisksAndForceReplicaSetReconfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedConfiguration", GoGetter: "AdvancedConfiguration"},
@@ -116,6 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "replicationFactorInput", GoGetter: "ReplicationFactorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationSpecs", GoGetter: "ReplicationSpecs"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationSpecsInput", GoGetter: "ReplicationSpecsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAcceptDataRisksAndForceReplicaSetReconfig", GoMethod: "ResetAcceptDataRisksAndForceReplicaSetReconfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedConfiguration", GoMethod: "ResetAdvancedConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalingComputeEnabled", GoMethod: "ResetAutoScalingComputeEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalingComputeScaleDownEnabled", GoMethod: "ResetAutoScalingComputeScaleDownEnabled"},
@@ -178,6 +181,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfiguration",
 		reflect.TypeOf((*ClusterAdvancedConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfigurationList",
+		reflect.TypeOf((*ClusterAdvancedConfigurationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClusterAdvancedConfigurationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfigurationOutputReference",
@@ -247,6 +271,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfig",
 		reflect.TypeOf((*ClusterBiConnectorConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfigList",
+		reflect.TypeOf((*ClusterBiConnectorConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClusterBiConnectorConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfigOutputReference",

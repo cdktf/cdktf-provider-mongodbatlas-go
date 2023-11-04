@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster mongodbatlas_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
-	AdvancedConfiguration() ClusterAdvancedConfigurationOutputReference
-	AdvancedConfigurationInput() *ClusterAdvancedConfiguration
+	AcceptDataRisksAndForceReplicaSetReconfig() *string
+	SetAcceptDataRisksAndForceReplicaSetReconfig(val *string)
+	AcceptDataRisksAndForceReplicaSetReconfigInput() *string
+	AdvancedConfiguration() ClusterAdvancedConfigurationList
+	AdvancedConfigurationInput() interface{}
 	AutoScalingComputeEnabled() interface{}
 	SetAutoScalingComputeEnabled(val interface{})
 	AutoScalingComputeEnabledInput() interface{}
@@ -32,8 +35,8 @@ type Cluster interface {
 	BackupEnabled() interface{}
 	SetBackupEnabled(val interface{})
 	BackupEnabledInput() interface{}
-	BiConnectorConfig() ClusterBiConnectorConfigOutputReference
-	BiConnectorConfigInput() *ClusterBiConnectorConfig
+	BiConnectorConfig() ClusterBiConnectorConfigList
+	BiConnectorConfigInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudBackup() interface{}
@@ -204,12 +207,13 @@ type Cluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdvancedConfiguration(value *ClusterAdvancedConfiguration)
-	PutBiConnectorConfig(value *ClusterBiConnectorConfig)
+	PutAdvancedConfiguration(value interface{})
+	PutBiConnectorConfig(value interface{})
 	PutLabels(value interface{})
 	PutReplicationSpecs(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *ClusterTimeouts)
+	ResetAcceptDataRisksAndForceReplicaSetReconfig()
 	ResetAdvancedConfiguration()
 	ResetAutoScalingComputeEnabled()
 	ResetAutoScalingComputeScaleDownEnabled()
@@ -259,8 +263,28 @@ type jsiiProxy_Cluster struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Cluster) AdvancedConfiguration() ClusterAdvancedConfigurationOutputReference {
-	var returns ClusterAdvancedConfigurationOutputReference
+func (j *jsiiProxy_Cluster) AcceptDataRisksAndForceReplicaSetReconfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) AcceptDataRisksAndForceReplicaSetReconfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) AdvancedConfiguration() ClusterAdvancedConfigurationList {
+	var returns ClusterAdvancedConfigurationList
 	_jsii_.Get(
 		j,
 		"advancedConfiguration",
@@ -269,8 +293,8 @@ func (j *jsiiProxy_Cluster) AdvancedConfiguration() ClusterAdvancedConfiguration
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) AdvancedConfigurationInput() *ClusterAdvancedConfiguration {
-	var returns *ClusterAdvancedConfiguration
+func (j *jsiiProxy_Cluster) AdvancedConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"advancedConfigurationInput",
@@ -379,8 +403,8 @@ func (j *jsiiProxy_Cluster) BackupEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) BiConnectorConfig() ClusterBiConnectorConfigOutputReference {
-	var returns ClusterBiConnectorConfigOutputReference
+func (j *jsiiProxy_Cluster) BiConnectorConfig() ClusterBiConnectorConfigList {
+	var returns ClusterBiConnectorConfigList
 	_jsii_.Get(
 		j,
 		"biConnectorConfig",
@@ -389,8 +413,8 @@ func (j *jsiiProxy_Cluster) BiConnectorConfig() ClusterBiConnectorConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_Cluster) BiConnectorConfigInput() *ClusterBiConnectorConfig {
-	var returns *ClusterBiConnectorConfig
+func (j *jsiiProxy_Cluster) BiConnectorConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"biConnectorConfigInput",
@@ -1230,7 +1254,7 @@ func (j *jsiiProxy_Cluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1248,7 +1272,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.2/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -1256,6 +1280,17 @@ func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, conf
 		"@cdktf/provider-mongodbatlas.cluster.Cluster",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_Cluster)SetAcceptDataRisksAndForceReplicaSetReconfig(val *string) {
+	if err := j.validateSetAcceptDataRisksAndForceReplicaSetReconfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptDataRisksAndForceReplicaSetReconfig",
+		val,
 	)
 }
 
@@ -1964,7 +1999,7 @@ func (c *jsiiProxy_Cluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_Cluster) PutAdvancedConfiguration(value *ClusterAdvancedConfiguration) {
+func (c *jsiiProxy_Cluster) PutAdvancedConfiguration(value interface{}) {
 	if err := c.validatePutAdvancedConfigurationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1975,7 +2010,7 @@ func (c *jsiiProxy_Cluster) PutAdvancedConfiguration(value *ClusterAdvancedConfi
 	)
 }
 
-func (c *jsiiProxy_Cluster) PutBiConnectorConfig(value *ClusterBiConnectorConfig) {
+func (c *jsiiProxy_Cluster) PutBiConnectorConfig(value interface{}) {
 	if err := c.validatePutBiConnectorConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -2027,6 +2062,14 @@ func (c *jsiiProxy_Cluster) PutTimeouts(value *ClusterTimeouts) {
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetAcceptDataRisksAndForceReplicaSetReconfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAcceptDataRisksAndForceReplicaSetReconfig",
+		nil, // no parameters
 	)
 }
 

@@ -67,11 +67,11 @@ func (c *jsiiProxy_Cluster) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value *ClusterAdvancedConfiguration) error {
+func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value interface{}) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value *ClusterBiConnectorConfig) error {
+func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -104,6 +104,10 @@ func validateCluster_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Cluster) validateSetAcceptDataRisksAndForceReplicaSetReconfigParameters(val *string) error {
 	return nil
 }
 

@@ -39,8 +39,8 @@ type AdvancedClusterAdvancedConfigurationOutputReference interface {
 	FailIndexKeyTooLongInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AdvancedClusterAdvancedConfiguration
-	SetInternalValue(val *AdvancedClusterAdvancedConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	JavascriptEnabled() interface{}
 	SetJavascriptEnabled(val interface{})
 	JavascriptEnabledInput() interface{}
@@ -223,8 +223,8 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) InternalValue() *AdvancedClusterAdvancedConfiguration {
-	var returns *AdvancedClusterAdvancedConfiguration
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -414,29 +414,29 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) Transact
 }
 
 
-func NewAdvancedClusterAdvancedConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AdvancedClusterAdvancedConfigurationOutputReference {
+func NewAdvancedClusterAdvancedConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AdvancedClusterAdvancedConfigurationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAdvancedClusterAdvancedConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAdvancedClusterAdvancedConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAdvancedClusterAdvancedConfigurationOutputReference_Override(a AdvancedClusterAdvancedConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAdvancedClusterAdvancedConfigurationOutputReference_Override(a AdvancedClusterAdvancedConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -496,7 +496,7 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference)SetFailIn
 	)
 }
 
-func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference)SetInternalValue(val *AdvancedClusterAdvancedConfiguration) {
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
