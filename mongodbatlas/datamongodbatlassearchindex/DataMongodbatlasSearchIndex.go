@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_index mongodbatlas_search_index}.
 type DataMongodbatlasSearchIndex interface {
 	cdktf.TerraformDataSource
 	Analyzer() *string
@@ -42,6 +42,9 @@ type DataMongodbatlasSearchIndex interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fields() *string
+	SetFields(val *string)
+	FieldsInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,6 +96,9 @@ type DataMongodbatlasSearchIndex interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -122,6 +128,7 @@ type DataMongodbatlasSearchIndex interface {
 	ResetAnalyzers()
 	ResetCollectionName()
 	ResetDatabase()
+	ResetFields()
 	ResetId()
 	ResetMappingsDynamic()
 	ResetMappingsFields()
@@ -131,6 +138,7 @@ type DataMongodbatlasSearchIndex interface {
 	ResetOverrideLogicalId()
 	ResetSearchAnalyzer()
 	ResetStatus()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -281,6 +289,26 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) Fields() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) FieldsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -556,8 +584,28 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) DataMongodbatlasSearchIndex {
 	_init_.Initialize()
 
@@ -575,7 +623,7 @@ func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex_Override(d DataMongodbatlasSearchIndex, scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) {
 	_init_.Initialize()
 
@@ -656,6 +704,17 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetFields(val *string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fields",
 		val,
 	)
 }
@@ -771,6 +830,17 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1092,6 +1162,14 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetDatabase() {
 	)
 }
 
+func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFields",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1144,6 +1222,14 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

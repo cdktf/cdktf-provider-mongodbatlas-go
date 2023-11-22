@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/search_index mongodbatlas_search_index}.
 type SearchIndex interface {
 	cdktf.TerraformResource
 	Analyzer() *string
@@ -46,6 +46,9 @@ type SearchIndex interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fields() *string
+	SetFields(val *string)
+	FieldsInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -102,6 +105,9 @@ type SearchIndex interface {
 	TerraformResourceType() *string
 	Timeouts() SearchIndexTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	WaitForIndexBuildCompletion() interface{}
 	SetWaitForIndexBuildCompletion(val interface{})
 	WaitForIndexBuildCompletionInput() interface{}
@@ -142,6 +148,7 @@ type SearchIndex interface {
 	PutTimeouts(value *SearchIndexTimeouts)
 	ResetAnalyzer()
 	ResetAnalyzers()
+	ResetFields()
 	ResetId()
 	ResetMappingsDynamic()
 	ResetMappingsFields()
@@ -152,6 +159,7 @@ type SearchIndex interface {
 	ResetStatus()
 	ResetSynonyms()
 	ResetTimeouts()
+	ResetType()
 	ResetWaitForIndexBuildCompletion()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -313,6 +321,26 @@ func (j *jsiiProxy_SearchIndex) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchIndex) Fields() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchIndex) FieldsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +646,26 @@ func (j *jsiiProxy_SearchIndex) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SearchIndex) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchIndex) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchIndex) WaitForIndexBuildCompletion() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -639,7 +687,7 @@ func (j *jsiiProxy_SearchIndex) WaitForIndexBuildCompletionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexConfig) SearchIndex {
 	_init_.Initialize()
 
@@ -657,7 +705,7 @@ func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex_Override(s SearchIndex, scope constructs.Construct, id *string, config *SearchIndexConfig) {
 	_init_.Initialize()
 
@@ -749,6 +797,17 @@ func (j *jsiiProxy_SearchIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchIndex)SetFields(val *string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fields",
 		val,
 	)
 }
@@ -864,6 +923,17 @@ func (j *jsiiProxy_SearchIndex)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchIndex)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1235,6 +1305,14 @@ func (s *jsiiProxy_SearchIndex) ResetAnalyzers() {
 	)
 }
 
+func (s *jsiiProxy_SearchIndex) ResetFields() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFields",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SearchIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1295,6 +1373,14 @@ func (s *jsiiProxy_SearchIndex) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchIndex) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
 		nil, // no parameters
 	)
 }

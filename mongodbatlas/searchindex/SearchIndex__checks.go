@@ -403,6 +403,14 @@ func (j *jsiiProxy_SearchIndex) validateSetDatabaseParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_SearchIndex) validateSetFieldsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SearchIndex) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -518,6 +526,14 @@ func (j *jsiiProxy_SearchIndex) validateSetSearchAnalyzerParameters(val *string)
 }
 
 func (j *jsiiProxy_SearchIndex) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SearchIndex) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

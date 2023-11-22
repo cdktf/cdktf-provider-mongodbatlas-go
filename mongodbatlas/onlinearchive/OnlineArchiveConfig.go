@@ -22,40 +22,40 @@ type OnlineArchiveConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#cluster_name OnlineArchive#cluster_name}.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#coll_name OnlineArchive#coll_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#coll_name OnlineArchive#coll_name}.
 	CollName *string `field:"required" json:"collName" yaml:"collName"`
 	// criteria block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#criteria OnlineArchive#criteria}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#criteria OnlineArchive#criteria}
 	Criteria *OnlineArchiveCriteria `field:"required" json:"criteria" yaml:"criteria"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#db_name OnlineArchive#db_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#db_name OnlineArchive#db_name}.
 	DbName *string `field:"required" json:"dbName" yaml:"dbName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#project_id OnlineArchive#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#project_id OnlineArchive#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#collection_type OnlineArchive#collection_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#collection_type OnlineArchive#collection_type}.
 	CollectionType *string `field:"optional" json:"collectionType" yaml:"collectionType"`
 	// data_expiration_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#data_expiration_rule OnlineArchive#data_expiration_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#data_expiration_rule OnlineArchive#data_expiration_rule}
 	DataExpirationRule *OnlineArchiveDataExpirationRule `field:"optional" json:"dataExpirationRule" yaml:"dataExpirationRule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#id OnlineArchive#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#id OnlineArchive#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// partition_fields block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#partition_fields OnlineArchive#partition_fields}
 	PartitionFields interface{} `field:"optional" json:"partitionFields" yaml:"partitionFields"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#paused OnlineArchive#paused}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#paused OnlineArchive#paused}.
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 	// schedule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#schedule OnlineArchive#schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#schedule OnlineArchive#schedule}
 	Schedule *OnlineArchiveSchedule `field:"optional" json:"schedule" yaml:"schedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/online_archive#sync_creation OnlineArchive#sync_creation}.
 	SyncCreation interface{} `field:"optional" json:"syncCreation" yaml:"syncCreation"`
 }
 

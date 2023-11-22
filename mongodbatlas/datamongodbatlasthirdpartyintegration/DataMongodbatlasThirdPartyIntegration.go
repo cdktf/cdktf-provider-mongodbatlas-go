@@ -12,12 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
 type DataMongodbatlasThirdPartyIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	ApiKey() *string
-	ApiToken() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ChannelName() *string
@@ -45,7 +44,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LicenseKey() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -152,16 +150,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ApiKey() *string {
 	_jsii_.Get(
 		j,
 		"apiKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiToken",
 		&returns,
 	)
 	return returns
@@ -282,16 +270,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) LicenseKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseKey",
 		&returns,
 	)
 	return returns
@@ -548,7 +526,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) UserNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) DataMongodbatlasThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -566,7 +544,7 @@ func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration_Override(d DataMongodbatlasThirdPartyIntegration, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 

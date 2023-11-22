@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/network_container mongodbatlas_network_container}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/network_container mongodbatlas_network_container}.
 type NetworkContainer interface {
 	cdktf.TerraformResource
 	AtlasCidrBlock() *string
@@ -516,7 +516,7 @@ func (j *jsiiProxy_NetworkContainer) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/network_container mongodbatlas_network_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/network_container mongodbatlas_network_container} Resource.
 func NewNetworkContainer(scope constructs.Construct, id *string, config *NetworkContainerConfig) NetworkContainer {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewNetworkContainer(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.12.3/docs/resources/network_container mongodbatlas_network_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/network_container mongodbatlas_network_container} Resource.
 func NewNetworkContainer_Override(n NetworkContainer, scope constructs.Construct, id *string, config *NetworkContainerConfig) {
 	_init_.Initialize()
 

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetDatabaseParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetFieldsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetSearchAnalyzerParamet
 }
 
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

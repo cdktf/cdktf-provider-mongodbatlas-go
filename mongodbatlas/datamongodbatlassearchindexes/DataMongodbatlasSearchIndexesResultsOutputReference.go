@@ -33,6 +33,7 @@ type DataMongodbatlasSearchIndexesResultsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Database() *string
+	Fields() *string
 	// Experimental.
 	Fqn() *string
 	IndexId() *string
@@ -53,6 +54,7 @@ type DataMongodbatlasSearchIndexesResultsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
 	WaitForIndexBuildCompletion() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
@@ -173,6 +175,16 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Database
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Fields() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -288,6 +300,16 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns

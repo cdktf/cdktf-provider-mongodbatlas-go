@@ -15,7 +15,6 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	cdktf.ComplexObject
 	AccountId() *string
 	ApiKey() *string
-	ApiToken() *string
 	ChannelName() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -37,7 +36,6 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataMongodbatlasThirdPartyIntegrationsResults
 	SetInternalValue(val *DataMongodbatlasThirdPartyIntegrationsResults)
-	LicenseKey() *string
 	MicrosoftTeamsWebhookUrl() *string
 	ProjectId() *string
 	Region() *string
@@ -117,16 +115,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) ApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiToken",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) ChannelName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -192,16 +180,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) LicenseKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseKey",
 		&returns,
 	)
 	return returns
