@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key mongodbatlas_access_list_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/access_list_api_key mongodbatlas_access_list_api_key}.
 type AccessListApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AccessListApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key mongodbatlas_access_list_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/access_list_api_key mongodbatlas_access_list_api_key} Resource.
 func NewAccessListApiKey(scope constructs.Construct, id *string, config *AccessListApiKeyConfig) AccessListApiKey {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAccessListApiKey(scope constructs.Construct, id *string, config *AccessL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/access_list_api_key mongodbatlas_access_list_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/access_list_api_key mongodbatlas_access_list_api_key} Resource.
 func NewAccessListApiKey_Override(a AccessListApiKey, scope constructs.Construct, id *string, config *AccessListApiKeyConfig) {
 	_init_.Initialize()
 

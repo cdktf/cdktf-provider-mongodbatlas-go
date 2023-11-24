@@ -7,7 +7,7 @@ package federateddatabaseinstance
 type FederatedDatabaseInstanceStorageStoresReadPreferenceTagSets struct {
 	// tags block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/federated_database_instance#tags FederatedDatabaseInstance#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_database_instance#tags FederatedDatabaseInstance#tags}
 	Tags interface{} `field:"required" json:"tags" yaml:"tags"`
 }
 

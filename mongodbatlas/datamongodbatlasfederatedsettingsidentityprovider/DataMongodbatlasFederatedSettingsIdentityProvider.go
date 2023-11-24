@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
 type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	cdktf.TerraformDataSource
 	AcsUrl() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProvider(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProviderConfig) DataMongodbatlasFederatedSettingsIdentityProvider {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataMongodbatlasFederatedSettingsIdentityProvider(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProvider_Override(d DataMongodbatlasFederatedSettingsIdentityProvider, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProviderConfig) {
 	_init_.Initialize()
 

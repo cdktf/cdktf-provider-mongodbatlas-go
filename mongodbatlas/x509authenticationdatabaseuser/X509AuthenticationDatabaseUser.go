@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
 type X509AuthenticationDatabaseUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_X509AuthenticationDatabaseUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
 func NewX509AuthenticationDatabaseUser(scope constructs.Construct, id *string, config *X509AuthenticationDatabaseUserConfig) X509AuthenticationDatabaseUser {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewX509AuthenticationDatabaseUser(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.0/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Resource.
 func NewX509AuthenticationDatabaseUser_Override(x X509AuthenticationDatabaseUser, scope constructs.Construct, id *string, config *X509AuthenticationDatabaseUserConfig) {
 	_init_.Initialize()
 
