@@ -59,7 +59,15 @@ func (f *jsiiProxy_FederatedDatabaseInstance) validateInterpolationForAttributeP
 	return nil
 }
 
+func (f *jsiiProxy_FederatedDatabaseInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

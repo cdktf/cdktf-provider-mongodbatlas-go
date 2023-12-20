@@ -59,7 +59,15 @@ func (f *jsiiProxy_FederatedQueryLimit) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (f *jsiiProxy_FederatedQueryLimit) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedQueryLimit) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

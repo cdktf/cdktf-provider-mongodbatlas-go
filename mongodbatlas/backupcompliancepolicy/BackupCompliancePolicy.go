@@ -12,12 +12,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
 type BackupCompliancePolicy interface {
 	cdktf.TerraformResource
 	AuthorizedEmail() *string
 	SetAuthorizedEmail(val *string)
 	AuthorizedEmailInput() *string
+	AuthorizedUserFirstName() *string
+	SetAuthorizedUserFirstName(val *string)
+	AuthorizedUserFirstNameInput() *string
+	AuthorizedUserLastName() *string
+	SetAuthorizedUserLastName(val *string)
+	AuthorizedUserLastNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -119,12 +125,22 @@ type BackupCompliancePolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -172,6 +188,46 @@ func (j *jsiiProxy_BackupCompliancePolicy) AuthorizedEmailInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizedEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) AuthorizedUserFirstName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedUserFirstName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) AuthorizedUserFirstNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedUserFirstNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) AuthorizedUserLastName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedUserLastName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) AuthorizedUserLastNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedUserLastNameInput",
 		&returns,
 	)
 	return returns
@@ -588,7 +644,7 @@ func (j *jsiiProxy_BackupCompliancePolicy) UpdatedUser() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) BackupCompliancePolicy {
 	_init_.Initialize()
 
@@ -606,7 +662,7 @@ func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy_Override(b BackupCompliancePolicy, scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) {
 	_init_.Initialize()
 
@@ -624,6 +680,28 @@ func (j *jsiiProxy_BackupCompliancePolicy)SetAuthorizedEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"authorizedEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy)SetAuthorizedUserFirstName(val *string) {
+	if err := j.validateSetAuthorizedUserFirstNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedUserFirstName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy)SetAuthorizedUserLastName(val *string) {
+	if err := j.validateSetAuthorizedUserLastNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedUserLastName",
 		val,
 	)
 }
@@ -1031,6 +1109,19 @@ func (b *jsiiProxy_BackupCompliancePolicy) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BackupCompliancePolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1058,6 +1149,17 @@ func (b *jsiiProxy_BackupCompliancePolicy) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BackupCompliancePolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1066,6 +1168,17 @@ func (b *jsiiProxy_BackupCompliancePolicy) MoveTo(moveTarget *string, index inte
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

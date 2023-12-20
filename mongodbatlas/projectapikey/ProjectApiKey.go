@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
 type ProjectApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -99,12 +99,22 @@ type ProjectApiKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -113,7 +123,7 @@ type ProjectApiKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProjectAssignment()
+	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -400,7 +410,7 @@ func (j *jsiiProxy_ProjectApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) ProjectApiKey {
 	_init_.Initialize()
 
@@ -418,7 +428,7 @@ func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey_Override(p ProjectApiKey, scope constructs.Construct, id *string, config *ProjectApiKeyConfig) {
 	_init_.Initialize()
 
@@ -799,6 +809,19 @@ func (p *jsiiProxy_ProjectApiKey) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (p *jsiiProxy_ProjectApiKey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_ProjectApiKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -826,6 +849,17 @@ func (p *jsiiProxy_ProjectApiKey) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (p *jsiiProxy_ProjectApiKey) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_ProjectApiKey) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -834,6 +868,17 @@ func (p *jsiiProxy_ProjectApiKey) MoveTo(moveTarget *string, index interface{}) 
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_ProjectApiKey) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -875,10 +920,10 @@ func (p *jsiiProxy_ProjectApiKey) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectApiKey) ResetProjectAssignment() {
+func (p *jsiiProxy_ProjectApiKey) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetProjectAssignment",
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

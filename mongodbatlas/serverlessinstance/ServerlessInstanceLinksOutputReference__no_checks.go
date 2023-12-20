@@ -59,7 +59,15 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetHrefParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetRelParameters(val *string) error {
 	return nil
 }
 

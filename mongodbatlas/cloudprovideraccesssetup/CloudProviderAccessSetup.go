@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup}.
 type CloudProviderAccessSetup interface {
 	cdktf.TerraformResource
 	AwsConfig() CloudProviderAccessSetupAwsConfigList
@@ -100,12 +100,22 @@ type CloudProviderAccessSetup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -411,7 +421,7 @@ func (j *jsiiProxy_CloudProviderAccessSetup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
 func NewCloudProviderAccessSetup(scope constructs.Construct, id *string, config *CloudProviderAccessSetupConfig) CloudProviderAccessSetup {
 	_init_.Initialize()
 
@@ -429,7 +439,7 @@ func NewCloudProviderAccessSetup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/cloud_provider_access_setup mongodbatlas_cloud_provider_access_setup} Resource.
 func NewCloudProviderAccessSetup_Override(c CloudProviderAccessSetup, scope constructs.Construct, id *string, config *CloudProviderAccessSetupConfig) {
 	_init_.Initialize()
 
@@ -810,6 +820,19 @@ func (c *jsiiProxy_CloudProviderAccessSetup) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (c *jsiiProxy_CloudProviderAccessSetup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CloudProviderAccessSetup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -837,6 +860,17 @@ func (c *jsiiProxy_CloudProviderAccessSetup) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (c *jsiiProxy_CloudProviderAccessSetup) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CloudProviderAccessSetup) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -845,6 +879,17 @@ func (c *jsiiProxy_CloudProviderAccessSetup) MoveTo(moveTarget *string, index in
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudProviderAccessSetup) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

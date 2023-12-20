@@ -59,7 +59,15 @@ func (c *jsiiProxy_ClusterOutageSimulation) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ClusterOutageSimulation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterOutageSimulation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterOutageSimulation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

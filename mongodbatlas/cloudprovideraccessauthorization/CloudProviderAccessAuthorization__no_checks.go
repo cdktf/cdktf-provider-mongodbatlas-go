@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudProviderAccessAuthorization) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudProviderAccessAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudProviderAccessAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (b *jsiiProxy_BackupCompliancePolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupCompliancePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -104,6 +112,14 @@ func validateBackupCompliancePolicy_IsTerraformResourceParameters(x interface{})
 }
 
 func (j *jsiiProxy_BackupCompliancePolicy) validateSetAuthorizedEmailParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) validateSetAuthorizedUserFirstNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) validateSetAuthorizedUserLastNameParameters(val *string) error {
 	return nil
 }
 

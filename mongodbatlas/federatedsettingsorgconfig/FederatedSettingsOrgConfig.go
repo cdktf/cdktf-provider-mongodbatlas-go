@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
 type FederatedSettingsOrgConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type FederatedSettingsOrgConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) FederatedSettingsOrgConfig {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig_Override(f FederatedSettingsOrgConfig, scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) {
 	_init_.Initialize()
 
@@ -880,6 +890,19 @@ func (f *jsiiProxy_FederatedSettingsOrgConfig) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (f *jsiiProxy_FederatedSettingsOrgConfig) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FederatedSettingsOrgConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -907,6 +930,17 @@ func (f *jsiiProxy_FederatedSettingsOrgConfig) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (f *jsiiProxy_FederatedSettingsOrgConfig) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FederatedSettingsOrgConfig) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -915,6 +949,17 @@ func (f *jsiiProxy_FederatedSettingsOrgConfig) MoveTo(moveTarget *string, index 
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsOrgConfig) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

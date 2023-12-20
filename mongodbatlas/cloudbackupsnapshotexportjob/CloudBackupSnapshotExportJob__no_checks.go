@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudBackupSnapshotExportJob) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CloudBackupSnapshotExportJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudBackupSnapshotExportJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudBackupSnapshotExportJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

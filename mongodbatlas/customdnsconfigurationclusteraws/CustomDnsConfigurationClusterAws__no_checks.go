@@ -59,7 +59,15 @@ func (c *jsiiProxy_CustomDnsConfigurationClusterAws) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_CustomDnsConfigurationClusterAws) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomDnsConfigurationClusterAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomDnsConfigurationClusterAws) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

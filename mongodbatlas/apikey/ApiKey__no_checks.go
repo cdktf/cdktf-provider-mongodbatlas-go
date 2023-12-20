@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApiKey) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_ApiKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

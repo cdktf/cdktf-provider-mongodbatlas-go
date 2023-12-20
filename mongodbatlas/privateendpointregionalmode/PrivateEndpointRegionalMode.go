@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
 type PrivateEndpointRegionalMode interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type PrivateEndpointRegionalMode interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -368,7 +378,7 @@ func (j *jsiiProxy_PrivateEndpointRegionalMode) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource.
 func NewPrivateEndpointRegionalMode(scope constructs.Construct, id *string, config *PrivateEndpointRegionalModeConfig) PrivateEndpointRegionalMode {
 	_init_.Initialize()
 
@@ -386,7 +396,7 @@ func NewPrivateEndpointRegionalMode(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Resource.
 func NewPrivateEndpointRegionalMode_Override(p PrivateEndpointRegionalMode, scope constructs.Construct, id *string, config *PrivateEndpointRegionalModeConfig) {
 	_init_.Initialize()
 
@@ -767,6 +777,19 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (p *jsiiProxy_PrivateEndpointRegionalMode) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PrivateEndpointRegionalMode) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -794,6 +817,17 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (p *jsiiProxy_PrivateEndpointRegionalMode) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PrivateEndpointRegionalMode) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -802,6 +836,17 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) MoveTo(moveTarget *string, index
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PrivateEndpointRegionalMode) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

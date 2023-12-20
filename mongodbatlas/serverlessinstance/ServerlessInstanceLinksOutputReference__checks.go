@@ -166,6 +166,14 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetHrefParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -185,6 +193,14 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetInternalVa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServerlessInstanceLinks; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) validateSetRelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

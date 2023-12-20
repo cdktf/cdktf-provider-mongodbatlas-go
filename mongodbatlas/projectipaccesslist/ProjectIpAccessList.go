@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list}.
 type ProjectIpAccessList interface {
 	cdktf.TerraformResource
 	AwsSecurityGroup() *string
@@ -103,12 +103,22 @@ type ProjectIpAccessList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -427,7 +437,7 @@ func (j *jsiiProxy_ProjectIpAccessList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList(scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) ProjectIpAccessList {
 	_init_.Initialize()
 
@@ -445,7 +455,7 @@ func NewProjectIpAccessList(scope constructs.Construct, id *string, config *Proj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project_ip_access_list mongodbatlas_project_ip_access_list} Resource.
 func NewProjectIpAccessList_Override(p ProjectIpAccessList, scope constructs.Construct, id *string, config *ProjectIpAccessListConfig) {
 	_init_.Initialize()
 
@@ -848,6 +858,19 @@ func (p *jsiiProxy_ProjectIpAccessList) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (p *jsiiProxy_ProjectIpAccessList) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_ProjectIpAccessList) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -875,6 +898,17 @@ func (p *jsiiProxy_ProjectIpAccessList) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (p *jsiiProxy_ProjectIpAccessList) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_ProjectIpAccessList) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -883,6 +917,17 @@ func (p *jsiiProxy_ProjectIpAccessList) MoveTo(moveTarget *string, index interfa
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_ProjectIpAccessList) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

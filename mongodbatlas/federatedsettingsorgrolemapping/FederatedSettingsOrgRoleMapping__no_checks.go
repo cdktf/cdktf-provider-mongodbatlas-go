@@ -59,7 +59,15 @@ func (f *jsiiProxy_FederatedSettingsOrgRoleMapping) validateInterpolationForAttr
 	return nil
 }
 
+func (f *jsiiProxy_FederatedSettingsOrgRoleMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedSettingsOrgRoleMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedSettingsOrgRoleMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

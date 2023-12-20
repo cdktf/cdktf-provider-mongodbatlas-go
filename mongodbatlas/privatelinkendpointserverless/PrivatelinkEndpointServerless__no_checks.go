@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivatelinkEndpointServerless) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServerless) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServerless) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatelinkEndpointServerless) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

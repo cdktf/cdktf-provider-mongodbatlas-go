@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_query_limit mongodbatlas_federated_query_limit}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_query_limit mongodbatlas_federated_query_limit}.
 type FederatedQueryLimit interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type FederatedQueryLimit interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -482,7 +492,7 @@ func (j *jsiiProxy_FederatedQueryLimit) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_query_limit mongodbatlas_federated_query_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_query_limit mongodbatlas_federated_query_limit} Resource.
 func NewFederatedQueryLimit(scope constructs.Construct, id *string, config *FederatedQueryLimitConfig) FederatedQueryLimit {
 	_init_.Initialize()
 
@@ -500,7 +510,7 @@ func NewFederatedQueryLimit(scope constructs.Construct, id *string, config *Fede
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/federated_query_limit mongodbatlas_federated_query_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_query_limit mongodbatlas_federated_query_limit} Resource.
 func NewFederatedQueryLimit_Override(f FederatedQueryLimit, scope constructs.Construct, id *string, config *FederatedQueryLimitConfig) {
 	_init_.Initialize()
 
@@ -936,6 +946,19 @@ func (f *jsiiProxy_FederatedQueryLimit) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (f *jsiiProxy_FederatedQueryLimit) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -963,6 +986,17 @@ func (f *jsiiProxy_FederatedQueryLimit) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (f *jsiiProxy_FederatedQueryLimit) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FederatedQueryLimit) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -971,6 +1005,17 @@ func (f *jsiiProxy_FederatedQueryLimit) MoveTo(moveTarget *string, index interfa
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FederatedQueryLimit) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

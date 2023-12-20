@@ -59,7 +59,15 @@ func (e *jsiiProxy_EncryptionAtRest) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EncryptionAtRest) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EncryptionAtRest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EncryptionAtRest) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

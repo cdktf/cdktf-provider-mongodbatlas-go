@@ -31,9 +31,13 @@ type ServerlessInstanceLinksOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Href() *string
+	SetHref(val *string)
+	HrefInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Rel() *string
+	SetRel(val *string)
+	RelInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +70,8 @@ type ServerlessInstanceLinksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHref()
+	ResetRel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +137,16 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) Href() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) HrefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hrefInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -146,6 +162,16 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) Rel() *string {
 	_jsii_.Get(
 		j,
 		"rel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference) RelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"relInput",
 		&returns,
 	)
 	return returns
@@ -221,6 +247,17 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference)SetComplexObjectIsFrom
 	)
 }
 
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference)SetHref(val *string) {
+	if err := j.validateSetHrefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"href",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ServerlessInstanceLinksOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -228,6 +265,17 @@ func (j *jsiiProxy_ServerlessInstanceLinksOutputReference)SetInternalValue(val i
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerlessInstanceLinksOutputReference)SetRel(val *string) {
+	if err := j.validateSetRelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rel",
 		val,
 	)
 }
@@ -438,6 +486,22 @@ func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) ResetHref() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHref",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) ResetRel() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRel",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

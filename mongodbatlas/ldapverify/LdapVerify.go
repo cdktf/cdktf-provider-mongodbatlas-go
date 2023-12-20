@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/ldap_verify mongodbatlas_ldap_verify}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/ldap_verify mongodbatlas_ldap_verify}.
 type LdapVerify interface {
 	cdktf.TerraformResource
 	AuthzQueryTemplate() *string
@@ -113,12 +113,22 @@ type LdapVerify interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -504,7 +514,7 @@ func (j *jsiiProxy_LdapVerify) Validations() LdapVerifyValidationsList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
 func NewLdapVerify(scope constructs.Construct, id *string, config *LdapVerifyConfig) LdapVerify {
 	_init_.Initialize()
 
@@ -522,7 +532,7 @@ func NewLdapVerify(scope constructs.Construct, id *string, config *LdapVerifyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.13.1/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/ldap_verify mongodbatlas_ldap_verify} Resource.
 func NewLdapVerify_Override(l LdapVerify, scope constructs.Construct, id *string, config *LdapVerifyConfig) {
 	_init_.Initialize()
 
@@ -958,6 +968,19 @@ func (l *jsiiProxy_LdapVerify) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (l *jsiiProxy_LdapVerify) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LdapVerify) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -985,6 +1008,17 @@ func (l *jsiiProxy_LdapVerify) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (l *jsiiProxy_LdapVerify) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LdapVerify) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -993,6 +1027,17 @@ func (l *jsiiProxy_LdapVerify) MoveTo(moveTarget *string, index interface{}) {
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LdapVerify) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

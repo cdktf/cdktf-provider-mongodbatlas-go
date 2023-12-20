@@ -59,7 +59,15 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUser) validateInterpolationForAttri
 	return nil
 }
 
+func (x *jsiiProxy_X509AuthenticationDatabaseUser) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_X509AuthenticationDatabaseUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (x *jsiiProxy_X509AuthenticationDatabaseUser) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

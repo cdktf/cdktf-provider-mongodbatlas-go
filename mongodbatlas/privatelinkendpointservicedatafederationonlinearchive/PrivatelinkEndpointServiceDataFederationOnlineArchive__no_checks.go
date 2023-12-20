@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 	return nil
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

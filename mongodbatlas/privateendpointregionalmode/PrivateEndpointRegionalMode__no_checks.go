@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateEndpointRegionalMode) validateInterpolationForAttribut
 	return nil
 }
 
+func (p *jsiiProxy_PrivateEndpointRegionalMode) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateEndpointRegionalMode) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateEndpointRegionalMode) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

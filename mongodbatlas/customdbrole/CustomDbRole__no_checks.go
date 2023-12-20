@@ -59,7 +59,15 @@ func (c *jsiiProxy_CustomDbRole) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CustomDbRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomDbRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomDbRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

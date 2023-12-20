@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedEmail", GoGetter: "AuthorizedEmail"},
+			_jsii_.MemberProperty{JsiiProperty: "authorizedUserFirstName", GoGetter: "AuthorizedUserFirstName"},
+			_jsii_.MemberProperty{JsiiProperty: "authorizedUserLastName", GoGetter: "AuthorizedUserLastName"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "copyProtectionEnabled", GoGetter: "CopyProtectionEnabled"},
