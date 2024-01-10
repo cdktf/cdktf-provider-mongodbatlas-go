@@ -7,6 +7,10 @@ package datamongodbatlasdatalakepipelinerun
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRunStatsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRunStatsList) validateGetParameters(index *float64) error {
 	return nil
 }

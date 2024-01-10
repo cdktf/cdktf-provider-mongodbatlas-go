@@ -7,6 +7,10 @@ package datamongodbatlasatlasusers
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasAtlasUsersResultsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasAtlasUsersResultsList) validateGetParameters(index *float64) error {
 	return nil
 }

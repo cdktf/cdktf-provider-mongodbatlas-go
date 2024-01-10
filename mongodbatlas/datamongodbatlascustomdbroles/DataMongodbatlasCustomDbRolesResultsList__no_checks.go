@@ -7,6 +7,10 @@ package datamongodbatlascustomdbroles
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasCustomDbRolesResultsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasCustomDbRolesResultsList) validateGetParameters(index *float64) error {
 	return nil
 }

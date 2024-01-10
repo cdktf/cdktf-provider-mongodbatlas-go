@@ -7,6 +7,10 @@ package datamongodbatlasonlinearchives
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

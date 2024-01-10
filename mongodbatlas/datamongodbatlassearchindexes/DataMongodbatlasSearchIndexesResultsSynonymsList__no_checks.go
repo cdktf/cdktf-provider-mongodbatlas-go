@@ -7,6 +7,10 @@ package datamongodbatlassearchindexes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsSynonymsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsSynonymsList) validateGetParameters(index *float64) error {
 	return nil
 }

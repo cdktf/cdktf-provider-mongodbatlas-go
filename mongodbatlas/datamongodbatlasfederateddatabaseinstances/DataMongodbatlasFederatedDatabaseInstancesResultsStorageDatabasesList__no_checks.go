@@ -7,6 +7,10 @@ package datamongodbatlasfederateddatabaseinstances
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageDatabasesList) validateGetParameters(index *float64) error {
 	return nil
 }

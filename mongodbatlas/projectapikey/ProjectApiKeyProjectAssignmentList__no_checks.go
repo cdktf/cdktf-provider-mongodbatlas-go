@@ -7,6 +7,10 @@ package projectapikey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectApiKeyProjectAssignmentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectApiKeyProjectAssignmentList) validateGetParameters(index *float64) error {
 	return nil
 }

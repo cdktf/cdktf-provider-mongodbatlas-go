@@ -7,6 +7,10 @@ package datamongodbatlasapikeys
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasApiKeysResultsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasApiKeysResultsList) validateGetParameters(index *float64) error {
 	return nil
 }

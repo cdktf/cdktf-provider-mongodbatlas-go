@@ -7,6 +7,10 @@ package datamongodbatlasfederatedsettingsorgrolemappings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsList) validateGetParameters(index *float64) error {
 	return nil
 }

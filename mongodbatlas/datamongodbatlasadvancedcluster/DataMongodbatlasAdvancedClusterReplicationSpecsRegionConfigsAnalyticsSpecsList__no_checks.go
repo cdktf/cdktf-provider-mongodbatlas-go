@@ -7,6 +7,10 @@ package datamongodbatlasadvancedcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsList) validateGetParameters(index *float64) error {
 	return nil
 }

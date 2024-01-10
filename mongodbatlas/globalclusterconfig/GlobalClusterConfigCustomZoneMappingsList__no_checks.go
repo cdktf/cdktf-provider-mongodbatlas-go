@@ -7,6 +7,10 @@ package globalclusterconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsList) validateGetParameters(index *float64) error {
 	return nil
 }

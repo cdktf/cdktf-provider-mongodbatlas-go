@@ -7,6 +7,10 @@ package datalakepipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLakePipelineSnapshotsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLakePipelineSnapshotsList) validateGetParameters(index *float64) error {
 	return nil
 }

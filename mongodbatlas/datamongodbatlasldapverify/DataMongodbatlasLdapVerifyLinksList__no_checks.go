@@ -7,6 +7,10 @@ package datamongodbatlasldapverify
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasLdapVerifyLinksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasLdapVerifyLinksList) validateGetParameters(index *float64) error {
 	return nil
 }

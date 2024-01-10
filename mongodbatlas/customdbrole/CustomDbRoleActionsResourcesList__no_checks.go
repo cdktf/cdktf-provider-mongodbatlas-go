@@ -7,6 +7,10 @@ package customdbrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomDbRoleActionsResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomDbRoleActionsResourcesList) validateGetParameters(index *float64) error {
 	return nil
 }

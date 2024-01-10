@@ -7,6 +7,10 @@ package datamongodbatlasserverlessinstances
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasServerlessInstancesResultsTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasServerlessInstancesResultsTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datamongodbatlasnetworkpeerings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasNetworkPeeringsResultsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasNetworkPeeringsResultsList) validateGetParameters(index *float64) error {
 	return nil
 }

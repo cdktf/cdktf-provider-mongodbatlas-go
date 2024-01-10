@@ -7,6 +7,10 @@ package datamongodbatlasfederatedsettingsidentityproviders
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoCertificatesList) validateGetParameters(index *float64) error {
 	return nil
 }

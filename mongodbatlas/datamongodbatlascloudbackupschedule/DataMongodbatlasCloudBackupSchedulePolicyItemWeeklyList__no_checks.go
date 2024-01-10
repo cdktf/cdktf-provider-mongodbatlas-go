@@ -7,6 +7,10 @@ package datamongodbatlascloudbackupschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList) validateGetParameters(index *float64) error {
 	return nil
 }

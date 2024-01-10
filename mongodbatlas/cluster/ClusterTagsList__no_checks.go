@@ -7,6 +7,10 @@ package cluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClusterTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterTagsList) validateGetParameters(index *float64) error {
 	return nil
 }
