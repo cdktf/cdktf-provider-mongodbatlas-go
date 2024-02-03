@@ -55,26 +55,6 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validateOverrideLogic
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutOnDemandPolicyItemParameters(value *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutPolicyItemDailyParameters(value *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutPolicyItemHourlyParameters(value *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutPolicyItemMonthlyParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) validatePutPolicyItemWeeklyParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataMongodbatlasBackupCompliancePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

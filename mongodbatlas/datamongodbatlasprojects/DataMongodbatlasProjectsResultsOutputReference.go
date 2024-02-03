@@ -35,6 +35,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	Id() *string
 	InternalValue() *DataMongodbatlasProjectsResults
 	SetInternalValue(val *DataMongodbatlasProjectsResults)
+	IpAddresses() DataMongodbatlasProjectsResultsIpAddressesOutputReference
 	IsCollectDatabaseSpecificsStatisticsEnabled() cdktf.IResolvable
 	IsDataExplorerEnabled() cdktf.IResolvable
 	IsExtendedStorageSizesEnabled() cdktf.IResolvable
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IpAddresses() DataMongodbatlasProjectsResultsIpAddressesOutputReference {
+	var returns DataMongodbatlasProjectsResultsIpAddressesOutputReference
+	_jsii_.Get(
+		j,
+		"ipAddresses",
 		&returns,
 	)
 	return returns

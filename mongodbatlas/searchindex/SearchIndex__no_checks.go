@@ -163,10 +163,6 @@ func (j *jsiiProxy_SearchIndex) validateSetSearchAnalyzerParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SearchIndex) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SearchIndex) validateSetTypeParameters(val *string) error {
 	return nil
 }

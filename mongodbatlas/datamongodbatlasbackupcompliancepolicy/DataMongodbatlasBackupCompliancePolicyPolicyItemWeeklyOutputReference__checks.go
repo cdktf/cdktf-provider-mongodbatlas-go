@@ -166,49 +166,9 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) validateSetFrequencyIntervalParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly:
-		val := val.(*DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly:
-		val_ := val.(DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) validateSetRetentionUnitParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) validateSetRetentionValueParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

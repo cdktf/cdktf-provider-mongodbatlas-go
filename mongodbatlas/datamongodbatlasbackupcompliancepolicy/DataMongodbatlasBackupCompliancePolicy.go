@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
 type DataMongodbatlasBackupCompliancePolicy interface {
 	cdktf.TerraformDataSource
 	AuthorizedEmail() *string
@@ -49,17 +49,12 @@ type DataMongodbatlasBackupCompliancePolicy interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OnDemandPolicyItem() DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference
-	OnDemandPolicyItemInput() *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem
+	OnDemandPolicyItem() DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList
 	PitEnabled() cdktf.IResolvable
-	PolicyItemDaily() DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference
-	PolicyItemDailyInput() *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily
-	PolicyItemHourly() DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference
-	PolicyItemHourlyInput() *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly
+	PolicyItemDaily() DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList
+	PolicyItemHourly() DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList
 	PolicyItemMonthly() DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList
-	PolicyItemMonthlyInput() interface{}
 	PolicyItemWeekly() DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList
-	PolicyItemWeeklyInput() interface{}
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -104,20 +99,10 @@ type DataMongodbatlasBackupCompliancePolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutOnDemandPolicyItem(value *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem)
-	PutPolicyItemDaily(value *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily)
-	PutPolicyItemHourly(value *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly)
-	PutPolicyItemMonthly(value interface{})
-	PutPolicyItemWeekly(value interface{})
 	ResetId()
-	ResetOnDemandPolicyItem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicyItemDaily()
-	ResetPolicyItemHourly()
-	ResetPolicyItemMonthly()
-	ResetPolicyItemWeekly()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -297,21 +282,11 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) Node() constructs.Nod
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) OnDemandPolicyItem() DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference {
-	var returns DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) OnDemandPolicyItem() DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList {
+	var returns DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemList
 	_jsii_.Get(
 		j,
 		"onDemandPolicyItem",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) OnDemandPolicyItemInput() *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem {
-	var returns *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem
-	_jsii_.Get(
-		j,
-		"onDemandPolicyItemInput",
 		&returns,
 	)
 	return returns
@@ -327,8 +302,8 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PitEnabled() cdktf.IR
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemDaily() DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference {
-	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemDaily() DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList {
+	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemDailyList
 	_jsii_.Get(
 		j,
 		"policyItemDaily",
@@ -337,31 +312,11 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemDaily() Dat
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemDailyInput() *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily {
-	var returns *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily
-	_jsii_.Get(
-		j,
-		"policyItemDailyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemHourly() DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference {
-	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyOutputReference
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemHourly() DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList {
+	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList
 	_jsii_.Get(
 		j,
 		"policyItemHourly",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemHourlyInput() *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly {
-	var returns *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly
-	_jsii_.Get(
-		j,
-		"policyItemHourlyInput",
 		&returns,
 	)
 	return returns
@@ -377,31 +332,11 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemMonthly() D
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemMonthlyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"policyItemMonthlyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemWeekly() DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList {
 	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList
 	_jsii_.Get(
 		j,
 		"policyItemWeekly",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemWeeklyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"policyItemWeeklyInput",
 		&returns,
 	)
 	return returns
@@ -518,7 +453,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) UpdatedUser() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
 func NewDataMongodbatlasBackupCompliancePolicy(scope constructs.Construct, id *string, config *DataMongodbatlasBackupCompliancePolicyConfig) DataMongodbatlasBackupCompliancePolicy {
 	_init_.Initialize()
 
@@ -536,7 +471,7 @@ func NewDataMongodbatlasBackupCompliancePolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
 func NewDataMongodbatlasBackupCompliancePolicy_Override(d DataMongodbatlasBackupCompliancePolicy, scope constructs.Construct, id *string, config *DataMongodbatlasBackupCompliancePolicyConfig) {
 	_init_.Initialize()
 
@@ -900,61 +835,6 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) OverrideLogicalId(new
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PutOnDemandPolicyItem(value *DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItem) {
-	if err := d.validatePutOnDemandPolicyItemParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOnDemandPolicyItem",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PutPolicyItemDaily(value *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily) {
-	if err := d.validatePutPolicyItemDailyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPolicyItemDaily",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PutPolicyItemHourly(value *DataMongodbatlasBackupCompliancePolicyPolicyItemHourly) {
-	if err := d.validatePutPolicyItemHourlyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPolicyItemHourly",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PutPolicyItemMonthly(value interface{}) {
-	if err := d.validatePutPolicyItemMonthlyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPolicyItemMonthly",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PutPolicyItemWeekly(value interface{}) {
-	if err := d.validatePutPolicyItemWeeklyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPolicyItemWeekly",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -963,50 +843,10 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetOnDemandPolicyItem() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOnDemandPolicyItem",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetPolicyItemDaily() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyItemDaily",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetPolicyItemHourly() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyItemHourly",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetPolicyItemMonthly() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyItemMonthly",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ResetPolicyItemWeekly() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicyItemWeekly",
 		nil, // no parameters
 	)
 }

@@ -13,6 +13,7 @@ import (
 
 type DataMongodbatlasOrganizationsResultsOutputReference interface {
 	cdktf.ComplexObject
+	ApiAccessListRequired() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,7 +36,9 @@ type DataMongodbatlasOrganizationsResultsOutputReference interface {
 	SetInternalValue(val *DataMongodbatlasOrganizationsResults)
 	IsDeleted() cdktf.IResolvable
 	Links() DataMongodbatlasOrganizationsResultsLinksList
+	MultiFactorAuthRequired() cdktf.IResolvable
 	Name() *string
+	RestrictEmployeeAccess() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,6 +84,16 @@ type DataMongodbatlasOrganizationsResultsOutputReference interface {
 // The jsii proxy struct for DataMongodbatlasOrganizationsResultsOutputReference
 type jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) ApiAccessListRequired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"apiAccessListRequired",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) ComplexObjectIndex() interface{} {
@@ -163,11 +176,31 @@ func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) Links() 
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) MultiFactorAuthRequired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"multiFactorAuthRequired",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) RestrictEmployeeAccess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictEmployeeAccess",
 		&returns,
 	)
 	return returns

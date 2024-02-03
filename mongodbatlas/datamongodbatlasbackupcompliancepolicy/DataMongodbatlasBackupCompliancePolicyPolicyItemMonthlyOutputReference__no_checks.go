@@ -59,19 +59,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetFrequencyIntervalParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetRetentionUnitParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetRetentionValueParameters(val *float64) error {
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly) error {
 	return nil
 }
 

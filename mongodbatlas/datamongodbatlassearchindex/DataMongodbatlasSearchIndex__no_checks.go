@@ -131,10 +131,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetSearchAnalyzerParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -91,6 +91,10 @@ func validateOrganization_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetApiAccessListRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -115,6 +119,10 @@ func (j *jsiiProxy_Organization) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetMultiFactorAuthRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -124,6 +132,10 @@ func (j *jsiiProxy_Organization) validateSetOrgOwnerIdParameters(val *string) er
 }
 
 func (j *jsiiProxy_Organization) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Organization) validateSetRestrictEmployeeAccessParameters(val interface{}) error {
 	return nil
 }
 

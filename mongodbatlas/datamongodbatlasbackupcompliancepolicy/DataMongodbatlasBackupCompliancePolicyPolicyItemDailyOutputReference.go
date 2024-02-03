@@ -31,18 +31,12 @@ type DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference interf
 	// Experimental.
 	Fqn() *string
 	FrequencyInterval() *float64
-	SetFrequencyInterval(val *float64)
-	FrequencyIntervalInput() *float64
 	FrequencyType() *string
 	Id() *string
 	InternalValue() *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily
 	SetInternalValue(val *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily)
 	RetentionUnit() *string
-	SetRetentionUnit(val *string)
-	RetentionUnitInput() *string
 	RetentionValue() *float64
-	SetRetentionValue(val *float64)
-	RetentionValueInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -140,16 +134,6 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) FrequencyIntervalInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"frequencyIntervalInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) FrequencyType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -190,31 +174,11 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) RetentionUnitInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"retentionUnitInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) RetentionValue() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"retentionValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) RetentionValueInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"retentionValueInput",
 		&returns,
 	)
 	return returns
@@ -241,29 +205,29 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 }
 
 
-func NewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference {
+func NewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference_Override(d DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference_Override(d DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -290,17 +254,6 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference)SetFrequencyInterval(val *float64) {
-	if err := j.validateSetFrequencyIntervalParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"frequencyInterval",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference)SetInternalValue(val *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -308,28 +261,6 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference)SetRetentionUnit(val *string) {
-	if err := j.validateSetRetentionUnitParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"retentionUnit",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference)SetRetentionValue(val *float64) {
-	if err := j.validateSetRetentionValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"retentionValue",
 		val,
 	)
 }

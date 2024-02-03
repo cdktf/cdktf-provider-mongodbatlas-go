@@ -31,18 +31,12 @@ type DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference inter
 	// Experimental.
 	Fqn() *string
 	FrequencyInterval() *float64
-	SetFrequencyInterval(val *float64)
-	FrequencyIntervalInput() *float64
 	FrequencyType() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly
+	SetInternalValue(val *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly)
 	RetentionUnit() *string
-	SetRetentionUnit(val *string)
-	RetentionUnitInput() *string
 	RetentionValue() *float64
-	SetRetentionValue(val *float64)
-	RetentionValueInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -140,16 +134,6 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) FrequencyIntervalInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"frequencyIntervalInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) FrequencyType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -170,8 +154,8 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) InternalValue() *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly {
+	var returns *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,31 +174,11 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) RetentionUnitInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"retentionUnitInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) RetentionValue() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"retentionValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference) RetentionValueInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"retentionValueInput",
 		&returns,
 	)
 	return returns
@@ -290,46 +254,13 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputR
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference)SetFrequencyInterval(val *float64) {
-	if err := j.validateSetFrequencyIntervalParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"frequencyInterval",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference)SetInternalValue(val *DataMongodbatlasBackupCompliancePolicyPolicyItemWeekly) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference)SetRetentionUnit(val *string) {
-	if err := j.validateSetRetentionUnitParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"retentionUnit",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyOutputReference)SetRetentionValue(val *float64) {
-	if err := j.validateSetRetentionValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"retentionValue",
 		val,
 	)
 }

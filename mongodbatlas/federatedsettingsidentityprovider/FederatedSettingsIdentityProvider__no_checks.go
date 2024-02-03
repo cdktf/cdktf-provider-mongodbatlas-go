@@ -95,6 +95,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAssociatedDomai
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAudienceClaimParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetClientIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +112,10 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetCountParameters
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetFederationSettingsIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetGroupsClaimParameters(val *string) error {
 	return nil
 }
 
@@ -123,11 +135,19 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetRequestBindingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetRequestedScopesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -144,6 +164,10 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetSsoUrlParameter
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetUserClaimParameters(val *string) error {
 	return nil
 }
 

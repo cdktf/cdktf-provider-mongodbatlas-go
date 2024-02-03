@@ -255,6 +255,22 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAssociatedDomai
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAudienceClaimParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetClientIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -353,6 +369,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetFederationSetti
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetGroupsClaimParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -378,6 +402,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetLifecycleParame
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetProtocolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -439,6 +471,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetRequestBindingP
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetRequestedScopesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetResponseSignatureAlgorithmParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -476,6 +516,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetSsoUrlParameter
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetUserClaimParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

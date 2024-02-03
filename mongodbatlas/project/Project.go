@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,7 @@ type Project interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IpAddresses() ProjectIpAddressesOutputReference
 	IsCollectDatabaseSpecificsStatisticsEnabled() interface{}
 	SetIsCollectDatabaseSpecificsStatisticsEnabled(val interface{})
 	IsCollectDatabaseSpecificsStatisticsEnabledInput() interface{}
@@ -283,6 +284,16 @@ func (j *jsiiProxy_Project) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) IpAddresses() ProjectIpAddressesOutputReference {
+	var returns ProjectIpAddressesOutputReference
+	_jsii_.Get(
+		j,
+		"ipAddresses",
 		&returns,
 	)
 	return returns
@@ -629,7 +640,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -647,7 +658,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 

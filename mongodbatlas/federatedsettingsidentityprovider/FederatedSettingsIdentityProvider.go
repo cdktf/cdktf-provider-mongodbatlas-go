@@ -12,14 +12,20 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
 type FederatedSettingsIdentityProvider interface {
 	cdktf.TerraformResource
 	AssociatedDomains() *[]*string
 	SetAssociatedDomains(val *[]*string)
 	AssociatedDomainsInput() *[]*string
+	AudienceClaim() *[]*string
+	SetAudienceClaim(val *[]*string)
+	AudienceClaimInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,9 +51,13 @@ type FederatedSettingsIdentityProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupsClaim() *string
+	SetGroupsClaim(val *string)
+	GroupsClaimInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IdpId() *string
 	IssuerUri() *string
 	SetIssuerUri(val *string)
 	IssuerUriInput() *string
@@ -61,6 +71,9 @@ type FederatedSettingsIdentityProvider interface {
 	// The tree node.
 	Node() constructs.Node
 	OktaIdpId() *string
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,6 +87,9 @@ type FederatedSettingsIdentityProvider interface {
 	RequestBinding() *string
 	SetRequestBinding(val *string)
 	RequestBindingInput() *string
+	RequestedScopes() *[]*string
+	SetRequestedScopes(val *[]*string)
+	RequestedScopesInput() *[]*string
 	ResponseSignatureAlgorithm() *string
 	SetResponseSignatureAlgorithm(val *string)
 	ResponseSignatureAlgorithmInput() *string
@@ -92,6 +108,9 @@ type FederatedSettingsIdentityProvider interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserClaim() *string
+	SetUserClaim(val *string)
+	UserClaimInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -136,10 +155,21 @@ type FederatedSettingsIdentityProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAssociatedDomains()
+	ResetAudienceClaim()
+	ResetClientId()
+	ResetGroupsClaim()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtocol()
+	ResetRequestBinding()
+	ResetRequestedScopes()
+	ResetResponseSignatureAlgorithm()
+	ResetSsoDebugEnabled()
+	ResetSsoUrl()
+	ResetStatus()
+	ResetUserClaim()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -178,11 +208,51 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) AssociatedDomainsInput() *
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) AudienceClaim() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"audienceClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) AudienceClaimInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"audienceClaimInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +348,26 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) FriendlyUniqueId() *string
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) GroupsClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupsClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) GroupsClaimInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupsClaimInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -293,6 +383,16 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) IdpId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpId",
 		&returns,
 	)
 	return returns
@@ -368,6 +468,26 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) OktaIdpId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -413,6 +533,26 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) RequestBindingInput() *str
 	_jsii_.Get(
 		j,
 		"requestBindingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) RequestedScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requestedScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) RequestedScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requestedScopesInput",
 		&returns,
 	)
 	return returns
@@ -528,8 +668,28 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) TerraformResourceType() *s
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) UserClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userClaim",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) UserClaimInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userClaimInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) FederatedSettingsIdentityProvider {
 	_init_.Initialize()
 
@@ -547,7 +707,7 @@ func NewFederatedSettingsIdentityProvider(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Resource.
 func NewFederatedSettingsIdentityProvider_Override(f FederatedSettingsIdentityProvider, scope constructs.Construct, id *string, config *FederatedSettingsIdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -565,6 +725,28 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetAssociatedDomains(val *[
 	_jsii_.Set(
 		j,
 		"associatedDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetAudienceClaim(val *[]*string) {
+	if err := j.validateSetAudienceClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"audienceClaim",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientId",
 		val,
 	)
 }
@@ -618,6 +800,17 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetForEach(val cdktf.ITerra
 	)
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetGroupsClaim(val *string) {
+	if err := j.validateSetGroupsClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupsClaim",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -662,6 +855,17 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -688,6 +892,17 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetRequestBinding(val *stri
 	_jsii_.Set(
 		j,
 		"requestBinding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetRequestedScopes(val *[]*string) {
+	if err := j.validateSetRequestedScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestedScopes",
 		val,
 	)
 }
@@ -732,6 +947,17 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider)SetUserClaim(val *string) {
+	if err := j.validateSetUserClaimParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userClaim",
 		val,
 	)
 }
@@ -1097,6 +1323,30 @@ func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetAssociatedDomains() {
 	)
 }
 
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetAudienceClaim() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAudienceClaim",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetClientId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetGroupsClaim() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetGroupsClaim",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1109,6 +1359,70 @@ func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetRequestBinding() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRequestBinding",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetRequestedScopes() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRequestedScopes",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetResponseSignatureAlgorithm() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetResponseSignatureAlgorithm",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetSsoDebugEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSsoDebugEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetSsoUrl() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSsoUrl",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetStatus() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsIdentityProvider) ResetUserClaim() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetUserClaim",
 		nil, // no parameters
 	)
 }

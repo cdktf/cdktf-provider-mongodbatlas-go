@@ -166,49 +166,9 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetFrequencyIntervalParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly:
-		val := val.(*DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly:
-		val_ := val.(DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetRetentionUnitParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetRetentionValueParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasBackupCompliancePolicyPolicyItemMonthly) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

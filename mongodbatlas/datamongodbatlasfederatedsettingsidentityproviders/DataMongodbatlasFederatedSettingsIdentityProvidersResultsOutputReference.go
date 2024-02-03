@@ -16,7 +16,9 @@ type DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference in
 	AcsUrl() *string
 	AssociatedDomains() *[]*string
 	AssociatedOrgs() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsList
+	AudienceClaim() *[]*string
 	AudienceUri() *string
+	ClientId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,12 +37,16 @@ type DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference in
 	DisplayName() *string
 	// Experimental.
 	Fqn() *string
+	GroupsClaim() *string
+	IdpId() *string
 	InternalValue() *DataMongodbatlasFederatedSettingsIdentityProvidersResults
 	SetInternalValue(val *DataMongodbatlasFederatedSettingsIdentityProvidersResults)
 	IssuerUri() *string
 	OktaIdpId() *string
 	PemFileInfo() DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList
+	Protocol() *string
 	RequestBinding() *string
+	RequestedScopes() *[]*string
 	ResponseSignatureAlgorithm() *string
 	SsoDebugEnabled() cdktf.IResolvable
 	SsoUrl() *string
@@ -53,6 +59,7 @@ type DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference in
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserClaim() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -122,11 +129,31 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) AudienceClaim() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"audienceClaim",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) AudienceUri() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"audienceUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
 		&returns,
 	)
 	return returns
@@ -182,6 +209,26 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) GroupsClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupsClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) IdpId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) InternalValue() *DataMongodbatlasFederatedSettingsIdentityProvidersResults {
 	var returns *DataMongodbatlasFederatedSettingsIdentityProvidersResults
 	_jsii_.Get(
@@ -222,11 +269,31 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) RequestBinding() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"requestBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) RequestedScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requestedScopes",
 		&returns,
 	)
 	return returns
@@ -287,6 +354,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) UserClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userClaim",
 		&returns,
 	)
 	return returns

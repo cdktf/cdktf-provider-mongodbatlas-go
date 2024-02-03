@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutpu
 	return nil
 }
 
-func validateNewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

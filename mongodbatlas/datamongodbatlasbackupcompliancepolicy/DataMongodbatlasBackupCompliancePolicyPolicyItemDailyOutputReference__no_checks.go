@@ -59,19 +59,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) validateSetFrequencyIntervalParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasBackupCompliancePolicyPolicyItemDaily) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) validateSetRetentionUnitParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReference) validateSetRetentionValueParameters(val *float64) error {
 	return nil
 }
 
@@ -83,7 +71,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputRe
 	return nil
 }
 
-func validateNewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataMongodbatlasBackupCompliancePolicyPolicyItemDailyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

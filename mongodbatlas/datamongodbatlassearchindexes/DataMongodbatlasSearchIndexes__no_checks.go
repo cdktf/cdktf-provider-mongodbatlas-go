@@ -91,15 +91,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetItemsPerPageParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetPageNumParameters(val *float64) error {
 	return nil
 }
 

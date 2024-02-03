@@ -1,12 +1,15 @@
-# CDKTF Go bindings for mongodb/mongodbatlas provider version 1.14.0
+# CDKTF Go bindings for mongodb/mongodbatlas provider version 1.15.0
 
-This repo builds and publishes the [Terraform mongodbatlas provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform mongodbatlas provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-mongodbatlas-go`](https://github.com/cdktf/cdktf-provider-mongodbatlas-go) package.
 
-`go get github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas`
+`go get github.com/cdktf/cdktf-provider-mongodbatlas-go/mongodbatlas/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-mongodbatlas-go/blob/main/mongodbatlas/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform mongodbatlas provider vers
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform mongodbatlas provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0)
+* [Terraform mongodbatlas provider](https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

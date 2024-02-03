@@ -205,29 +205,29 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutpu
 }
 
 
-func NewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference {
+func NewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference_Override(d DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference_Override(d DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasBackupCompliancePolicy.DataMongodbatlasBackupCompliancePolicyOnDemandPolicyItemOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_index mongodbatlas_search_index}.
 type DataMongodbatlasSearchIndex interface {
 	cdktf.TerraformDataSource
 	Analyzer() *string
@@ -87,8 +87,6 @@ type DataMongodbatlasSearchIndex interface {
 	SetSearchAnalyzer(val *string)
 	SearchAnalyzerInput() *string
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	Synonyms() DataMongodbatlasSearchIndexSynonymsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -137,7 +135,6 @@ type DataMongodbatlasSearchIndex interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSearchAnalyzer()
-	ResetStatus()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -538,16 +535,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) Synonyms() DataMongodbatlasSearchIndexSynonymsList {
 	var returns DataMongodbatlasSearchIndexSynonymsList
 	_jsii_.Get(
@@ -609,7 +596,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) DataMongodbatlasSearchIndex {
 	_init_.Initialize()
 
@@ -627,7 +614,7 @@ func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex_Override(d DataMongodbatlasSearchIndex, scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) {
 	_init_.Initialize()
 
@@ -823,17 +810,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetSearchAnalyzer(val *string) {
 	_jsii_.Set(
 		j,
 		"searchAnalyzer",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -1218,14 +1194,6 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetSearchAnalyzer() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearchAnalyzer",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetStatus() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
+	ApiAccessListRequired() interface{}
+	SetApiAccessListRequired(val interface{})
+	ApiAccessListRequiredInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -52,6 +55,9 @@ type Organization interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MultiFactorAuthRequired() interface{}
+	SetMultiFactorAuthRequired(val interface{})
+	MultiFactorAuthRequiredInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,6 +79,9 @@ type Organization interface {
 	PublicKey() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RestrictEmployeeAccess() interface{}
+	SetRestrictEmployeeAccess(val interface{})
+	RestrictEmployeeAccessInput() interface{}
 	RoleNames() *[]*string
 	SetRoleNames(val *[]*string)
 	RoleNamesInput() *[]*string
@@ -125,11 +134,14 @@ type Organization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApiAccessListRequired()
 	ResetFederationSettingsId()
 	ResetId()
+	ResetMultiFactorAuthRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRestrictEmployeeAccess()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -146,6 +158,26 @@ type Organization interface {
 // The jsii proxy struct for Organization
 type jsiiProxy_Organization struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Organization) ApiAccessListRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"apiAccessListRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) ApiAccessListRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"apiAccessListRequiredInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Organization) CdktfStack() cdktf.TerraformStack {
@@ -298,6 +330,26 @@ func (j *jsiiProxy_Organization) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) MultiFactorAuthRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiFactorAuthRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) MultiFactorAuthRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiFactorAuthRequiredInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -408,6 +460,26 @@ func (j *jsiiProxy_Organization) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) RestrictEmployeeAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictEmployeeAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) RestrictEmployeeAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictEmployeeAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) RoleNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -459,7 +531,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -477,7 +549,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -485,6 +557,17 @@ func NewOrganization_Override(o Organization, scope constructs.Construct, id *st
 		"@cdktf/provider-mongodbatlas.organization.Organization",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetApiAccessListRequired(val interface{}) {
+	if err := j.validateSetApiAccessListRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiAccessListRequired",
+		val,
 	)
 }
 
@@ -570,6 +653,17 @@ func (j *jsiiProxy_Organization)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
+func (j *jsiiProxy_Organization)SetMultiFactorAuthRequired(val interface{}) {
+	if err := j.validateSetMultiFactorAuthRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiFactorAuthRequired",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Organization)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -607,6 +701,17 @@ func (j *jsiiProxy_Organization)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetRestrictEmployeeAccess(val interface{}) {
+	if err := j.validateSetRestrictEmployeeAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restrictEmployeeAccess",
 		val,
 	)
 }
@@ -975,6 +1080,14 @@ func (o *jsiiProxy_Organization) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_Organization) ResetApiAccessListRequired() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetApiAccessListRequired",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_Organization) ResetFederationSettingsId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -991,10 +1104,26 @@ func (o *jsiiProxy_Organization) ResetId() {
 	)
 }
 
+func (o *jsiiProxy_Organization) ResetMultiFactorAuthRequired() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMultiFactorAuthRequired",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_Organization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetRestrictEmployeeAccess() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRestrictEmployeeAccess",
 		nil, // no parameters
 	)
 }

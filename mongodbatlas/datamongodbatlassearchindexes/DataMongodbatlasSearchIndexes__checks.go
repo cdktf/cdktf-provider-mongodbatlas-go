@@ -243,25 +243,9 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetItemsPerPageParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) validateSetPageNumParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

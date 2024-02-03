@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) 
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

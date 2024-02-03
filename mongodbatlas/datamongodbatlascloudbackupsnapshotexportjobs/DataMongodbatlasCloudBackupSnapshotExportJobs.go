@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs}.
 type DataMongodbatlasCloudBackupSnapshotExportJobs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJobs) TotalCount() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJobs(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobsConfig) DataMongodbatlasCloudBackupSnapshotExportJobs {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataMongodbatlasCloudBackupSnapshotExportJobs(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/cloud_backup_snapshot_export_jobs mongodbatlas_cloud_backup_snapshot_export_jobs} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJobs_Override(d DataMongodbatlasCloudBackupSnapshotExportJobs, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobsConfig) {
 	_init_.Initialize()
 

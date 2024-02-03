@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes mongodbatlas_search_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes mongodbatlas_search_indexes}.
 type DataMongodbatlasSearchIndexes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -47,18 +47,12 @@ type DataMongodbatlasSearchIndexes interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	ItemsPerPage() *float64
-	SetItemsPerPage(val *float64)
-	ItemsPerPageInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PageNum() *float64
-	SetPageNum(val *float64)
-	PageNumInput() *float64
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -102,11 +96,9 @@ type DataMongodbatlasSearchIndexes interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
-	ResetItemsPerPage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPageNum()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -276,26 +268,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) ItemsPerPage() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) ItemsPerPageInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndexes) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -311,26 +283,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) PageNum() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNum",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes) PageNumInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNumInput",
 		&returns,
 	)
 	return returns
@@ -427,7 +379,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source.
 func NewDataMongodbatlasSearchIndexes(scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexesConfig) DataMongodbatlasSearchIndexes {
 	_init_.Initialize()
 
@@ -445,7 +397,7 @@ func NewDataMongodbatlasSearchIndexes(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/search_indexes mongodbatlas_search_indexes} Data Source.
 func NewDataMongodbatlasSearchIndexes_Override(d DataMongodbatlasSearchIndexes, scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexesConfig) {
 	_init_.Initialize()
 
@@ -527,17 +479,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes)SetItemsPerPage(val *float64) {
-	if err := j.validateSetItemsPerPageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"itemsPerPage",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndexes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -545,17 +486,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexes)SetLifecycle(val *cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexes)SetPageNum(val *float64) {
-	if err := j.validateSetPageNumParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pageNum",
 		val,
 	)
 }
@@ -872,26 +802,10 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndexes) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndexes) ResetItemsPerPage() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetItemsPerPage",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasSearchIndexes) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndexes) ResetPageNum() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPageNum",
 		nil, // no parameters
 	)
 }

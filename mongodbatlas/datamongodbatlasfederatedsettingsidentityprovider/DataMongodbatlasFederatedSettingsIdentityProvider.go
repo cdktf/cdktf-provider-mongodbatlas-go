@@ -12,15 +12,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider}.
 type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	cdktf.TerraformDataSource
 	AcsUrl() *string
 	AssociatedDomains() *[]*string
 	AssociatedOrgs() DataMongodbatlasFederatedSettingsIdentityProviderAssociatedOrgsList
+	AudienceClaim() *[]*string
 	AudienceUri() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -43,12 +45,14 @@ type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupsClaim() *string
 	Id() *string
 	SetId(val *string)
 	IdentityProviderId() *string
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
 	IdInput() *string
+	IdpId() *string
 	IssuerUri() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -58,6 +62,7 @@ type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	Node() constructs.Node
 	OktaIdpId() *string
 	PemFileInfo() DataMongodbatlasFederatedSettingsIdentityProviderPemFileInfoList
+	Protocol() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -65,6 +70,7 @@ type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RequestBinding() *string
+	RequestedScopes() *[]*string
 	ResponseSignatureAlgorithm() *string
 	SsoDebugEnabled() cdktf.IResolvable
 	SsoUrl() *string
@@ -75,6 +81,7 @@ type DataMongodbatlasFederatedSettingsIdentityProvider interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserClaim() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -153,6 +160,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) Associated
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) AudienceClaim() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"audienceClaim",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) AudienceUri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +185,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) CdktfStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
 		&returns,
 	)
 	return returns
@@ -263,6 +290,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) FriendlyUn
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) GroupsClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupsClaim",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -298,6 +335,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) IdInput() 
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) IdpId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpId",
 		&returns,
 	)
 	return returns
@@ -353,6 +400,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) PemFileInf
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -378,6 +435,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) RequestBin
 	_jsii_.Get(
 		j,
 		"requestBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) RequestedScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requestedScopes",
 		&returns,
 	)
 	return returns
@@ -453,8 +520,18 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvider) UserClaim() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userClaim",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProvider(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProviderConfig) DataMongodbatlasFederatedSettingsIdentityProvider {
 	_init_.Initialize()
 
@@ -472,7 +549,7 @@ func NewDataMongodbatlasFederatedSettingsIdentityProvider(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.14.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/federated_settings_identity_provider mongodbatlas_federated_settings_identity_provider} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProvider_Override(d DataMongodbatlasFederatedSettingsIdentityProvider, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProviderConfig) {
 	_init_.Initialize()
 
