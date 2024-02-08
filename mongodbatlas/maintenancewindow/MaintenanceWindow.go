@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
 type MaintenanceWindow interface {
 	cdktf.TerraformResource
 	AutoDefer() interface{}
@@ -488,7 +488,7 @@ func (j *jsiiProxy_MaintenanceWindow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow(scope constructs.Construct, id *string, config *MaintenanceWindowConfig) MaintenanceWindow {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewMaintenanceWindow(scope constructs.Construct, id *string, config *Mainte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow_Override(m MaintenanceWindow, scope constructs.Construct, id *string, config *MaintenanceWindowConfig) {
 	_init_.Initialize()
 

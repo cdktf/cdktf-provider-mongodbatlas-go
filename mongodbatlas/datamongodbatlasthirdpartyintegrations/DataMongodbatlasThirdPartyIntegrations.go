@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations}.
 type DataMongodbatlasThirdPartyIntegrations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrations) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
 func NewDataMongodbatlasThirdPartyIntegrations(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationsConfig) DataMongodbatlasThirdPartyIntegrations {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataMongodbatlasThirdPartyIntegrations(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.0/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/third_party_integrations mongodbatlas_third_party_integrations} Data Source.
 func NewDataMongodbatlasThirdPartyIntegrations_Override(d DataMongodbatlasThirdPartyIntegrations, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationsConfig) {
 	_init_.Initialize()
 
