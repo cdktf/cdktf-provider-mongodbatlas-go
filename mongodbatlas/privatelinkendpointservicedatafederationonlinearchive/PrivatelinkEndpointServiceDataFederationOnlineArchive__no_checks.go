@@ -107,6 +107,10 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 	return nil
 }
 
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetCustomerEndpointDnsNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetEndpointIdParameters(val *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 }
 
 func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user}.
 type DataMongodbatlasX509AuthenticationDatabaseUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUser) UsernameInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Data Source.
 func NewDataMongodbatlasX509AuthenticationDatabaseUser(scope constructs.Construct, id *string, config *DataMongodbatlasX509AuthenticationDatabaseUserConfig) DataMongodbatlasX509AuthenticationDatabaseUser {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataMongodbatlasX509AuthenticationDatabaseUser(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/x509_authentication_database_user mongodbatlas_x509_authentication_database_user} Data Source.
 func NewDataMongodbatlasX509AuthenticationDatabaseUser_Override(d DataMongodbatlasX509AuthenticationDatabaseUser, scope constructs.Construct, id *string, config *DataMongodbatlasX509AuthenticationDatabaseUserConfig) {
 	_init_.Initialize()
 

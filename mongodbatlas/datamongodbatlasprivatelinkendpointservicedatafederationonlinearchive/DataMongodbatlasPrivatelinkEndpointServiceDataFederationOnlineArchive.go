@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
 type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive inter
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomerEndpointDnsName() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +59,7 @@ type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive inter
 	ProviderName() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -148,6 +150,16 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive) CustomerEndpointDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerEndpointDnsName",
 		&returns,
 	)
 	return returns
@@ -303,6 +315,16 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -344,7 +366,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive {
 	_init_.Initialize()
 
@@ -362,7 +384,7 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive(sc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/data-sources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive_Override(d DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchive, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) {
 	_init_.Initialize()
 

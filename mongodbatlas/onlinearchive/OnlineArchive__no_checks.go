@@ -83,7 +83,7 @@ func (o *jsiiProxy_OnlineArchive) validatePutDataExpirationRuleParameters(value 
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchive) validatePutDataProcessRegionParameters(value interface{}) error {
+func (o *jsiiProxy_OnlineArchive) validatePutDataProcessRegionParameters(value *OnlineArchiveDataProcessRegion) error {
 	return nil
 }
 

@@ -356,6 +356,14 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 	return nil
 }
 
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetCustomerEndpointDnsNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetEndpointIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -437,6 +445,14 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) valida
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

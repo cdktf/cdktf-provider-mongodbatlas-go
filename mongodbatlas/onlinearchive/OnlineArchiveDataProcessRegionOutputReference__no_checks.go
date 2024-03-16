@@ -63,7 +63,7 @@ func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) validateSetInternalValueParameters(val *OnlineArchiveDataProcessRegion) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewOnlineArchiveDataProcessRegionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOnlineArchiveDataProcessRegionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

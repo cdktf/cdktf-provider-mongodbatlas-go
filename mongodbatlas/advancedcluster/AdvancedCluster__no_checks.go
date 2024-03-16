@@ -75,7 +75,7 @@ func (a *jsiiProxy_AdvancedCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedCluster) validatePutAdvancedConfigurationParameters(value interface{}) error {
+func (a *jsiiProxy_AdvancedCluster) validatePutAdvancedConfigurationParameters(value *AdvancedClusterAdvancedConfiguration) error {
 	return nil
 }
 

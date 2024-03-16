@@ -39,11 +39,7 @@ type PrivatelinkEndpointServiceEndpointsOutputReference interface {
 	SetIpAddress(val *string)
 	IpAddressInput() *string
 	ServiceAttachmentName() *string
-	SetServiceAttachmentName(val *string)
-	ServiceAttachmentNameInput() *string
 	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -78,8 +74,6 @@ type PrivatelinkEndpointServiceEndpointsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEndpointName()
 	ResetIpAddress()
-	ResetServiceAttachmentName()
-	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,31 +189,11 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ServiceAt
 	return returns
 }
 
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ServiceAttachmentNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceAttachmentNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
 		&returns,
 	)
 	return returns
@@ -324,28 +298,6 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference)SetIpAddre
 	_jsii_.Set(
 		j,
 		"ipAddress",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference)SetServiceAttachmentName(val *string) {
-	if err := j.validateSetServiceAttachmentNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serviceAttachmentName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -570,22 +522,6 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ResetIpAd
 	_jsii_.InvokeVoid(
 		p,
 		"resetIpAddress",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ResetServiceAttachmentName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetServiceAttachmentName",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

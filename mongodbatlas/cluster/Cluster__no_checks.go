@@ -75,11 +75,11 @@ func (c *jsiiProxy_Cluster) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value interface{}) error {
+func (c *jsiiProxy_Cluster) validatePutAdvancedConfigurationParameters(value *ClusterAdvancedConfiguration) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value interface{}) error {
+func (c *jsiiProxy_Cluster) validatePutBiConnectorConfigParameters(value *ClusterBiConnectorConfig) error {
 	return nil
 }
 

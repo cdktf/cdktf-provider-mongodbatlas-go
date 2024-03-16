@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive}.
 type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomerEndpointDnsName() *string
+	SetCustomerEndpointDnsName(val *string)
+	CustomerEndpointDnsNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,6 +73,9 @@ type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,10 +130,12 @@ type PrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts)
 	ResetComment()
+	ResetCustomerEndpointDnsName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -202,6 +210,26 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Count(
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) CustomerEndpointDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerEndpointDnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) CustomerEndpointDnsNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerEndpointDnsNameInput",
 		&returns,
 	)
 	return returns
@@ -377,6 +405,26 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) RawOve
 	return returns
 }
 
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -438,7 +486,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) Type()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) PrivatelinkEndpointServiceDataFederationOnlineArchive {
 	_init_.Initialize()
 
@@ -456,7 +504,7 @@ func NewPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/privatelink_endpoint_service_data_federation_online_archive mongodbatlas_privatelink_endpoint_service_data_federation_online_archive} Resource.
 func NewPrivatelinkEndpointServiceDataFederationOnlineArchive_Override(p PrivatelinkEndpointServiceDataFederationOnlineArchive, scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceDataFederationOnlineArchiveConfig) {
 	_init_.Initialize()
 
@@ -496,6 +544,17 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive)SetCoun
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive)SetCustomerEndpointDnsName(val *string) {
+	if err := j.validateSetCustomerEndpointDnsNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerEndpointDnsName",
 		val,
 	)
 }
@@ -586,6 +645,17 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive)SetProv
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -962,6 +1032,14 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetC
 	)
 }
 
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetCustomerEndpointDnsName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomerEndpointDnsName",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -974,6 +1052,14 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetO
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchive) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -71,14 +71,6 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) validateSetServiceAttachmentNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

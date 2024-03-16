@@ -71,7 +71,7 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetInternalValueParameters(val *AdvancedClusterAdvancedConfiguration) error {
 	return nil
 }
 
@@ -115,7 +115,7 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 	return nil
 }
 
-func validateNewAdvancedClusterAdvancedConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAdvancedClusterAdvancedConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

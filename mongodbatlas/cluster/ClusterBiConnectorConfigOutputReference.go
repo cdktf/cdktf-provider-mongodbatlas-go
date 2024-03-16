@@ -33,8 +33,8 @@ type ClusterBiConnectorConfigOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ClusterBiConnectorConfig
+	SetInternalValue(val *ClusterBiConnectorConfig)
 	ReadPreference() *string
 	SetReadPreference(val *string)
 	ReadPreferenceInput() *string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) InternalValue() *ClusterBiConnectorConfig {
+	var returns *ClusterBiConnectorConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference) TerraformResource() 
 }
 
 
-func NewClusterBiConnectorConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClusterBiConnectorConfigOutputReference {
+func NewClusterBiConnectorConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClusterBiConnectorConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewClusterBiConnectorConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewClusterBiConnectorConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ClusterBiConnectorConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewClusterBiConnectorConfigOutputReference_Override(c ClusterBiConnectorConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewClusterBiConnectorConfigOutputReference_Override(c ClusterBiConnectorConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.cluster.ClusterBiConnectorConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -258,7 +258,7 @@ func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference)SetEnabled(val interf
 	)
 }
 
-func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClusterBiConnectorConfigOutputReference)SetInternalValue(val *ClusterBiConnectorConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

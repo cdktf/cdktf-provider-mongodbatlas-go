@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
 type MaintenanceWindow interface {
 	cdktf.TerraformResource
 	AutoDefer() interface{}
@@ -64,8 +64,6 @@ type MaintenanceWindow interface {
 	// The tree node.
 	Node() constructs.Node
 	NumberOfDeferrals() *float64
-	SetNumberOfDeferrals(val *float64)
-	NumberOfDeferralsInput() *float64
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -79,7 +77,9 @@ type MaintenanceWindow interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	StartAsap() cdktf.IResolvable
+	StartAsap() interface{}
+	SetStartAsap(val interface{})
+	StartAsapInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,14 +131,13 @@ type MaintenanceWindow interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutoDefer()
 	ResetAutoDeferOnceEnabled()
-	ResetDayOfWeek()
 	ResetDefer()
 	ResetHourOfDay()
 	ResetId()
-	ResetNumberOfDeferrals()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStartAsap()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -387,16 +386,6 @@ func (j *jsiiProxy_MaintenanceWindow) NumberOfDeferrals() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_MaintenanceWindow) NumberOfDeferralsInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"numberOfDeferralsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MaintenanceWindow) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,11 +436,21 @@ func (j *jsiiProxy_MaintenanceWindow) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MaintenanceWindow) StartAsap() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_MaintenanceWindow) StartAsap() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"startAsap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MaintenanceWindow) StartAsapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startAsapInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +487,7 @@ func (j *jsiiProxy_MaintenanceWindow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow(scope constructs.Construct, id *string, config *MaintenanceWindowConfig) MaintenanceWindow {
 	_init_.Initialize()
 
@@ -506,7 +505,7 @@ func NewMaintenanceWindow(scope constructs.Construct, id *string, config *Mainte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow_Override(m MaintenanceWindow, scope constructs.Construct, id *string, config *MaintenanceWindowConfig) {
 	_init_.Initialize()
 
@@ -632,17 +631,6 @@ func (j *jsiiProxy_MaintenanceWindow)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_MaintenanceWindow)SetNumberOfDeferrals(val *float64) {
-	if err := j.validateSetNumberOfDeferralsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"numberOfDeferrals",
-		val,
-	)
-}
-
 func (j *jsiiProxy_MaintenanceWindow)SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -669,6 +657,17 @@ func (j *jsiiProxy_MaintenanceWindow)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MaintenanceWindow)SetStartAsap(val interface{}) {
+	if err := j.validateSetStartAsapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startAsap",
 		val,
 	)
 }
@@ -1042,14 +1041,6 @@ func (m *jsiiProxy_MaintenanceWindow) ResetAutoDeferOnceEnabled() {
 	)
 }
 
-func (m *jsiiProxy_MaintenanceWindow) ResetDayOfWeek() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetDayOfWeek",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MaintenanceWindow) ResetDefer() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1074,18 +1065,18 @@ func (m *jsiiProxy_MaintenanceWindow) ResetId() {
 	)
 }
 
-func (m *jsiiProxy_MaintenanceWindow) ResetNumberOfDeferrals() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetNumberOfDeferrals",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MaintenanceWindow) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MaintenanceWindow) ResetStartAsap() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStartAsap",
 		nil, // no parameters
 	)
 }

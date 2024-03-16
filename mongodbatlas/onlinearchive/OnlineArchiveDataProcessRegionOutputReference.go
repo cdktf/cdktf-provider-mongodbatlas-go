@@ -33,8 +33,8 @@ type OnlineArchiveDataProcessRegionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *OnlineArchiveDataProcessRegion
+	SetInternalValue(val *OnlineArchiveDataProcessRegion)
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) InternalValue() *OnlineArchiveDataProcessRegion {
+	var returns *OnlineArchiveDataProcessRegion
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference) TerraformResou
 }
 
 
-func NewOnlineArchiveDataProcessRegionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnlineArchiveDataProcessRegionOutputReference {
+func NewOnlineArchiveDataProcessRegionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OnlineArchiveDataProcessRegionOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewOnlineArchiveDataProcessRegionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewOnlineArchiveDataProcessRegionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_OnlineArchiveDataProcessRegionOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveDataProcessRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewOnlineArchiveDataProcessRegionOutputReference_Override(o OnlineArchiveDataProcessRegionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOnlineArchiveDataProcessRegionOutputReference_Override(o OnlineArchiveDataProcessRegionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.onlineArchive.OnlineArchiveDataProcessRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
@@ -258,7 +258,7 @@ func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OnlineArchiveDataProcessRegionOutputReference)SetInternalValue(val *OnlineArchiveDataProcessRegion) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

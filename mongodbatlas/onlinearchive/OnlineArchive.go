@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/online_archive mongodbatlas_online_archive}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/online_archive mongodbatlas_online_archive}.
 type OnlineArchive interface {
 	cdktf.TerraformResource
 	ArchiveId() *string
@@ -41,8 +41,8 @@ type OnlineArchive interface {
 	CriteriaInput() *OnlineArchiveCriteria
 	DataExpirationRule() OnlineArchiveDataExpirationRuleOutputReference
 	DataExpirationRuleInput() *OnlineArchiveDataExpirationRule
-	DataProcessRegion() OnlineArchiveDataProcessRegionList
-	DataProcessRegionInput() interface{}
+	DataProcessRegion() OnlineArchiveDataProcessRegionOutputReference
+	DataProcessRegionInput() *OnlineArchiveDataProcessRegion
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -142,7 +142,7 @@ type OnlineArchive interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCriteria(value *OnlineArchiveCriteria)
 	PutDataExpirationRule(value *OnlineArchiveDataExpirationRule)
-	PutDataProcessRegion(value interface{})
+	PutDataProcessRegion(value *OnlineArchiveDataProcessRegion)
 	PutPartitionFields(value interface{})
 	PutSchedule(value *OnlineArchiveSchedule)
 	ResetCollectionType()
@@ -324,8 +324,8 @@ func (j *jsiiProxy_OnlineArchive) DataExpirationRuleInput() *OnlineArchiveDataEx
 	return returns
 }
 
-func (j *jsiiProxy_OnlineArchive) DataProcessRegion() OnlineArchiveDataProcessRegionList {
-	var returns OnlineArchiveDataProcessRegionList
+func (j *jsiiProxy_OnlineArchive) DataProcessRegion() OnlineArchiveDataProcessRegionOutputReference {
+	var returns OnlineArchiveDataProcessRegionOutputReference
 	_jsii_.Get(
 		j,
 		"dataProcessRegion",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_OnlineArchive) DataProcessRegion() OnlineArchiveDataProcessRe
 	return returns
 }
 
-func (j *jsiiProxy_OnlineArchive) DataProcessRegionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OnlineArchive) DataProcessRegionInput() *OnlineArchiveDataProcessRegion {
+	var returns *OnlineArchiveDataProcessRegion
 	_jsii_.Get(
 		j,
 		"dataProcessRegionInput",
@@ -615,7 +615,7 @@ func (j *jsiiProxy_OnlineArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArchiveConfig) OnlineArchive {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewOnlineArchive(scope constructs.Construct, id *string, config *OnlineArch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.1/docs/resources/online_archive mongodbatlas_online_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/online_archive mongodbatlas_online_archive} Resource.
 func NewOnlineArchive_Override(o OnlineArchive, scope constructs.Construct, id *string, config *OnlineArchiveConfig) {
 	_init_.Initialize()
 
@@ -1175,7 +1175,7 @@ func (o *jsiiProxy_OnlineArchive) PutDataExpirationRule(value *OnlineArchiveData
 	)
 }
 
-func (o *jsiiProxy_OnlineArchive) PutDataProcessRegion(value interface{}) {
+func (o *jsiiProxy_OnlineArchive) PutDataProcessRegion(value *OnlineArchiveDataProcessRegion) {
 	if err := o.validatePutDataProcessRegionParameters(value); err != nil {
 		panic(err)
 	}

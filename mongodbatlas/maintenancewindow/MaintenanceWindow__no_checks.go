@@ -127,15 +127,15 @@ func (j *jsiiProxy_MaintenanceWindow) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceWindow) validateSetNumberOfDeferralsParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_MaintenanceWindow) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_MaintenanceWindow) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MaintenanceWindow) validateSetStartAsapParameters(val interface{}) error {
 	return nil
 }
 

@@ -29,12 +29,14 @@ type DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResul
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomerEndpointDnsName() *string
 	EndpointId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResults
 	SetInternalValue(val *DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResults)
 	ProviderName() *string
+	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,6 +125,16 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference) CustomerEndpointDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerEndpointDnsName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference) EndpointId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -158,6 +170,16 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	_jsii_.Get(
 		j,
 		"providerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns
