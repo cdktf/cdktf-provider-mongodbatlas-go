@@ -22,21 +22,21 @@ type DataLakePipelineConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/data_lake_pipeline#name DataLakePipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/data_lake_pipeline#name DataLakePipeline#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/data_lake_pipeline#project_id DataLakePipeline#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// sink block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/data_lake_pipeline#sink DataLakePipeline#sink}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/data_lake_pipeline#sink DataLakePipeline#sink}
 	Sink *DataLakePipelineSink `field:"optional" json:"sink" yaml:"sink"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/data_lake_pipeline#source DataLakePipeline#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/data_lake_pipeline#source DataLakePipeline#source}
 	Source *DataLakePipelineSource `field:"optional" json:"source" yaml:"source"`
 	// transformations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.2/docs/resources/data_lake_pipeline#transformations DataLakePipeline#transformations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/data_lake_pipeline#transformations DataLakePipeline#transformations}
 	Transformations interface{} `field:"optional" json:"transformations" yaml:"transformations"`
 }
 
