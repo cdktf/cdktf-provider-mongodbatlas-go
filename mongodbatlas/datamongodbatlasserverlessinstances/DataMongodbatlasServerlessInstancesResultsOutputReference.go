@@ -13,6 +13,7 @@ import (
 
 type DataMongodbatlasServerlessInstancesResultsOutputReference interface {
 	cdktf.ComplexObject
+	AutoIndexing() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -92,6 +93,16 @@ type DataMongodbatlasServerlessInstancesResultsOutputReference interface {
 // The jsii proxy struct for DataMongodbatlasServerlessInstancesResultsOutputReference
 type jsiiProxy_DataMongodbatlasServerlessInstancesResultsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataMongodbatlasServerlessInstancesResultsOutputReference) AutoIndexing() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoIndexing",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataMongodbatlasServerlessInstancesResultsOutputReference) ComplexObjectIndex() interface{} {

@@ -99,6 +99,10 @@ func (c *jsiiProxy_CloudBackupSchedule) validatePutPolicyItemWeeklyParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_CloudBackupSchedule) validatePutPolicyItemYearlyParameters(value interface{}) error {
+	return nil
+}
+
 func validateCloudBackupSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

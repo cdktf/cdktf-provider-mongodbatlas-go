@@ -63,6 +63,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyItemMonthlyInput", GoGetter: "PolicyItemMonthlyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "policyItemWeekly", GoGetter: "PolicyItemWeekly"},
 			_jsii_.MemberProperty{JsiiProperty: "policyItemWeeklyInput", GoGetter: "PolicyItemWeeklyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "policyItemYearly", GoGetter: "PolicyItemYearly"},
+			_jsii_.MemberProperty{JsiiProperty: "policyItemYearlyInput", GoGetter: "PolicyItemYearlyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -73,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPolicyItemHourly", GoMethod: "PutPolicyItemHourly"},
 			_jsii_.MemberMethod{JsiiMethod: "putPolicyItemMonthly", GoMethod: "PutPolicyItemMonthly"},
 			_jsii_.MemberMethod{JsiiMethod: "putPolicyItemWeekly", GoMethod: "PutPolicyItemWeekly"},
+			_jsii_.MemberMethod{JsiiMethod: "putPolicyItemYearly", GoMethod: "PutPolicyItemYearly"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceHourOfDay", GoGetter: "ReferenceHourOfDay"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceHourOfDayInput", GoGetter: "ReferenceHourOfDayInput"},
@@ -87,6 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyItemHourly", GoMethod: "ResetPolicyItemHourly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyItemMonthly", GoMethod: "ResetPolicyItemMonthly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyItemWeekly", GoMethod: "ResetPolicyItemWeekly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPolicyItemYearly", GoMethod: "ResetPolicyItemYearly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReferenceHourOfDay", GoMethod: "ResetReferenceHourOfDay"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReferenceMinuteOfHour", GoMethod: "ResetReferenceMinuteOfHour"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreWindowDays", GoMethod: "ResetRestoreWindowDays"},
@@ -449,6 +453,72 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudBackupSchedulePolicyItemWeeklyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-mongodbatlas.cloudBackupSchedule.CloudBackupSchedulePolicyItemYearly",
+		reflect.TypeOf((*CloudBackupSchedulePolicyItemYearly)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cloudBackupSchedule.CloudBackupSchedulePolicyItemYearlyList",
+		reflect.TypeOf((*CloudBackupSchedulePolicyItemYearlyList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudBackupSchedulePolicyItemYearlyList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.cloudBackupSchedule.CloudBackupSchedulePolicyItemYearlyOutputReference",
+		reflect.TypeOf((*CloudBackupSchedulePolicyItemYearlyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "frequencyInterval", GoGetter: "FrequencyInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "frequencyIntervalInput", GoGetter: "FrequencyIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "frequencyType", GoGetter: "FrequencyType"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionUnit", GoGetter: "RetentionUnit"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionUnitInput", GoGetter: "RetentionUnitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionValue", GoGetter: "RetentionValue"},
+			_jsii_.MemberProperty{JsiiProperty: "retentionValueInput", GoGetter: "RetentionValueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudBackupSchedulePolicyItemYearlyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

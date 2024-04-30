@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
 type DataMongodbatlasThirdPartyIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -42,8 +42,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -112,7 +110,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetEnabled()
-	ResetId()
 	ResetMicrosoftTeamsWebhookUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -264,16 +261,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +517,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) UserNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) DataMongodbatlasThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -548,7 +535,7 @@ func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration_Override(d DataMongodbatlasThirdPartyIntegration, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
@@ -593,17 +580,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetForEach(val cdktf.IT
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -982,14 +958,6 @@ func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	OrgId() *string
 	ProjectId() *string
 	RegionUsageRestrictions() *string
+	Tags() cdktf.StringMap
 	Teams() DataMongodbatlasProjectsResultsTeamsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -290,6 +291,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) RegionUsageRe
 	_jsii_.Get(
 		j,
 		"regionUsageRestrictions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

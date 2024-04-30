@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type DataMongodbatlasCloudBackupSchedule interface {
 	cdktf.TerraformDataSource
 	AutoExportEnabled() cdktf.IResolvable
@@ -57,6 +57,7 @@ type DataMongodbatlasCloudBackupSchedule interface {
 	PolicyItemHourly() DataMongodbatlasCloudBackupSchedulePolicyItemHourlyList
 	PolicyItemMonthly() DataMongodbatlasCloudBackupSchedulePolicyItemMonthlyList
 	PolicyItemWeekly() DataMongodbatlasCloudBackupSchedulePolicyItemWeeklyList
+	PolicyItemYearly() DataMongodbatlasCloudBackupSchedulePolicyItemYearlyList
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -354,6 +355,16 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) PolicyItemWeekly() DataM
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) PolicyItemYearly() DataMongodbatlasCloudBackupSchedulePolicyItemYearlyList {
+	var returns DataMongodbatlasCloudBackupSchedulePolicyItemYearlyList
+	_jsii_.Get(
+		j,
+		"policyItemYearly",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -465,7 +476,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseOrgAndGroupNamesInExp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) DataMongodbatlasCloudBackupSchedule {
 	_init_.Initialize()
 
@@ -483,7 +494,7 @@ func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule_Override(d DataMongodbatlasCloudBackupSchedule, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) {
 	_init_.Initialize()
 

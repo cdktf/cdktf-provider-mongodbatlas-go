@@ -155,6 +155,10 @@ func (j *jsiiProxy_Project) validateSetRegionUsageRestrictionsParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetWithDefaultAlertsSettingsParameters(val interface{}) error {
 	return nil
 }

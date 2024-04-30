@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -91,6 +91,9 @@ type Project interface {
 	RegionUsageRestrictions() *string
 	SetRegionUsageRestrictions(val *string)
 	RegionUsageRestrictionsInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	Teams() ProjectTeamsList
 	TeamsInput() interface{}
 	// Experimental.
@@ -159,6 +162,7 @@ type Project interface {
 	ResetOverrideLogicalId()
 	ResetProjectOwnerId()
 	ResetRegionUsageRestrictions()
+	ResetTags()
 	ResetTeams()
 	ResetWithDefaultAlertsSettings()
 	SynthesizeAttributes() *map[string]interface{}
@@ -569,6 +573,26 @@ func (j *jsiiProxy_Project) RegionUsageRestrictionsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Teams() ProjectTeamsList {
 	var returns ProjectTeamsList
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -843,6 +867,17 @@ func (j *jsiiProxy_Project)SetRegionUsageRestrictions(val *string) {
 	_jsii_.Set(
 		j,
 		"regionUsageRestrictions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1309,6 +1344,14 @@ func (p *jsiiProxy_Project) ResetRegionUsageRestrictions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRegionUsageRestrictions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetTags() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTags",
 		nil, // no parameters
 	)
 }

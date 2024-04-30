@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/serverless_instance mongodbatlas_serverless_instance}.
 type ServerlessInstance interface {
 	cdktf.TerraformResource
+	AutoIndexing() interface{}
+	SetAutoIndexing(val interface{})
+	AutoIndexingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -141,6 +144,7 @@ type ServerlessInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLinks(value interface{})
 	PutTags(value interface{})
+	ResetAutoIndexing()
 	ResetContinuousBackupEnabled()
 	ResetId()
 	ResetLinks()
@@ -166,6 +170,26 @@ type ServerlessInstance interface {
 // The jsii proxy struct for ServerlessInstance
 type jsiiProxy_ServerlessInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ServerlessInstance) AutoIndexing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoIndexing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerlessInstance) AutoIndexingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoIndexingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServerlessInstance) CdktfStack() cdktf.TerraformStack {
@@ -589,7 +613,7 @@ func (j *jsiiProxy_ServerlessInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance(scope constructs.Construct, id *string, config *ServerlessInstanceConfig) ServerlessInstance {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewServerlessInstance(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/serverless_instance mongodbatlas_serverless_instance} Resource.
 func NewServerlessInstance_Override(s ServerlessInstance, scope constructs.Construct, id *string, config *ServerlessInstanceConfig) {
 	_init_.Initialize()
 
@@ -615,6 +639,17 @@ func NewServerlessInstance_Override(s ServerlessInstance, scope constructs.Const
 		"@cdktf/provider-mongodbatlas.serverlessInstance.ServerlessInstance",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServerlessInstance)SetAutoIndexing(val interface{}) {
+	if err := j.validateSetAutoIndexingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoIndexing",
+		val,
 	)
 }
 
@@ -1157,6 +1192,14 @@ func (s *jsiiProxy_ServerlessInstance) PutTags(value interface{}) {
 		s,
 		"putTags",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServerlessInstance) ResetAutoIndexing() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoIndexing",
+		nil, // no parameters
 	)
 }
 

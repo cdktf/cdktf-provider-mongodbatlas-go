@@ -75,6 +75,10 @@ func validateDataMongodbatlasServerlessInstance_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasServerlessInstance) validateSetAutoIndexingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataMongodbatlasServerlessInstance) validateSetContinuousBackupEnabledParameters(val interface{}) error {
 	return nil
 }

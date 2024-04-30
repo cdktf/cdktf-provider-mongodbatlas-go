@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*DataMongodbatlasServerlessInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoIndexing", GoGetter: "AutoIndexing"},
+			_jsii_.MemberProperty{JsiiProperty: "autoIndexingInput", GoGetter: "AutoIndexingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionStringsPrivateEndpointSrv", GoGetter: "ConnectionStringsPrivateEndpointSrv"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionStringsStandardSrv", GoGetter: "ConnectionStringsStandardSrv"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerSettingsRegionName", GoGetter: "ProviderSettingsRegionName"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinks", GoMethod: "PutLinks"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoIndexing", GoMethod: "ResetAutoIndexing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContinuousBackupEnabled", GoMethod: "ResetContinuousBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinks", GoMethod: "ResetLinks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

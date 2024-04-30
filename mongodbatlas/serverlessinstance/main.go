@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoIndexing", GoGetter: "AutoIndexing"},
+			_jsii_.MemberProperty{JsiiProperty: "autoIndexingInput", GoGetter: "AutoIndexingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionStringsPrivateEndpointSrv", GoGetter: "ConnectionStringsPrivateEndpointSrv"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLinks", GoMethod: "PutLinks"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoIndexing", GoMethod: "ResetAutoIndexing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContinuousBackupEnabled", GoMethod: "ResetContinuousBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinks", GoMethod: "ResetLinks"},

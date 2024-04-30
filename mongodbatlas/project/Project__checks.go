@@ -605,6 +605,14 @@ func (j *jsiiProxy_Project) validateSetRegionUsageRestrictionsParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetWithDefaultAlertsSettingsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

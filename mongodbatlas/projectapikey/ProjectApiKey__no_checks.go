@@ -115,10 +115,6 @@ func (j *jsiiProxy_ProjectApiKey) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_ProjectApiKey) validateSetProjectIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ProjectApiKey) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

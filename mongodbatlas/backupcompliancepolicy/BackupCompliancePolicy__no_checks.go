@@ -95,6 +95,10 @@ func (b *jsiiProxy_BackupCompliancePolicy) validatePutPolicyItemWeeklyParameters
 	return nil
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) validatePutPolicyItemYearlyParameters(value interface{}) error {
+	return nil
+}
+
 func validateBackupCompliancePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

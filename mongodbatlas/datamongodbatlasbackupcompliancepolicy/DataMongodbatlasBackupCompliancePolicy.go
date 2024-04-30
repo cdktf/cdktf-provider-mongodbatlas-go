@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
 type DataMongodbatlasBackupCompliancePolicy interface {
 	cdktf.TerraformDataSource
 	AuthorizedEmail() *string
@@ -55,6 +55,7 @@ type DataMongodbatlasBackupCompliancePolicy interface {
 	PolicyItemHourly() DataMongodbatlasBackupCompliancePolicyPolicyItemHourlyList
 	PolicyItemMonthly() DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList
 	PolicyItemWeekly() DataMongodbatlasBackupCompliancePolicyPolicyItemWeeklyList
+	PolicyItemYearly() DataMongodbatlasBackupCompliancePolicyPolicyItemYearlyList
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -342,6 +343,16 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemWeekly() Da
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) PolicyItemYearly() DataMongodbatlasBackupCompliancePolicyPolicyItemYearlyList {
+	var returns DataMongodbatlasBackupCompliancePolicyPolicyItemYearlyList
+	_jsii_.Get(
+		j,
+		"policyItemYearly",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -453,7 +464,7 @@ func (j *jsiiProxy_DataMongodbatlasBackupCompliancePolicy) UpdatedUser() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
 func NewDataMongodbatlasBackupCompliancePolicy(scope constructs.Construct, id *string, config *DataMongodbatlasBackupCompliancePolicyConfig) DataMongodbatlasBackupCompliancePolicy {
 	_init_.Initialize()
 
@@ -471,7 +482,7 @@ func NewDataMongodbatlasBackupCompliancePolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Data Source.
 func NewDataMongodbatlasBackupCompliancePolicy_Override(d DataMongodbatlasBackupCompliancePolicy, scope constructs.Construct, id *string, config *DataMongodbatlasBackupCompliancePolicyConfig) {
 	_init_.Initialize()
 

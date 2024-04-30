@@ -37,6 +37,7 @@ type DataMongodbatlasAlertConfigurationsResultsNotificationOutputReference inter
 	EmailEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	IntegrationId() *string
 	InternalValue() *DataMongodbatlasAlertConfigurationsResultsNotification
 	SetInternalValue(val *DataMongodbatlasAlertConfigurationsResultsNotification)
 	IntervalMin() *float64
@@ -208,6 +209,16 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsNotificationOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsNotificationOutputReference) IntegrationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationId",
 		&returns,
 	)
 	return returns

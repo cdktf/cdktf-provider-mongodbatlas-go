@@ -99,6 +99,10 @@ func validateServerlessInstance_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessInstance) validateSetAutoIndexingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

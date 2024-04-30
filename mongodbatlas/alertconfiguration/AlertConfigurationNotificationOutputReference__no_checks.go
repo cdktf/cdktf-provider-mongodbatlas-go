@@ -87,6 +87,10 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetEma
 	return nil
 }
 
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetIntegrationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

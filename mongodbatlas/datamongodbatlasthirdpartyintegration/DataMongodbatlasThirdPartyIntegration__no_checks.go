@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetEnabledPara
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

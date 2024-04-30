@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
 type BackupCompliancePolicy interface {
 	cdktf.TerraformResource
 	AuthorizedEmail() *string
@@ -76,6 +76,8 @@ type BackupCompliancePolicy interface {
 	PolicyItemMonthlyInput() interface{}
 	PolicyItemWeekly() BackupCompliancePolicyPolicyItemWeeklyList
 	PolicyItemWeeklyInput() interface{}
+	PolicyItemYearly() BackupCompliancePolicyPolicyItemYearlyList
+	PolicyItemYearlyInput() interface{}
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -149,6 +151,7 @@ type BackupCompliancePolicy interface {
 	PutPolicyItemHourly(value *BackupCompliancePolicyPolicyItemHourly)
 	PutPolicyItemMonthly(value interface{})
 	PutPolicyItemWeekly(value interface{})
+	PutPolicyItemYearly(value interface{})
 	ResetCopyProtectionEnabled()
 	ResetEncryptionAtRestEnabled()
 	ResetId()
@@ -160,6 +163,7 @@ type BackupCompliancePolicy interface {
 	ResetPolicyItemHourly()
 	ResetPolicyItemMonthly()
 	ResetPolicyItemWeekly()
+	ResetPolicyItemYearly()
 	ResetRestoreWindowDays()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -519,6 +523,26 @@ func (j *jsiiProxy_BackupCompliancePolicy) PolicyItemWeeklyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BackupCompliancePolicy) PolicyItemYearly() BackupCompliancePolicyPolicyItemYearlyList {
+	var returns BackupCompliancePolicyPolicyItemYearlyList
+	_jsii_.Get(
+		j,
+		"policyItemYearly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupCompliancePolicy) PolicyItemYearlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyItemYearlyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupCompliancePolicy) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -650,7 +674,7 @@ func (j *jsiiProxy_BackupCompliancePolicy) UpdatedUser() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) BackupCompliancePolicy {
 	_init_.Initialize()
 
@@ -668,7 +692,7 @@ func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy_Override(b BackupCompliancePolicy, scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) {
 	_init_.Initialize()
 
@@ -1254,6 +1278,17 @@ func (b *jsiiProxy_BackupCompliancePolicy) PutPolicyItemWeekly(value interface{}
 	)
 }
 
+func (b *jsiiProxy_BackupCompliancePolicy) PutPolicyItemYearly(value interface{}) {
+	if err := b.validatePutPolicyItemYearlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putPolicyItemYearly",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupCompliancePolicy) ResetCopyProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1322,6 +1357,14 @@ func (b *jsiiProxy_BackupCompliancePolicy) ResetPolicyItemWeekly() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetPolicyItemWeekly",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) ResetPolicyItemYearly() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPolicyItemYearly",
 		nil, // no parameters
 	)
 }

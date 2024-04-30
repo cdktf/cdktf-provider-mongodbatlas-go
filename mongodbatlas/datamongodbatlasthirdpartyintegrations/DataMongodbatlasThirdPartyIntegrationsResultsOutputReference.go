@@ -34,6 +34,7 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataMongodbatlasThirdPartyIntegrationsResults
 	SetInternalValue(val *DataMongodbatlasThirdPartyIntegrationsResults)
 	MicrosoftTeamsWebhookUrl() *string
@@ -170,6 +171,16 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

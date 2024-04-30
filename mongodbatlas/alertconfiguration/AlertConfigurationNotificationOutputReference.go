@@ -51,6 +51,9 @@ type AlertConfigurationNotificationOutputReference interface {
 	EmailEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IntegrationId() *string
+	SetIntegrationId(val *string)
+	IntegrationIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	IntervalMin() *float64
@@ -141,6 +144,7 @@ type AlertConfigurationNotificationOutputReference interface {
 	ResetDelayMin()
 	ResetEmailAddress()
 	ResetEmailEnabled()
+	ResetIntegrationId()
 	ResetIntervalMin()
 	ResetMicrosoftTeamsWebhookUrl()
 	ResetMobileNumber()
@@ -346,6 +350,26 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) IntegrationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference) IntegrationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationIdInput",
 		&returns,
 	)
 	return returns
@@ -838,6 +862,17 @@ func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetEmailEnabled
 	)
 }
 
+func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetIntegrationId(val *string) {
+	if err := j.validateSetIntegrationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"integrationId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlertConfigurationNotificationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -1285,6 +1320,14 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetEmailEnab
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetIntegrationId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIntegrationId",
 		nil, // no parameters
 	)
 }

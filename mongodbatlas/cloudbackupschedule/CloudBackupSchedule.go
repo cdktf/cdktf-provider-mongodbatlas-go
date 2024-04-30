@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type CloudBackupSchedule interface {
 	cdktf.TerraformResource
 	AutoExportEnabled() interface{}
@@ -69,6 +69,8 @@ type CloudBackupSchedule interface {
 	PolicyItemMonthlyInput() interface{}
 	PolicyItemWeekly() CloudBackupSchedulePolicyItemWeeklyList
 	PolicyItemWeeklyInput() interface{}
+	PolicyItemYearly() CloudBackupSchedulePolicyItemYearlyList
+	PolicyItemYearlyInput() interface{}
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -152,6 +154,7 @@ type CloudBackupSchedule interface {
 	PutPolicyItemHourly(value *CloudBackupSchedulePolicyItemHourly)
 	PutPolicyItemMonthly(value interface{})
 	PutPolicyItemWeekly(value interface{})
+	PutPolicyItemYearly(value interface{})
 	ResetAutoExportEnabled()
 	ResetCopySettings()
 	ResetExport()
@@ -163,6 +166,7 @@ type CloudBackupSchedule interface {
 	ResetPolicyItemHourly()
 	ResetPolicyItemMonthly()
 	ResetPolicyItemWeekly()
+	ResetPolicyItemYearly()
 	ResetReferenceHourOfDay()
 	ResetReferenceMinuteOfHour()
 	ResetRestoreWindowDays()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_CloudBackupSchedule) PolicyItemWeeklyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudBackupSchedule) PolicyItemYearly() CloudBackupSchedulePolicyItemYearlyList {
+	var returns CloudBackupSchedulePolicyItemYearlyList
+	_jsii_.Get(
+		j,
+		"policyItemYearly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSchedule) PolicyItemYearlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyItemYearlyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudBackupSchedule) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -677,7 +701,7 @@ func (j *jsiiProxy_CloudBackupSchedule) UseOrgAndGroupNamesInExportPrefixInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
 func NewCloudBackupSchedule(scope constructs.Construct, id *string, config *CloudBackupScheduleConfig) CloudBackupSchedule {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewCloudBackupSchedule(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Resource.
 func NewCloudBackupSchedule_Override(c CloudBackupSchedule, scope constructs.Construct, id *string, config *CloudBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -1292,6 +1316,17 @@ func (c *jsiiProxy_CloudBackupSchedule) PutPolicyItemWeekly(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CloudBackupSchedule) PutPolicyItemYearly(value interface{}) {
+	if err := c.validatePutPolicyItemYearlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPolicyItemYearly",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudBackupSchedule) ResetAutoExportEnabled() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1360,6 +1395,14 @@ func (c *jsiiProxy_CloudBackupSchedule) ResetPolicyItemWeekly() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPolicyItemWeekly",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSchedule) ResetPolicyItemYearly() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyItemYearly",
 		nil, // no parameters
 	)
 }

@@ -22,9 +22,9 @@ type DataMongodbatlasAtlasUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/atlas_user#user_id DataMongodbatlasAtlasUser#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/atlas_user#user_id DataMongodbatlasAtlasUser#user_id}.
 	UserId *string `field:"optional" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/data-sources/atlas_user#username DataMongodbatlasAtlasUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/atlas_user#username DataMongodbatlasAtlasUser#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

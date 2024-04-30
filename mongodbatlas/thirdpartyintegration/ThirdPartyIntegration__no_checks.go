@@ -111,10 +111,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetEnabledParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
 type ProjectApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -55,9 +55,6 @@ type ProjectApiKey interface {
 	PrivateKey() *string
 	ProjectAssignment() ProjectApiKeyProjectAssignmentList
 	ProjectAssignmentInput() interface{}
-	ProjectId() *string
-	SetProjectId(val *string)
-	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -123,7 +120,6 @@ type ProjectApiKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -322,26 +318,6 @@ func (j *jsiiProxy_ProjectApiKey) ProjectAssignmentInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectApiKey) ProjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ProjectApiKey) ProjectIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"projectIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ProjectApiKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -413,7 +389,7 @@ func (j *jsiiProxy_ProjectApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) ProjectApiKey {
 	_init_.Initialize()
 
@@ -431,7 +407,7 @@ func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.15.3/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey_Override(p ProjectApiKey, scope constructs.Construct, id *string, config *ProjectApiKeyConfig) {
 	_init_.Initialize()
 
@@ -509,17 +485,6 @@ func (j *jsiiProxy_ProjectApiKey)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ProjectApiKey)SetProjectId(val *string) {
-	if err := j.validateSetProjectIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"projectId",
 		val,
 	)
 }
@@ -919,14 +884,6 @@ func (p *jsiiProxy_ProjectApiKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_ProjectApiKey) ResetProjectId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetProjectId",
 		nil, // no parameters
 	)
 }
