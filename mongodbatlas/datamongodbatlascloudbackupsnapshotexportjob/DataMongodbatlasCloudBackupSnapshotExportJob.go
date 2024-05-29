@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
 type DataMongodbatlasCloudBackupSnapshotExportJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -101,6 +101,7 @@ type DataMongodbatlasCloudBackupSnapshotExportJob interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -454,7 +455,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobConfig) DataMongodbatlasCloudBackupSnapshotExportJob {
 	_init_.Initialize()
 
@@ -472,7 +473,7 @@ func NewDataMongodbatlasCloudBackupSnapshotExportJob(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJob_Override(d DataMongodbatlasCloudBackupSnapshotExportJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobConfig) {
 	_init_.Initialize()
 
@@ -855,6 +856,14 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) OverrideLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
 	)
 }
 

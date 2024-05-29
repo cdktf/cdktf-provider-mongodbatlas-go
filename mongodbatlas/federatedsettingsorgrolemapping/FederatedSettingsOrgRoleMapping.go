@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping}.
 type FederatedSettingsOrgRoleMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,7 @@ type FederatedSettingsOrgRoleMapping interface {
 	RawOverrides() interface{}
 	RoleAssignments() FederatedSettingsOrgRoleMappingRoleAssignmentsList
 	RoleAssignmentsInput() interface{}
+	RoleMappingId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -358,6 +359,16 @@ func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) RoleAssignmentsInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) RoleMappingId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleMappingId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -389,7 +400,7 @@ func (j *jsiiProxy_FederatedSettingsOrgRoleMapping) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Resource.
 func NewFederatedSettingsOrgRoleMapping(scope constructs.Construct, id *string, config *FederatedSettingsOrgRoleMappingConfig) FederatedSettingsOrgRoleMapping {
 	_init_.Initialize()
 
@@ -407,7 +418,7 @@ func NewFederatedSettingsOrgRoleMapping(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/federated_settings_org_role_mapping mongodbatlas_federated_settings_org_role_mapping} Resource.
 func NewFederatedSettingsOrgRoleMapping_Override(f FederatedSettingsOrgRoleMapping, scope constructs.Construct, id *string, config *FederatedSettingsOrgRoleMappingConfig) {
 	_init_.Initialize()
 

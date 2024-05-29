@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) validateSetPro
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) validateSetSnapshotRestoreJobIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataMongodbatlasCloudBackupSnapshotRestoreJobParameters(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) error {
 	return nil
 }

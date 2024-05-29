@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/search_deployment mongodbatlas_search_deployment}.
 type SearchDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SearchDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchDeploymentConfig) SearchDeployment {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment_Override(s SearchDeployment, scope constructs.Construct, id *string, config *SearchDeploymentConfig) {
 	_init_.Initialize()
 

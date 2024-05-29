@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
 type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	cdktf.TerraformDataSource
 	Cancelled() cdktf.IResolvable
@@ -70,6 +70,9 @@ type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SnapshotId() *string
+	SnapshotRestoreJobId() *string
+	SetSnapshotRestoreJobId(val *string)
+	SnapshotRestoreJobIdInput() *string
 	TargetClusterName() *string
 	TargetProjectId() *string
 	// Experimental.
@@ -105,9 +108,11 @@ type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetJobId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSnapshotRestoreJobId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -427,6 +432,26 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) SnapshotId() *
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) SnapshotRestoreJobId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotRestoreJobId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) SnapshotRestoreJobIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotRestoreJobIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) TargetClusterName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -488,7 +513,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) Timestamp() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) DataMongodbatlasCloudBackupSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -506,7 +531,7 @@ func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob_Override(d DataMongodbatlasCloudBackupSnapshotRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 
@@ -603,6 +628,17 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob)SetProvider(val
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob)SetSnapshotRestoreJobId(val *string) {
+	if err := j.validateSetSnapshotRestoreJobIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotRestoreJobId",
 		val,
 	)
 }
@@ -900,10 +936,26 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) ResetJobId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetJobId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) ResetSnapshotRestoreJobId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSnapshotRestoreJobId",
 		nil, // no parameters
 	)
 }

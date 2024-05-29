@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) validateSetPro
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) validateSetSnapshotRestoreJobIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataMongodbatlasCloudBackupSnapshotRestoreJobParameters(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
