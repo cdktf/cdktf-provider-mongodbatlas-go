@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/projects mongodbatlas_projects}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/projects mongodbatlas_projects}.
 type DataMongodbatlasProjects interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataMongodbatlasProjects) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/projects mongodbatlas_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/projects mongodbatlas_projects} Data Source.
 func NewDataMongodbatlasProjects(scope constructs.Construct, id *string, config *DataMongodbatlasProjectsConfig) DataMongodbatlasProjects {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataMongodbatlasProjects(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/projects mongodbatlas_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/projects mongodbatlas_projects} Data Source.
 func NewDataMongodbatlasProjects_Override(d DataMongodbatlasProjects, scope constructs.Construct, id *string, config *DataMongodbatlasProjectsConfig) {
 	_init_.Initialize()
 

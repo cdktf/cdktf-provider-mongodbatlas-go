@@ -28,7 +28,7 @@ type DataMongodbatlasPushBasedLogExportConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.1/docs/data-sources/push_based_log_export#project_id DataMongodbatlasPushBasedLogExport#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/push_based_log_export#project_id DataMongodbatlasPushBasedLogExport#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
