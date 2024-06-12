@@ -99,6 +99,10 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetDataAccessIdentityProviderIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsOrgConfig) validateSetDomainAllowListParameters(val *[]*string) error {
 	return nil
 }

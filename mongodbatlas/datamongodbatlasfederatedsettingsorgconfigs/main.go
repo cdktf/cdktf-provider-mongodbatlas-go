@@ -103,6 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAccessIdentityProviderIds", GoGetter: "DataAccessIdentityProviderIds"},
 			_jsii_.MemberProperty{JsiiProperty: "domainAllowList", GoGetter: "DomainAllowList"},
 			_jsii_.MemberProperty{JsiiProperty: "domainRestrictionEnabled", GoGetter: "DomainRestrictionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

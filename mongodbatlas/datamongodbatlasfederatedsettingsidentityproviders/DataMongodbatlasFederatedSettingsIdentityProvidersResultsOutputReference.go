@@ -16,8 +16,9 @@ type DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference in
 	AcsUrl() *string
 	AssociatedDomains() *[]*string
 	AssociatedOrgs() DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsList
-	AudienceClaim() *[]*string
+	Audience() *string
 	AudienceUri() *string
+	AuthorizationType() *string
 	ClientId() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -34,11 +35,13 @@ type DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	DisplayName() *string
 	// Experimental.
 	Fqn() *string
 	GroupsClaim() *string
 	IdpId() *string
+	IdpType() *string
 	InternalValue() *DataMongodbatlasFederatedSettingsIdentityProvidersResults
 	SetInternalValue(val *DataMongodbatlasFederatedSettingsIdentityProvidersResults)
 	IssuerUri() *string
@@ -129,11 +132,11 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) AudienceClaim() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) Audience() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"audienceClaim",
+		"audience",
 		&returns,
 	)
 	return returns
@@ -144,6 +147,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	_jsii_.Get(
 		j,
 		"audienceUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) AuthorizationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizationType",
 		&returns,
 	)
 	return returns
@@ -189,6 +202,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) DisplayName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -224,6 +247,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutp
 	_jsii_.Get(
 		j,
 		"idpId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsOutputReference) IdpType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpType",
 		&returns,
 	)
 	return returns

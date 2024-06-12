@@ -83,15 +83,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) validateSetItemsPerPageParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) validateSetPageNumParameters(val *float64) error {
 	return nil
 }
 

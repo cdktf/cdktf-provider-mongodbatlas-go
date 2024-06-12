@@ -255,7 +255,15 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAssociatedDomai
 	return nil
 }
 
-func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAudienceClaimParameters(val *[]*string) error {
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAudienceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetAuthorizationTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,6 +369,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetFederationSettingsIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -378,6 +394,14 @@ func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetGroupsClaimPara
 }
 
 func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FederatedSettingsIdentityProvider) validateSetIdpTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

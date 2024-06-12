@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config}.
 type FederatedSettingsOrgConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type FederatedSettingsOrgConfig interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataAccessIdentityProviderIds() *[]*string
+	SetDataAccessIdentityProviderIds(val *[]*string)
+	DataAccessIdentityProviderIdsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -82,6 +85,7 @@ type FederatedSettingsOrgConfig interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserConflicts() FederatedSettingsOrgConfigUserConflictsList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,8 +129,10 @@ type FederatedSettingsOrgConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDataAccessIdentityProviderIds()
 	ResetDomainAllowList()
 	ResetId()
+	ResetIdentityProviderId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -184,6 +190,26 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsOrgConfig) DataAccessIdentityProviderIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataAccessIdentityProviderIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedSettingsOrgConfig) DataAccessIdentityProviderIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataAccessIdentityProviderIdsInput",
 		&returns,
 	)
 	return returns
@@ -449,8 +475,18 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FederatedSettingsOrgConfig) UserConflicts() FederatedSettingsOrgConfigUserConflictsList {
+	var returns FederatedSettingsOrgConfigUserConflictsList
+	_jsii_.Get(
+		j,
+		"userConflicts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) FederatedSettingsOrgConfig {
 	_init_.Initialize()
 
@@ -468,7 +504,7 @@ func NewFederatedSettingsOrgConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/federated_settings_org_config mongodbatlas_federated_settings_org_config} Resource.
 func NewFederatedSettingsOrgConfig_Override(f FederatedSettingsOrgConfig, scope constructs.Construct, id *string, config *FederatedSettingsOrgConfigConfig) {
 	_init_.Initialize()
 
@@ -497,6 +533,17 @@ func (j *jsiiProxy_FederatedSettingsOrgConfig)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FederatedSettingsOrgConfig)SetDataAccessIdentityProviderIds(val *[]*string) {
+	if err := j.validateSetDataAccessIdentityProviderIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataAccessIdentityProviderIds",
 		val,
 	)
 }
@@ -977,6 +1024,14 @@ func (f *jsiiProxy_FederatedSettingsOrgConfig) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (f *jsiiProxy_FederatedSettingsOrgConfig) ResetDataAccessIdentityProviderIds() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataAccessIdentityProviderIds",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FederatedSettingsOrgConfig) ResetDomainAllowList() {
 	_jsii_.InvokeVoid(
 		f,
@@ -989,6 +1044,14 @@ func (f *jsiiProxy_FederatedSettingsOrgConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedSettingsOrgConfig) ResetIdentityProviderId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetIdentityProviderId",
 		nil, // no parameters
 	)
 }

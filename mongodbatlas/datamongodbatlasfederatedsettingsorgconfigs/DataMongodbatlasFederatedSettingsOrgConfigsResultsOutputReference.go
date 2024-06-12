@@ -28,6 +28,7 @@ type DataMongodbatlasFederatedSettingsOrgConfigsResultsOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataAccessIdentityProviderIds() *[]*string
 	DomainAllowList() *[]*string
 	DomainRestrictionEnabled() cdktf.IResolvable
 	// Experimental.
@@ -111,6 +112,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfigsResultsOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfigsResultsOutputReference) DataAccessIdentityProviderIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataAccessIdentityProviderIds",
 		&returns,
 	)
 	return returns

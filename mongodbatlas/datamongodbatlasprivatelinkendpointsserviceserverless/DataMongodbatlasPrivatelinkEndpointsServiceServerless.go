@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless}.
 type DataMongodbatlasPrivatelinkEndpointsServiceServerless interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,18 +41,12 @@ type DataMongodbatlasPrivatelinkEndpointsServiceServerless interface {
 	InstanceName() *string
 	SetInstanceName(val *string)
 	InstanceNameInput() *string
-	ItemsPerPage() *float64
-	SetItemsPerPage(val *float64)
-	ItemsPerPageInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PageNum() *float64
-	SetPageNum(val *float64)
-	PageNumInput() *float64
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -95,11 +89,9 @@ type DataMongodbatlasPrivatelinkEndpointsServiceServerless interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
-	ResetItemsPerPage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPageNum()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -229,26 +221,6 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) Instan
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ItemsPerPage() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ItemsPerPageInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -264,26 +236,6 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) Node()
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) PageNum() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNum",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) PageNumInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNumInput",
 		&returns,
 	)
 	return returns
@@ -370,7 +322,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) Terraf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointsServiceServerless(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointsServiceServerlessConfig) DataMongodbatlasPrivatelinkEndpointsServiceServerless {
 	_init_.Initialize()
 
@@ -388,7 +340,7 @@ func NewDataMongodbatlasPrivatelinkEndpointsServiceServerless(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.16.2/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/data-sources/privatelink_endpoints_service_serverless mongodbatlas_privatelink_endpoints_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointsServiceServerless_Override(d DataMongodbatlasPrivatelinkEndpointsServiceServerless, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointsServiceServerlessConfig) {
 	_init_.Initialize()
 
@@ -448,17 +400,6 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless)SetInst
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless)SetItemsPerPage(val *float64) {
-	if err := j.validateSetItemsPerPageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"itemsPerPage",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -466,17 +407,6 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless)SetLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless)SetPageNum(val *float64) {
-	if err := j.validateSetPageNumParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pageNum",
 		val,
 	)
 }
@@ -793,26 +723,10 @@ func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ResetI
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ResetItemsPerPage() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetItemsPerPage",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointsServiceServerless) ResetPageNum() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPageNum",
 		nil, // no parameters
 	)
 }
