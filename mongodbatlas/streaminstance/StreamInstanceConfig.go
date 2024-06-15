@@ -22,13 +22,13 @@ type StreamInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/stream_instance#data_process_region StreamInstance#data_process_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/stream_instance#data_process_region StreamInstance#data_process_region}.
 	DataProcessRegion *StreamInstanceDataProcessRegion `field:"required" json:"dataProcessRegion" yaml:"dataProcessRegion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/stream_instance#instance_name StreamInstance#instance_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/stream_instance#instance_name StreamInstance#instance_name}.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/stream_instance#project_id StreamInstance#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/stream_instance#project_id StreamInstance#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.0/docs/resources/stream_instance#stream_config StreamInstance#stream_config}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/stream_instance#stream_config StreamInstance#stream_config}.
 	StreamConfig *StreamInstanceStreamConfig `field:"optional" json:"streamConfig" yaml:"streamConfig"`
 }
 
