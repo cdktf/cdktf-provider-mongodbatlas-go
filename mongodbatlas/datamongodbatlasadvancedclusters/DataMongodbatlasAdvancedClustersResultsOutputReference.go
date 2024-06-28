@@ -38,6 +38,7 @@ type DataMongodbatlasAdvancedClustersResultsOutputReference interface {
 	EncryptionAtRestProvider() *string
 	// Experimental.
 	Fqn() *string
+	GlobalClusterSelfManagedSharding() cdktf.IResolvable
 	InternalValue() *DataMongodbatlasAdvancedClustersResults
 	SetInternalValue(val *DataMongodbatlasAdvancedClustersResults)
 	Labels() DataMongodbatlasAdvancedClustersResultsLabelsList
@@ -214,6 +215,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) GlobalClusterSelfManagedSharding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"globalClusterSelfManagedSharding",
 		&returns,
 	)
 	return returns

@@ -5,7 +5,7 @@ package onlinearchive
 
 
 type OnlineArchiveDataExpirationRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/online_archive#expire_after_days OnlineArchive#expire_after_days}.
 	ExpireAfterDays *float64 `field:"required" json:"expireAfterDays" yaml:"expireAfterDays"`
 }
 

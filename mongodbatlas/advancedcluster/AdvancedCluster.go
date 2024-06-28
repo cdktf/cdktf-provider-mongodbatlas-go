@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -61,6 +61,9 @@ type AdvancedCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlobalClusterSelfManagedSharding() interface{}
+	SetGlobalClusterSelfManagedSharding(val interface{})
+	GlobalClusterSelfManagedShardingInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -178,6 +181,7 @@ type AdvancedCluster interface {
 	ResetBiConnectorConfig()
 	ResetDiskSizeGb()
 	ResetEncryptionAtRestProvider()
+	ResetGlobalClusterSelfManagedSharding()
 	ResetId()
 	ResetLabels()
 	ResetMongoDbMajorVersion()
@@ -455,6 +459,26 @@ func (j *jsiiProxy_AdvancedCluster) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) GlobalClusterSelfManagedSharding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"globalClusterSelfManagedSharding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) GlobalClusterSelfManagedShardingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"globalClusterSelfManagedShardingInput",
 		&returns,
 	)
 	return returns
@@ -841,7 +865,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -859,7 +883,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -959,6 +983,17 @@ func (j *jsiiProxy_AdvancedCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetGlobalClusterSelfManagedSharding(val interface{}) {
+	if err := j.validateSetGlobalClusterSelfManagedShardingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"globalClusterSelfManagedSharding",
 		val,
 	)
 }
@@ -1566,6 +1601,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetEncryptionAtRestProvider() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEncryptionAtRestProvider",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetGlobalClusterSelfManagedSharding() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGlobalClusterSelfManagedSharding",
 		nil, // no parameters
 	)
 }

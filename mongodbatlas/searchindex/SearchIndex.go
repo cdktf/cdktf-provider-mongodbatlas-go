@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index}.
 type SearchIndex interface {
 	cdktf.TerraformResource
 	Analyzer() *string
@@ -687,7 +687,7 @@ func (j *jsiiProxy_SearchIndex) WaitForIndexBuildCompletionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexConfig) SearchIndex {
 	_init_.Initialize()
 
@@ -705,7 +705,7 @@ func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.1/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex_Override(s SearchIndex, scope constructs.Construct, id *string, config *SearchIndexConfig) {
 	_init_.Initialize()
 

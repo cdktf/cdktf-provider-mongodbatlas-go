@@ -143,6 +143,10 @@ func (j *jsiiProxy_AdvancedCluster) validateSetEncryptionAtRestProviderParameter
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedCluster) validateSetGlobalClusterSelfManagedShardingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedCluster) validateSetIdParameters(val *string) error {
 	return nil
 }
