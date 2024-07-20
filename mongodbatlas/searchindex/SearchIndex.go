@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_index mongodbatlas_search_index}.
 type SearchIndex interface {
 	cdktf.TerraformResource
 	Analyzer() *string
@@ -93,6 +93,9 @@ type SearchIndex interface {
 	SetSearchAnalyzer(val *string)
 	SearchAnalyzerInput() *string
 	Status() *string
+	StoredSource() *string
+	SetStoredSource(val *string)
+	StoredSourceInput() *string
 	Synonyms() SearchIndexSynonymsList
 	SynonymsInput() interface{}
 	// Experimental.
@@ -164,6 +167,7 @@ type SearchIndex interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSearchAnalyzer()
+	ResetStoredSource()
 	ResetSynonyms()
 	ResetTimeouts()
 	ResetType()
@@ -576,6 +580,26 @@ func (j *jsiiProxy_SearchIndex) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SearchIndex) StoredSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchIndex) StoredSourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchIndex) Synonyms() SearchIndexSynonymsList {
 	var returns SearchIndexSynonymsList
 	_jsii_.Get(
@@ -687,7 +711,7 @@ func (j *jsiiProxy_SearchIndex) WaitForIndexBuildCompletionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexConfig) SearchIndex {
 	_init_.Initialize()
 
@@ -705,7 +729,7 @@ func NewSearchIndex(scope constructs.Construct, id *string, config *SearchIndexC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/search_index mongodbatlas_search_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_index mongodbatlas_search_index} Resource.
 func NewSearchIndex_Override(s SearchIndex, scope constructs.Construct, id *string, config *SearchIndexConfig) {
 	_init_.Initialize()
 
@@ -912,6 +936,17 @@ func (j *jsiiProxy_SearchIndex)SetSearchAnalyzer(val *string) {
 	_jsii_.Set(
 		j,
 		"searchAnalyzer",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchIndex)SetStoredSource(val *string) {
+	if err := j.validateSetStoredSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storedSource",
 		val,
 	)
 }
@@ -1373,6 +1408,14 @@ func (s *jsiiProxy_SearchIndex) ResetSearchAnalyzer() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSearchAnalyzer",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchIndex) ResetStoredSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStoredSource",
 		nil, // no parameters
 	)
 }

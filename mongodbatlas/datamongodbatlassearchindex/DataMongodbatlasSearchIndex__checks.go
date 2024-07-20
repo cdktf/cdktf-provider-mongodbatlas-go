@@ -154,31 +154,7 @@ func validateDataMongodbatlasSearchIndex_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetAnalyzerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetAnalyzersParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetClusterNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetCollectionNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,22 +219,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetDatabaseParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetFieldsParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -283,59 +243,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetMappingsDynamicParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetMappingsFieldsParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetProjectIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetSearchAnalyzerParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

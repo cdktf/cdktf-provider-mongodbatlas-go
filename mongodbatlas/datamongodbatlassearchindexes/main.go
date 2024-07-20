@@ -131,12 +131,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "searchAnalyzer", GoGetter: "SearchAnalyzer"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "storedSource", GoGetter: "StoredSource"},
 			_jsii_.MemberProperty{JsiiProperty: "synonyms", GoGetter: "Synonyms"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "waitForIndexBuildCompletion", GoGetter: "WaitForIndexBuildCompletion"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference{}

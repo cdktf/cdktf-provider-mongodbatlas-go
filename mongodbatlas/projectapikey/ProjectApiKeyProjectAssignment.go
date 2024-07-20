@@ -5,9 +5,9 @@ package projectapikey
 
 
 type ProjectApiKeyProjectAssignment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/project_api_key#project_id ProjectApiKey#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/project_api_key#project_id ProjectApiKey#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/project_api_key#role_names ProjectApiKey#role_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/project_api_key#role_names ProjectApiKey#role_names}.
 	RoleNames *[]*string `field:"required" json:"roleNames" yaml:"roleNames"`
 }
 

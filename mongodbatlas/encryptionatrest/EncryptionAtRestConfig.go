@@ -22,19 +22,19 @@ type EncryptionAtRestConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/encryption_at_rest#project_id EncryptionAtRest#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// aws_kms_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/encryption_at_rest#aws_kms_config EncryptionAtRest#aws_kms_config}
 	AwsKmsConfig interface{} `field:"optional" json:"awsKmsConfig" yaml:"awsKmsConfig"`
 	// azure_key_vault_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/encryption_at_rest#azure_key_vault_config EncryptionAtRest#azure_key_vault_config}
 	AzureKeyVaultConfig interface{} `field:"optional" json:"azureKeyVaultConfig" yaml:"azureKeyVaultConfig"`
 	// google_cloud_kms_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/encryption_at_rest#google_cloud_kms_config EncryptionAtRest#google_cloud_kms_config}
 	GoogleCloudKmsConfig interface{} `field:"optional" json:"googleCloudKmsConfig" yaml:"googleCloudKmsConfig"`
 }
 

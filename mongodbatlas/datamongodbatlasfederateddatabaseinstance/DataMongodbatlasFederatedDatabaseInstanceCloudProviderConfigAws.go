@@ -5,7 +5,7 @@ package datamongodbatlasfederateddatabaseinstance
 
 
 type DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/federated_database_instance#test_s3_bucket DataMongodbatlasFederatedDatabaseInstance#test_s3_bucket}.
 	TestS3Bucket *string `field:"optional" json:"testS3Bucket" yaml:"testS3Bucket"`
 }
 

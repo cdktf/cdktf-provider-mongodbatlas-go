@@ -45,6 +45,7 @@ type DataMongodbatlasSearchIndexesResultsOutputReference interface {
 	ProjectId() *string
 	SearchAnalyzer() *string
 	Status() *string
+	StoredSource() *string
 	Synonyms() DataMongodbatlasSearchIndexesResultsSynonymsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -55,7 +56,6 @@ type DataMongodbatlasSearchIndexesResultsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
-	WaitForIndexBuildCompletion() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -275,6 +275,16 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Status()
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) StoredSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedSource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Synonyms() DataMongodbatlasSearchIndexesResultsSynonymsList {
 	var returns DataMongodbatlasSearchIndexesResultsSynonymsList
 	_jsii_.Get(
@@ -310,16 +320,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) Type() *
 	_jsii_.Get(
 		j,
 		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) WaitForIndexBuildCompletion() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"waitForIndexBuildCompletion",
 		&returns,
 	)
 	return returns

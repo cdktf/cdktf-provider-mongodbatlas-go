@@ -71,31 +71,11 @@ func validateDataMongodbatlasSearchIndex_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetAnalyzerParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetAnalyzersParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetClusterNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetCollectionNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetDatabaseParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetFieldsParameters(val *string) error {
 	return nil
 }
 
@@ -111,27 +91,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetMappingsDynamicParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetMappingsFieldsParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetProjectIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetSearchAnalyzerParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

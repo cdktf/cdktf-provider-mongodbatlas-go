@@ -12,23 +12,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index mongodbatlas_search_index}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index mongodbatlas_search_index}.
 type DataMongodbatlasSearchIndex interface {
 	cdktf.TerraformDataSource
 	Analyzer() *string
-	SetAnalyzer(val *string)
-	AnalyzerInput() *string
 	Analyzers() *string
-	SetAnalyzers(val *string)
-	AnalyzersInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
 	CollectionName() *string
-	SetCollectionName(val *string)
-	CollectionNameInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -36,15 +30,11 @@ type DataMongodbatlasSearchIndex interface {
 	// Experimental.
 	SetCount(val interface{})
 	Database() *string
-	SetDatabase(val *string)
-	DatabaseInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Fields() *string
-	SetFields(val *string)
-	FieldsInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,15 +53,9 @@ type DataMongodbatlasSearchIndex interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MappingsDynamic() interface{}
-	SetMappingsDynamic(val interface{})
-	MappingsDynamicInput() interface{}
+	MappingsDynamic() cdktf.IResolvable
 	MappingsFields() *string
-	SetMappingsFields(val *string)
-	MappingsFieldsInput() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -84,9 +68,8 @@ type DataMongodbatlasSearchIndex interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SearchAnalyzer() *string
-	SetSearchAnalyzer(val *string)
-	SearchAnalyzerInput() *string
 	Status() *string
+	StoredSource() *string
 	Synonyms() DataMongodbatlasSearchIndexSynonymsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -95,8 +78,6 @@ type DataMongodbatlasSearchIndex interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -122,20 +103,10 @@ type DataMongodbatlasSearchIndex interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAnalyzer()
-	ResetAnalyzers()
-	ResetCollectionName()
-	ResetDatabase()
-	ResetFields()
 	ResetId()
-	ResetMappingsDynamic()
-	ResetMappingsFields()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSearchAnalyzer()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -165,31 +136,11 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Analyzer() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) AnalyzerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"analyzerInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) Analyzers() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"analyzers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) AnalyzersInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"analyzersInput",
 		&returns,
 	)
 	return returns
@@ -235,16 +186,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) CollectionName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) CollectionNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"collectionNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -275,16 +216,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Database() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) DatabaseInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -300,16 +231,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Fields() *string {
 	_jsii_.Get(
 		j,
 		"fields",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) FieldsInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -395,21 +316,11 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) MappingsDynamic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) MappingsDynamic() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"mappingsDynamic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) MappingsDynamicInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"mappingsDynamicInput",
 		&returns,
 	)
 	return returns
@@ -425,31 +336,11 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) MappingsFields() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) MappingsFieldsInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"mappingsFieldsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -515,21 +406,21 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) SearchAnalyzer() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) SearchAnalyzerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"searchAnalyzerInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchIndex) StoredSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedSource",
 		&returns,
 	)
 	return returns
@@ -585,18 +476,8 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) DataMongodbatlasSearchIndex {
 	_init_.Initialize()
 
@@ -614,7 +495,7 @@ func NewDataMongodbatlasSearchIndex(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.3/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/search_index mongodbatlas_search_index} Data Source.
 func NewDataMongodbatlasSearchIndex_Override(d DataMongodbatlasSearchIndex, scope constructs.Construct, id *string, config *DataMongodbatlasSearchIndexConfig) {
 	_init_.Initialize()
 
@@ -625,28 +506,6 @@ func NewDataMongodbatlasSearchIndex_Override(d DataMongodbatlasSearchIndex, scop
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetAnalyzer(val *string) {
-	if err := j.validateSetAnalyzerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"analyzer",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetAnalyzers(val *string) {
-	if err := j.validateSetAnalyzersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"analyzers",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
@@ -654,17 +513,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetClusterName(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetCollectionName(val *string) {
-	if err := j.validateSetCollectionNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"collectionName",
 		val,
 	)
 }
@@ -680,32 +528,10 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetDatabase(val *string) {
-	if err := j.validateSetDatabaseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"database",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetFields(val *string) {
-	if err := j.validateSetFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"fields",
 		val,
 	)
 }
@@ -751,39 +577,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetMappingsDynamic(val interface{}) {
-	if err := j.validateSetMappingsDynamicParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"mappingsDynamic",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetMappingsFields(val *string) {
-	if err := j.validateSetMappingsFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"mappingsFields",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -799,28 +592,6 @@ func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetSearchAnalyzer(val *string) {
-	if err := j.validateSetSearchAnalyzerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"searchAnalyzer",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasSearchIndex)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -1110,46 +881,6 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndex) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetAnalyzer() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAnalyzer",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetAnalyzers() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAnalyzers",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetCollectionName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCollectionName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetDatabase() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDatabase",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetFields() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFields",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1158,50 +889,10 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetMappingsDynamic() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMappingsDynamic",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetMappingsFields() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMappingsFields",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetSearchAnalyzer() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSearchAnalyzer",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasSearchIndex) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
 		nil, // no parameters
 	)
 }
