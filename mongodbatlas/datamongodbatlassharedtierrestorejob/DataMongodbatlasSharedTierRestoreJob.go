@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job}.
 type DataMongodbatlasSharedTierRestoreJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataMongodbatlasSharedTierRestoreJob) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job} Data Source.
 func NewDataMongodbatlasSharedTierRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasSharedTierRestoreJobConfig) DataMongodbatlasSharedTierRestoreJob {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataMongodbatlasSharedTierRestoreJob(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/shared_tier_restore_job mongodbatlas_shared_tier_restore_job} Data Source.
 func NewDataMongodbatlasSharedTierRestoreJob_Override(d DataMongodbatlasSharedTierRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasSharedTierRestoreJobConfig) {
 	_init_.Initialize()
 

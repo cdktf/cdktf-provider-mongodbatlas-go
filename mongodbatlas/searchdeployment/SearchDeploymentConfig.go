@@ -24,19 +24,19 @@ type SearchDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Label that identifies the cluster to return the search nodes for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/search_deployment#cluster_name SearchDeployment#cluster_name}
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// Unique 24-hexadecimal character string that identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_deployment#project_id SearchDeployment#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/search_deployment#project_id SearchDeployment#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// List of settings that configure the search nodes for your cluster.
 	//
 	// This list is currently limited to defining a single element.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_deployment#specs SearchDeployment#specs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/search_deployment#specs SearchDeployment#specs}
 	Specs interface{} `field:"required" json:"specs" yaml:"specs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/search_deployment#timeouts SearchDeployment#timeouts}.
 	Timeouts *SearchDeploymentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

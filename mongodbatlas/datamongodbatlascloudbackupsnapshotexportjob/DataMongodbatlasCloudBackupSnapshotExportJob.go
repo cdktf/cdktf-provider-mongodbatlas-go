@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
 type DataMongodbatlasCloudBackupSnapshotExportJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -455,7 +455,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobConfig) DataMongodbatlasCloudBackupSnapshotExportJob {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewDataMongodbatlasCloudBackupSnapshotExportJob(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.4/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/data-sources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportJob_Override(d DataMongodbatlasCloudBackupSnapshotExportJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportJobConfig) {
 	_init_.Initialize()
 
