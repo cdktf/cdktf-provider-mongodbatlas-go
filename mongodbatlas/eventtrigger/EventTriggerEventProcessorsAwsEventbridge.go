@@ -5,9 +5,9 @@ package eventtrigger
 
 
 type EventTriggerEventProcessorsAwsEventbridge struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/event_trigger#config_account_id EventTrigger#config_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/event_trigger#config_account_id EventTrigger#config_account_id}.
 	ConfigAccountId *string `field:"optional" json:"configAccountId" yaml:"configAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.5/docs/resources/event_trigger#config_region EventTrigger#config_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/event_trigger#config_region EventTrigger#config_region}.
 	ConfigRegion *string `field:"optional" json:"configRegion" yaml:"configRegion"`
 }
 
