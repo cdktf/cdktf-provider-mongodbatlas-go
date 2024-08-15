@@ -38,7 +38,6 @@ type PrivatelinkEndpointServiceEndpointsOutputReference interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
-	ServiceAttachmentName() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -174,16 +173,6 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) IpAddress
 	_jsii_.Get(
 		j,
 		"ipAddressInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ServiceAttachmentName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceAttachmentName",
 		&returns,
 	)
 	return returns

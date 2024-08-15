@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) validateSetProjectIdPara
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) validateSetUseZoneIdForCopySettingsParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataMongodbatlasCloudBackupScheduleParameters(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) error {
 	return nil
 }

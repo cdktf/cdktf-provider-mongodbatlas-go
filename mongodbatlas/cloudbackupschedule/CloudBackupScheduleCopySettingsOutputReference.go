@@ -55,6 +55,9 @@ type CloudBackupScheduleCopySettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -84,6 +87,7 @@ type CloudBackupScheduleCopySettingsOutputReference interface {
 	ResetRegionName()
 	ResetReplicationSpecId()
 	ResetShouldCopyOplogs()
+	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -269,6 +273,26 @@ func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewCloudBackupScheduleCopySettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudBackupScheduleCopySettingsOutputReference {
 	_init_.Initialize()
@@ -403,6 +427,17 @@ func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (c *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) ResetShouldCo
 	_jsii_.InvokeVoid(
 		c,
 		"resetShouldCopyOplogs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

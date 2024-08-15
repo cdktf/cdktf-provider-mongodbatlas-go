@@ -63,6 +63,10 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOut
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference) validateSetDiskSizeGbParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsElectableSpecsOutputReference) validateSetEbsVolumeTypeParameters(val *string) error {
 	return nil
 }

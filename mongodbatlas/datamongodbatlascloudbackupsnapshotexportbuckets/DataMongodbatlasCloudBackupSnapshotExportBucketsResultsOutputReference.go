@@ -36,6 +36,9 @@ type DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference inte
 	IamRoleId() *string
 	InternalValue() *DataMongodbatlasCloudBackupSnapshotExportBucketsResults
 	SetInternalValue(val *DataMongodbatlasCloudBackupSnapshotExportBucketsResults)
+	RoleId() *string
+	ServiceUrl() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -168,6 +171,36 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference) ServiceUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns

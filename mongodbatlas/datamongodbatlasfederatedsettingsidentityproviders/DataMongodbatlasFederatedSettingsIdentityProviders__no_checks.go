@@ -87,15 +87,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) validateSetItemsPerPageParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) validateSetPageNumParameters(val *float64) error {
 	return nil
 }
 

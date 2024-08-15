@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetExpo
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

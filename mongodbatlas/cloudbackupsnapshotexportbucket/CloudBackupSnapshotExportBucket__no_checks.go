@@ -123,6 +123,18 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) validateSetRoleIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) validateSetServiceUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) validateSetTenantIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudBackupSnapshotExportBucketParameters(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportBucketConfig) error {
 	return nil
 }

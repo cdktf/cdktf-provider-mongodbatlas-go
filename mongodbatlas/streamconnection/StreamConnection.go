@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 type StreamConnection interface {
 	cdktf.TerraformResource
 	Authentication() StreamConnectionAuthenticationOutputReference
@@ -533,7 +533,7 @@ func (j *jsiiProxy_StreamConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection(scope constructs.Construct, id *string, config *StreamConnectionConfig) StreamConnection {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewStreamConnection(scope constructs.Construct, id *string, config *StreamC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection_Override(s StreamConnection, scope constructs.Construct, id *string, config *StreamConnectionConfig) {
 	_init_.Initialize()
 

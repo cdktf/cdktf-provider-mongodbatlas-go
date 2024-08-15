@@ -34,7 +34,6 @@ type DataMongodbatlasPrivatelinkEndpointServiceEndpointsOutputReference interfac
 	InternalValue() *DataMongodbatlasPrivatelinkEndpointServiceEndpoints
 	SetInternalValue(val *DataMongodbatlasPrivatelinkEndpointServiceEndpoints)
 	IpAddress() *string
-	ServiceAttachmentName() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -148,16 +147,6 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceEndpointsOutputRefe
 	_jsii_.Get(
 		j,
 		"ipAddress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceEndpointsOutputReference) ServiceAttachmentName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceAttachmentName",
 		&returns,
 	)
 	return returns

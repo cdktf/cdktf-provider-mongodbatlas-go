@@ -29,6 +29,7 @@ type DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalId() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -44,6 +45,7 @@ type DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
 	ZoneName() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -124,6 +126,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputReference) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -189,6 +201,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutput
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
 		&returns,
 	)
 	return returns

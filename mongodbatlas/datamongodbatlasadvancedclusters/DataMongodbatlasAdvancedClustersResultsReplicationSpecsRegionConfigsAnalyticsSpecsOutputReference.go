@@ -29,6 +29,7 @@ type DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfigsAnalyti
 	// Experimental.
 	CreationStack() *[]*string
 	DiskIops() *float64
+	DiskSizeGb() *float64
 	EbsVolumeType() *string
 	// Experimental.
 	Fqn() *string
@@ -118,6 +119,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegion
 	_jsii_.Get(
 		j,
 		"diskIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) DiskSizeGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSizeGb",
 		&returns,
 	)
 	return returns

@@ -174,6 +174,14 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutp
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference) validateSetDiskSizeGbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsReadOnlySpecsOutputReference) validateSetEbsVolumeTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

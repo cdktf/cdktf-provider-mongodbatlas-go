@@ -91,10 +91,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetProjectIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetSchemeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetServiceDiscoveryParameters(val *string) error {
 	return nil
 }

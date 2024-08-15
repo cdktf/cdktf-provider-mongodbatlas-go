@@ -182,12 +182,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegionName", GoMethod: "ResetRegionName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicationSpecId", GoMethod: "ResetReplicationSpecId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShouldCopyOplogs", GoMethod: "ResetShouldCopyOplogs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "shouldCopyOplogs", GoGetter: "ShouldCopyOplogs"},
 			_jsii_.MemberProperty{JsiiProperty: "shouldCopyOplogsInput", GoGetter: "ShouldCopyOplogsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudBackupScheduleCopySettingsOutputReference{}

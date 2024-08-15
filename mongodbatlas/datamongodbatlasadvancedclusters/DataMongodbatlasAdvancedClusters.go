@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters}.
 type DataMongodbatlasAdvancedClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,9 @@ type DataMongodbatlasAdvancedClusters interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseReplicationSpecPerShard() interface{}
+	SetUseReplicationSpecPerShard(val interface{})
+	UseReplicationSpecPerShardInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,6 +92,7 @@ type DataMongodbatlasAdvancedClusters interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUseReplicationSpecPerShard()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -298,8 +302,28 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) TerraformResourceType() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) UseReplicationSpecPerShard() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useReplicationSpecPerShard",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) UseReplicationSpecPerShardInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useReplicationSpecPerShardInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
 func NewDataMongodbatlasAdvancedClusters(scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClustersConfig) DataMongodbatlasAdvancedClusters {
 	_init_.Initialize()
 
@@ -317,7 +341,7 @@ func NewDataMongodbatlasAdvancedClusters(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/advanced_clusters mongodbatlas_advanced_clusters} Data Source.
 func NewDataMongodbatlasAdvancedClusters_Override(d DataMongodbatlasAdvancedClusters, scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClustersConfig) {
 	_init_.Initialize()
 
@@ -392,6 +416,17 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClusters)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters)SetUseReplicationSpecPerShard(val interface{}) {
+	if err := j.validateSetUseReplicationSpecPerShardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useReplicationSpecPerShard",
 		val,
 	)
 }
@@ -693,6 +728,14 @@ func (d *jsiiProxy_DataMongodbatlasAdvancedClusters) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasAdvancedClusters) ResetUseReplicationSpecPerShard() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseReplicationSpecPerShard",
 		nil, // no parameters
 	)
 }

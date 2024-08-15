@@ -31,6 +31,9 @@ type AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference i
 	DiskIops() *float64
 	SetDiskIops(val *float64)
 	DiskIopsInput() *float64
+	DiskSizeGb() *float64
+	SetDiskSizeGb(val *float64)
+	DiskSizeGbInput() *float64
 	EbsVolumeType() *string
 	SetEbsVolumeType(val *string)
 	EbsVolumeTypeInput() *string
@@ -77,6 +80,7 @@ type AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDiskIops()
+	ResetDiskSizeGb()
 	ResetEbsVolumeType()
 	ResetNodeCount()
 	// Produce the Token's value at resolution time.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOut
 	_jsii_.Get(
 		j,
 		"diskIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) DiskSizeGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSizeGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) DiskSizeGbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSizeGbInput",
 		&returns,
 	)
 	return returns
@@ -301,6 +325,17 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOut
 	_jsii_.Set(
 		j,
 		"diskIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference)SetDiskSizeGb(val *float64) {
+	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskSizeGb",
 		val,
 	)
 }
@@ -561,6 +596,14 @@ func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOut
 	_jsii_.InvokeVoid(
 		a,
 		"resetDiskIops",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) ResetDiskSizeGb() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDiskSizeGb",
 		nil, // no parameters
 	)
 }

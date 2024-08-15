@@ -139,10 +139,6 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetRoutingKeyParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ThirdPartyIntegration) validateSetSchemeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetSecretParameters(val *string) error {
 	return nil
 }

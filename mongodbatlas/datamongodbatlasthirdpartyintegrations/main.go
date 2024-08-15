@@ -120,7 +120,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "routingKey", GoGetter: "RoutingKey"},
-			_jsii_.MemberProperty{JsiiProperty: "scheme", GoGetter: "Scheme"},
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceDiscovery", GoGetter: "ServiceDiscovery"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceKey", GoGetter: "ServiceKey"},

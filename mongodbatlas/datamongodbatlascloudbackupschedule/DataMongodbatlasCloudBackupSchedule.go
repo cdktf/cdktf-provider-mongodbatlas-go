@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule}.
 type DataMongodbatlasCloudBackupSchedule interface {
 	cdktf.TerraformDataSource
 	AutoExportEnabled() cdktf.IResolvable
@@ -77,6 +77,9 @@ type DataMongodbatlasCloudBackupSchedule interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UseOrgAndGroupNamesInExportPrefix() cdktf.IResolvable
+	UseZoneIdForCopySettings() interface{}
+	SetUseZoneIdForCopySettings(val interface{})
+	UseZoneIdForCopySettingsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,6 +109,7 @@ type DataMongodbatlasCloudBackupSchedule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUseZoneIdForCopySettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -475,8 +479,28 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseOrgAndGroupNamesInExp
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseZoneIdForCopySettings() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useZoneIdForCopySettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule) UseZoneIdForCopySettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useZoneIdForCopySettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) DataMongodbatlasCloudBackupSchedule {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewDataMongodbatlasCloudBackupSchedule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/cloud_backup_schedule mongodbatlas_cloud_backup_schedule} Data Source.
 func NewDataMongodbatlasCloudBackupSchedule_Override(d DataMongodbatlasCloudBackupSchedule, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSchedule)SetUseZoneIdForCopySettings(val interface{}) {
+	if err := j.validateSetUseZoneIdForCopySettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useZoneIdForCopySettings",
 		val,
 	)
 }
@@ -881,6 +916,14 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedule) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedule) ResetUseZoneIdForCopySettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseZoneIdForCopySettings",
 		nil, // no parameters
 	)
 }

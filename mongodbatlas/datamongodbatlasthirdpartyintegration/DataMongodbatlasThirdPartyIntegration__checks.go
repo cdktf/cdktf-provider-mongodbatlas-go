@@ -255,14 +255,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetProjectIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetSchemeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetServiceDiscoveryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

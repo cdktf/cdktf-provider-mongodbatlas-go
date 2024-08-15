@@ -23,7 +23,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "deliveryTypeConfig", GoGetter: "DeliveryTypeConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "deliveryTypeConfigInput", GoGetter: "DeliveryTypeConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "deliveryUrl", GoGetter: "DeliveryUrl"},

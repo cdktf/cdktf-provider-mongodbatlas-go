@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers}.
 type DataMongodbatlasFederatedSettingsIdentityProviders interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,18 +44,12 @@ type DataMongodbatlasFederatedSettingsIdentityProviders interface {
 	IdpTypes() *[]*string
 	SetIdpTypes(val *[]*string)
 	IdpTypesInput() *[]*string
-	ItemsPerPage() *float64
-	SetItemsPerPage(val *float64)
-	ItemsPerPageInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PageNum() *float64
-	SetPageNum(val *float64)
-	PageNumInput() *float64
 	Protocols() *[]*string
 	SetProtocols(val *[]*string)
 	ProtocolsInput() *[]*string
@@ -99,11 +93,9 @@ type DataMongodbatlasFederatedSettingsIdentityProviders interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
 	ResetIdpTypes()
-	ResetItemsPerPage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPageNum()
 	ResetProtocols()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -254,26 +246,6 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) IdpTypesI
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ItemsPerPage() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ItemsPerPageInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"itemsPerPageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -289,26 +261,6 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) Node() co
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) PageNum() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNum",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) PageNumInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"pageNumInput",
 		&returns,
 	)
 	return returns
@@ -395,7 +347,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProviders(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProvidersConfig) DataMongodbatlasFederatedSettingsIdentityProviders {
 	_init_.Initialize()
 
@@ -413,7 +365,7 @@ func NewDataMongodbatlasFederatedSettingsIdentityProviders(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/data-sources/federated_settings_identity_providers mongodbatlas_federated_settings_identity_providers} Data Source.
 func NewDataMongodbatlasFederatedSettingsIdentityProviders_Override(d DataMongodbatlasFederatedSettingsIdentityProviders, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsIdentityProvidersConfig) {
 	_init_.Initialize()
 
@@ -484,17 +436,6 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders)SetIdpType
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders)SetItemsPerPage(val *float64) {
-	if err := j.validateSetItemsPerPageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"itemsPerPage",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -502,17 +443,6 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders)SetLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders)SetPageNum(val *float64) {
-	if err := j.validateSetPageNumParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pageNum",
 		val,
 	)
 }
@@ -837,26 +767,10 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ResetIdpT
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ResetItemsPerPage() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetItemsPerPage",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProviders) ResetPageNum() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPageNum",
 		nil, // no parameters
 	)
 }

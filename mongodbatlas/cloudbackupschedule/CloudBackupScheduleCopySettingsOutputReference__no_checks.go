@@ -91,6 +91,10 @@ func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_CloudBackupScheduleCopySettingsOutputReference) validateSetZoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudBackupScheduleCopySettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

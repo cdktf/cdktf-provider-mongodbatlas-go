@@ -29,6 +29,7 @@ type AdvancedClusterReplicationSpecsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalId() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -47,6 +48,7 @@ type AdvancedClusterReplicationSpecsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
 	ZoneName() *string
 	SetZoneName(val *string)
 	ZoneNameInput() *string
@@ -127,6 +129,16 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsOutputReference) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
 		&returns,
 	)
 	return returns
@@ -217,6 +229,16 @@ func (j *jsiiProxy_AdvancedClusterReplicationSpecsOutputReference) TerraformReso
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterReplicationSpecsOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
 		&returns,
 	)
 	return returns

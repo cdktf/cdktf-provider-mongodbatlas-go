@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
 type CloudBackupSnapshotExportBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -69,6 +69,15 @@ type CloudBackupSnapshotExportBucket interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
+	ServiceUrl() *string
+	SetServiceUrl(val *string)
+	ServiceUrlInput() *string
+	TenantId() *string
+	SetTenantId(val *string)
+	TenantIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,9 +127,13 @@ type CloudBackupSnapshotExportBucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIamRoleId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleId()
+	ResetServiceUrl()
+	ResetTenantId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -369,6 +382,66 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) ServiceUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) ServiceUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket) TenantIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudBackupSnapshotExportBucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -400,7 +473,7 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
 func NewCloudBackupSnapshotExportBucket(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportBucketConfig) CloudBackupSnapshotExportBucket {
 	_init_.Initialize()
 
@@ -418,7 +491,7 @@ func NewCloudBackupSnapshotExportBucket(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.17.6/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Resource.
 func NewCloudBackupSnapshotExportBucket_Override(c CloudBackupSnapshotExportBucket, scope constructs.Construct, id *string, config *CloudBackupSnapshotExportBucketConfig) {
 	_init_.Initialize()
 
@@ -537,6 +610,39 @@ func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetServiceUrl(val *string) {
+	if err := j.validateSetServiceUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudBackupSnapshotExportBucket)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenantId",
 		val,
 	)
 }
@@ -894,10 +1000,42 @@ func (c *jsiiProxy_CloudBackupSnapshotExportBucket) OverrideLogicalId(newLogical
 	)
 }
 
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) ResetIamRoleId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIamRoleId",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudBackupSnapshotExportBucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRoleId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) ResetServiceUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetServiceUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSnapshotExportBucket) ResetTenantId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTenantId",
 		nil, // no parameters
 	)
 }

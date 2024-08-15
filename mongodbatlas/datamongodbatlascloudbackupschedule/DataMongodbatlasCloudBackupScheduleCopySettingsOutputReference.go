@@ -45,6 +45,7 @@ type DataMongodbatlasCloudBackupScheduleCopySettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ZoneId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -199,6 +200,16 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupScheduleCopySettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupScheduleCopySettingsOutputReference) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
 		&returns,
 	)
 	return returns

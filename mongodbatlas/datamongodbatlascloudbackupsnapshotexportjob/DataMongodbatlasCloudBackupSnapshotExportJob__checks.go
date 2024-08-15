@@ -227,14 +227,6 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetExpo
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

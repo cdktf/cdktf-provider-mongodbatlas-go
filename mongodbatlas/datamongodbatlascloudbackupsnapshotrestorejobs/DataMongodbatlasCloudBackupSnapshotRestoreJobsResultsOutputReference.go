@@ -24,7 +24,6 @@ type DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputReference interf
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -119,16 +118,6 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputRe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns

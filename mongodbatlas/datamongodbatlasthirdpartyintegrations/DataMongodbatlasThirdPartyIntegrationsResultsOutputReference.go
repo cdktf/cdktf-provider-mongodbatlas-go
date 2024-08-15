@@ -41,7 +41,6 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	ProjectId() *string
 	Region() *string
 	RoutingKey() *string
-	Scheme() *string
 	Secret() *string
 	ServiceDiscovery() *string
 	ServiceKey() *string
@@ -231,16 +230,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	_jsii_.Get(
 		j,
 		"routingKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) Scheme() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scheme",
 		&returns,
 	)
 	return returns

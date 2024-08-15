@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "referenceMinuteOfHour", GoGetter: "ReferenceMinuteOfHour"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseZoneIdForCopySettings", GoMethod: "ResetUseZoneIdForCopySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreWindowDays", GoGetter: "RestoreWindowDays"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -69,6 +70,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useOrgAndGroupNamesInExportPrefix", GoGetter: "UseOrgAndGroupNamesInExportPrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "useZoneIdForCopySettings", GoGetter: "UseZoneIdForCopySettings"},
+			_jsii_.MemberProperty{JsiiProperty: "useZoneIdForCopySettingsInput", GoGetter: "UseZoneIdForCopySettingsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataMongodbatlasCloudBackupSchedule{}
@@ -135,6 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataMongodbatlasCloudBackupScheduleCopySettingsOutputReference{}

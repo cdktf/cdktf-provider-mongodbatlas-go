@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) validateSetProjectIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataMongodbatlasAdvancedClusters) validateSetUseReplicationSpecPerShardParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataMongodbatlasAdvancedClustersParameters(scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClustersConfig) error {
 	return nil
 }
