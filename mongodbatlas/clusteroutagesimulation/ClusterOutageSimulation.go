@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation}.
 type ClusterOutageSimulation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_ClusterOutageSimulation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource.
 func NewClusterOutageSimulation(scope constructs.Construct, id *string, config *ClusterOutageSimulationConfig) ClusterOutageSimulation {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewClusterOutageSimulation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.0/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/cluster_outage_simulation mongodbatlas_cluster_outage_simulation} Resource.
 func NewClusterOutageSimulation_Override(c ClusterOutageSimulation, scope constructs.Construct, id *string, config *ClusterOutageSimulationConfig) {
 	_init_.Initialize()
 
