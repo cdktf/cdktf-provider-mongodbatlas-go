@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/online_archives mongodbatlas_online_archives}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/online_archives mongodbatlas_online_archives}.
 type DataMongodbatlasOnlineArchives interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataMongodbatlasOnlineArchives) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source.
 func NewDataMongodbatlasOnlineArchives(scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchivesConfig) DataMongodbatlasOnlineArchives {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataMongodbatlasOnlineArchives(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/online_archives mongodbatlas_online_archives} Data Source.
 func NewDataMongodbatlasOnlineArchives_Override(d DataMongodbatlasOnlineArchives, scope constructs.Construct, id *string, config *DataMongodbatlasOnlineArchivesConfig) {
 	_init_.Initialize()
 

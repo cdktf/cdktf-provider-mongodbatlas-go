@@ -47,6 +47,9 @@ type EncryptionAtRestAzureKeyVaultConfigOutputReference interface {
 	KeyVaultName() *string
 	SetKeyVaultName(val *string)
 	KeyVaultNameInput() *string
+	RequirePrivateNetworking() interface{}
+	SetRequirePrivateNetworking(val interface{})
+	RequirePrivateNetworkingInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -67,6 +70,7 @@ type EncryptionAtRestAzureKeyVaultConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Valid() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -96,6 +100,7 @@ type EncryptionAtRestAzureKeyVaultConfigOutputReference interface {
 	ResetEnabled()
 	ResetKeyIdentifier()
 	ResetKeyVaultName()
+	ResetRequirePrivateNetworking()
 	ResetResourceGroupName()
 	ResetSecret()
 	ResetSubscriptionId()
@@ -265,6 +270,26 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) KeyVaultN
 	return returns
 }
 
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) RequirePrivateNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePrivateNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) RequirePrivateNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePrivateNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -360,6 +385,16 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) Valid() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"valid",
 		&returns,
 	)
 	return returns
@@ -477,6 +512,17 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference)SetKeyVaul
 	_jsii_.Set(
 		j,
 		"keyVaultName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference)SetRequirePrivateNetworking(val interface{}) {
+	if err := j.validateSetRequirePrivateNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirePrivateNetworking",
 		val,
 	)
 }
@@ -769,6 +815,14 @@ func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) ResetKeyV
 	_jsii_.InvokeVoid(
 		e,
 		"resetKeyVaultName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) ResetRequirePrivateNetworking() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRequirePrivateNetworking",
 		nil, // no parameters
 	)
 }

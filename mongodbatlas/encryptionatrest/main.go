@@ -146,6 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "valid", GoGetter: "Valid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference{}
@@ -210,11 +211,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyIdentifierInput", GoGetter: "KeyIdentifierInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultName", GoGetter: "KeyVaultName"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultNameInput", GoGetter: "KeyVaultNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requirePrivateNetworking", GoGetter: "RequirePrivateNetworking"},
+			_jsii_.MemberProperty{JsiiProperty: "requirePrivateNetworkingInput", GoGetter: "RequirePrivateNetworkingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureEnvironment", GoMethod: "ResetAzureEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyIdentifier", GoMethod: "ResetKeyIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultName", GoMethod: "ResetKeyVaultName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequirePrivateNetworking", GoMethod: "ResetRequirePrivateNetworking"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroupName", GoMethod: "ResetResourceGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscriptionId", GoMethod: "ResetSubscriptionId"},
@@ -231,6 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "valid", GoGetter: "Valid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference{}
@@ -302,6 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "valid", GoGetter: "Valid"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference{}

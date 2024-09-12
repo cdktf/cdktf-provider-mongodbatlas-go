@@ -51,6 +51,10 @@ func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) validateSetChangeStreamOptionsPreAndPostImagesExpireAfterSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

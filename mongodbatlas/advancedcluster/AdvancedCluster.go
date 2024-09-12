@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -101,6 +101,9 @@ type AdvancedCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaSetScalingStrategy() *string
+	SetReplicaSetScalingStrategy(val *string)
+	ReplicaSetScalingStrategyInput() *string
 	ReplicationSpecs() AdvancedClusterReplicationSpecsList
 	ReplicationSpecsInput() interface{}
 	RetainBackupsEnabled() interface{}
@@ -190,6 +193,7 @@ type AdvancedCluster interface {
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetPitEnabled()
+	ResetReplicaSetScalingStrategy()
 	ResetRetainBackupsEnabled()
 	ResetRootCertType()
 	ResetTags()
@@ -684,6 +688,26 @@ func (j *jsiiProxy_AdvancedCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AdvancedCluster) ReplicaSetScalingStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaSetScalingStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) ReplicaSetScalingStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaSetScalingStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AdvancedCluster) ReplicationSpecs() AdvancedClusterReplicationSpecsList {
 	var returns AdvancedClusterReplicationSpecsList
 	_jsii_.Get(
@@ -865,7 +889,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -883,7 +907,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1114,17 @@ func (j *jsiiProxy_AdvancedCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetReplicaSetScalingStrategy(val *string) {
+	if err := j.validateSetReplicaSetScalingStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaSetScalingStrategy",
 		val,
 	)
 }
@@ -1657,6 +1692,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetPitEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPitEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetReplicaSetScalingStrategy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetReplicaSetScalingStrategy",
 		nil, // no parameters
 	)
 }

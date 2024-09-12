@@ -191,6 +191,8 @@ func init() {
 		"@cdktf/provider-mongodbatlas.cluster.ClusterAdvancedConfigurationOutputReference",
 		reflect.TypeOf((*ClusterAdvancedConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "changeStreamOptionsPreAndPostImagesExpireAfterSeconds", GoGetter: "ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "changeStreamOptionsPreAndPostImagesExpireAfterSecondsInput", GoGetter: "ChangeStreamOptionsPreAndPostImagesExpireAfterSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,6 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "oplogMinRetentionHoursInput", GoGetter: "OplogMinRetentionHoursInput"},
 			_jsii_.MemberProperty{JsiiProperty: "oplogSizeMb", GoGetter: "OplogSizeMb"},
 			_jsii_.MemberProperty{JsiiProperty: "oplogSizeMbInput", GoGetter: "OplogSizeMbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds", GoMethod: "ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultReadConcern", GoMethod: "ResetDefaultReadConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultWriteConcern", GoMethod: "ResetDefaultWriteConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFailIndexKeyTooLong", GoMethod: "ResetFailIndexKeyTooLong"},

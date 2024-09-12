@@ -130,6 +130,7 @@ func init() {
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasCluster.DataMongodbatlasClusterAdvancedConfigurationOutputReference",
 		reflect.TypeOf((*DataMongodbatlasClusterAdvancedConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "changeStreamOptionsPreAndPostImagesExpireAfterSeconds", GoGetter: "ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

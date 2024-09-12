@@ -83,6 +83,10 @@ func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateSetRequirePrivateNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

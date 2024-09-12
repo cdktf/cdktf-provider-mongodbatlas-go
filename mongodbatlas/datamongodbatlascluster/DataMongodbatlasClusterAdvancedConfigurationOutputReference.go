@@ -13,6 +13,7 @@ import (
 
 type DataMongodbatlasClusterAdvancedConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,6 +89,16 @@ type DataMongodbatlasClusterAdvancedConfigurationOutputReference interface {
 // The jsii proxy struct for DataMongodbatlasClusterAdvancedConfigurationOutputReference
 type jsiiProxy_DataMongodbatlasClusterAdvancedConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataMongodbatlasClusterAdvancedConfigurationOutputReference) ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"changeStreamOptionsPreAndPostImagesExpireAfterSeconds",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataMongodbatlasClusterAdvancedConfigurationOutputReference) ComplexObjectIndex() interface{} {

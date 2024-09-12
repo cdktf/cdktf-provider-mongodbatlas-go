@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings}.
 type DataMongodbatlasFederatedSettingsOrgRoleMappings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappings) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgRoleMappings(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgRoleMappingsConfig) DataMongodbatlasFederatedSettingsOrgRoleMappings {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataMongodbatlasFederatedSettingsOrgRoleMappings(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.18.1/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/federated_settings_org_role_mappings mongodbatlas_federated_settings_org_role_mappings} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgRoleMappings_Override(d DataMongodbatlasFederatedSettingsOrgRoleMappings, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgRoleMappingsConfig) {
 	_init_.Initialize()
 

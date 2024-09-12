@@ -58,6 +58,7 @@ type EncryptionAtRestAwsKmsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Valid() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -288,6 +289,16 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) Valid() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"valid",
 		&returns,
 	)
 	return returns

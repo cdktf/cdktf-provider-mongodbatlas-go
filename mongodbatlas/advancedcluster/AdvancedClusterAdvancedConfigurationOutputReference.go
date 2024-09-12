@@ -13,6 +13,9 @@ import (
 
 type AdvancedClusterAdvancedConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds() *float64
+	SetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds(val *float64)
+	ChangeStreamOptionsPreAndPostImagesExpireAfterSecondsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -97,6 +100,7 @@ type AdvancedClusterAdvancedConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds()
 	ResetDefaultReadConcern()
 	ResetDefaultWriteConcern()
 	ResetFailIndexKeyTooLong()
@@ -121,6 +125,26 @@ type AdvancedClusterAdvancedConfigurationOutputReference interface {
 // The jsii proxy struct for AdvancedClusterAdvancedConfigurationOutputReference
 type jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) ChangeStreamOptionsPreAndPostImagesExpireAfterSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"changeStreamOptionsPreAndPostImagesExpireAfterSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) ChangeStreamOptionsPreAndPostImagesExpireAfterSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"changeStreamOptionsPreAndPostImagesExpireAfterSecondsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -438,6 +462,17 @@ func NewAdvancedClusterAdvancedConfigurationOutputReference_Override(a AdvancedC
 		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterAdvancedConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference)SetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds(val *float64) {
+	if err := j.validateSetChangeStreamOptionsPreAndPostImagesExpireAfterSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"changeStreamOptionsPreAndPostImagesExpireAfterSeconds",
+		val,
 	)
 }
 
@@ -801,6 +836,14 @@ func (a *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) ResetDefaultReadConcern() {
