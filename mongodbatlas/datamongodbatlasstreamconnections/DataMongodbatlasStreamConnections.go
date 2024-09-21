@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/stream_connections mongodbatlas_stream_connections}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_connections mongodbatlas_stream_connections}.
 type DataMongodbatlasStreamConnections interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnections) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source.
 func NewDataMongodbatlasStreamConnections(scope constructs.Construct, id *string, config *DataMongodbatlasStreamConnectionsConfig) DataMongodbatlasStreamConnections {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataMongodbatlasStreamConnections(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_connections mongodbatlas_stream_connections} Data Source.
 func NewDataMongodbatlasStreamConnections_Override(d DataMongodbatlasStreamConnections, scope constructs.Construct, id *string, config *DataMongodbatlasStreamConnectionsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots}.
 type DataMongodbatlasCloudBackupSnapshots interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshots) TotalCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshots(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotsConfig) DataMongodbatlasCloudBackupSnapshots {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataMongodbatlasCloudBackupSnapshots(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/cloud_backup_snapshots mongodbatlas_cloud_backup_snapshots} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshots_Override(d DataMongodbatlasCloudBackupSnapshots, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotsConfig) {
 	_init_.Initialize()
 

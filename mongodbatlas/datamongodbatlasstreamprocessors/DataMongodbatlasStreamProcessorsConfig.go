@@ -24,7 +24,7 @@ type DataMongodbatlasStreamProcessorsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the stream instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/stream_processors#instance_name DataMongodbatlasStreamProcessors#instance_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processors#instance_name DataMongodbatlasStreamProcessors#instance_name}
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,7 +32,7 @@ type DataMongodbatlasStreamProcessorsConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/data-sources/stream_processors#project_id DataMongodbatlasStreamProcessors#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/data-sources/stream_processors#project_id DataMongodbatlasStreamProcessors#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

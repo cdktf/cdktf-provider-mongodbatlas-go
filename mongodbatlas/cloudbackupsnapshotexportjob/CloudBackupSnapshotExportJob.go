@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
 type CloudBackupSnapshotExportJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,7 +38,6 @@ type CloudBackupSnapshotExportJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ErrMsg() *string
 	ExportBucketId() *string
 	SetExportBucketId(val *string)
 	ExportBucketIdInput() *string
@@ -255,16 +254,6 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudBackupSnapshotExportJob) ErrMsg() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"errMsg",
 		&returns,
 	)
 	return returns
@@ -511,7 +500,7 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) CloudBackupSnapshotExportJob {
 	_init_.Initialize()
 
@@ -529,7 +518,7 @@ func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.19.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob_Override(c CloudBackupSnapshotExportJob, scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) {
 	_init_.Initialize()
 

@@ -227,7 +227,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customData", GoGetter: "CustomData"},
-			_jsii_.MemberProperty{JsiiProperty: "errMsg", GoGetter: "ErrMsg"},
 			_jsii_.MemberProperty{JsiiProperty: "exportBucketId", GoGetter: "ExportBucketId"},
 			_jsii_.MemberProperty{JsiiProperty: "exportJobId", GoGetter: "ExportJobId"},
 			_jsii_.MemberProperty{JsiiProperty: "exportStatusExportedCollections", GoGetter: "ExportStatusExportedCollections"},

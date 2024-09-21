@@ -22,9 +22,6 @@ type FederatedDatabaseInstanceStorageStoresOutputReference interface {
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
-	ClusterId() *string
-	SetClusterId(val *string)
-	ClusterIdInput() *string
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
@@ -115,7 +112,6 @@ type FederatedDatabaseInstanceStorageStoresOutputReference interface {
 	ResetAdditionalStorageClasses()
 	ResetAllowInsecure()
 	ResetBucket()
-	ResetClusterId()
 	ResetClusterName()
 	ResetDefaultFormat()
 	ResetDelimiter()
@@ -198,26 +194,6 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) Bucket
 	_jsii_.Get(
 		j,
 		"bucketInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) ClusterId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) ClusterIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterIdInput",
 		&returns,
 	)
 	return returns
@@ -590,17 +566,6 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference)SetBuck
 	_jsii_.Set(
 		j,
 		"bucket",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference)SetClusterId(val *string) {
-	if err := j.validateSetClusterIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterId",
 		val,
 	)
 }
@@ -998,14 +963,6 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) ResetB
 	_jsii_.InvokeVoid(
 		f,
 		"resetBucket",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) ResetClusterId() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetClusterId",
 		nil, // no parameters
 	)
 }

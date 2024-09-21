@@ -67,10 +67,6 @@ func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) validateSetClusterIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FederatedDatabaseInstanceStorageStoresOutputReference) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

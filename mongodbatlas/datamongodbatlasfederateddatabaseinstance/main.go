@@ -496,7 +496,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "additionalStorageClasses", GoGetter: "AdditionalStorageClasses"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecure", GoGetter: "AllowInsecure"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
-			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

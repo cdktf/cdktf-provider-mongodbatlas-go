@@ -31,7 +31,6 @@ type DataMongodbatlasCloudBackupSnapshotExportJobsResultsOutputReference interfa
 	// Experimental.
 	CreationStack() *[]*string
 	CustomData() DataMongodbatlasCloudBackupSnapshotExportJobsResultsCustomDataList
-	ErrMsg() *string
 	ExportBucketId() *string
 	ExportJobId() *string
 	ExportStatusExportedCollections() *float64
@@ -146,16 +145,6 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJobsResultsOutputRef
 	_jsii_.Get(
 		j,
 		"customData",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportJobsResultsOutputReference) ErrMsg() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"errMsg",
 		&returns,
 	)
 	return returns

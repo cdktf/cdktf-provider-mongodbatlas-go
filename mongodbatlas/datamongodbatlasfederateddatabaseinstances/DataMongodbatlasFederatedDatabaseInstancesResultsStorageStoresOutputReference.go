@@ -16,7 +16,6 @@ type DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresOutputReferen
 	AdditionalStorageClasses() *[]*string
 	AllowInsecure() cdktf.IResolvable
 	Bucket() *string
-	ClusterId() *string
 	ClusterName() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -120,16 +119,6 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStore
 	_jsii_.Get(
 		j,
 		"bucket",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsStorageStoresOutputReference) ClusterId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterId",
 		&returns,
 	)
 	return returns
