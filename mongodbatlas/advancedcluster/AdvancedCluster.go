@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -101,6 +101,9 @@ type AdvancedCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedactClientLogData() interface{}
+	SetRedactClientLogData(val interface{})
+	RedactClientLogDataInput() interface{}
 	ReplicaSetScalingStrategy() *string
 	SetReplicaSetScalingStrategy(val *string)
 	ReplicaSetScalingStrategyInput() *string
@@ -193,6 +196,7 @@ type AdvancedCluster interface {
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetPitEnabled()
+	ResetRedactClientLogData()
 	ResetReplicaSetScalingStrategy()
 	ResetRetainBackupsEnabled()
 	ResetRootCertType()
@@ -688,6 +692,26 @@ func (j *jsiiProxy_AdvancedCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AdvancedCluster) RedactClientLogData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redactClientLogData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) RedactClientLogDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redactClientLogDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AdvancedCluster) ReplicaSetScalingStrategy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -889,7 +913,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -907,7 +931,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1138,17 @@ func (j *jsiiProxy_AdvancedCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetRedactClientLogData(val interface{}) {
+	if err := j.validateSetRedactClientLogDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redactClientLogData",
 		val,
 	)
 }
@@ -1692,6 +1727,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetPitEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPitEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetRedactClientLogData() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRedactClientLogData",
 		nil, // no parameters
 	)
 }

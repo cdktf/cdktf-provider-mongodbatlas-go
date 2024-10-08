@@ -47,6 +47,7 @@ type DataMongodbatlasAdvancedClustersResultsOutputReference interface {
 	Name() *string
 	Paused() cdktf.IResolvable
 	PitEnabled() cdktf.IResolvable
+	RedactClientLogData() cdktf.IResolvable
 	ReplicaSetScalingStrategy() *string
 	ReplicationSpecs() DataMongodbatlasAdvancedClustersResultsReplicationSpecsList
 	RootCertType() *string
@@ -296,6 +297,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) PitEn
 	_jsii_.Get(
 		j,
 		"pitEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) RedactClientLogData() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"redactClientLogData",
 		&returns,
 	)
 	return returns

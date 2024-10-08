@@ -21,6 +21,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "customZoneMapping", GoGetter: "CustomZoneMapping"},
+			_jsii_.MemberProperty{JsiiProperty: "customZoneMappingZoneId", GoGetter: "CustomZoneMappingZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

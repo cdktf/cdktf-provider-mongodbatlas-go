@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "redactClientLogData", GoGetter: "RedactClientLogData"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaSetScalingStrategy", GoGetter: "ReplicaSetScalingStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationSpecs", GoGetter: "ReplicationSpecs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

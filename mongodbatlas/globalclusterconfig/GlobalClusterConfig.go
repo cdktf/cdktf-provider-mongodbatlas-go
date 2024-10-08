@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config}.
 type GlobalClusterConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type GlobalClusterConfig interface {
 	CustomZoneMapping() cdktf.StringMap
 	CustomZoneMappings() GlobalClusterConfigCustomZoneMappingsList
 	CustomZoneMappingsInput() interface{}
+	CustomZoneMappingZoneId() cdktf.StringMap
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -234,6 +235,16 @@ func (j *jsiiProxy_GlobalClusterConfig) CustomZoneMappingsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlobalClusterConfig) CustomZoneMappingZoneId() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"customZoneMappingZoneId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlobalClusterConfig) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -415,7 +426,7 @@ func (j *jsiiProxy_GlobalClusterConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource.
 func NewGlobalClusterConfig(scope constructs.Construct, id *string, config *GlobalClusterConfigConfig) GlobalClusterConfig {
 	_init_.Initialize()
 
@@ -433,7 +444,7 @@ func NewGlobalClusterConfig(scope constructs.Construct, id *string, config *Glob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.20.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/global_cluster_config mongodbatlas_global_cluster_config} Resource.
 func NewGlobalClusterConfig_Override(g GlobalClusterConfig, scope constructs.Construct, id *string, config *GlobalClusterConfigConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerRegionName", GoGetter: "ProviderRegionName"},
 			_jsii_.MemberProperty{JsiiProperty: "providerVolumeType", GoGetter: "ProviderVolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "redactClientLogData", GoGetter: "RedactClientLogData"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationFactor", GoGetter: "ReplicationFactor"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationSpecs", GoGetter: "ReplicationSpecs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

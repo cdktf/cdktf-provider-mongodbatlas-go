@@ -499,6 +499,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "paused", GoGetter: "Paused"},
 			_jsii_.MemberProperty{JsiiProperty: "pitEnabled", GoGetter: "PitEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "redactClientLogData", GoGetter: "RedactClientLogData"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaSetScalingStrategy", GoGetter: "ReplicaSetScalingStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationSpecs", GoGetter: "ReplicationSpecs"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

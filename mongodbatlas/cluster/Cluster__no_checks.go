@@ -235,6 +235,10 @@ func (j *jsiiProxy_Cluster) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Cluster) validateSetRedactClientLogDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cluster) validateSetReplicationFactorParameters(val *float64) error {
 	return nil
 }

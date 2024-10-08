@@ -64,6 +64,7 @@ type DataMongodbatlasClustersResultsOutputReference interface {
 	ProviderName() *string
 	ProviderRegionName() *string
 	ProviderVolumeType() *string
+	RedactClientLogData() cdktf.IResolvable
 	ReplicationFactor() *float64
 	ReplicationSpecs() DataMongodbatlasClustersResultsReplicationSpecsList
 	SnapshotBackupPolicy() DataMongodbatlasClustersResultsSnapshotBackupPolicyList
@@ -484,6 +485,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) ProviderVolum
 	_jsii_.Get(
 		j,
 		"providerVolumeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) RedactClientLogData() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"redactClientLogData",
 		&returns,
 	)
 	return returns

@@ -25,6 +25,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customZoneMapping", GoGetter: "CustomZoneMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "customZoneMappings", GoGetter: "CustomZoneMappings"},
 			_jsii_.MemberProperty{JsiiProperty: "customZoneMappingsInput", GoGetter: "CustomZoneMappingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customZoneMappingZoneId", GoGetter: "CustomZoneMappingZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
