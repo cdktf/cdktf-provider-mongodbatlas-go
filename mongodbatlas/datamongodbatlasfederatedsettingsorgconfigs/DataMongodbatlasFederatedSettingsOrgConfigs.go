@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs}.
 type DataMongodbatlasFederatedSettingsOrgConfigs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedSettingsOrgConfigs) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgConfigs(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgConfigsConfig) DataMongodbatlasFederatedSettingsOrgConfigs {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataMongodbatlasFederatedSettingsOrgConfigs(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/federated_settings_org_configs mongodbatlas_federated_settings_org_configs} Data Source.
 func NewDataMongodbatlasFederatedSettingsOrgConfigs_Override(d DataMongodbatlasFederatedSettingsOrgConfigs, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedSettingsOrgConfigsConfig) {
 	_init_.Initialize()
 

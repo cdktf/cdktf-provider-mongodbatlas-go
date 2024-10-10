@@ -5,11 +5,11 @@ package databaseuser
 
 
 type DatabaseUserRoles struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/database_user#database_name DatabaseUser#database_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/database_user#database_name DatabaseUser#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/database_user#role_name DatabaseUser#role_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/database_user#role_name DatabaseUser#role_name}.
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/resources/database_user#collection_name DatabaseUser#collection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/database_user#collection_name DatabaseUser#collection_name}.
 	CollectionName *string `field:"optional" json:"collectionName" yaml:"collectionName"`
 }
 

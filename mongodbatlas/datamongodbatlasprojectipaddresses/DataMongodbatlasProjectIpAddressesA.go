@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses}.
 type DataMongodbatlasProjectIpAddressesA interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAddressesA) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source.
 func NewDataMongodbatlasProjectIpAddressesA(scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAddressesAConfig) DataMongodbatlasProjectIpAddressesA {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataMongodbatlasProjectIpAddressesA(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.0/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_ip_addresses mongodbatlas_project_ip_addresses} Data Source.
 func NewDataMongodbatlasProjectIpAddressesA_Override(d DataMongodbatlasProjectIpAddressesA, scope constructs.Construct, id *string, config *DataMongodbatlasProjectIpAddressesAConfig) {
 	_init_.Initialize()
 
