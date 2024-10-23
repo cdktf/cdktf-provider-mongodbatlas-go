@@ -131,6 +131,10 @@ func (j *jsiiProxy_Project) validateSetIsSchemaAdvisorEnabledParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetIsSlowOperationThresholdingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

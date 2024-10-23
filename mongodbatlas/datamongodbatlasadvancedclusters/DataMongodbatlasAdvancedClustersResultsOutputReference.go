@@ -27,6 +27,8 @@ type DataMongodbatlasAdvancedClustersResultsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfigServerManagementMode() *string
+	ConfigServerType() *string
 	ConnectionStrings() DataMongodbatlasAdvancedClustersResultsConnectionStringsList
 	CreateDate() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -157,6 +159,26 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) Compl
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) ConfigServerManagementMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configServerManagementMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) ConfigServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configServerType",
 		&returns,
 	)
 	return returns

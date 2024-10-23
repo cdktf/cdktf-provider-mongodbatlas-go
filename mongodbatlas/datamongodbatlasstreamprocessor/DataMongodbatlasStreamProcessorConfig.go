@@ -24,11 +24,11 @@ type DataMongodbatlasStreamProcessorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the stream instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/stream_processor#instance_name DataMongodbatlasStreamProcessor#instance_name}
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
 	// Human-readable label that identifies the stream processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/stream_processor#processor_name DataMongodbatlasStreamProcessor#processor_name}
 	ProcessorName *string `field:"required" json:"processorName" yaml:"processorName"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -36,7 +36,7 @@ type DataMongodbatlasStreamProcessorConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/stream_processor#project_id DataMongodbatlasStreamProcessor#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

@@ -42,6 +42,7 @@ type DataMongodbatlasProjectsResultsOutputReference interface {
 	IsPerformanceAdvisorEnabled() cdktf.IResolvable
 	IsRealtimePerformancePanelEnabled() cdktf.IResolvable
 	IsSchemaAdvisorEnabled() cdktf.IResolvable
+	IsSlowOperationThresholdingEnabled() cdktf.IResolvable
 	Limits() DataMongodbatlasProjectsResultsLimitsList
 	Name() *string
 	OrgId() *string
@@ -241,6 +242,16 @@ func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IsSchemaAdvis
 	_jsii_.Get(
 		j,
 		"isSchemaAdvisorEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectsResultsOutputReference) IsSlowOperationThresholdingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isSlowOperationThresholdingEnabled",
 		&returns,
 	)
 	return returns

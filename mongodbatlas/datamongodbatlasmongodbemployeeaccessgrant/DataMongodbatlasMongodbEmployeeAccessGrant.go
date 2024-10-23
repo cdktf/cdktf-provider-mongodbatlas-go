@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant}.
 type DataMongodbatlasMongodbEmployeeAccessGrant interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataMongodbatlasMongodbEmployeeAccessGrant) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant} Data Source.
 func NewDataMongodbatlasMongodbEmployeeAccessGrant(scope constructs.Construct, id *string, config *DataMongodbatlasMongodbEmployeeAccessGrantConfig) DataMongodbatlasMongodbEmployeeAccessGrant {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataMongodbatlasMongodbEmployeeAccessGrant(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/mongodb_employee_access_grant mongodbatlas_mongodb_employee_access_grant} Data Source.
 func NewDataMongodbatlasMongodbEmployeeAccessGrant_Override(d DataMongodbatlasMongodbEmployeeAccessGrant, scope constructs.Construct, id *string, config *DataMongodbatlasMongodbEmployeeAccessGrantConfig) {
 	_init_.Initialize()
 

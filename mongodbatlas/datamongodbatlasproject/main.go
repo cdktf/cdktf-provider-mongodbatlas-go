@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isPerformanceAdvisorEnabled", GoGetter: "IsPerformanceAdvisorEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isRealtimePerformancePanelEnabled", GoGetter: "IsRealtimePerformancePanelEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isSchemaAdvisorEnabled", GoGetter: "IsSchemaAdvisorEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isSlowOperationThresholdingEnabled", GoGetter: "IsSlowOperationThresholdingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "limits", GoGetter: "Limits"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

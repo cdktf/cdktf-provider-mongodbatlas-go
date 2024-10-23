@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -31,6 +31,10 @@ type AdvancedCluster interface {
 	ClusterType() *string
 	SetClusterType(val *string)
 	ClusterTypeInput() *string
+	ConfigServerManagementMode() *string
+	SetConfigServerManagementMode(val *string)
+	ConfigServerManagementModeInput() *string
+	ConfigServerType() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -185,6 +189,7 @@ type AdvancedCluster interface {
 	ResetAdvancedConfiguration()
 	ResetBackupEnabled()
 	ResetBiConnectorConfig()
+	ResetConfigServerManagementMode()
 	ResetDiskSizeGb()
 	ResetEncryptionAtRestProvider()
 	ResetGlobalClusterSelfManagedSharding()
@@ -337,6 +342,36 @@ func (j *jsiiProxy_AdvancedCluster) ClusterTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) ConfigServerManagementMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configServerManagementMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) ConfigServerManagementModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configServerManagementModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) ConfigServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configServerType",
 		&returns,
 	)
 	return returns
@@ -913,7 +948,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -931,7 +966,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -971,6 +1006,17 @@ func (j *jsiiProxy_AdvancedCluster)SetClusterType(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetConfigServerManagementMode(val *string) {
+	if err := j.validateSetConfigServerManagementModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configServerManagementMode",
 		val,
 	)
 }
@@ -1655,6 +1701,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetBiConnectorConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBiConnectorConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetConfigServerManagementMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConfigServerManagementMode",
 		nil, // no parameters
 	)
 }

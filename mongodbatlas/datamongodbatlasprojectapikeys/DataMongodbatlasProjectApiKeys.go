@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys}.
 type DataMongodbatlasProjectApiKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataMongodbatlasProjectApiKeys) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source.
 func NewDataMongodbatlasProjectApiKeys(scope constructs.Construct, id *string, config *DataMongodbatlasProjectApiKeysConfig) DataMongodbatlasProjectApiKeys {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataMongodbatlasProjectApiKeys(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project_api_keys mongodbatlas_project_api_keys} Data Source.
 func NewDataMongodbatlasProjectApiKeys_Override(d DataMongodbatlasProjectApiKeys, scope constructs.Construct, id *string, config *DataMongodbatlasProjectApiKeysConfig) {
 	_init_.Initialize()
 

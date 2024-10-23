@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project mongodbatlas_project}.
 type DataMongodbatlasProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,6 +45,7 @@ type DataMongodbatlasProject interface {
 	IsPerformanceAdvisorEnabled() cdktf.IResolvable
 	IsRealtimePerformancePanelEnabled() cdktf.IResolvable
 	IsSchemaAdvisorEnabled() cdktf.IResolvable
+	IsSlowOperationThresholdingEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -293,6 +294,16 @@ func (j *jsiiProxy_DataMongodbatlasProject) IsSchemaAdvisorEnabled() cdktf.IReso
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasProject) IsSlowOperationThresholdingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isSlowOperationThresholdingEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasProject) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -454,7 +465,7 @@ func (j *jsiiProxy_DataMongodbatlasProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) DataMongodbatlasProject {
 	_init_.Initialize()
 
@@ -472,7 +483,7 @@ func NewDataMongodbatlasProject(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/data-sources/project mongodbatlas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/project mongodbatlas_project} Data Source.
 func NewDataMongodbatlasProject_Override(d DataMongodbatlasProject, scope constructs.Construct, id *string, config *DataMongodbatlasProjectConfig) {
 	_init_.Initialize()
 

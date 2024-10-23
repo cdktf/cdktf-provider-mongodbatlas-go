@@ -127,6 +127,10 @@ func (j *jsiiProxy_AdvancedCluster) validateSetClusterTypeParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedCluster) validateSetConfigServerManagementModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

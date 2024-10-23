@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project mongodbatlas_project}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project mongodbatlas_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type Project interface {
 	IsSchemaAdvisorEnabled() interface{}
 	SetIsSchemaAdvisorEnabled(val interface{})
 	IsSchemaAdvisorEnabledInput() interface{}
+	IsSlowOperationThresholdingEnabled() interface{}
+	SetIsSlowOperationThresholdingEnabled(val interface{})
+	IsSlowOperationThresholdingEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -156,6 +159,7 @@ type Project interface {
 	ResetIsPerformanceAdvisorEnabled()
 	ResetIsRealtimePerformancePanelEnabled()
 	ResetIsSchemaAdvisorEnabled()
+	ResetIsSlowOperationThresholdingEnabled()
 	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -423,6 +427,26 @@ func (j *jsiiProxy_Project) IsSchemaAdvisorEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Project) IsSlowOperationThresholdingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSlowOperationThresholdingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) IsSlowOperationThresholdingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSlowOperationThresholdingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -664,7 +688,7 @@ func (j *jsiiProxy_Project) WithDefaultAlertsSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project mongodbatlas_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -682,7 +706,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.1/docs/resources/project mongodbatlas_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/project mongodbatlas_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -793,6 +817,17 @@ func (j *jsiiProxy_Project)SetIsSchemaAdvisorEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isSchemaAdvisorEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetIsSlowOperationThresholdingEnabled(val interface{}) {
+	if err := j.validateSetIsSlowOperationThresholdingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSlowOperationThresholdingEnabled",
 		val,
 	)
 }
@@ -1312,6 +1347,14 @@ func (p *jsiiProxy_Project) ResetIsSchemaAdvisorEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIsSchemaAdvisorEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Project) ResetIsSlowOperationThresholdingEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIsSlowOperationThresholdingEnabled",
 		nil, // no parameters
 	)
 }

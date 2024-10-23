@@ -474,6 +474,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "configServerManagementMode", GoGetter: "ConfigServerManagementMode"},
+			_jsii_.MemberProperty{JsiiProperty: "configServerType", GoGetter: "ConfigServerType"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionStrings", GoGetter: "ConnectionStrings"},
 			_jsii_.MemberProperty{JsiiProperty: "createDate", GoGetter: "CreateDate"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
