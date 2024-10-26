@@ -22,9 +22,9 @@ type DataMongodbatlasProjectsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/projects#items_per_page DataMongodbatlasProjects#items_per_page}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/projects#items_per_page DataMongodbatlasProjects#items_per_page}.
 	ItemsPerPage *float64 `field:"optional" json:"itemsPerPage" yaml:"itemsPerPage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/projects#page_num DataMongodbatlasProjects#page_num}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/projects#page_num DataMongodbatlasProjects#page_num}.
 	PageNum *float64 `field:"optional" json:"pageNum" yaml:"pageNum"`
 }
 

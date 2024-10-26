@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket}.
 type DataMongodbatlasCloudBackupSnapshotExportBucket interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucket) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportBucket(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportBucketConfig) DataMongodbatlasCloudBackupSnapshotExportBucket {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataMongodbatlasCloudBackupSnapshotExportBucket(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/cloud_backup_snapshot_export_bucket mongodbatlas_cloud_backup_snapshot_export_bucket} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotExportBucket_Override(d DataMongodbatlasCloudBackupSnapshotExportBucket, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotExportBucketConfig) {
 	_init_.Initialize()
 

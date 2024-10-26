@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/stream_processor mongodbatlas_stream_processor}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/resources/stream_processor mongodbatlas_stream_processor}.
 type StreamProcessor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_StreamProcessor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/stream_processor mongodbatlas_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/resources/stream_processor mongodbatlas_stream_processor} Resource.
 func NewStreamProcessor(scope constructs.Construct, id *string, config *StreamProcessorConfig) StreamProcessor {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewStreamProcessor(scope constructs.Construct, id *string, config *StreamPr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.2/docs/resources/stream_processor mongodbatlas_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/resources/stream_processor mongodbatlas_stream_processor} Resource.
 func NewStreamProcessor_Override(s StreamProcessor, scope constructs.Construct, id *string, config *StreamProcessorConfig) {
 	_init_.Initialize()
 
