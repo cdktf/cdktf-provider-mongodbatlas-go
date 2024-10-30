@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}.
 type DataMongodbatlasFederatedDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
 func NewDataMongodbatlasFederatedDatabaseInstance(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedDatabaseInstanceConfig) DataMongodbatlasFederatedDatabaseInstance {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataMongodbatlasFederatedDatabaseInstance(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
 func NewDataMongodbatlasFederatedDatabaseInstance_Override(d DataMongodbatlasFederatedDatabaseInstance, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedDatabaseInstanceConfig) {
 	_init_.Initialize()
 

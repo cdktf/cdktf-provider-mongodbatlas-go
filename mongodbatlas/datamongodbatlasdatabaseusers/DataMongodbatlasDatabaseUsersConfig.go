@@ -22,7 +22,7 @@ type DataMongodbatlasDatabaseUsersConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.3/docs/data-sources/database_users#project_id DataMongodbatlasDatabaseUsers#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/database_users#project_id DataMongodbatlasDatabaseUsers#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
