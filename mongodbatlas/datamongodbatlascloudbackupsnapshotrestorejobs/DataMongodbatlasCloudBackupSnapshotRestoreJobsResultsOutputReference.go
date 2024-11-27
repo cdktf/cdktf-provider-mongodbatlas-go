@@ -33,6 +33,7 @@ type DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputReference interf
 	DeliveryUrl() *[]*string
 	Expired() cdktf.IResolvable
 	ExpiresAt() *string
+	Failed() cdktf.IResolvable
 	FinishedAt() *string
 	// Experimental.
 	Fqn() *string
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputRe
 	_jsii_.Get(
 		j,
 		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJobsResultsOutputReference) Failed() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"failed",
 		&returns,
 	)
 	return returns

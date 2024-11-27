@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	ApiAccessListRequired() interface{}
@@ -48,6 +48,9 @@ type Organization interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GenAiFeaturesEnabled() interface{}
+	SetGenAiFeaturesEnabled(val interface{})
+	GenAiFeaturesEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -136,6 +139,7 @@ type Organization interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetApiAccessListRequired()
 	ResetFederationSettingsId()
+	ResetGenAiFeaturesEnabled()
 	ResetId()
 	ResetMultiFactorAuthRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -295,6 +299,26 @@ func (j *jsiiProxy_Organization) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) GenAiFeaturesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"genAiFeaturesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) GenAiFeaturesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"genAiFeaturesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +555,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -627,6 +651,17 @@ func (j *jsiiProxy_Organization)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetGenAiFeaturesEnabled(val interface{}) {
+	if err := j.validateSetGenAiFeaturesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"genAiFeaturesEnabled",
 		val,
 	)
 }
@@ -1092,6 +1127,14 @@ func (o *jsiiProxy_Organization) ResetFederationSettingsId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFederationSettingsId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetGenAiFeaturesEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGenAiFeaturesEnabled",
 		nil, // no parameters
 	)
 }

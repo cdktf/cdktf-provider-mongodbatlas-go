@@ -111,6 +111,10 @@ func (j *jsiiProxy_Organization) validateSetFederationSettingsIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetGenAiFeaturesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetIdParameters(val *string) error {
 	return nil
 }

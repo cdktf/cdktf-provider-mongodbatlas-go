@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization mongodbatlas_organization}.
 type DataMongodbatlasOrganization interface {
 	cdktf.TerraformDataSource
 	ApiAccessListRequired() cdktf.IResolvable
@@ -36,6 +36,7 @@ type DataMongodbatlasOrganization interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GenAiFeaturesEnabled() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -188,6 +189,16 @@ func (j *jsiiProxy_DataMongodbatlasOrganization) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOrganization) GenAiFeaturesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"genAiFeaturesEnabled",
 		&returns,
 	)
 	return returns
@@ -354,7 +365,7 @@ func (j *jsiiProxy_DataMongodbatlasOrganization) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization mongodbatlas_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization mongodbatlas_organization} Data Source.
 func NewDataMongodbatlasOrganization(scope constructs.Construct, id *string, config *DataMongodbatlasOrganizationConfig) DataMongodbatlasOrganization {
 	_init_.Initialize()
 
@@ -372,7 +383,7 @@ func NewDataMongodbatlasOrganization(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/organization mongodbatlas_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/organization mongodbatlas_organization} Data Source.
 func NewDataMongodbatlasOrganization_Override(d DataMongodbatlasOrganization, scope constructs.Construct, id *string, config *DataMongodbatlasOrganizationConfig) {
 	_init_.Initialize()
 

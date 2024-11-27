@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job}.
 type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	cdktf.TerraformDataSource
 	Cancelled() cdktf.IResolvable
@@ -35,6 +35,7 @@ type DataMongodbatlasCloudBackupSnapshotRestoreJob interface {
 	SetDependsOn(val *[]*string)
 	Expired() cdktf.IResolvable
 	ExpiresAt() *string
+	Failed() cdktf.IResolvable
 	FinishedAt() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -231,6 +232,16 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) ExpiresAt() *s
 	_jsii_.Get(
 		j,
 		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) Failed() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"failed",
 		&returns,
 	)
 	return returns
@@ -477,7 +488,7 @@ func (j *jsiiProxy_DataMongodbatlasCloudBackupSnapshotRestoreJob) Timestamp() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) DataMongodbatlasCloudBackupSnapshotRestoreJob {
 	_init_.Initialize()
 
@@ -495,7 +506,7 @@ func NewDataMongodbatlasCloudBackupSnapshotRestoreJob(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cloud_backup_snapshot_restore_job mongodbatlas_cloud_backup_snapshot_restore_job} Data Source.
 func NewDataMongodbatlasCloudBackupSnapshotRestoreJob_Override(d DataMongodbatlasCloudBackupSnapshotRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasCloudBackupSnapshotRestoreJobConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/database_users mongodbatlas_database_users}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/database_users mongodbatlas_database_users}.
 type DataMongodbatlasDatabaseUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataMongodbatlasDatabaseUsers) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
 func NewDataMongodbatlasDatabaseUsers(scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUsersConfig) DataMongodbatlasDatabaseUsers {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataMongodbatlasDatabaseUsers(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/database_users mongodbatlas_database_users} Data Source.
 func NewDataMongodbatlasDatabaseUsers_Override(d DataMongodbatlasDatabaseUsers, scope constructs.Construct, id *string, config *DataMongodbatlasDatabaseUsersConfig) {
 	_init_.Initialize()
 

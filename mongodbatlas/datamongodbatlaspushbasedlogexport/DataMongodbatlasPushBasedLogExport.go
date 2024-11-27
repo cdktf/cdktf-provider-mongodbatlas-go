@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export}.
 type DataMongodbatlasPushBasedLogExport interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataMongodbatlasPushBasedLogExport) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source.
 func NewDataMongodbatlasPushBasedLogExport(scope constructs.Construct, id *string, config *DataMongodbatlasPushBasedLogExportConfig) DataMongodbatlasPushBasedLogExport {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataMongodbatlasPushBasedLogExport(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.21.4/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/push_based_log_export mongodbatlas_push_based_log_export} Data Source.
 func NewDataMongodbatlasPushBasedLogExport_Override(d DataMongodbatlasPushBasedLogExport, scope constructs.Construct, id *string, config *DataMongodbatlasPushBasedLogExportConfig) {
 	_init_.Initialize()
 

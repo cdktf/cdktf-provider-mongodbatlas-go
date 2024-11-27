@@ -26,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "expired", GoGetter: "Expired"},
 			_jsii_.MemberProperty{JsiiProperty: "expiresAt", GoGetter: "ExpiresAt"},
+			_jsii_.MemberProperty{JsiiProperty: "failed", GoGetter: "Failed"},
 			_jsii_.MemberProperty{JsiiProperty: "finishedAt", GoGetter: "FinishedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

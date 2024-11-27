@@ -31,6 +31,7 @@ type DataMongodbatlasOrganizationsResultsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GenAiFeaturesEnabled() cdktf.IResolvable
 	Id() *string
 	InternalValue() *DataMongodbatlasOrganizationsResults
 	SetInternalValue(val *DataMongodbatlasOrganizationsResults)
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) GenAiFeaturesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"genAiFeaturesEnabled",
 		&returns,
 	)
 	return returns
