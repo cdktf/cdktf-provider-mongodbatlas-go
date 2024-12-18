@@ -53,6 +53,7 @@ type DataMongodbatlasClustersResultsOutputReference interface {
 	Name() *string
 	NumShards() *float64
 	Paused() cdktf.IResolvable
+	PinnedFcv() DataMongodbatlasClustersResultsPinnedFcvList
 	PitEnabled() cdktf.IResolvable
 	ProviderAutoScalingComputeMaxInstanceSize() *string
 	ProviderAutoScalingComputeMinInstanceSize() *string
@@ -375,6 +376,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) Paused() cdkt
 	_jsii_.Get(
 		j,
 		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsOutputReference) PinnedFcv() DataMongodbatlasClustersResultsPinnedFcvList {
+	var returns DataMongodbatlasClustersResultsPinnedFcvList
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -89,6 +89,8 @@ type AdvancedCluster interface {
 	Paused() interface{}
 	SetPaused(val interface{})
 	PausedInput() interface{}
+	PinnedFcv() AdvancedClusterPinnedFcvOutputReference
+	PinnedFcvInput() *AdvancedClusterPinnedFcv
 	PitEnabled() interface{}
 	SetPitEnabled(val interface{})
 	PitEnabledInput() interface{}
@@ -182,6 +184,7 @@ type AdvancedCluster interface {
 	PutAdvancedConfiguration(value *AdvancedClusterAdvancedConfiguration)
 	PutBiConnectorConfig(value *AdvancedClusterBiConnectorConfig)
 	PutLabels(value interface{})
+	PutPinnedFcv(value *AdvancedClusterPinnedFcv)
 	PutReplicationSpecs(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *AdvancedClusterTimeouts)
@@ -200,6 +203,7 @@ type AdvancedCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPaused()
+	ResetPinnedFcv()
 	ResetPitEnabled()
 	ResetRedactClientLogData()
 	ResetReplicaSetScalingStrategy()
@@ -657,6 +661,26 @@ func (j *jsiiProxy_AdvancedCluster) PausedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AdvancedCluster) PinnedFcv() AdvancedClusterPinnedFcvOutputReference {
+	var returns AdvancedClusterPinnedFcvOutputReference
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) PinnedFcvInput() *AdvancedClusterPinnedFcv {
+	var returns *AdvancedClusterPinnedFcv
+	_jsii_.Get(
+		j,
+		"pinnedFcvInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AdvancedCluster) PitEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -948,7 +972,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -966,7 +990,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -1640,6 +1664,17 @@ func (a *jsiiProxy_AdvancedCluster) PutLabels(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AdvancedCluster) PutPinnedFcv(value *AdvancedClusterPinnedFcv) {
+	if err := a.validatePutPinnedFcvParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPinnedFcv",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AdvancedCluster) PutReplicationSpecs(value interface{}) {
 	if err := a.validatePutReplicationSpecsParameters(value); err != nil {
 		panic(err)
@@ -1773,6 +1808,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetPaused() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetPinnedFcv() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPinnedFcv",
 		nil, // no parameters
 	)
 }

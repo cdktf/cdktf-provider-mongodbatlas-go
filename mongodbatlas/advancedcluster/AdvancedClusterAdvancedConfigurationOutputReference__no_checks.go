@@ -63,6 +63,10 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetDefaultMaxTimeMsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetDefaultReadConcernParameters(val *string) error {
 	return nil
 }

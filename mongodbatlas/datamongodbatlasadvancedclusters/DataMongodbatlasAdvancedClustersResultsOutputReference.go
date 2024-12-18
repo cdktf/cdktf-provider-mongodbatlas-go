@@ -48,6 +48,7 @@ type DataMongodbatlasAdvancedClustersResultsOutputReference interface {
 	MongoDbVersion() *string
 	Name() *string
 	Paused() cdktf.IResolvable
+	PinnedFcv() DataMongodbatlasAdvancedClustersResultsPinnedFcvList
 	PitEnabled() cdktf.IResolvable
 	RedactClientLogData() cdktf.IResolvable
 	ReplicaSetScalingStrategy() *string
@@ -309,6 +310,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) Pause
 	_jsii_.Get(
 		j,
 		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsOutputReference) PinnedFcv() DataMongodbatlasAdvancedClustersResultsPinnedFcvList {
+	var returns DataMongodbatlasAdvancedClustersResultsPinnedFcvList
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
 		&returns,
 	)
 	return returns

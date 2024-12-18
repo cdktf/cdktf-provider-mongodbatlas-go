@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/cluster mongodbatlas_cluster}.
 type DataMongodbatlasCluster interface {
 	cdktf.TerraformDataSource
 	AdvancedConfiguration() DataMongodbatlasClusterAdvancedConfigurationList
@@ -67,6 +67,7 @@ type DataMongodbatlasCluster interface {
 	Node() constructs.Node
 	NumShards() *float64
 	Paused() cdktf.IResolvable
+	PinnedFcv() DataMongodbatlasClusterPinnedFcvList
 	PitEnabled() cdktf.IResolvable
 	ProjectId() *string
 	SetProjectId(val *string)
@@ -481,6 +482,16 @@ func (j *jsiiProxy_DataMongodbatlasCluster) Paused() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasCluster) PinnedFcv() DataMongodbatlasClusterPinnedFcvList {
+	var returns DataMongodbatlasClusterPinnedFcvList
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasCluster) PitEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -762,7 +773,7 @@ func (j *jsiiProxy_DataMongodbatlasCluster) VersionReleaseSystem() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) DataMongodbatlasCluster {
 	_init_.Initialize()
 
@@ -780,7 +791,7 @@ func NewDataMongodbatlasCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/cluster mongodbatlas_cluster} Data Source.
 func NewDataMongodbatlasCluster_Override(d DataMongodbatlasCluster, scope constructs.Construct, id *string, config *DataMongodbatlasClusterConfig) {
 	_init_.Initialize()
 

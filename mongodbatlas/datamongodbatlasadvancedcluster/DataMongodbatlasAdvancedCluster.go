@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster}.
 type DataMongodbatlasAdvancedCluster interface {
 	cdktf.TerraformDataSource
 	AdvancedConfiguration() DataMongodbatlasAdvancedClusterAdvancedConfigurationList
@@ -62,6 +62,7 @@ type DataMongodbatlasAdvancedCluster interface {
 	// The tree node.
 	Node() constructs.Node
 	Paused() cdktf.IResolvable
+	PinnedFcv() DataMongodbatlasAdvancedClusterPinnedFcvList
 	PitEnabled() interface{}
 	SetPitEnabled(val interface{})
 	PitEnabledInput() interface{}
@@ -421,6 +422,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) Paused() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) PinnedFcv() DataMongodbatlasAdvancedClusterPinnedFcvList {
+	var returns DataMongodbatlasAdvancedClusterPinnedFcvList
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) PitEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -612,7 +623,7 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedCluster) VersionReleaseSystem() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source.
 func NewDataMongodbatlasAdvancedCluster(scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClusterConfig) DataMongodbatlasAdvancedCluster {
 	_init_.Initialize()
 
@@ -630,7 +641,7 @@ func NewDataMongodbatlasAdvancedCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/data-sources/advanced_cluster mongodbatlas_advanced_cluster} Data Source.
 func NewDataMongodbatlasAdvancedCluster_Override(d DataMongodbatlasAdvancedCluster, scope constructs.Construct, id *string, config *DataMongodbatlasAdvancedClusterConfig) {
 	_init_.Initialize()
 

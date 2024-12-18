@@ -31,6 +31,9 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultMaxTimeMs() *float64
+	SetDefaultMaxTimeMs(val *float64)
+	DefaultMaxTimeMsInput() *float64
 	DefaultReadConcern() *string
 	SetDefaultReadConcern(val *string)
 	DefaultReadConcernInput() *string
@@ -101,6 +104,7 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds()
+	ResetDefaultMaxTimeMs()
 	ResetDefaultReadConcern()
 	ResetDefaultWriteConcern()
 	ResetFailIndexKeyTooLong()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) DefaultMaxTimeMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultMaxTimeMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) DefaultMaxTimeMsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultMaxTimeMsInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +518,17 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetDefaultMaxTimeMs(val *float64) {
+	if err := j.validateSetDefaultMaxTimeMsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultMaxTimeMs",
 		val,
 	)
 }
@@ -842,6 +877,14 @@ func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetChangeStrea
 	_jsii_.InvokeVoid(
 		c,
 		"resetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetDefaultMaxTimeMs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultMaxTimeMs",
 		nil, // no parameters
 	)
 }

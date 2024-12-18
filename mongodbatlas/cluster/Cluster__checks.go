@@ -260,6 +260,17 @@ func (c *jsiiProxy_Cluster) validatePutLabelsParameters(value interface{}) error
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutPinnedFcvParameters(value *ClusterPinnedFcv) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutReplicationSpecsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

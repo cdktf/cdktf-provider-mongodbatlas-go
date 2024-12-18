@@ -87,6 +87,10 @@ func (c *jsiiProxy_Cluster) validatePutLabelsParameters(value interface{}) error
 	return nil
 }
 
+func (c *jsiiProxy_Cluster) validatePutPinnedFcvParameters(value *ClusterPinnedFcv) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cluster) validatePutReplicationSpecsParameters(value interface{}) error {
 	return nil
 }

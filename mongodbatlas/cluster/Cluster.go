@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/cluster mongodbatlas_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/cluster mongodbatlas_cluster}.
 type Cluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -103,6 +103,8 @@ type Cluster interface {
 	Paused() interface{}
 	SetPaused(val interface{})
 	PausedInput() interface{}
+	PinnedFcv() ClusterPinnedFcvOutputReference
+	PinnedFcvInput() *ClusterPinnedFcv
 	PitEnabled() interface{}
 	SetPitEnabled(val interface{})
 	PitEnabledInput() interface{}
@@ -223,6 +225,7 @@ type Cluster interface {
 	PutAdvancedConfiguration(value *ClusterAdvancedConfiguration)
 	PutBiConnectorConfig(value *ClusterBiConnectorConfig)
 	PutLabels(value interface{})
+	PutPinnedFcv(value *ClusterPinnedFcv)
 	PutReplicationSpecs(value interface{})
 	PutTags(value interface{})
 	PutTimeouts(value *ClusterTimeouts)
@@ -246,6 +249,7 @@ type Cluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPaused()
+	ResetPinnedFcv()
 	ResetPitEnabled()
 	ResetProviderAutoScalingComputeMaxInstanceSize()
 	ResetProviderAutoScalingComputeMinInstanceSize()
@@ -810,6 +814,26 @@ func (j *jsiiProxy_Cluster) PausedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cluster) PinnedFcv() ClusterPinnedFcvOutputReference {
+	var returns ClusterPinnedFcvOutputReference
+	_jsii_.Get(
+		j,
+		"pinnedFcv",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cluster) PinnedFcvInput() *ClusterPinnedFcv {
+	var returns *ClusterPinnedFcv
+	_jsii_.Get(
+		j,
+		"pinnedFcvInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cluster) PitEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1291,7 +1315,7 @@ func (j *jsiiProxy_Cluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) Cluster {
 	_init_.Initialize()
 
@@ -1309,7 +1333,7 @@ func NewCluster(scope constructs.Construct, id *string, config *ClusterConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.22.0/docs/resources/cluster mongodbatlas_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.23.0/docs/resources/cluster mongodbatlas_cluster} Resource.
 func NewCluster_Override(c Cluster, scope constructs.Construct, id *string, config *ClusterConfig) {
 	_init_.Initialize()
 
@@ -2115,6 +2139,17 @@ func (c *jsiiProxy_Cluster) PutLabels(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_Cluster) PutPinnedFcv(value *ClusterPinnedFcv) {
+	if err := c.validatePutPinnedFcvParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPinnedFcv",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cluster) PutReplicationSpecs(value interface{}) {
 	if err := c.validatePutReplicationSpecsParameters(value); err != nil {
 		panic(err)
@@ -2288,6 +2323,14 @@ func (c *jsiiProxy_Cluster) ResetPaused() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cluster) ResetPinnedFcv() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPinnedFcv",
 		nil, // no parameters
 	)
 }

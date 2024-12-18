@@ -29,6 +29,7 @@ type DataMongodbatlasAdvancedClustersResultsAdvancedConfigurationOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultMaxTimeMs() *float64
 	DefaultReadConcern() *string
 	DefaultWriteConcern() *string
 	FailIndexKeyTooLong() cdktf.IResolvable
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsAdvancedConfigurationO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasAdvancedClustersResultsAdvancedConfigurationOutputReference) DefaultMaxTimeMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultMaxTimeMs",
 		&returns,
 	)
 	return returns

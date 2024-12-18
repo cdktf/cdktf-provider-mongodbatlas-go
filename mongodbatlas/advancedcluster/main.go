@@ -75,6 +75,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "paused", GoGetter: "Paused"},
 			_jsii_.MemberProperty{JsiiProperty: "pausedInput", GoGetter: "PausedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pinnedFcv", GoGetter: "PinnedFcv"},
+			_jsii_.MemberProperty{JsiiProperty: "pinnedFcvInput", GoGetter: "PinnedFcvInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pitEnabled", GoGetter: "PitEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "pitEnabledInput", GoGetter: "PitEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedConfiguration", GoMethod: "PutAdvancedConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putBiConnectorConfig", GoMethod: "PutBiConnectorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
+			_jsii_.MemberMethod{JsiiMethod: "putPinnedFcv", GoMethod: "PutPinnedFcv"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplicationSpecs", GoMethod: "PutReplicationSpecs"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -107,6 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMongoDbMajorVersion", GoMethod: "ResetMongoDbMajorVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPaused", GoMethod: "ResetPaused"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPinnedFcv", GoMethod: "ResetPinnedFcv"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPitEnabled", GoMethod: "ResetPitEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedactClientLogData", GoMethod: "ResetRedactClientLogData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicaSetScalingStrategy", GoMethod: "ResetReplicaSetScalingStrategy"},
@@ -159,6 +163,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultMaxTimeMs", GoGetter: "DefaultMaxTimeMs"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultMaxTimeMsInput", GoGetter: "DefaultMaxTimeMsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultReadConcern", GoGetter: "DefaultReadConcern"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultReadConcernInput", GoGetter: "DefaultReadConcernInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultWriteConcern", GoGetter: "DefaultWriteConcern"},
@@ -189,6 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "oplogSizeMb", GoGetter: "OplogSizeMb"},
 			_jsii_.MemberProperty{JsiiProperty: "oplogSizeMbInput", GoGetter: "OplogSizeMbInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds", GoMethod: "ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultMaxTimeMs", GoMethod: "ResetDefaultMaxTimeMs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultReadConcern", GoMethod: "ResetDefaultReadConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultWriteConcern", GoMethod: "ResetDefaultWriteConcern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFailIndexKeyTooLong", GoMethod: "ResetFailIndexKeyTooLong"},
@@ -507,6 +514,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AdvancedClusterLabelsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterPinnedFcv",
+		reflect.TypeOf((*AdvancedClusterPinnedFcv)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-mongodbatlas.advancedCluster.AdvancedClusterPinnedFcvOutputReference",
+		reflect.TypeOf((*AdvancedClusterPinnedFcvOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationDate", GoGetter: "ExpirationDate"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationDateInput", GoGetter: "ExpirationDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AdvancedClusterPinnedFcvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
