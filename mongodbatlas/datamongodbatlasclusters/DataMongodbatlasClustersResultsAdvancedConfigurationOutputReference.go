@@ -29,6 +29,7 @@ type DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomOpensslCipherConfigTls12() *[]*string
 	DefaultMaxTimeMs() *float64
 	DefaultReadConcern() *string
 	DefaultWriteConcern() *string
@@ -52,6 +53,7 @@ type DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCipherConfigMode() *string
 	TransactionLifetimeLimitSeconds() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -127,6 +129,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference) CustomOpensslCipherConfigTls12() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customOpensslCipherConfigTls12",
 		&returns,
 	)
 	return returns
@@ -277,6 +289,16 @@ func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasClustersResultsAdvancedConfigurationOutputReference) TlsCipherConfigMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCipherConfigMode",
 		&returns,
 	)
 	return returns

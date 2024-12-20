@@ -31,6 +31,9 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomOpensslCipherConfigTls12() *[]*string
+	SetCustomOpensslCipherConfigTls12(val *[]*string)
+	CustomOpensslCipherConfigTls12Input() *[]*string
 	DefaultMaxTimeMs() *float64
 	SetDefaultMaxTimeMs(val *float64)
 	DefaultMaxTimeMsInput() *float64
@@ -76,6 +79,9 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCipherConfigMode() *string
+	SetTlsCipherConfigMode(val *string)
+	TlsCipherConfigModeInput() *string
 	TransactionLifetimeLimitSeconds() *float64
 	SetTransactionLifetimeLimitSeconds(val *float64)
 	TransactionLifetimeLimitSecondsInput() *float64
@@ -104,6 +110,7 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetChangeStreamOptionsPreAndPostImagesExpireAfterSeconds()
+	ResetCustomOpensslCipherConfigTls12()
 	ResetDefaultMaxTimeMs()
 	ResetDefaultReadConcern()
 	ResetDefaultWriteConcern()
@@ -115,6 +122,7 @@ type ClusterAdvancedConfigurationOutputReference interface {
 	ResetOplogSizeMb()
 	ResetSampleRefreshIntervalBiConnector()
 	ResetSampleSizeBiConnector()
+	ResetTlsCipherConfigMode()
 	ResetTransactionLifetimeLimitSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +184,26 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) CustomOpensslCipherConfigTls12() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customOpensslCipherConfigTls12",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) CustomOpensslCipherConfigTls12Input() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customOpensslCipherConfigTls12Input",
 		&returns,
 	)
 	return returns
@@ -441,6 +469,26 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TlsCipherConfigMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCipherConfigMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TlsCipherConfigModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCipherConfigModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference) TransactionLifetimeLimitSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -518,6 +566,17 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetCustomOpensslCipherConfigTls12(val *[]*string) {
+	if err := j.validateSetCustomOpensslCipherConfigTls12Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customOpensslCipherConfigTls12",
 		val,
 	)
 }
@@ -672,6 +731,17 @@ func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterAdvancedConfigurationOutputReference)SetTlsCipherConfigMode(val *string) {
+	if err := j.validateSetTlsCipherConfigModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCipherConfigMode",
 		val,
 	)
 }
@@ -881,6 +951,14 @@ func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetChangeStrea
 	)
 }
 
+func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetCustomOpensslCipherConfigTls12() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomOpensslCipherConfigTls12",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetDefaultMaxTimeMs() {
 	_jsii_.InvokeVoid(
 		c,
@@ -965,6 +1043,14 @@ func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetSampleSizeB
 	_jsii_.InvokeVoid(
 		c,
 		"resetSampleSizeBiConnector",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterAdvancedConfigurationOutputReference) ResetTlsCipherConfigMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsCipherConfigMode",
 		nil, // no parameters
 	)
 }

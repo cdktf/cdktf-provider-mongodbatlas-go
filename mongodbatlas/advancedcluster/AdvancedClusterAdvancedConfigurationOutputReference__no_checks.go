@@ -63,6 +63,10 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetCustomOpensslCipherConfigTls12Parameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetDefaultMaxTimeMsParameters(val *float64) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 }
 
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetTlsCipherConfigModeParameters(val *string) error {
 	return nil
 }
 

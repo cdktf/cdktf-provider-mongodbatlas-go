@@ -174,6 +174,14 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetCustomOpensslCipherConfigTls12Parameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetDefaultMaxTimeMsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -315,6 +323,14 @@ func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validate
 }
 
 func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AdvancedClusterAdvancedConfigurationOutputReference) validateSetTlsCipherConfigModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
