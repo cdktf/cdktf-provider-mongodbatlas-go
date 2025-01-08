@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 type StreamConnection interface {
 	cdktf.TerraformResource
 	Authentication() StreamConnectionAuthenticationOutputReference
@@ -63,6 +63,8 @@ type StreamConnection interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Networking() StreamConnectionNetworkingOutputReference
+	NetworkingInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -134,12 +136,14 @@ type StreamConnection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *StreamConnectionAuthentication)
 	PutDbRoleToExecute(value *StreamConnectionDbRoleToExecute)
+	PutNetworking(value *StreamConnectionNetworking)
 	PutSecurity(value *StreamConnectionSecurity)
 	ResetAuthentication()
 	ResetBootstrapServers()
 	ResetClusterName()
 	ResetConfig()
 	ResetDbRoleToExecute()
+	ResetNetworking()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -402,6 +406,26 @@ func (j *jsiiProxy_StreamConnection) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_StreamConnection) Networking() StreamConnectionNetworkingOutputReference {
+	var returns StreamConnectionNetworkingOutputReference
+	_jsii_.Get(
+		j,
+		"networking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) NetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamConnection) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_StreamConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection(scope constructs.Construct, id *string, config *StreamConnectionConfig) StreamConnection {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewStreamConnection(scope constructs.Construct, id *string, config *StreamC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection_Override(s StreamConnection, scope constructs.Construct, id *string, config *StreamConnectionConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func (s *jsiiProxy_StreamConnection) PutDbRoleToExecute(value *StreamConnectionD
 	)
 }
 
+func (s *jsiiProxy_StreamConnection) PutNetworking(value *StreamConnectionNetworking) {
+	if err := s.validatePutNetworkingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNetworking",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StreamConnection) PutSecurity(value *StreamConnectionSecurity) {
 	if err := s.validatePutSecurityParameters(value); err != nil {
 		panic(err)
@@ -1129,6 +1164,14 @@ func (s *jsiiProxy_StreamConnection) ResetDbRoleToExecute() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDbRoleToExecute",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamConnection) ResetNetworking() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworking",
 		nil, // no parameters
 	)
 }

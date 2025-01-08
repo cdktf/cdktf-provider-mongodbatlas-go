@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
 type PrivatelinkEndpointServiceServerless interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_PrivatelinkEndpointServiceServerless) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Resource.
 func NewPrivatelinkEndpointServiceServerless(scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceServerlessConfig) PrivatelinkEndpointServiceServerless {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewPrivatelinkEndpointServiceServerless(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Resource.
 func NewPrivatelinkEndpointServiceServerless_Override(p PrivatelinkEndpointServiceServerless, scope constructs.Construct, id *string, config *PrivatelinkEndpointServiceServerlessConfig) {
 	_init_.Initialize()
 

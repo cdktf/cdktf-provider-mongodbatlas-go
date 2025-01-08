@@ -83,6 +83,10 @@ func (s *jsiiProxy_StreamConnection) validatePutDbRoleToExecuteParameters(value 
 	return nil
 }
 
+func (s *jsiiProxy_StreamConnection) validatePutNetworkingParameters(value *StreamConnectionNetworking) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamConnection) validatePutSecurityParameters(value *StreamConnectionSecurity) error {
 	return nil
 }

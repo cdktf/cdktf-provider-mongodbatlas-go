@@ -40,6 +40,7 @@ type DataMongodbatlasStreamConnectionsResultsOutputReference interface {
 	InstanceName() *string
 	InternalValue() *DataMongodbatlasStreamConnectionsResults
 	SetInternalValue(val *DataMongodbatlasStreamConnectionsResults)
+	Networking() DataMongodbatlasStreamConnectionsResultsNetworkingOutputReference
 	ProjectId() *string
 	Security() DataMongodbatlasStreamConnectionsResultsSecurityOutputReference
 	// Experimental.
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Networking() DataMongodbatlasStreamConnectionsResultsNetworkingOutputReference {
+	var returns DataMongodbatlasStreamConnectionsResultsNetworkingOutputReference
+	_jsii_.Get(
+		j,
+		"networking",
 		&returns,
 	)
 	return returns

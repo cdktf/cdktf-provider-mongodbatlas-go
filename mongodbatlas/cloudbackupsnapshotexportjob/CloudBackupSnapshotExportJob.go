@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job}.
 type CloudBackupSnapshotExportJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -128,6 +128,7 @@ type CloudBackupSnapshotExportJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomData(value interface{})
+	ResetCustomData()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -500,7 +501,7 @@ func (j *jsiiProxy_CloudBackupSnapshotExportJob) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) CloudBackupSnapshotExportJob {
 	_init_.Initialize()
 
@@ -518,7 +519,7 @@ func NewCloudBackupSnapshotExportJob(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.24.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/cloud_backup_snapshot_export_job mongodbatlas_cloud_backup_snapshot_export_job} Resource.
 func NewCloudBackupSnapshotExportJob_Override(c CloudBackupSnapshotExportJob, scope constructs.Construct, id *string, config *CloudBackupSnapshotExportJobConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1003,14 @@ func (c *jsiiProxy_CloudBackupSnapshotExportJob) PutCustomData(value interface{}
 		c,
 		"putCustomData",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSnapshotExportJob) ResetCustomData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomData",
+		nil, // no parameters
 	)
 }
 

@@ -31,6 +31,8 @@ type DataMongodbatlasProjectIpAddressesServicesClustersAOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	FutureInbound() *[]*string
+	FutureOutbound() *[]*string
 	Inbound() *[]*string
 	InternalValue() *DataMongodbatlasProjectIpAddressesServicesClustersA
 	SetInternalValue(val *DataMongodbatlasProjectIpAddressesServicesClustersA)
@@ -127,6 +129,26 @@ func (j *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesClustersAOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesClustersAOutputReference) FutureInbound() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"futureInbound",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesClustersAOutputReference) FutureOutbound() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"futureOutbound",
 		&returns,
 	)
 	return returns
