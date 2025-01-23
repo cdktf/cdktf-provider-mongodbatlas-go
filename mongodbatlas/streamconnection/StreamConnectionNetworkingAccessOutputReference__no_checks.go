@@ -59,6 +59,10 @@ func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) validateSetConnectionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) validateSetInternalValueParameters(val *StreamConnectionNetworkingAccess) error {
 	return nil
 }

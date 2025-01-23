@@ -23,6 +23,9 @@ type StreamConnectionNetworkingAccessOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionId() *string
+	SetConnectionId(val *string)
+	ConnectionIdInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,7 @@ type StreamConnectionNetworkingAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +101,26 @@ func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) ComplexObjec
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) ConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) ConnectionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionIdInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamConnectionNetworkingAccessOutputReference)SetConnectionId(val *string) {
+	if err := j.validateSetConnectionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionId",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (s *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) ResetConnectionId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConnectionId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StreamConnectionNetworkingAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

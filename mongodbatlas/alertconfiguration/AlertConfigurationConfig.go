@@ -22,27 +22,27 @@ type AlertConfigurationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#event_type AlertConfiguration#event_type}.
 	EventType *string `field:"required" json:"eventType" yaml:"eventType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#project_id AlertConfiguration#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#enabled AlertConfiguration#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// matcher block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#matcher AlertConfiguration#matcher}
 	Matcher interface{} `field:"optional" json:"matcher" yaml:"matcher"`
 	// metric_threshold_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#metric_threshold_config AlertConfiguration#metric_threshold_config}
 	MetricThresholdConfig interface{} `field:"optional" json:"metricThresholdConfig" yaml:"metricThresholdConfig"`
 	// notification block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#notification AlertConfiguration#notification}
 	Notification interface{} `field:"optional" json:"notification" yaml:"notification"`
 	// threshold_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/resources/alert_configuration#threshold_config AlertConfiguration#threshold_config}
 	ThresholdConfig interface{} `field:"optional" json:"thresholdConfig" yaml:"thresholdConfig"`
 }
 

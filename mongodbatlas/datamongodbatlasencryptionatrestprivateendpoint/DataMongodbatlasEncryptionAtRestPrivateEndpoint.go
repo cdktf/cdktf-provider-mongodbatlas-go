@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
 type DataMongodbatlasEncryptionAtRestPrivateEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRestPrivateEndpoint) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Data Source.
 func NewDataMongodbatlasEncryptionAtRestPrivateEndpoint(scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestPrivateEndpointConfig) DataMongodbatlasEncryptionAtRestPrivateEndpoint {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataMongodbatlasEncryptionAtRestPrivateEndpoint(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.25.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.0/docs/data-sources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Data Source.
 func NewDataMongodbatlasEncryptionAtRestPrivateEndpoint_Override(d DataMongodbatlasEncryptionAtRestPrivateEndpoint, scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestPrivateEndpointConfig) {
 	_init_.Initialize()
 
