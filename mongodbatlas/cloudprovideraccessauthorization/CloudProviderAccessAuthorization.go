@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization}.
 type CloudProviderAccessAuthorization interface {
 	cdktf.TerraformResource
 	AuthorizedDate() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_CloudProviderAccessAuthorization) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) CloudProviderAccessAuthorization {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewCloudProviderAccessAuthorization(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.26.1/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/cloud_provider_access_authorization mongodbatlas_cloud_provider_access_authorization} Resource.
 func NewCloudProviderAccessAuthorization_Override(c CloudProviderAccessAuthorization, scope constructs.Construct, id *string, config *CloudProviderAccessAuthorizationConfig) {
 	_init_.Initialize()
 
