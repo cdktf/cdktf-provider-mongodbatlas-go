@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_instance mongodbatlas_stream_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_instance mongodbatlas_stream_instance}.
 type StreamInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_StreamInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource.
 func NewStreamInstance(scope constructs.Construct, id *string, config *StreamInstanceConfig) StreamInstance {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewStreamInstance(scope constructs.Construct, id *string, config *StreamIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_instance mongodbatlas_stream_instance} Resource.
 func NewStreamInstance_Override(s StreamInstance, scope constructs.Construct, id *string, config *StreamInstanceConfig) {
 	_init_.Initialize()
 

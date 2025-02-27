@@ -36,6 +36,7 @@ type DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference interface {
 	InternalValue() *DataMongodbatlasEncryptionAtRestAwsKmsConfig
 	SetInternalValue(val *DataMongodbatlasEncryptionAtRestAwsKmsConfig)
 	Region() *string
+	RequirePrivateNetworking() cdktf.IResolvable
 	RoleId() *string
 	SecretAccessKey() *string
 	// Experimental.
@@ -171,6 +172,16 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) RequirePrivateNetworking() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"requirePrivateNetworking",
 		&returns,
 	)
 	return returns

@@ -79,6 +79,10 @@ func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetRegio
 	return nil
 }
 
+func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetRequirePrivateNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EncryptionAtRestAwsKmsConfigOutputReference) validateSetRoleIdParameters(val *string) error {
 	return nil
 }

@@ -24,17 +24,17 @@ type StreamProcessorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the stream instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#instance_name StreamProcessor#instance_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#instance_name StreamProcessor#instance_name}
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
 	// Stream aggregation pipeline you want to apply to your streaming data.
 	//
 	// [MongoDB Atlas Docs](https://www.mongodb.com/docs/atlas/atlas-stream-processing/stream-aggregation/#std-label-stream-aggregation) contain more information. Using [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode) is recommended when setting this attribute. For more details see the [Aggregation Pipelines Documentation](https://www.mongodb.com/docs/atlas/atlas-stream-processing/stream-aggregation/)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#pipeline StreamProcessor#pipeline}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#pipeline StreamProcessor#pipeline}
 	Pipeline *string `field:"required" json:"pipeline" yaml:"pipeline"`
 	// Human-readable label that identifies the stream processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#processor_name StreamProcessor#processor_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#processor_name StreamProcessor#processor_name}
 	ProcessorName *string `field:"required" json:"processorName" yaml:"processorName"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -42,11 +42,11 @@ type StreamProcessorConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#project_id StreamProcessor#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#project_id StreamProcessor#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Optional configuration for the stream processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#options StreamProcessor#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#options StreamProcessor#options}
 	Options *StreamProcessorOptions `field:"optional" json:"options" yaml:"options"`
 	// The state of the stream processor.
 	//
@@ -54,7 +54,7 @@ type StreamProcessorConfig struct {
 	//
 	// **NOTE** When creating a stream processor, setting the state to STARTED can automatically start the stream processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/stream_processor#state StreamProcessor#state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_processor#state StreamProcessor#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

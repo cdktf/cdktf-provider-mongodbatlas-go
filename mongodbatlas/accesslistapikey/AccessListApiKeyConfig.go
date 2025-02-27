@@ -22,18 +22,18 @@ type AccessListApiKeyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/access_list_api_key#api_key_id AccessListApiKey#api_key_id}.
 	ApiKeyId *string `field:"required" json:"apiKeyId" yaml:"apiKeyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/access_list_api_key#org_id AccessListApiKey#org_id}.
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/access_list_api_key#cidr_block AccessListApiKey#cidr_block}.
 	CidrBlock *string `field:"optional" json:"cidrBlock" yaml:"cidrBlock"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/access_list_api_key#id AccessListApiKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/access_list_api_key#id AccessListApiKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.27.0/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/access_list_api_key#ip_address AccessListApiKey#ip_address}.
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
 }
 
