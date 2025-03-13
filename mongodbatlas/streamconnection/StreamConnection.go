@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 type StreamConnection interface {
 	cdktf.TerraformResource
 	Authentication() StreamConnectionAuthenticationOutputReference
 	AuthenticationInput() interface{}
+	Aws() StreamConnectionAwsOutputReference
+	AwsInput() interface{}
 	BootstrapServers() *string
 	SetBootstrapServers(val *string)
 	BootstrapServersInput() *string
@@ -135,10 +137,12 @@ type StreamConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *StreamConnectionAuthentication)
+	PutAws(value *StreamConnectionAws)
 	PutDbRoleToExecute(value *StreamConnectionDbRoleToExecute)
 	PutNetworking(value *StreamConnectionNetworking)
 	PutSecurity(value *StreamConnectionSecurity)
 	ResetAuthentication()
+	ResetAws()
 	ResetBootstrapServers()
 	ResetClusterName()
 	ResetConfig()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_StreamConnection) AuthenticationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"authenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) Aws() StreamConnectionAwsOutputReference {
+	var returns StreamConnectionAwsOutputReference
+	_jsii_.Get(
+		j,
+		"aws",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) AwsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsInput",
 		&returns,
 	)
 	return returns
@@ -557,7 +581,7 @@ func (j *jsiiProxy_StreamConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection(scope constructs.Construct, id *string, config *StreamConnectionConfig) StreamConnection {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewStreamConnection(scope constructs.Construct, id *string, config *StreamC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection_Override(s StreamConnection, scope constructs.Construct, id *string, config *StreamConnectionConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1119,17 @@ func (s *jsiiProxy_StreamConnection) PutAuthentication(value *StreamConnectionAu
 	)
 }
 
+func (s *jsiiProxy_StreamConnection) PutAws(value *StreamConnectionAws) {
+	if err := s.validatePutAwsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAws",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StreamConnection) PutDbRoleToExecute(value *StreamConnectionDbRoleToExecute) {
 	if err := s.validatePutDbRoleToExecuteParameters(value); err != nil {
 		panic(err)
@@ -1132,6 +1167,14 @@ func (s *jsiiProxy_StreamConnection) ResetAuthentication() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamConnection) ResetAws() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAws",
 		nil, // no parameters
 	)
 }

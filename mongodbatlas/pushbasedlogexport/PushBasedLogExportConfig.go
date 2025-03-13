@@ -24,11 +24,11 @@ type PushBasedLogExportConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket to which the agent sends the logs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/push_based_log_export#bucket_name PushBasedLogExport#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export#bucket_name PushBasedLogExport#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// ID of the AWS IAM role that is used to write to the S3 bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/push_based_log_export#iam_role_id PushBasedLogExport#iam_role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export#iam_role_id PushBasedLogExport#iam_role_id}
 	IamRoleId *string `field:"required" json:"iamRoleId" yaml:"iamRoleId"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -36,13 +36,13 @@ type PushBasedLogExportConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/push_based_log_export#project_id PushBasedLogExport#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export#project_id PushBasedLogExport#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// S3 directory in which vector writes in order to store the logs. An empty string denotes the root directory.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/push_based_log_export#prefix_path PushBasedLogExport#prefix_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export#prefix_path PushBasedLogExport#prefix_path}
 	PrefixPath *string `field:"optional" json:"prefixPath" yaml:"prefixPath"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export#timeouts PushBasedLogExport#timeouts}.
 	Timeouts *PushBasedLogExportTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

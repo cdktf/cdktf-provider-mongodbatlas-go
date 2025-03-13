@@ -14,6 +14,7 @@ import (
 type DataMongodbatlasStreamConnectionsResultsOutputReference interface {
 	cdktf.ComplexObject
 	Authentication() DataMongodbatlasStreamConnectionsResultsAuthenticationOutputReference
+	Aws() DataMongodbatlasStreamConnectionsResultsAwsOutputReference
 	BootstrapServers() *string
 	ClusterName() *string
 	// the index of the complex object in a list.
@@ -96,6 +97,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Auth
 	_jsii_.Get(
 		j,
 		"authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Aws() DataMongodbatlasStreamConnectionsResultsAwsOutputReference {
+	var returns DataMongodbatlasStreamConnectionsResultsAwsOutputReference
+	_jsii_.Get(
+		j,
+		"aws",
 		&returns,
 	)
 	return returns

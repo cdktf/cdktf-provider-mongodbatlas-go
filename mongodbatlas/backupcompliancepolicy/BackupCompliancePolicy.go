@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy}.
 type BackupCompliancePolicy interface {
 	cdktf.TerraformResource
 	AuthorizedEmail() *string
@@ -155,6 +155,7 @@ type BackupCompliancePolicy interface {
 	ResetCopyProtectionEnabled()
 	ResetEncryptionAtRestEnabled()
 	ResetId()
+	ResetOnDemandPolicyItem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -674,7 +675,7 @@ func (j *jsiiProxy_BackupCompliancePolicy) UpdatedUser() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) BackupCompliancePolicy {
 	_init_.Initialize()
 
@@ -692,7 +693,7 @@ func NewBackupCompliancePolicy(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/backup_compliance_policy mongodbatlas_backup_compliance_policy} Resource.
 func NewBackupCompliancePolicy_Override(b BackupCompliancePolicy, scope constructs.Construct, id *string, config *BackupCompliancePolicyConfig) {
 	_init_.Initialize()
 
@@ -1309,6 +1310,14 @@ func (b *jsiiProxy_BackupCompliancePolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupCompliancePolicy) ResetOnDemandPolicyItem() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOnDemandPolicyItem",
 		nil, // no parameters
 	)
 }

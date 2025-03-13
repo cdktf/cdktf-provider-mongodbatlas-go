@@ -82,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyProtectionEnabled", GoMethod: "ResetCopyProtectionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionAtRestEnabled", GoMethod: "ResetEncryptionAtRestEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandPolicyItem", GoMethod: "ResetOnDemandPolicyItem"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPitEnabled", GoMethod: "ResetPitEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyItemDaily", GoMethod: "ResetPolicyItemDaily"},

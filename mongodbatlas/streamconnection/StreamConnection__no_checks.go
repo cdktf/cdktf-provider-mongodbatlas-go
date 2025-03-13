@@ -79,6 +79,10 @@ func (s *jsiiProxy_StreamConnection) validatePutAuthenticationParameters(value *
 	return nil
 }
 
+func (s *jsiiProxy_StreamConnection) validatePutAwsParameters(value *StreamConnectionAws) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamConnection) validatePutDbRoleToExecuteParameters(value *StreamConnectionDbRoleToExecute) error {
 	return nil
 }

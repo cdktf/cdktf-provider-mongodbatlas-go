@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses}.
 type DataMongodbatlasControlPlaneIpAddresses interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataMongodbatlasControlPlaneIpAddresses) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source.
 func NewDataMongodbatlasControlPlaneIpAddresses(scope constructs.Construct, id *string, config *DataMongodbatlasControlPlaneIpAddressesConfig) DataMongodbatlasControlPlaneIpAddresses {
 	_init_.Initialize()
 
@@ -281,7 +281,7 @@ func NewDataMongodbatlasControlPlaneIpAddresses(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.28.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/control_plane_ip_addresses mongodbatlas_control_plane_ip_addresses} Data Source.
 func NewDataMongodbatlasControlPlaneIpAddresses_Override(d DataMongodbatlasControlPlaneIpAddresses, scope constructs.Construct, id *string, config *DataMongodbatlasControlPlaneIpAddressesConfig) {
 	_init_.Initialize()
 
