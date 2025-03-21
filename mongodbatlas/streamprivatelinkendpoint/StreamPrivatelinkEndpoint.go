@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
 type StreamPrivatelinkEndpoint interface {
 	cdktf.TerraformResource
+	Arn() *string
+	SetArn(val *string)
+	ArnInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,6 +40,7 @@ type StreamPrivatelinkEndpoint interface {
 	DnsSubDomain() *[]*string
 	SetDnsSubDomain(val *[]*string)
 	DnsSubDomainInput() *[]*string
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,6 +51,7 @@ type StreamPrivatelinkEndpoint interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	InterfaceEndpointId() *string
+	InterfaceEndpointName() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -60,6 +65,7 @@ type StreamPrivatelinkEndpoint interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderAccountId() *string
 	ProviderName() *string
 	SetProviderName(val *string)
 	ProviderNameInput() *string
@@ -128,6 +134,7 @@ type StreamPrivatelinkEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetArn()
 	ResetDnsDomain()
 	ResetDnsSubDomain()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -151,6 +158,26 @@ type StreamPrivatelinkEndpoint interface {
 // The jsii proxy struct for StreamPrivatelinkEndpoint
 type jsiiProxy_StreamPrivatelinkEndpoint struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) ArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StreamPrivatelinkEndpoint) CdktfStack() cdktf.TerraformStack {
@@ -243,6 +270,16 @@ func (j *jsiiProxy_StreamPrivatelinkEndpoint) DnsSubDomainInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamPrivatelinkEndpoint) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -293,6 +330,16 @@ func (j *jsiiProxy_StreamPrivatelinkEndpoint) InterfaceEndpointId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) InterfaceEndpointName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceEndpointName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamPrivatelinkEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -338,6 +385,16 @@ func (j *jsiiProxy_StreamPrivatelinkEndpoint) Provider() cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) ProviderAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerAccountId",
 		&returns,
 	)
 	return returns
@@ -484,7 +541,7 @@ func (j *jsiiProxy_StreamPrivatelinkEndpoint) VendorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
 func NewStreamPrivatelinkEndpoint(scope constructs.Construct, id *string, config *StreamPrivatelinkEndpointConfig) StreamPrivatelinkEndpoint {
 	_init_.Initialize()
 
@@ -502,7 +559,7 @@ func NewStreamPrivatelinkEndpoint(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
 func NewStreamPrivatelinkEndpoint_Override(s StreamPrivatelinkEndpoint, scope constructs.Construct, id *string, config *StreamPrivatelinkEndpointConfig) {
 	_init_.Initialize()
 
@@ -510,6 +567,17 @@ func NewStreamPrivatelinkEndpoint_Override(s StreamPrivatelinkEndpoint, scope co
 		"@cdktf/provider-mongodbatlas.streamPrivatelinkEndpoint.StreamPrivatelinkEndpoint",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StreamPrivatelinkEndpoint)SetArn(val *string) {
+	if err := j.validateSetArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"arn",
+		val,
 	)
 }
 
@@ -1008,6 +1076,14 @@ func (s *jsiiProxy_StreamPrivatelinkEndpoint) OverrideLogicalId(newLogicalId *st
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamPrivatelinkEndpoint) ResetArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetArn",
+		nil, // no parameters
 	)
 }
 

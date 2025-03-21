@@ -5,9 +5,9 @@ package databaseuser
 
 
 type DatabaseUserLabels struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/database_user#key DatabaseUser#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/database_user#key DatabaseUser#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/database_user#value DatabaseUser#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/database_user#value DatabaseUser#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

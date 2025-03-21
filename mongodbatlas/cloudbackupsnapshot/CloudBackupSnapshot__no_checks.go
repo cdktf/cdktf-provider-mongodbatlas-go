@@ -75,6 +75,10 @@ func (c *jsiiProxy_CloudBackupSnapshot) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_CloudBackupSnapshot) validatePutTimeoutsParameters(value *CloudBackupSnapshotTimeouts) error {
+	return nil
+}
+
 func validateCloudBackupSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

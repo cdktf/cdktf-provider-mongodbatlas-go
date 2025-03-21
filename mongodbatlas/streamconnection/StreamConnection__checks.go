@@ -424,6 +424,14 @@ func (j *jsiiProxy_StreamConnection) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_StreamConnection) validateSetHeadersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StreamConnection) validateSetInstanceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -495,6 +503,14 @@ func (j *jsiiProxy_StreamConnection) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_StreamConnection) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StreamConnection) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

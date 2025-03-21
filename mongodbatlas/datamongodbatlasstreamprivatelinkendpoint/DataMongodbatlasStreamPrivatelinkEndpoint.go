@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
 type DataMongodbatlasStreamPrivatelinkEndpoint interface {
 	cdktf.TerraformDataSource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -29,6 +30,7 @@ type DataMongodbatlasStreamPrivatelinkEndpoint interface {
 	SetDependsOn(val *[]*string)
 	DnsDomain() *string
 	DnsSubDomain() *[]*string
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,6 +43,7 @@ type DataMongodbatlasStreamPrivatelinkEndpoint interface {
 	SetId(val *string)
 	IdInput() *string
 	InterfaceEndpointId() *string
+	InterfaceEndpointName() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -54,6 +57,7 @@ type DataMongodbatlasStreamPrivatelinkEndpoint interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProviderAccountId() *string
 	ProviderName() *string
 	// Experimental.
 	RawOverrides() interface{}
@@ -114,6 +118,16 @@ type jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -169,6 +183,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) DnsSubDomain() *[]
 	_jsii_.Get(
 		j,
 		"dnsSubDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
 		&returns,
 	)
 	return returns
@@ -234,6 +258,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) InterfaceEndpointI
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) InterfaceEndpointName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceEndpointName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -279,6 +313,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) Provider() cdktf.T
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) ProviderAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerAccountId",
 		&returns,
 	)
 	return returns
@@ -375,7 +419,7 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpoint) Vendor() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Data Source.
 func NewDataMongodbatlasStreamPrivatelinkEndpoint(scope constructs.Construct, id *string, config *DataMongodbatlasStreamPrivatelinkEndpointConfig) DataMongodbatlasStreamPrivatelinkEndpoint {
 	_init_.Initialize()
 
@@ -393,7 +437,7 @@ func NewDataMongodbatlasStreamPrivatelinkEndpoint(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/data-sources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Data Source.
 func NewDataMongodbatlasStreamPrivatelinkEndpoint_Override(d DataMongodbatlasStreamPrivatelinkEndpoint, scope constructs.Construct, id *string, config *DataMongodbatlasStreamPrivatelinkEndpointConfig) {
 	_init_.Initialize()
 

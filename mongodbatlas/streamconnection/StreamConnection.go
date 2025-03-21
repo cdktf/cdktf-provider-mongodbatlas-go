@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 type StreamConnection interface {
 	cdktf.TerraformResource
 	Authentication() StreamConnectionAuthenticationOutputReference
@@ -57,6 +57,9 @@ type StreamConnection interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Headers() *map[string]*string
+	SetHeaders(val *map[string]*string)
+	HeadersInput() *map[string]*string
 	Id() *string
 	InstanceName() *string
 	SetInstanceName(val *string)
@@ -93,6 +96,9 @@ type StreamConnection interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -147,11 +153,13 @@ type StreamConnection interface {
 	ResetClusterName()
 	ResetConfig()
 	ResetDbRoleToExecute()
+	ResetHeaders()
 	ResetNetworking()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecurity()
+	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -390,6 +398,26 @@ func (j *jsiiProxy_StreamConnection) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamConnection) Headers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) HeadersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamConnection) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -580,8 +608,28 @@ func (j *jsiiProxy_StreamConnection) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamConnection) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+func (j *jsiiProxy_StreamConnection) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection(scope constructs.Construct, id *string, config *StreamConnectionConfig) StreamConnection {
 	_init_.Initialize()
 
@@ -599,7 +647,7 @@ func NewStreamConnection(scope constructs.Construct, id *string, config *StreamC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection_Override(s StreamConnection, scope constructs.Construct, id *string, config *StreamConnectionConfig) {
 	_init_.Initialize()
 
@@ -692,6 +740,17 @@ func (j *jsiiProxy_StreamConnection)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_StreamConnection)SetHeaders(val *map[string]*string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StreamConnection)SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
@@ -751,6 +810,17 @@ func (j *jsiiProxy_StreamConnection)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamConnection)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
 		val,
 	)
 }
@@ -1211,6 +1281,14 @@ func (s *jsiiProxy_StreamConnection) ResetDbRoleToExecute() {
 	)
 }
 
+func (s *jsiiProxy_StreamConnection) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StreamConnection) ResetNetworking() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1231,6 +1309,14 @@ func (s *jsiiProxy_StreamConnection) ResetSecurity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecurity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamConnection) ResetUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUrl",
 		nil, // no parameters
 	)
 }

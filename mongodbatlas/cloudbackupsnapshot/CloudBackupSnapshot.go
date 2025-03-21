@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot}.
 type CloudBackupSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -88,6 +88,8 @@ type CloudBackupSnapshot interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() CloudBackupSnapshotTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -132,10 +134,12 @@ type CloudBackupSnapshot interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *CloudBackupSnapshotTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -534,6 +538,26 @@ func (j *jsiiProxy_CloudBackupSnapshot) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudBackupSnapshot) Timeouts() CloudBackupSnapshotTimeoutsOutputReference {
+	var returns CloudBackupSnapshotTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudBackupSnapshot) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudBackupSnapshot) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_CloudBackupSnapshot) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) CloudBackupSnapshot {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewCloudBackupSnapshot(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/cloud_backup_snapshot mongodbatlas_cloud_backup_snapshot} Resource.
 func NewCloudBackupSnapshot_Override(c CloudBackupSnapshot, scope constructs.Construct, id *string, config *CloudBackupSnapshotConfig) {
 	_init_.Initialize()
 
@@ -1050,6 +1074,17 @@ func (c *jsiiProxy_CloudBackupSnapshot) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_CloudBackupSnapshot) PutTimeouts(value *CloudBackupSnapshotTimeouts) {
+	if err := c.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudBackupSnapshot) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1062,6 +1097,14 @@ func (c *jsiiProxy_CloudBackupSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudBackupSnapshot) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

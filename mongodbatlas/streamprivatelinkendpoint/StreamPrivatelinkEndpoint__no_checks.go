@@ -91,6 +91,10 @@ func validateStreamPrivatelinkEndpoint_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_StreamPrivatelinkEndpoint) validateSetArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamPrivatelinkEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

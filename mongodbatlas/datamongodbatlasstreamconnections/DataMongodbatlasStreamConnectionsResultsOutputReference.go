@@ -37,6 +37,7 @@ type DataMongodbatlasStreamConnectionsResultsOutputReference interface {
 	DbRoleToExecute() DataMongodbatlasStreamConnectionsResultsDbRoleToExecuteOutputReference
 	// Experimental.
 	Fqn() *string
+	Headers() cdktf.StringMap
 	Id() *string
 	InstanceName() *string
 	InternalValue() *DataMongodbatlasStreamConnectionsResults
@@ -53,6 +54,7 @@ type DataMongodbatlasStreamConnectionsResultsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -202,6 +204,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Fqn(
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Headers() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,6 +299,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Type
 	_jsii_.Get(
 		j,
 		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
 		&returns,
 	)
 	return returns

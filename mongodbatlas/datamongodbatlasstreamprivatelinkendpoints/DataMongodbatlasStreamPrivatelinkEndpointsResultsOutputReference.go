@@ -13,6 +13,7 @@ import (
 
 type DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference interface {
 	cdktf.ComplexObject
+	Arn() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,13 +31,16 @@ type DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference interface 
 	CreationStack() *[]*string
 	DnsDomain() *string
 	DnsSubDomain() *[]*string
+	ErrorMessage() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InterfaceEndpointId() *string
+	InterfaceEndpointName() *string
 	InternalValue() *DataMongodbatlasStreamPrivatelinkEndpointsResults
 	SetInternalValue(val *DataMongodbatlasStreamPrivatelinkEndpointsResults)
 	ProjectId() *string
+	ProviderAccountId() *string
 	ProviderName() *string
 	Region() *string
 	ServiceEndpointId() *string
@@ -89,6 +93,16 @@ type jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -139,6 +153,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -169,6 +193,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) InterfaceEndpointName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceEndpointName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) InternalValue() *DataMongodbatlasStreamPrivatelinkEndpointsResults {
 	var returns *DataMongodbatlasStreamPrivatelinkEndpointsResults
 	_jsii_.Get(
@@ -184,6 +218,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputRefere
 	_jsii_.Get(
 		j,
 		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsOutputReference) ProviderAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerAccountId",
 		&returns,
 	)
 	return returns

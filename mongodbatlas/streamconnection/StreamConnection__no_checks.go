@@ -135,6 +135,10 @@ func (j *jsiiProxy_StreamConnection) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_StreamConnection) validateSetHeadersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamConnection) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
@@ -152,6 +156,10 @@ func (j *jsiiProxy_StreamConnection) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_StreamConnection) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StreamConnection) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

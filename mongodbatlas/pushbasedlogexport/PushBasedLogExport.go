@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export}.
 type PushBasedLogExport interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_PushBasedLogExport) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export} Resource.
 func NewPushBasedLogExport(scope constructs.Construct, id *string, config *PushBasedLogExportConfig) PushBasedLogExport {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewPushBasedLogExport(scope constructs.Construct, id *string, config *PushB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.29.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/push_based_log_export mongodbatlas_push_based_log_export} Resource.
 func NewPushBasedLogExport_Override(p PushBasedLogExport, scope constructs.Construct, id *string, config *PushBasedLogExportConfig) {
 	_init_.Initialize()
 
