@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	ApiAccessListRequired() interface{}
@@ -88,6 +88,9 @@ type Organization interface {
 	RoleNames() *[]*string
 	SetRoleNames(val *[]*string)
 	RoleNamesInput() *[]*string
+	SkipDefaultAlertsSettings() interface{}
+	SetSkipDefaultAlertsSettings(val interface{})
+	SkipDefaultAlertsSettingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -146,6 +149,7 @@ type Organization interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestrictEmployeeAccess()
+	ResetSkipDefaultAlertsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -524,6 +528,26 @@ func (j *jsiiProxy_Organization) RoleNamesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) SkipDefaultAlertsSettings() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDefaultAlertsSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) SkipDefaultAlertsSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDefaultAlertsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -555,7 +579,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.30.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -758,6 +782,17 @@ func (j *jsiiProxy_Organization)SetRoleNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roleNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetSkipDefaultAlertsSettings(val interface{}) {
+	if err := j.validateSetSkipDefaultAlertsSettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDefaultAlertsSettings",
 		val,
 	)
 }
@@ -1167,6 +1202,14 @@ func (o *jsiiProxy_Organization) ResetRestrictEmployeeAccess() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRestrictEmployeeAccess",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetSkipDefaultAlertsSettings() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSkipDefaultAlertsSettings",
 		nil, // no parameters
 	)
 }
