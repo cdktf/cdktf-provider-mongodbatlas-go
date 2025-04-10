@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/search_deployment mongodbatlas_search_deployment}.
 type DataMongodbatlasSearchDeployment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,6 +30,7 @@ type DataMongodbatlasSearchDeployment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionAtRestProvider() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -164,6 +165,16 @@ func (j *jsiiProxy_DataMongodbatlasSearchDeployment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasSearchDeployment) EncryptionAtRestProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionAtRestProvider",
 		&returns,
 	)
 	return returns
@@ -320,7 +331,7 @@ func (j *jsiiProxy_DataMongodbatlasSearchDeployment) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/search_deployment mongodbatlas_search_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/search_deployment mongodbatlas_search_deployment} Data Source.
 func NewDataMongodbatlasSearchDeployment(scope constructs.Construct, id *string, config *DataMongodbatlasSearchDeploymentConfig) DataMongodbatlasSearchDeployment {
 	_init_.Initialize()
 
@@ -338,7 +349,7 @@ func NewDataMongodbatlasSearchDeployment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/search_deployment mongodbatlas_search_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/search_deployment mongodbatlas_search_deployment} Data Source.
 func NewDataMongodbatlasSearchDeployment_Override(d DataMongodbatlasSearchDeployment, scope constructs.Construct, id *string, config *DataMongodbatlasSearchDeploymentConfig) {
 	_init_.Initialize()
 

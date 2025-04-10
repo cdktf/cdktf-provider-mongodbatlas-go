@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
 type SearchDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type SearchDeployment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionAtRestProvider() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,6 +63,9 @@ type SearchDeployment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipWaitOnUpdate() interface{}
+	SetSkipWaitOnUpdate(val interface{})
+	SkipWaitOnUpdateInput() interface{}
 	Specs() SearchDeploymentSpecsList
 	SpecsInput() interface{}
 	StateName() *string
@@ -121,6 +125,7 @@ type SearchDeployment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipWaitOnUpdate()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -205,6 +210,16 @@ func (j *jsiiProxy_SearchDeployment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchDeployment) EncryptionAtRestProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionAtRestProvider",
 		&returns,
 	)
 	return returns
@@ -320,6 +335,26 @@ func (j *jsiiProxy_SearchDeployment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SearchDeployment) SkipWaitOnUpdate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWaitOnUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchDeployment) SkipWaitOnUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipWaitOnUpdateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchDeployment) Specs() SearchDeploymentSpecsList {
 	var returns SearchDeploymentSpecsList
 	_jsii_.Get(
@@ -401,7 +436,7 @@ func (j *jsiiProxy_SearchDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchDeploymentConfig) SearchDeployment {
 	_init_.Initialize()
 
@@ -419,7 +454,7 @@ func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment_Override(s SearchDeployment, scope constructs.Construct, id *string, config *SearchDeploymentConfig) {
 	_init_.Initialize()
 
@@ -516,6 +551,17 @@ func (j *jsiiProxy_SearchDeployment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchDeployment)SetSkipWaitOnUpdate(val interface{}) {
+	if err := j.validateSetSkipWaitOnUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipWaitOnUpdate",
 		val,
 	)
 }
@@ -899,6 +945,14 @@ func (s *jsiiProxy_SearchDeployment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchDeployment) ResetSkipWaitOnUpdate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkipWaitOnUpdate",
 		nil, // no parameters
 	)
 }

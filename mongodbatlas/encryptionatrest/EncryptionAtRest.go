@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 type EncryptionAtRest interface {
 	cdktf.TerraformResource
 	AwsKmsConfig() EncryptionAtRestAwsKmsConfigList
@@ -35,6 +35,9 @@ type EncryptionAtRest interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnabledForSearchNodes() interface{}
+	SetEnabledForSearchNodes(val interface{})
+	EnabledForSearchNodesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,6 +122,7 @@ type EncryptionAtRest interface {
 	PutGoogleCloudKmsConfig(value interface{})
 	ResetAwsKmsConfig()
 	ResetAzureKeyVaultConfig()
+	ResetEnabledForSearchNodes()
 	ResetGoogleCloudKmsConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_EncryptionAtRest) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRest) EnabledForSearchNodes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledForSearchNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRest) EnabledForSearchNodesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledForSearchNodesInput",
 		&returns,
 	)
 	return returns
@@ -392,7 +416,7 @@ func (j *jsiiProxy_EncryptionAtRest) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest(scope constructs.Construct, id *string, config *EncryptionAtRestConfig) EncryptionAtRest {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewEncryptionAtRest(scope constructs.Construct, id *string, config *Encrypt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/encryption_at_rest mongodbatlas_encryption_at_rest} Resource.
 func NewEncryptionAtRest_Override(e EncryptionAtRest, scope constructs.Construct, id *string, config *EncryptionAtRestConfig) {
 	_init_.Initialize()
 
@@ -447,6 +471,17 @@ func (j *jsiiProxy_EncryptionAtRest)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EncryptionAtRest)SetEnabledForSearchNodes(val interface{}) {
+	if err := j.validateSetEnabledForSearchNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledForSearchNodes",
 		val,
 	)
 }
@@ -898,6 +933,14 @@ func (e *jsiiProxy_EncryptionAtRest) ResetAzureKeyVaultConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAzureKeyVaultConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EncryptionAtRest) ResetEnabledForSearchNodes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnabledForSearchNodes",
 		nil, // no parameters
 	)
 }

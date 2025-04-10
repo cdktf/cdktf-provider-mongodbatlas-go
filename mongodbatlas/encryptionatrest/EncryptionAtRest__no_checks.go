@@ -111,6 +111,10 @@ func (j *jsiiProxy_EncryptionAtRest) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_EncryptionAtRest) validateSetEnabledForSearchNodesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EncryptionAtRest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

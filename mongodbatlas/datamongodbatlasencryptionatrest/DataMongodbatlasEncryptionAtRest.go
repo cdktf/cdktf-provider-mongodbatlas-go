@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 type DataMongodbatlasEncryptionAtRest interface {
 	cdktf.TerraformDataSource
 	AwsKmsConfig() DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference
@@ -29,6 +29,7 @@ type DataMongodbatlasEncryptionAtRest interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnabledForSearchNodes() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -162,6 +163,16 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRest) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasEncryptionAtRest) EnabledForSearchNodes() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabledForSearchNodes",
 		&returns,
 	)
 	return returns
@@ -308,7 +319,7 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRest) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
 func NewDataMongodbatlasEncryptionAtRest(scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestConfig) DataMongodbatlasEncryptionAtRest {
 	_init_.Initialize()
 
@@ -326,7 +337,7 @@ func NewDataMongodbatlasEncryptionAtRest(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.31.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
 func NewDataMongodbatlasEncryptionAtRest_Override(d DataMongodbatlasEncryptionAtRest, scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestConfig) {
 	_init_.Initialize()
 

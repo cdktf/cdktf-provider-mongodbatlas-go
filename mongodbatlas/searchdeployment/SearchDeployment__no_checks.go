@@ -123,6 +123,10 @@ func (j *jsiiProxy_SearchDeployment) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SearchDeployment) validateSetSkipWaitOnUpdateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSearchDeploymentParameters(scope constructs.Construct, id *string, config *SearchDeploymentConfig) error {
 	return nil
 }
