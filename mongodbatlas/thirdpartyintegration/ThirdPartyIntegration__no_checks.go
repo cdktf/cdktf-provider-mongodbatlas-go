@@ -143,6 +143,14 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetSecretParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ThirdPartyIntegration) validateSetSendCollectionLatencyMetricsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration) validateSetSendDatabaseMetricsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetServiceDiscoveryParameters(val *string) error {
 	return nil
 }

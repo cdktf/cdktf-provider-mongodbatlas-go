@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job}.
 type DataMongodbatlasFlexRestoreJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataMongodbatlasFlexRestoreJob) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source.
 func NewDataMongodbatlasFlexRestoreJob(scope constructs.Construct, id *string, config *DataMongodbatlasFlexRestoreJobConfig) DataMongodbatlasFlexRestoreJob {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataMongodbatlasFlexRestoreJob(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_restore_job mongodbatlas_flex_restore_job} Data Source.
 func NewDataMongodbatlasFlexRestoreJob_Override(d DataMongodbatlasFlexRestoreJob, scope constructs.Construct, id *string, config *DataMongodbatlasFlexRestoreJobConfig) {
 	_init_.Initialize()
 

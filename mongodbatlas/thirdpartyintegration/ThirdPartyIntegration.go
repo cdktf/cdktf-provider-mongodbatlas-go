@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
 type ThirdPartyIntegration interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -83,6 +83,12 @@ type ThirdPartyIntegration interface {
 	Secret() *string
 	SetSecret(val *string)
 	SecretInput() *string
+	SendCollectionLatencyMetrics() interface{}
+	SetSendCollectionLatencyMetrics(val interface{})
+	SendCollectionLatencyMetricsInput() interface{}
+	SendDatabaseMetrics() interface{}
+	SetSendDatabaseMetrics(val interface{})
+	SendDatabaseMetricsInput() interface{}
 	ServiceDiscovery() *string
 	SetServiceDiscovery(val *string)
 	ServiceDiscoveryInput() *string
@@ -161,6 +167,8 @@ type ThirdPartyIntegration interface {
 	ResetRegion()
 	ResetRoutingKey()
 	ResetSecret()
+	ResetSendCollectionLatencyMetrics()
+	ResetSendDatabaseMetrics()
 	ResetServiceDiscovery()
 	ResetServiceKey()
 	ResetTeamName()
@@ -504,6 +512,46 @@ func (j *jsiiProxy_ThirdPartyIntegration) SecretInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ThirdPartyIntegration) SendCollectionLatencyMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendCollectionLatencyMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration) SendCollectionLatencyMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendCollectionLatencyMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration) SendDatabaseMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDatabaseMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration) SendDatabaseMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendDatabaseMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ThirdPartyIntegration) ServiceDiscovery() *string {
 	var returns *string
 	_jsii_.Get(
@@ -655,7 +703,7 @@ func (j *jsiiProxy_ThirdPartyIntegration) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) ThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -673,7 +721,7 @@ func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration_Override(t ThirdPartyIntegration, scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
@@ -847,6 +895,28 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"secret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration)SetSendCollectionLatencyMetrics(val interface{}) {
+	if err := j.validateSetSendCollectionLatencyMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendCollectionLatencyMetrics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration)SetSendDatabaseMetrics(val interface{}) {
+	if err := j.validateSetSendDatabaseMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendDatabaseMetrics",
 		val,
 	)
 }
@@ -1338,6 +1408,22 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetSecret() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetSecret",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_ThirdPartyIntegration) ResetSendCollectionLatencyMetrics() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSendCollectionLatencyMetrics",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_ThirdPartyIntegration) ResetSendDatabaseMetrics() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSendDatabaseMetrics",
 		nil, // no parameters
 	)
 }

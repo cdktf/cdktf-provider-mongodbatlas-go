@@ -519,6 +519,14 @@ func (j *jsiiProxy_Organization) validateSetRoleNamesParameters(val *[]*string) 
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetSecurityContactParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetSkipDefaultAlertsSettingsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

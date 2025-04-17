@@ -75,15 +75,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetCountParame
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetMicrosoftTeamsWebhookUrlParameters(val *string) error {
 	return nil
 }
 
@@ -91,15 +83,7 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetProjectIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetServiceDiscoveryParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) validateSetUserNameParameters(val *string) error {
 	return nil
 }
 

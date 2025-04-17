@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	ApiAccessListRequired() interface{}
@@ -88,6 +88,9 @@ type Organization interface {
 	RoleNames() *[]*string
 	SetRoleNames(val *[]*string)
 	RoleNamesInput() *[]*string
+	SecurityContact() *string
+	SetSecurityContact(val *string)
+	SecurityContactInput() *string
 	SkipDefaultAlertsSettings() interface{}
 	SetSkipDefaultAlertsSettings(val interface{})
 	SkipDefaultAlertsSettingsInput() interface{}
@@ -149,6 +152,7 @@ type Organization interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestrictEmployeeAccess()
+	ResetSecurityContact()
 	ResetSkipDefaultAlertsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -528,6 +532,26 @@ func (j *jsiiProxy_Organization) RoleNamesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) SecurityContact() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityContact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) SecurityContactInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityContactInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) SkipDefaultAlertsSettings() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -579,7 +603,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -597,7 +621,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -782,6 +806,17 @@ func (j *jsiiProxy_Organization)SetRoleNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roleNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetSecurityContact(val *string) {
+	if err := j.validateSetSecurityContactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityContact",
 		val,
 	)
 }
@@ -1202,6 +1237,14 @@ func (o *jsiiProxy_Organization) ResetRestrictEmployeeAccess() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRestrictEmployeeAccess",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetSecurityContact() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSecurityContact",
 		nil, // no parameters
 	)
 }

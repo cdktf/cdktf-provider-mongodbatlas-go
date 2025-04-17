@@ -147,6 +147,10 @@ func (j *jsiiProxy_Organization) validateSetRoleNamesParameters(val *[]*string) 
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetSecurityContactParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetSkipDefaultAlertsSettingsParameters(val interface{}) error {
 	return nil
 }

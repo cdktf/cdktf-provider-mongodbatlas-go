@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration}.
 type DataMongodbatlasThirdPartyIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -30,9 +30,7 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,8 +45,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MicrosoftTeamsWebhookUrl() *string
-	SetMicrosoftTeamsWebhookUrl(val *string)
-	MicrosoftTeamsWebhookUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -63,9 +59,9 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	Region() *string
 	RoutingKey() *string
 	Secret() *string
+	SendCollectionLatencyMetrics() cdktf.IResolvable
+	SendDatabaseMetrics() cdktf.IResolvable
 	ServiceDiscovery() *string
-	SetServiceDiscovery(val *string)
-	ServiceDiscoveryInput() *string
 	ServiceKey() *string
 	TeamName() *string
 	// Experimental.
@@ -79,8 +75,6 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	TypeInput() *string
 	Url() *string
 	UserName() *string
-	SetUserName(val *string)
-	UserNameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,13 +100,9 @@ type DataMongodbatlasThirdPartyIntegration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetEnabled()
-	ResetMicrosoftTeamsWebhookUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetServiceDiscovery()
-	ResetUserName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -202,21 +192,11 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) DependsOn() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -277,16 +257,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) MicrosoftTeamsWebhookU
 	_jsii_.Get(
 		j,
 		"microsoftTeamsWebhookUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) MicrosoftTeamsWebhookUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"microsoftTeamsWebhookUrlInput",
 		&returns,
 	)
 	return returns
@@ -372,21 +342,31 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) Secret() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ServiceDiscovery() *string {
-	var returns *string
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) SendCollectionLatencyMetrics() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"serviceDiscovery",
+		"sendCollectionLatencyMetrics",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ServiceDiscoveryInput() *string {
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) SendDatabaseMetrics() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendDatabaseMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ServiceDiscovery() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"serviceDiscoveryInput",
+		"serviceDiscovery",
 		&returns,
 	)
 	return returns
@@ -482,18 +462,8 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) UserName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration) UserNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userNameInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) DataMongodbatlasThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -511,7 +481,7 @@ func NewDataMongodbatlasThirdPartyIntegration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/third_party_integration mongodbatlas_third_party_integration} Data Source.
 func NewDataMongodbatlasThirdPartyIntegration_Override(d DataMongodbatlasThirdPartyIntegration, scope constructs.Construct, id *string, config *DataMongodbatlasThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
@@ -541,17 +511,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -567,17 +526,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetLifecycle(val *cdktf
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetMicrosoftTeamsWebhookUrl(val *string) {
-	if err := j.validateSetMicrosoftTeamsWebhookUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"microsoftTeamsWebhookUrl",
 		val,
 	)
 }
@@ -601,17 +549,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetServiceDiscovery(val *string) {
-	if err := j.validateSetServiceDiscoveryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serviceDiscovery",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
@@ -619,17 +556,6 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegration)SetUserName(val *string) {
-	if err := j.validateSetUserNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"userName",
 		val,
 	)
 }
@@ -919,42 +845,10 @@ func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) OverrideLogicalId(newL
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetMicrosoftTeamsWebhookUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMicrosoftTeamsWebhookUrl",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetServiceDiscovery() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetServiceDiscovery",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataMongodbatlasThirdPartyIntegration) ResetUserName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUserName",
 		nil, // no parameters
 	)
 }

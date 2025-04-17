@@ -24,7 +24,7 @@ type DataMongodbatlasFlexClustersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique 24-hexadecimal character string that identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/data-sources/flex_clusters#project_id DataMongodbatlasFlexClusters#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_clusters#project_id DataMongodbatlasFlexClusters#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

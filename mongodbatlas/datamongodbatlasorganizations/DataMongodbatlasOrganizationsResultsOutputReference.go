@@ -40,6 +40,7 @@ type DataMongodbatlasOrganizationsResultsOutputReference interface {
 	MultiFactorAuthRequired() cdktf.IResolvable
 	Name() *string
 	RestrictEmployeeAccess() cdktf.IResolvable
+	SecurityContact() *string
 	SkipDefaultAlertsSettings() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -213,6 +214,16 @@ func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) Restrict
 	_jsii_.Get(
 		j,
 		"restrictEmployeeAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasOrganizationsResultsOutputReference) SecurityContact() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityContact",
 		&returns,
 	)
 	return returns

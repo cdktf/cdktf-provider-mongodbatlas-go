@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint}.
 type StreamPrivatelinkEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_StreamPrivatelinkEndpoint) VendorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
 func NewStreamPrivatelinkEndpoint(scope constructs.Construct, id *string, config *StreamPrivatelinkEndpointConfig) StreamPrivatelinkEndpoint {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewStreamPrivatelinkEndpoint(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.32.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/stream_privatelink_endpoint mongodbatlas_stream_privatelink_endpoint} Resource.
 func NewStreamPrivatelinkEndpoint_Override(s StreamPrivatelinkEndpoint, scope constructs.Construct, id *string, config *StreamPrivatelinkEndpointConfig) {
 	_init_.Initialize()
 
