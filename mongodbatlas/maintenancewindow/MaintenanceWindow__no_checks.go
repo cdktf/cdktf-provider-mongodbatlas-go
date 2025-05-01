@@ -75,6 +75,10 @@ func (m *jsiiProxy_MaintenanceWindow) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceWindow) validatePutProtectedHoursParameters(value *MaintenanceWindowProtectedHours) error {
+	return nil
+}
+
 func validateMaintenanceWindow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

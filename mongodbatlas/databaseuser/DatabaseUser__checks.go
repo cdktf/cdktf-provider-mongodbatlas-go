@@ -446,6 +446,14 @@ func (j *jsiiProxy_DatabaseUser) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseUser) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseUser) validateSetLdapAuthTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

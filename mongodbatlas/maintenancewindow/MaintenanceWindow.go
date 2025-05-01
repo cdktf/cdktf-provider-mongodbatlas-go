@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window mongodbatlas_maintenance_window}.
 type MaintenanceWindow interface {
 	cdktf.TerraformResource
 	AutoDefer() interface{}
@@ -67,6 +67,8 @@ type MaintenanceWindow interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	ProtectedHours() MaintenanceWindowProtectedHoursOutputReference
+	ProtectedHoursInput() *MaintenanceWindowProtectedHours
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -86,6 +88,7 @@ type MaintenanceWindow interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeZoneId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,6 +132,7 @@ type MaintenanceWindow interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProtectedHours(value *MaintenanceWindowProtectedHours)
 	ResetAutoDefer()
 	ResetAutoDeferOnceEnabled()
 	ResetDefer()
@@ -137,6 +141,7 @@ type MaintenanceWindow interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtectedHours()
 	ResetStartAsap()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -406,6 +411,26 @@ func (j *jsiiProxy_MaintenanceWindow) ProjectIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MaintenanceWindow) ProtectedHours() MaintenanceWindowProtectedHoursOutputReference {
+	var returns MaintenanceWindowProtectedHoursOutputReference
+	_jsii_.Get(
+		j,
+		"protectedHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MaintenanceWindow) ProtectedHoursInput() *MaintenanceWindowProtectedHours {
+	var returns *MaintenanceWindowProtectedHours
+	_jsii_.Get(
+		j,
+		"protectedHoursInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MaintenanceWindow) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -486,8 +511,18 @@ func (j *jsiiProxy_MaintenanceWindow) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MaintenanceWindow) TimeZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow(scope constructs.Construct, id *string, config *MaintenanceWindowConfig) MaintenanceWindow {
 	_init_.Initialize()
 
@@ -505,7 +540,7 @@ func NewMaintenanceWindow(scope constructs.Construct, id *string, config *Mainte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/maintenance_window mongodbatlas_maintenance_window} Resource.
 func NewMaintenanceWindow_Override(m MaintenanceWindow, scope constructs.Construct, id *string, config *MaintenanceWindowConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1060,17 @@ func (m *jsiiProxy_MaintenanceWindow) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MaintenanceWindow) PutProtectedHours(value *MaintenanceWindowProtectedHours) {
+	if err := m.validatePutProtectedHoursParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putProtectedHours",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MaintenanceWindow) ResetAutoDefer() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1069,6 +1115,14 @@ func (m *jsiiProxy_MaintenanceWindow) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MaintenanceWindow) ResetProtectedHours() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProtectedHours",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_DatabaseUser) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseUser) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseUser) validateSetLdapAuthTypeParameters(val *string) error {
 	return nil
 }

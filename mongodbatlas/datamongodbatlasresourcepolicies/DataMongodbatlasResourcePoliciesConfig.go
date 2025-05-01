@@ -26,7 +26,7 @@ type DataMongodbatlasResourcePoliciesConfig struct {
 	//
 	// Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/resource_policies#org_id DataMongodbatlasResourcePolicies#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/resource_policies#org_id DataMongodbatlasResourcePolicies#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 }
 

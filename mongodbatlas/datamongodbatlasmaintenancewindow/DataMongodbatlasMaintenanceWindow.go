@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window}.
 type DataMongodbatlasMaintenanceWindow interface {
 	cdktf.TerraformDataSource
 	AutoDeferOnceEnabled() cdktf.IResolvable
@@ -51,6 +51,7 @@ type DataMongodbatlasMaintenanceWindow interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	ProtectedHours() DataMongodbatlasMaintenanceWindowProtectedHoursList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -64,6 +65,7 @@ type DataMongodbatlasMaintenanceWindow interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TimeZoneId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -282,6 +284,16 @@ func (j *jsiiProxy_DataMongodbatlasMaintenanceWindow) ProjectIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasMaintenanceWindow) ProtectedHours() DataMongodbatlasMaintenanceWindowProtectedHoursList {
+	var returns DataMongodbatlasMaintenanceWindowProtectedHoursList
+	_jsii_.Get(
+		j,
+		"protectedHours",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataMongodbatlasMaintenanceWindow) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -342,8 +354,18 @@ func (j *jsiiProxy_DataMongodbatlasMaintenanceWindow) TerraformResourceType() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataMongodbatlasMaintenanceWindow) TimeZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window} Data Source.
 func NewDataMongodbatlasMaintenanceWindow(scope constructs.Construct, id *string, config *DataMongodbatlasMaintenanceWindowConfig) DataMongodbatlasMaintenanceWindow {
 	_init_.Initialize()
 
@@ -361,7 +383,7 @@ func NewDataMongodbatlasMaintenanceWindow(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/maintenance_window mongodbatlas_maintenance_window} Data Source.
 func NewDataMongodbatlasMaintenanceWindow_Override(d DataMongodbatlasMaintenanceWindow, scope constructs.Construct, id *string, config *DataMongodbatlasMaintenanceWindowConfig) {
 	_init_.Initialize()
 

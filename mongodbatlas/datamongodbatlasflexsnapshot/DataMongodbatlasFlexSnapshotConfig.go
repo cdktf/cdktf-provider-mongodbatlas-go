@@ -24,7 +24,7 @@ type DataMongodbatlasFlexSnapshotConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_snapshot#name DataMongodbatlasFlexSnapshot#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#name DataMongodbatlasFlexSnapshot#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,11 +32,11 @@ type DataMongodbatlasFlexSnapshotConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_snapshot#project_id DataMongodbatlasFlexSnapshot#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#project_id DataMongodbatlasFlexSnapshot#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Unique 24-hexadecimal digit string that identifies the snapshot to restore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.33.0/docs/data-sources/flex_snapshot#snapshot_id DataMongodbatlasFlexSnapshot#snapshot_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot#snapshot_id DataMongodbatlasFlexSnapshot#snapshot_id}
 	SnapshotId *string `field:"required" json:"snapshotId" yaml:"snapshotId"`
 }
 
