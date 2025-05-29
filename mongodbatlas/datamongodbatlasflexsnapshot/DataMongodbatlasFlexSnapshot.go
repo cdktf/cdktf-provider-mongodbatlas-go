@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot}.
 type DataMongodbatlasFlexSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataMongodbatlasFlexSnapshot) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source.
 func NewDataMongodbatlasFlexSnapshot(scope constructs.Construct, id *string, config *DataMongodbatlasFlexSnapshotConfig) DataMongodbatlasFlexSnapshot {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataMongodbatlasFlexSnapshot(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/flex_snapshot mongodbatlas_flex_snapshot} Data Source.
 func NewDataMongodbatlasFlexSnapshot_Override(d DataMongodbatlasFlexSnapshot, scope constructs.Construct, id *string, config *DataMongodbatlasFlexSnapshotConfig) {
 	_init_.Initialize()
 

@@ -111,6 +111,10 @@ func (j *jsiiProxy_SearchDeployment) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SearchDeployment) validateSetDeleteOnCreateTimeoutParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

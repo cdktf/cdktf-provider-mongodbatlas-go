@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/search_deployment mongodbatlas_search_deployment}.
 type SearchDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type SearchDeployment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeleteOnCreateTimeout() interface{}
+	SetDeleteOnCreateTimeout(val interface{})
+	DeleteOnCreateTimeoutInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,6 +125,7 @@ type SearchDeployment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSpecs(value interface{})
 	PutTimeouts(value *SearchDeploymentTimeouts)
+	ResetDeleteOnCreateTimeout()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -200,6 +204,26 @@ func (j *jsiiProxy_SearchDeployment) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchDeployment) DeleteOnCreateTimeout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnCreateTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchDeployment) DeleteOnCreateTimeoutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnCreateTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -436,7 +460,7 @@ func (j *jsiiProxy_SearchDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchDeploymentConfig) SearchDeployment {
 	_init_.Initialize()
 
@@ -454,7 +478,7 @@ func NewSearchDeployment(scope constructs.Construct, id *string, config *SearchD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/search_deployment mongodbatlas_search_deployment} Resource.
 func NewSearchDeployment_Override(s SearchDeployment, scope constructs.Construct, id *string, config *SearchDeploymentConfig) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_SearchDeployment)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchDeployment)SetDeleteOnCreateTimeout(val interface{}) {
+	if err := j.validateSetDeleteOnCreateTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteOnCreateTimeout",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (s *jsiiProxy_SearchDeployment) PutTimeouts(value *SearchDeploymentTimeouts
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SearchDeployment) ResetDeleteOnCreateTimeout() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeleteOnCreateTimeout",
+		nil, // no parameters
 	)
 }
 

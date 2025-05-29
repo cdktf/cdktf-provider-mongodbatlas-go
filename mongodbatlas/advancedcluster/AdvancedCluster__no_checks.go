@@ -143,6 +143,10 @@ func (j *jsiiProxy_AdvancedCluster) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedCluster) validateSetDeleteOnCreateTimeoutParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedCluster) validateSetDiskSizeGbParameters(val *float64) error {
 	return nil
 }

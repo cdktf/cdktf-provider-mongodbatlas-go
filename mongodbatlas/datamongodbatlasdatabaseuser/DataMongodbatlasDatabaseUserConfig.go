@@ -22,11 +22,11 @@ type DataMongodbatlasDatabaseUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/database_user#auth_database_name DataMongodbatlasDatabaseUser#auth_database_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/database_user#auth_database_name DataMongodbatlasDatabaseUser#auth_database_name}.
 	AuthDatabaseName *string `field:"required" json:"authDatabaseName" yaml:"authDatabaseName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/database_user#project_id DataMongodbatlasDatabaseUser#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/database_user#project_id DataMongodbatlasDatabaseUser#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/database_user#username DataMongodbatlasDatabaseUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/database_user#username DataMongodbatlasDatabaseUser#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 

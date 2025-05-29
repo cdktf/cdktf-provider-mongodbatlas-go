@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/team mongodbatlas_team}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/team mongodbatlas_team}.
 type DataMongodbatlasTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataMongodbatlasTeam) Usernames() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/team mongodbatlas_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/team mongodbatlas_team} Data Source.
 func NewDataMongodbatlasTeam(scope constructs.Construct, id *string, config *DataMongodbatlasTeamConfig) DataMongodbatlasTeam {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataMongodbatlasTeam(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/team mongodbatlas_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/team mongodbatlas_team} Data Source.
 func NewDataMongodbatlasTeam_Override(d DataMongodbatlasTeam, scope constructs.Construct, id *string, config *DataMongodbatlasTeamConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster}.
 type AdvancedCluster interface {
 	cdktf.TerraformResource
 	AcceptDataRisksAndForceReplicaSetReconfig() *string
@@ -47,6 +47,9 @@ type AdvancedCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateDate() *string
+	DeleteOnCreateTimeout() interface{}
+	SetDeleteOnCreateTimeout(val interface{})
+	DeleteOnCreateTimeoutInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,6 +196,7 @@ type AdvancedCluster interface {
 	ResetBackupEnabled()
 	ResetBiConnectorConfig()
 	ResetConfigServerManagementMode()
+	ResetDeleteOnCreateTimeout()
 	ResetDiskSizeGb()
 	ResetEncryptionAtRestProvider()
 	ResetGlobalClusterSelfManagedSharding()
@@ -426,6 +430,26 @@ func (j *jsiiProxy_AdvancedCluster) CreateDate() *string {
 	_jsii_.Get(
 		j,
 		"createDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) DeleteOnCreateTimeout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnCreateTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdvancedCluster) DeleteOnCreateTimeoutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnCreateTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -972,7 +996,7 @@ func (j *jsiiProxy_AdvancedCluster) VersionReleaseSystemInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster(scope constructs.Construct, id *string, config *AdvancedClusterConfig) AdvancedCluster {
 	_init_.Initialize()
 
@@ -990,7 +1014,7 @@ func NewAdvancedCluster(scope constructs.Construct, id *string, config *Advanced
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/resources/advanced_cluster mongodbatlas_advanced_cluster} Resource.
 func NewAdvancedCluster_Override(a AdvancedCluster, scope constructs.Construct, id *string, config *AdvancedClusterConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1087,17 @@ func (j *jsiiProxy_AdvancedCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdvancedCluster)SetDeleteOnCreateTimeout(val interface{}) {
+	if err := j.validateSetDeleteOnCreateTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteOnCreateTimeout",
 		val,
 	)
 }
@@ -1744,6 +1779,14 @@ func (a *jsiiProxy_AdvancedCluster) ResetConfigServerManagementMode() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetConfigServerManagementMode",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdvancedCluster) ResetDeleteOnCreateTimeout() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeleteOnCreateTimeout",
 		nil, // no parameters
 	)
 }

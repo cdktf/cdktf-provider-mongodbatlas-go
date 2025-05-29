@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest}.
 type DataMongodbatlasEncryptionAtRest interface {
 	cdktf.TerraformDataSource
 	AwsKmsConfig() DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRest) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
 func NewDataMongodbatlasEncryptionAtRest(scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestConfig) DataMongodbatlasEncryptionAtRest {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataMongodbatlasEncryptionAtRest(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.34.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/encryption_at_rest mongodbatlas_encryption_at_rest} Data Source.
 func NewDataMongodbatlasEncryptionAtRest_Override(d DataMongodbatlasEncryptionAtRest, scope constructs.Construct, id *string, config *DataMongodbatlasEncryptionAtRestConfig) {
 	_init_.Initialize()
 
