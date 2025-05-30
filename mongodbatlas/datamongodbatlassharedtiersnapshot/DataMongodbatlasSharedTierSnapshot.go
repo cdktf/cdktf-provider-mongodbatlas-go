@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot}.
 type DataMongodbatlasSharedTierSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataMongodbatlasSharedTierSnapshot) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot} Data Source.
 func NewDataMongodbatlasSharedTierSnapshot(scope constructs.Construct, id *string, config *DataMongodbatlasSharedTierSnapshotConfig) DataMongodbatlasSharedTierSnapshot {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataMongodbatlasSharedTierSnapshot(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.0/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/shared_tier_snapshot mongodbatlas_shared_tier_snapshot} Data Source.
 func NewDataMongodbatlasSharedTierSnapshot_Override(d DataMongodbatlasSharedTierSnapshot, scope constructs.Construct, id *string, config *DataMongodbatlasSharedTierSnapshotConfig) {
 	_init_.Initialize()
 
