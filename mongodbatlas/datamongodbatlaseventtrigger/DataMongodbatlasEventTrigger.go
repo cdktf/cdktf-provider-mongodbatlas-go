@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/event_trigger mongodbatlas_event_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/event_trigger mongodbatlas_event_trigger}.
 type DataMongodbatlasEventTrigger interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -543,7 +543,7 @@ func (j *jsiiProxy_DataMongodbatlasEventTrigger) Unordered() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/event_trigger mongodbatlas_event_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/event_trigger mongodbatlas_event_trigger} Data Source.
 func NewDataMongodbatlasEventTrigger(scope constructs.Construct, id *string, config *DataMongodbatlasEventTriggerConfig) DataMongodbatlasEventTrigger {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewDataMongodbatlasEventTrigger(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/event_trigger mongodbatlas_event_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/event_trigger mongodbatlas_event_trigger} Data Source.
 func NewDataMongodbatlasEventTrigger_Override(d DataMongodbatlasEventTrigger, scope constructs.Construct, id *string, config *DataMongodbatlasEventTriggerConfig) {
 	_init_.Initialize()
 

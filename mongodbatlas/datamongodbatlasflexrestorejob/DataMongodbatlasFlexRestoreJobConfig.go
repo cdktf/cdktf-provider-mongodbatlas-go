@@ -24,7 +24,7 @@ type DataMongodbatlasFlexRestoreJobConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#name DataMongodbatlasFlexRestoreJob#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,11 +32,11 @@ type DataMongodbatlasFlexRestoreJobConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#project_id DataMongodbatlasFlexRestoreJob#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Unique 24-hexadecimal digit string that identifies the restore job.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/flex_restore_job#restore_job_id DataMongodbatlasFlexRestoreJob#restore_job_id}
 	RestoreJobId *string `field:"required" json:"restoreJobId" yaml:"restoreJobId"`
 }
 

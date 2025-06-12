@@ -5,9 +5,9 @@ package maintenancewindow
 
 
 type MaintenanceWindowProtectedHours struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/resources/maintenance_window#end_hour_of_day MaintenanceWindow#end_hour_of_day}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/maintenance_window#end_hour_of_day MaintenanceWindow#end_hour_of_day}.
 	EndHourOfDay *float64 `field:"required" json:"endHourOfDay" yaml:"endHourOfDay"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.35.1/docs/resources/maintenance_window#start_hour_of_day MaintenanceWindow#start_hour_of_day}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/maintenance_window#start_hour_of_day MaintenanceWindow#start_hour_of_day}.
 	StartHourOfDay *float64 `field:"required" json:"startHourOfDay" yaml:"startHourOfDay"`
 }
 
