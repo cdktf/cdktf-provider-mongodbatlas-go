@@ -17,6 +17,7 @@ type DataMongodbatlasStreamConnectionsResultsOutputReference interface {
 	Aws() DataMongodbatlasStreamConnectionsResultsAwsOutputReference
 	BootstrapServers() *string
 	ClusterName() *string
+	ClusterProjectId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -129,6 +130,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) Clus
 	_jsii_.Get(
 		j,
 		"clusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamConnectionsResultsOutputReference) ClusterProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterProjectId",
 		&returns,
 	)
 	return returns

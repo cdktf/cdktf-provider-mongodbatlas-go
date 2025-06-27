@@ -5,7 +5,7 @@ package streamconnection
 
 
 type StreamConnectionNetworking struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/stream_connection#access StreamConnection#access}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/stream_connection#access StreamConnection#access}.
 	Access *StreamConnectionNetworkingAccess `field:"required" json:"access" yaml:"access"`
 }
 

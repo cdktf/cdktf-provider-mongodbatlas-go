@@ -293,6 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "aws", GoGetter: "Aws"},
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServers", GoGetter: "BootstrapServers"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterProjectId", GoGetter: "ClusterProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

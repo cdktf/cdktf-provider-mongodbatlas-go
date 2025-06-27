@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/stream_connection mongodbatlas_stream_connection}.
 type StreamConnection interface {
 	cdktf.TerraformResource
 	Authentication() StreamConnectionAuthenticationOutputReference
@@ -27,6 +27,9 @@ type StreamConnection interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ClusterProjectId() *string
+	SetClusterProjectId(val *string)
+	ClusterProjectIdInput() *string
 	Config() *map[string]*string
 	SetConfig(val *map[string]*string)
 	ConfigInput() *map[string]*string
@@ -151,6 +154,7 @@ type StreamConnection interface {
 	ResetAws()
 	ResetBootstrapServers()
 	ResetClusterName()
+	ResetClusterProjectId()
 	ResetConfig()
 	ResetDbRoleToExecute()
 	ResetHeaders()
@@ -263,6 +267,26 @@ func (j *jsiiProxy_StreamConnection) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) ClusterProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamConnection) ClusterProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterProjectIdInput",
 		&returns,
 	)
 	return returns
@@ -629,7 +653,7 @@ func (j *jsiiProxy_StreamConnection) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection(scope constructs.Construct, id *string, config *StreamConnectionConfig) StreamConnection {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewStreamConnection(scope constructs.Construct, id *string, config *StreamC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/stream_connection mongodbatlas_stream_connection} Resource.
 func NewStreamConnection_Override(s StreamConnection, scope constructs.Construct, id *string, config *StreamConnectionConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_StreamConnection)SetClusterName(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamConnection)SetClusterProjectId(val *string) {
+	if err := j.validateSetClusterProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterProjectId",
 		val,
 	)
 }
@@ -1261,6 +1296,14 @@ func (s *jsiiProxy_StreamConnection) ResetClusterName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetClusterName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamConnection) ResetClusterProjectId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClusterProjectId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint}.
 type EncryptionAtRestPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_EncryptionAtRestPrivateEndpoint) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Resource.
 func NewEncryptionAtRestPrivateEndpoint(scope constructs.Construct, id *string, config *EncryptionAtRestPrivateEndpointConfig) EncryptionAtRestPrivateEndpoint {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewEncryptionAtRestPrivateEndpoint(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/encryption_at_rest_private_endpoint mongodbatlas_encryption_at_rest_private_endpoint} Resource.
 func NewEncryptionAtRestPrivateEndpoint_Override(e EncryptionAtRestPrivateEndpoint, scope constructs.Construct, id *string, config *EncryptionAtRestPrivateEndpointConfig) {
 	_init_.Initialize()
 

@@ -318,6 +318,14 @@ func (j *jsiiProxy_StreamConnection) validateSetClusterNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_StreamConnection) validateSetClusterProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StreamConnection) validateSetConfigParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServers", GoGetter: "BootstrapServers"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterProjectId", GoGetter: "ClusterProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},

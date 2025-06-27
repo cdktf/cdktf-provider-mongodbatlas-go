@@ -22,11 +22,11 @@ type DataMongodbatlasStreamConnectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection#connection_name DataMongodbatlasStreamConnection#connection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection#connection_name DataMongodbatlasStreamConnection#connection_name}.
 	ConnectionName *string `field:"required" json:"connectionName" yaml:"connectionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection#instance_name DataMongodbatlasStreamConnection#instance_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection#instance_name DataMongodbatlasStreamConnection#instance_name}.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection#project_id DataMongodbatlasStreamConnection#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection#project_id DataMongodbatlasStreamConnection#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

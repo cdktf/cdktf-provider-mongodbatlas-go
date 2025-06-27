@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection mongodbatlas_stream_connection}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection mongodbatlas_stream_connection}.
 type DataMongodbatlasStreamConnection interface {
 	cdktf.TerraformDataSource
 	Authentication() DataMongodbatlasStreamConnectionAuthenticationOutputReference
@@ -21,6 +21,7 @@ type DataMongodbatlasStreamConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterName() *string
+	ClusterProjectId() *string
 	Config() cdktf.StringMap
 	ConnectionName() *string
 	SetConnectionName(val *string)
@@ -166,6 +167,16 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnection) ClusterName() *string {
 	_jsii_.Get(
 		j,
 		"clusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasStreamConnection) ClusterProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterProjectId",
 		&returns,
 	)
 	return returns
@@ -442,7 +453,7 @@ func (j *jsiiProxy_DataMongodbatlasStreamConnection) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection mongodbatlas_stream_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection mongodbatlas_stream_connection} Data Source.
 func NewDataMongodbatlasStreamConnection(scope constructs.Construct, id *string, config *DataMongodbatlasStreamConnectionConfig) DataMongodbatlasStreamConnection {
 	_init_.Initialize()
 
@@ -460,7 +471,7 @@ func NewDataMongodbatlasStreamConnection(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/data-sources/stream_connection mongodbatlas_stream_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_connection mongodbatlas_stream_connection} Data Source.
 func NewDataMongodbatlasStreamConnection_Override(d DataMongodbatlasStreamConnection, scope constructs.Construct, id *string, config *DataMongodbatlasStreamConnectionConfig) {
 	_init_.Initialize()
 

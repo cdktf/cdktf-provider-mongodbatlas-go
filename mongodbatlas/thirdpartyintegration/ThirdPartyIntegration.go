@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
 type ThirdPartyIntegration interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -703,7 +703,7 @@ func (j *jsiiProxy_ThirdPartyIntegration) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) ThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -721,7 +721,7 @@ func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.36.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration_Override(t ThirdPartyIntegration, scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
