@@ -151,6 +151,10 @@ func (j *jsiiProxy_ThirdPartyIntegration) validateSetSendDatabaseMetricsParamete
 	return nil
 }
 
+func (j *jsiiProxy_ThirdPartyIntegration) validateSetSendUserProvidedResourceTagsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ThirdPartyIntegration) validateSetServiceDiscoveryParameters(val *string) error {
 	return nil
 }

@@ -44,6 +44,7 @@ type DataMongodbatlasThirdPartyIntegrationsResultsOutputReference interface {
 	Secret() *string
 	SendCollectionLatencyMetrics() cdktf.IResolvable
 	SendDatabaseMetrics() cdktf.IResolvable
+	SendUserProvidedResourceTags() cdktf.IResolvable
 	ServiceDiscovery() *string
 	ServiceKey() *string
 	TeamName() *string
@@ -262,6 +263,16 @@ func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference)
 	_jsii_.Get(
 		j,
 		"sendDatabaseMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasThirdPartyIntegrationsResultsOutputReference) SendUserProvidedResourceTags() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendUserProvidedResourceTags",
 		&returns,
 	)
 	return returns

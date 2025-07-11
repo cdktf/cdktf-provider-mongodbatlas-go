@@ -22,11 +22,11 @@ type DataMongodbatlasStreamInstancesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_instances#project_id DataMongodbatlasStreamInstances#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_instances#project_id DataMongodbatlasStreamInstances#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_instances#items_per_page DataMongodbatlasStreamInstances#items_per_page}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_instances#items_per_page DataMongodbatlasStreamInstances#items_per_page}.
 	ItemsPerPage *float64 `field:"optional" json:"itemsPerPage" yaml:"itemsPerPage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_instances#page_num DataMongodbatlasStreamInstances#page_num}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_instances#page_num DataMongodbatlasStreamInstances#page_num}.
 	PageNum *float64 `field:"optional" json:"pageNum" yaml:"pageNum"`
 }
 

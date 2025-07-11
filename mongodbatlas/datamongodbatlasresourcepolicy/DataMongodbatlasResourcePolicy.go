@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/resource_policy mongodbatlas_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/resource_policy mongodbatlas_resource_policy}.
 type DataMongodbatlasResourcePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataMongodbatlasResourcePolicy) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source.
 func NewDataMongodbatlasResourcePolicy(scope constructs.Construct, id *string, config *DataMongodbatlasResourcePolicyConfig) DataMongodbatlasResourcePolicy {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataMongodbatlasResourcePolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/resource_policy mongodbatlas_resource_policy} Data Source.
 func NewDataMongodbatlasResourcePolicy_Override(d DataMongodbatlasResourcePolicy, scope constructs.Construct, id *string, config *DataMongodbatlasResourcePolicyConfig) {
 	_init_.Initialize()
 

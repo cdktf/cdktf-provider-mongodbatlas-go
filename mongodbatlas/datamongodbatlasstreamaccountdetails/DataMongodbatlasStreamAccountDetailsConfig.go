@@ -24,19 +24,19 @@ type DataMongodbatlasStreamAccountDetailsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// One of `aws` or `azure`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#cloud_provider DataMongodbatlasStreamAccountDetails#cloud_provider}
 	CloudProvider *string `field:"required" json:"cloudProvider" yaml:"cloudProvider"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
-	// Use the [/groups](https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/#tag/Projects/operation/listProjects) endpoint to retrieve all projects to which the authenticated user has access.
+	// Use the [/groups](https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/operation/operation-listprojects) endpoint to retrieve all projects to which the authenticated user has access.
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#project_id DataMongodbatlasStreamAccountDetails#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The cloud provider specific region name, i.e. `US_EAST_1` for cloud provider `aws`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_account_details#region_name DataMongodbatlasStreamAccountDetails#region_name}
 	RegionName *string `field:"required" json:"regionName" yaml:"regionName"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization mongodbatlas_organization}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization mongodbatlas_organization}.
 type Organization interface {
 	cdktf.TerraformResource
 	ApiAccessListRequired() interface{}
@@ -144,14 +144,17 @@ type Organization interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetApiAccessListRequired()
+	ResetDescription()
 	ResetFederationSettingsId()
 	ResetGenAiFeaturesEnabled()
 	ResetId()
 	ResetMultiFactorAuthRequired()
+	ResetOrgOwnerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestrictEmployeeAccess()
+	ResetRoleNames()
 	ResetSecurityContact()
 	ResetSkipDefaultAlertsSettings()
 	SynthesizeAttributes() *map[string]interface{}
@@ -603,7 +606,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -621,7 +624,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/organization mongodbatlas_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/organization mongodbatlas_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -1193,6 +1196,14 @@ func (o *jsiiProxy_Organization) ResetApiAccessListRequired() {
 	)
 }
 
+func (o *jsiiProxy_Organization) ResetDescription() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_Organization) ResetFederationSettingsId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1225,6 +1236,14 @@ func (o *jsiiProxy_Organization) ResetMultiFactorAuthRequired() {
 	)
 }
 
+func (o *jsiiProxy_Organization) ResetOrgOwnerId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrgOwnerId",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_Organization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1237,6 +1256,14 @@ func (o *jsiiProxy_Organization) ResetRestrictEmployeeAccess() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRestrictEmployeeAccess",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetRoleNames() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRoleNames",
 		nil, // no parameters
 	)
 }

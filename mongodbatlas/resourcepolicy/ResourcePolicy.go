@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/resource_policy mongodbatlas_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/resource_policy mongodbatlas_resource_policy}.
 type ResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -445,7 +445,7 @@ func (j *jsiiProxy_ResourcePolicy) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource.
 func NewResourcePolicy(scope constructs.Construct, id *string, config *ResourcePolicyConfig) ResourcePolicy {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewResourcePolicy(scope constructs.Construct, id *string, config *ResourceP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/resource_policy mongodbatlas_resource_policy} Resource.
 func NewResourcePolicy_Override(r ResourcePolicy, scope constructs.Construct, id *string, config *ResourcePolicyConfig) {
 	_init_.Initialize()
 

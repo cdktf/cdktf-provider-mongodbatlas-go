@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
 			_jsii_.MemberProperty{JsiiProperty: "sendCollectionLatencyMetrics", GoGetter: "SendCollectionLatencyMetrics"},
 			_jsii_.MemberProperty{JsiiProperty: "sendDatabaseMetrics", GoGetter: "SendDatabaseMetrics"},
+			_jsii_.MemberProperty{JsiiProperty: "sendUserProvidedResourceTags", GoGetter: "SendUserProvidedResourceTags"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceDiscovery", GoGetter: "ServiceDiscovery"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceKey", GoGetter: "ServiceKey"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

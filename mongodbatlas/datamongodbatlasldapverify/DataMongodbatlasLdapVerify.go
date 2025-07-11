@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify}.
 type DataMongodbatlasLdapVerify interface {
 	cdktf.TerraformDataSource
 	BindUsername() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataMongodbatlasLdapVerify) Validations() DataMongodbatlasLda
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
 func NewDataMongodbatlasLdapVerify(scope constructs.Construct, id *string, config *DataMongodbatlasLdapVerifyConfig) DataMongodbatlasLdapVerify {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDataMongodbatlasLdapVerify(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/ldap_verify mongodbatlas_ldap_verify} Data Source.
 func NewDataMongodbatlasLdapVerify_Override(d DataMongodbatlasLdapVerify, scope constructs.Construct, id *string, config *DataMongodbatlasLdapVerifyConfig) {
 	_init_.Initialize()
 

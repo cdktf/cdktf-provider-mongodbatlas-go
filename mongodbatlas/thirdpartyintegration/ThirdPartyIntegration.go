@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/third_party_integration mongodbatlas_third_party_integration}.
 type ThirdPartyIntegration interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -89,6 +89,9 @@ type ThirdPartyIntegration interface {
 	SendDatabaseMetrics() interface{}
 	SetSendDatabaseMetrics(val interface{})
 	SendDatabaseMetricsInput() interface{}
+	SendUserProvidedResourceTags() interface{}
+	SetSendUserProvidedResourceTags(val interface{})
+	SendUserProvidedResourceTagsInput() interface{}
 	ServiceDiscovery() *string
 	SetServiceDiscovery(val *string)
 	ServiceDiscoveryInput() *string
@@ -169,6 +172,7 @@ type ThirdPartyIntegration interface {
 	ResetSecret()
 	ResetSendCollectionLatencyMetrics()
 	ResetSendDatabaseMetrics()
+	ResetSendUserProvidedResourceTags()
 	ResetServiceDiscovery()
 	ResetServiceKey()
 	ResetTeamName()
@@ -552,6 +556,26 @@ func (j *jsiiProxy_ThirdPartyIntegration) SendDatabaseMetricsInput() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_ThirdPartyIntegration) SendUserProvidedResourceTags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendUserProvidedResourceTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration) SendUserProvidedResourceTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendUserProvidedResourceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ThirdPartyIntegration) ServiceDiscovery() *string {
 	var returns *string
 	_jsii_.Get(
@@ -703,7 +727,7 @@ func (j *jsiiProxy_ThirdPartyIntegration) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) ThirdPartyIntegration {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewThirdPartyIntegration(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/third_party_integration mongodbatlas_third_party_integration} Resource.
 func NewThirdPartyIntegration_Override(t ThirdPartyIntegration, scope constructs.Construct, id *string, config *ThirdPartyIntegrationConfig) {
 	_init_.Initialize()
 
@@ -917,6 +941,17 @@ func (j *jsiiProxy_ThirdPartyIntegration)SetSendDatabaseMetrics(val interface{})
 	_jsii_.Set(
 		j,
 		"sendDatabaseMetrics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ThirdPartyIntegration)SetSendUserProvidedResourceTags(val interface{}) {
+	if err := j.validateSetSendUserProvidedResourceTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendUserProvidedResourceTags",
 		val,
 	)
 }
@@ -1424,6 +1459,14 @@ func (t *jsiiProxy_ThirdPartyIntegration) ResetSendDatabaseMetrics() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetSendDatabaseMetrics",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_ThirdPartyIntegration) ResetSendUserProvidedResourceTags() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSendUserProvidedResourceTags",
 		nil, // no parameters
 	)
 }

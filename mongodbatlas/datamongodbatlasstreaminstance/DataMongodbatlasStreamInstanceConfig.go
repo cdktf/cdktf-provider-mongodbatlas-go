@@ -22,9 +22,9 @@ type DataMongodbatlasStreamInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_instance#instance_name DataMongodbatlasStreamInstance#instance_name}.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.37.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_instance#project_id DataMongodbatlasStreamInstance#project_id}.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
