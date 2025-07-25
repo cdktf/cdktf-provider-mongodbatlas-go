@@ -12,13 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance}.
 type DataMongodbatlasFederatedDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CloudProviderConfig() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference
-	CloudProviderConfigInput() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig
+	CloudProviderConfig() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigList
+	CloudProviderConfigInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -94,7 +94,7 @@ type DataMongodbatlasFederatedDatabaseInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCloudProviderConfig(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig)
+	PutCloudProviderConfig(value interface{})
 	ResetCloudProviderConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CloudProviderConfig() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference {
-	var returns DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CloudProviderConfig() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigList {
+	var returns DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigList
 	_jsii_.Get(
 		j,
 		"cloudProviderConfig",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CloudProviderConfi
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CloudProviderConfigInput() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig {
-	var returns *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) CloudProviderConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cloudProviderConfigInput",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
 func NewDataMongodbatlasFederatedDatabaseInstance(scope constructs.Construct, id *string, config *DataMongodbatlasFederatedDatabaseInstanceConfig) DataMongodbatlasFederatedDatabaseInstance {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataMongodbatlasFederatedDatabaseInstance(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/federated_database_instance mongodbatlas_federated_database_instance} Data Source.
 func NewDataMongodbatlasFederatedDatabaseInstance_Override(d DataMongodbatlasFederatedDatabaseInstance, scope constructs.Construct, id *string, config *DataMongodbatlasFederatedDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -783,7 +783,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) OverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) PutCloudProviderConfig(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig) {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) PutCloudProviderConfig(value interface{}) {
 	if err := d.validatePutCloudProviderConfigParameters(value); err != nil {
 		panic(err)
 	}

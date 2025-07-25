@@ -24,7 +24,7 @@ type DataMongodbatlasResourcePolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique 24-hexadecimal digit string that identifies an Atlas resource policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/resource_policy#id DataMongodbatlasResourcePolicy#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/resource_policy#id DataMongodbatlasResourcePolicy#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,7 +33,7 @@ type DataMongodbatlasResourcePolicyConfig struct {
 	//
 	// Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/resource_policy#org_id DataMongodbatlasResourcePolicy#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/resource_policy#org_id DataMongodbatlasResourcePolicy#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 }
 

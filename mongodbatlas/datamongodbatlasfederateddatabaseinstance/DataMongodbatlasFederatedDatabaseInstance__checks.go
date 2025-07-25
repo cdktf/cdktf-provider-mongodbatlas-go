@@ -114,12 +114,32 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validateOverrideLo
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validatePutCloudProviderConfigParameters(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validatePutCloudProviderConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig:
+		value := value.(*[]*DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig:
+		value_ := value.([]*DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

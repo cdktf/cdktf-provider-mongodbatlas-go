@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validateOverrideLo
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validatePutCloudProviderConfigParameters(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstance) validatePutCloudProviderConfigParameters(value interface{}) error {
 	return nil
 }
 

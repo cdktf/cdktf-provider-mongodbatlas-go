@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_processors mongodbatlas_stream_processors}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_processors mongodbatlas_stream_processors}.
 type DataMongodbatlasStreamProcessors interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataMongodbatlasStreamProcessors) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_processors mongodbatlas_stream_processors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_processors mongodbatlas_stream_processors} Data Source.
 func NewDataMongodbatlasStreamProcessors(scope constructs.Construct, id *string, config *DataMongodbatlasStreamProcessorsConfig) DataMongodbatlasStreamProcessors {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataMongodbatlasStreamProcessors(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/stream_processors mongodbatlas_stream_processors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/stream_processors mongodbatlas_stream_processors} Data Source.
 func NewDataMongodbatlasStreamProcessors_Override(d DataMongodbatlasStreamProcessors, scope constructs.Construct, id *string, config *DataMongodbatlasStreamProcessorsConfig) {
 	_init_.Initialize()
 

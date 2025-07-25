@@ -51,6 +51,10 @@ func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) 
 	return nil
 }
 
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validatePutAzureParameters(value *FederatedDatabaseInstanceCloudProviderConfigAzure) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

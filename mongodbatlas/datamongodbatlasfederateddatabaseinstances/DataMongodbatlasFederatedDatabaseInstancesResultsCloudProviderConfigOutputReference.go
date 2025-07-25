@@ -14,6 +14,7 @@ import (
 type DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigOutputReference interface {
 	cdktf.ComplexObject
 	Aws() DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAwsList
+	Azure() DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAzureList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +86,16 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsCloudProvide
 	_jsii_.Get(
 		j,
 		"aws",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigOutputReference) Azure() DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAzureList {
+	var returns DataMongodbatlasFederatedDatabaseInstancesResultsCloudProviderConfigAzureList
+	_jsii_.Get(
+		j,
+		"azure",
 		&returns,
 	)
 	return returns

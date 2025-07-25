@@ -7,7 +7,11 @@ package federateddatabaseinstance
 type FederatedDatabaseInstanceCloudProviderConfig struct {
 	// aws block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/resources/federated_database_instance#aws FederatedDatabaseInstance#aws}
-	Aws *FederatedDatabaseInstanceCloudProviderConfigAws `field:"required" json:"aws" yaml:"aws"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/federated_database_instance#aws FederatedDatabaseInstance#aws}
+	Aws *FederatedDatabaseInstanceCloudProviderConfigAws `field:"optional" json:"aws" yaml:"aws"`
+	// azure block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/federated_database_instance#azure FederatedDatabaseInstance#azure}
+	Azure *FederatedDatabaseInstanceCloudProviderConfigAzure `field:"optional" json:"azure" yaml:"azure"`
 }
 

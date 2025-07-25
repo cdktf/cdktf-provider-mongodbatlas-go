@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) validatePutAwsParameters(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) validatePutAwsParameters(value interface{}) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) validateSetInternalValueParameters(val *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig) error {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return nil
 }
 
-func validateNewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

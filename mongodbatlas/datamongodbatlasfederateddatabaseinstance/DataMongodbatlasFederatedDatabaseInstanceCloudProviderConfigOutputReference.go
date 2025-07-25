@@ -13,8 +13,9 @@ import (
 
 type DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference interface {
 	cdktf.ComplexObject
-	Aws() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsOutputReference
-	AwsInput() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws
+	Aws() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsList
+	AwsInput() interface{}
+	Azure() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAzureList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,8 +33,8 @@ type DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig
-	SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +67,7 @@ type DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAws(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws)
+	PutAws(value interface{})
 	ResetAws()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -83,8 +84,8 @@ type jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutpu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) Aws() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsOutputReference {
-	var returns DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsOutputReference
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) Aws() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsList {
+	var returns DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAwsList
 	_jsii_.Get(
 		j,
 		"aws",
@@ -93,11 +94,21 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) AwsInput() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws {
-	var returns *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) AwsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"awsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) Azure() DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAzureList {
+	var returns DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAzureList
+	_jsii_.Get(
+		j,
+		"azure",
 		&returns,
 	)
 	return returns
@@ -143,8 +154,8 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return returns
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) InternalValue() *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig {
-	var returns *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +185,29 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 }
 
 
-func NewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference {
+func NewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference_Override(d DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference_Override(d DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-mongodbatlas.dataMongodbatlasFederatedDatabaseInstance.DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -223,7 +234,7 @@ func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	)
 }
 
-func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference)SetInternalValue(val *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfig) {
+func (j *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +453,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigO
 	return returns
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) PutAws(value *DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigAws) {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceCloudProviderConfigOutputReference) PutAws(value interface{}) {
 	if err := d.validatePutAwsParameters(value); err != nil {
 		panic(err)
 	}

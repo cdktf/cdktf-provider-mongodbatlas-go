@@ -15,6 +15,8 @@ type FederatedDatabaseInstanceCloudProviderConfigOutputReference interface {
 	cdktf.ComplexObject
 	Aws() FederatedDatabaseInstanceCloudProviderConfigAwsOutputReference
 	AwsInput() *FederatedDatabaseInstanceCloudProviderConfigAws
+	Azure() FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference
+	AzureInput() *FederatedDatabaseInstanceCloudProviderConfigAzure
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,9 @@ type FederatedDatabaseInstanceCloudProviderConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAws(value *FederatedDatabaseInstanceCloudProviderConfigAws)
+	PutAzure(value *FederatedDatabaseInstanceCloudProviderConfigAzure)
+	ResetAws()
+	ResetAzure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +102,26 @@ func (j *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"awsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) Azure() FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference {
+	var returns FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference
+	_jsii_.Get(
+		j,
+		"azure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) AzureInput() *FederatedDatabaseInstanceCloudProviderConfigAzure {
+	var returns *FederatedDatabaseInstanceCloudProviderConfigAzure
+	_jsii_.Get(
+		j,
+		"azureInput",
 		&returns,
 	)
 	return returns
@@ -449,6 +474,33 @@ func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) 
 		f,
 		"putAws",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) PutAzure(value *FederatedDatabaseInstanceCloudProviderConfigAzure) {
+	if err := f.validatePutAzureParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putAzure",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) ResetAws() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAws",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) ResetAzure() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAzure",
+		nil, // no parameters
 	)
 }
 

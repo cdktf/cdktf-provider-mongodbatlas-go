@@ -24,11 +24,11 @@ type DataMongodbatlasSearchDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Label that identifies the cluster to return the search nodes for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/search_deployment#cluster_name DataMongodbatlasSearchDeployment#cluster_name}
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/search_deployment#project_id DataMongodbatlasSearchDeployment#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

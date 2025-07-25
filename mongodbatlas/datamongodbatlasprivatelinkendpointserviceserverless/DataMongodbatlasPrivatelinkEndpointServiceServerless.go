@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless}.
 type DataMongodbatlasPrivatelinkEndpointServiceServerless interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceServerless) Terrafo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceServerless(scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig) DataMongodbatlasPrivatelinkEndpointServiceServerless {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataMongodbatlasPrivatelinkEndpointServiceServerless(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/privatelink_endpoint_service_serverless mongodbatlas_privatelink_endpoint_service_serverless} Data Source.
 func NewDataMongodbatlasPrivatelinkEndpointServiceServerless_Override(d DataMongodbatlasPrivatelinkEndpointServiceServerless, scope constructs.Construct, id *string, config *DataMongodbatlasPrivatelinkEndpointServiceServerlessConfig) {
 	_init_.Initialize()
 

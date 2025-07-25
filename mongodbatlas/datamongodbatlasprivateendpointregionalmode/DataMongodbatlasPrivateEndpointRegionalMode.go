@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode}.
 type DataMongodbatlasPrivateEndpointRegionalMode interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataMongodbatlasPrivateEndpointRegionalMode) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
 func NewDataMongodbatlasPrivateEndpointRegionalMode(scope constructs.Construct, id *string, config *DataMongodbatlasPrivateEndpointRegionalModeConfig) DataMongodbatlasPrivateEndpointRegionalMode {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewDataMongodbatlasPrivateEndpointRegionalMode(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.38.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/private_endpoint_regional_mode mongodbatlas_private_endpoint_regional_mode} Data Source.
 func NewDataMongodbatlasPrivateEndpointRegionalMode_Override(d DataMongodbatlasPrivateEndpointRegionalMode, scope constructs.Construct, id *string, config *DataMongodbatlasPrivateEndpointRegionalModeConfig) {
 	_init_.Initialize()
 
