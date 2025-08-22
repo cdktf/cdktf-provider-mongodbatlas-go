@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster}.
 type DataMongodbatlasFlexCluster interface {
 	cdktf.TerraformDataSource
 	BackupSettings() DataMongodbatlasFlexClusterBackupSettingsOutputReference
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataMongodbatlasFlexCluster) VersionReleaseSystem() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster} Data Source.
 func NewDataMongodbatlasFlexCluster(scope constructs.Construct, id *string, config *DataMongodbatlasFlexClusterConfig) DataMongodbatlasFlexCluster {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataMongodbatlasFlexCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_cluster mongodbatlas_flex_cluster} Data Source.
 func NewDataMongodbatlasFlexCluster_Override(d DataMongodbatlasFlexCluster, scope constructs.Construct, id *string, config *DataMongodbatlasFlexClusterConfig) {
 	_init_.Initialize()
 

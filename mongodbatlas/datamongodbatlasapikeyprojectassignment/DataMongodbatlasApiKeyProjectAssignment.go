@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment}.
 type DataMongodbatlasApiKeyProjectAssignment interface {
 	cdktf.TerraformDataSource
 	ApiKeyId() *string
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataMongodbatlasApiKeyProjectAssignment) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Data Source.
 func NewDataMongodbatlasApiKeyProjectAssignment(scope constructs.Construct, id *string, config *DataMongodbatlasApiKeyProjectAssignmentConfig) DataMongodbatlasApiKeyProjectAssignment {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataMongodbatlasApiKeyProjectAssignment(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/api_key_project_assignment mongodbatlas_api_key_project_assignment} Data Source.
 func NewDataMongodbatlasApiKeyProjectAssignment_Override(d DataMongodbatlasApiKeyProjectAssignment, scope constructs.Construct, id *string, config *DataMongodbatlasApiKeyProjectAssignmentConfig) {
 	_init_.Initialize()
 

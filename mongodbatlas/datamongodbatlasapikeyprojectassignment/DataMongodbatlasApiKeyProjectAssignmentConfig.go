@@ -24,7 +24,7 @@ type DataMongodbatlasApiKeyProjectAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique 24-hexadecimal digit string that identifies this organization API key that you want to assign to one project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/api_key_project_assignment#api_key_id DataMongodbatlasApiKeyProjectAssignment#api_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/api_key_project_assignment#api_key_id DataMongodbatlasApiKeyProjectAssignment#api_key_id}
 	ApiKeyId *string `field:"required" json:"apiKeyId" yaml:"apiKeyId"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,7 +32,7 @@ type DataMongodbatlasApiKeyProjectAssignmentConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/data-sources/api_key_project_assignment#project_id DataMongodbatlasApiKeyProjectAssignment#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/api_key_project_assignment#project_id DataMongodbatlasApiKeyProjectAssignment#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

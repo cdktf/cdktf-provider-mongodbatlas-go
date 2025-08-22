@@ -5,7 +5,7 @@ package cluster
 
 
 type ClusterPinnedFcv struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.39.0/docs/resources/cluster#expiration_date Cluster#expiration_date}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/cluster#expiration_date Cluster#expiration_date}.
 	ExpirationDate *string `field:"required" json:"expirationDate" yaml:"expirationDate"`
 }
 
