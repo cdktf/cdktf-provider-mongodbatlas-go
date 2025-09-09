@@ -5,7 +5,7 @@ package cloudbackupsnapshot
 
 
 type CloudBackupSnapshotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/cloud_backup_snapshot#create CloudBackupSnapshot#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/cloud_backup_snapshot#create CloudBackupSnapshot#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

@@ -38,6 +38,9 @@ type EncryptionAtRestGoogleCloudKmsConfigOutputReference interface {
 	KeyVersionResourceId() *string
 	SetKeyVersionResourceId(val *string)
 	KeyVersionResourceIdInput() *string
+	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
 	ServiceAccountKey() *string
 	SetServiceAccountKey(val *string)
 	ServiceAccountKeyInput() *string
@@ -76,6 +79,7 @@ type EncryptionAtRestGoogleCloudKmsConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
 	ResetKeyVersionResourceId()
+	ResetRoleId()
 	ResetServiceAccountKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) KeyVersi
 	_jsii_.Get(
 		j,
 		"keyVersionResourceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
 		&returns,
 	)
 	return returns
@@ -311,6 +335,17 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference)SetKeyVer
 	_jsii_.Set(
 		j,
 		"keyVersionResourceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
 		val,
 	)
 }
@@ -546,6 +581,14 @@ func (e *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) ResetKey
 	_jsii_.InvokeVoid(
 		e,
 		"resetKeyVersionResourceId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRoleId",
 		nil, // no parameters
 	)
 }

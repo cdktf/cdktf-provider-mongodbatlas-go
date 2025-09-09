@@ -71,6 +71,10 @@ func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validateSetRoleIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EncryptionAtRestGoogleCloudKmsConfigOutputReference) validateSetServiceAccountKeyParameters(val *string) error {
 	return nil
 }

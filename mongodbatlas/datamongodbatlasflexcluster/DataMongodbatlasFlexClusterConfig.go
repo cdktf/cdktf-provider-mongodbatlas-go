@@ -24,11 +24,11 @@ type DataMongodbatlasFlexClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/flex_cluster#name DataMongodbatlasFlexCluster#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal character string that identifies the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/flex_cluster#project_id DataMongodbatlasFlexCluster#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

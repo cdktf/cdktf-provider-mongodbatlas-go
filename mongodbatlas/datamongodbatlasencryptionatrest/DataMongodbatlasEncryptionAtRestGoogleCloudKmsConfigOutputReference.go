@@ -34,6 +34,7 @@ type DataMongodbatlasEncryptionAtRestGoogleCloudKmsConfigOutputReference interfa
 	InternalValue() *DataMongodbatlasEncryptionAtRestGoogleCloudKmsConfig
 	SetInternalValue(val *DataMongodbatlasEncryptionAtRestGoogleCloudKmsConfig)
 	KeyVersionResourceId() *string
+	RoleId() *string
 	ServiceAccountKey() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataMongodbatlasEncryptionAtRestGoogleCloudKmsConfigOutputRef
 	_jsii_.Get(
 		j,
 		"keyVersionResourceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataMongodbatlasEncryptionAtRestGoogleCloudKmsConfigOutputReference) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
 		&returns,
 	)
 	return returns

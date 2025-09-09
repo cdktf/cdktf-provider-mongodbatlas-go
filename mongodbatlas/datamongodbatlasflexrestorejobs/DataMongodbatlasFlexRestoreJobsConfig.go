@@ -24,7 +24,7 @@ type DataMongodbatlasFlexRestoreJobsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that identifies the flex cluster whose snapshot you want to restore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_restore_jobs#name DataMongodbatlasFlexRestoreJobs#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/flex_restore_jobs#name DataMongodbatlasFlexRestoreJobs#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,7 +32,7 @@ type DataMongodbatlasFlexRestoreJobsConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/data-sources/flex_restore_jobs#project_id DataMongodbatlasFlexRestoreJobs#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/flex_restore_jobs#project_id DataMongodbatlasFlexRestoreJobs#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

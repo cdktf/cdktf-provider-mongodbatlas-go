@@ -24,21 +24,21 @@ type ResourcePolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable label that describes the Atlas resource policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/resource_policy#name ResourcePolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/resource_policy#name ResourcePolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal digit string that identifies the organization that contains your projects.
 	//
 	// Use the [/orgs](#tag/Organizations/operation/listOrganizations) endpoint to retrieve all organizations to which the authenticated user has access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/resource_policy#org_id ResourcePolicy#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// List of policies that make up the Atlas resource policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/resource_policy#policies ResourcePolicy#policies}
 	Policies interface{} `field:"required" json:"policies" yaml:"policies"`
 	// Description of the Atlas resource policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/resource_policy#description ResourcePolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/resource_policy#description ResourcePolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

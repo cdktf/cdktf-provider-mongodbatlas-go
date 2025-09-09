@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/project_api_key mongodbatlas_project_api_key}.
 type ProjectApiKey interface {
 	cdktf.TerraformResource
 	ApiKeyId() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_ProjectApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApiKeyConfig) ProjectApiKey {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewProjectApiKey(scope constructs.Construct, id *string, config *ProjectApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.40.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/project_api_key mongodbatlas_project_api_key} Resource.
 func NewProjectApiKey_Override(p ProjectApiKey, scope constructs.Construct, id *string, config *ProjectApiKeyConfig) {
 	_init_.Initialize()
 
