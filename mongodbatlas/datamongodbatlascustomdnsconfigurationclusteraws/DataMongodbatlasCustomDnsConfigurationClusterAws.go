@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws}.
 type DataMongodbatlasCustomDnsConfigurationClusterAws interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataMongodbatlasCustomDnsConfigurationClusterAws) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
 func NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope constructs.Construct, id *string, config *DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) DataMongodbatlasCustomDnsConfigurationClusterAws {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataMongodbatlasCustomDnsConfigurationClusterAws(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/custom_dns_configuration_cluster_aws mongodbatlas_custom_dns_configuration_cluster_aws} Data Source.
 func NewDataMongodbatlasCustomDnsConfigurationClusterAws_Override(d DataMongodbatlasCustomDnsConfigurationClusterAws, scope constructs.Construct, id *string, config *DataMongodbatlasCustomDnsConfigurationClusterAwsConfig) {
 	_init_.Initialize()
 

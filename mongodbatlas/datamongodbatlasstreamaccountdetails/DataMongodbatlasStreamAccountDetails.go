@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/stream_account_details mongodbatlas_stream_account_details}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/stream_account_details mongodbatlas_stream_account_details}.
 type DataMongodbatlasStreamAccountDetails interface {
 	cdktf.TerraformDataSource
 	AwsAccountId() *string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataMongodbatlasStreamAccountDetails) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/stream_account_details mongodbatlas_stream_account_details} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/stream_account_details mongodbatlas_stream_account_details} Data Source.
 func NewDataMongodbatlasStreamAccountDetails(scope constructs.Construct, id *string, config *DataMongodbatlasStreamAccountDetailsConfig) DataMongodbatlasStreamAccountDetails {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataMongodbatlasStreamAccountDetails(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/stream_account_details mongodbatlas_stream_account_details} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/stream_account_details mongodbatlas_stream_account_details} Data Source.
 func NewDataMongodbatlasStreamAccountDetails_Override(d DataMongodbatlasStreamAccountDetails, scope constructs.Construct, id *string, config *DataMongodbatlasStreamAccountDetailsConfig) {
 	_init_.Initialize()
 

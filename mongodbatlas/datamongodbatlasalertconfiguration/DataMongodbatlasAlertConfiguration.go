@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration}.
 type DataMongodbatlasAlertConfiguration interface {
 	cdktf.TerraformDataSource
 	AlertConfigurationId() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataMongodbatlasAlertConfiguration) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
 func NewDataMongodbatlasAlertConfiguration(scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationConfig) DataMongodbatlasAlertConfiguration {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataMongodbatlasAlertConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/data-sources/alert_configuration mongodbatlas_alert_configuration} Data Source.
 func NewDataMongodbatlasAlertConfiguration_Override(d DataMongodbatlasAlertConfiguration, scope constructs.Construct, id *string, config *DataMongodbatlasAlertConfigurationConfig) {
 	_init_.Initialize()
 

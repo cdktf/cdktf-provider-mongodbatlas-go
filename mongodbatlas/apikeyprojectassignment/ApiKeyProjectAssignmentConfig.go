@@ -24,7 +24,7 @@ type ApiKeyProjectAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique 24-hexadecimal digit string that identifies this organization API key that you want to assign to one project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#api_key_id ApiKeyProjectAssignment#api_key_id}
 	ApiKeyId *string `field:"required" json:"apiKeyId" yaml:"apiKeyId"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	//
@@ -32,13 +32,13 @@ type ApiKeyProjectAssignmentConfig struct {
 	//
 	// **NOTE**: Groups and projects are synonymous terms. Your group id is the same as your project id. For existing groups, your group/project id remains the same. The resource and corresponding endpoints use the term groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#project_id ApiKeyProjectAssignment#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Human-readable label that identifies the collection of privileges that MongoDB Cloud grants a specific API key, MongoDB Cloud user, or MongoDB Cloud team.
 	//
 	// These roles include only the specific project-level roles.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.0/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/mongodb/mongodbatlas/1.41.1/docs/resources/api_key_project_assignment#roles ApiKeyProjectAssignment#roles}
 	Roles *[]*string `field:"required" json:"roles" yaml:"roles"`
 }
 
