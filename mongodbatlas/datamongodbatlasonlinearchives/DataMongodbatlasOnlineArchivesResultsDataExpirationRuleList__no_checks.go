@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsDataExpirationRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

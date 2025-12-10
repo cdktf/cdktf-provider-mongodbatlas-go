@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectLimitsList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (p *jsiiProxy_ProjectLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

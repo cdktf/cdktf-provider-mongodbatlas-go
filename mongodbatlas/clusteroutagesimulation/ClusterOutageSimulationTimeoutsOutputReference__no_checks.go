@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterOutageSimulationTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ClusterOutageSimulationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterOutageSimulationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterOutageSimulationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterOutageSimulationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

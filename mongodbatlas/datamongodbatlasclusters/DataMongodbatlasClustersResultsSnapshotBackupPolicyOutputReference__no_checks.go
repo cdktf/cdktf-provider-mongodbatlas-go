@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasClustersResultsSnapshotBackupPolicyOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasClustersResultsSnapshotBackupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasClustersResultsSnapshotBackupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasClustersResultsSnapshotBackupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasClustersResultsSnapshotBackupPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasStreamPrivatelinkEndpointsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

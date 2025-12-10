@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventTriggerEventProcessorsAwsEventbridgeOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EventTriggerEventProcessorsAwsEventbridgeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventTriggerEventProcessorsAwsEventbridgeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventTriggerEventProcessorsAwsEventbridgeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventTriggerEventProcessorsAwsEventbridgeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasMaintenanceWindowProtectedHoursList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasMaintenanceWindowProtectedHoursList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasMaintenanceWindowProtectedHoursList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

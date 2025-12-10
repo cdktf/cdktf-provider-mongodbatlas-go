@@ -27,9 +27,9 @@ func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

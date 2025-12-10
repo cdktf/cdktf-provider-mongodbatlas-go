@@ -136,7 +136,7 @@ type AlertConfigurationNotificationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetApiToken()
 	ResetChannelName()
 	ResetDatadogApiKey()
@@ -162,7 +162,7 @@ type AlertConfigurationNotificationOutputReference interface {
 	ResetWebhookUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1252,8 +1252,8 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) InterpolationA
 	return returns
 }
 
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1261,7 +1261,7 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1452,8 +1452,8 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) ResetWebhookUr
 	)
 }
 
-func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1461,7 +1461,7 @@ func (a *jsiiProxy_AlertConfigurationNotificationOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

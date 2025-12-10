@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeouts
 	return nil
 }
 
-func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatelinkEndpointServiceDataFederationOnlineArchiveTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

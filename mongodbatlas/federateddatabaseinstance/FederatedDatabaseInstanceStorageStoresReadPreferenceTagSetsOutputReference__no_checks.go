@@ -43,7 +43,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOu
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOu
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

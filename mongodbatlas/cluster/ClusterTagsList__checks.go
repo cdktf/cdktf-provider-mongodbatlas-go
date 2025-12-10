@@ -29,9 +29,9 @@ func (c *jsiiProxy_ClusterTagsList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (c *jsiiProxy_ClusterTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ClusterTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

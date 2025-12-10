@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesList
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstanceStorageDatabasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

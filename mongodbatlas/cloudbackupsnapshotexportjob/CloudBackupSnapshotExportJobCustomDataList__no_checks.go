@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudBackupSnapshotExportJobCustomDataList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSnapshotExportJobCustomDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudBackupSnapshotExportJobCustomDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

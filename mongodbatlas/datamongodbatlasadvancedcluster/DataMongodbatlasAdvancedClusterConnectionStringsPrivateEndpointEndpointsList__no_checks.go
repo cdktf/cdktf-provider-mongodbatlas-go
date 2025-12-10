@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasAdvancedClusterConnectionStringsPrivateEndpoi
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasAdvancedClusterConnectionStringsPrivateEndpointEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasAdvancedClusterConnectionStringsPrivateEndpointEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

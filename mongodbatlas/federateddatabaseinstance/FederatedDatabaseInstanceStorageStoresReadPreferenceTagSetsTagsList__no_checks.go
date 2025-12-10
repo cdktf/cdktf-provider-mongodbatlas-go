@@ -15,7 +15,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTa
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageStoresReadPreferenceTagSetsTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

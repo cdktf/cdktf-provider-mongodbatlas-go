@@ -43,7 +43,7 @@ func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validatePutResourcesParam
 	return nil
 }
 
-func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomDbRoleActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

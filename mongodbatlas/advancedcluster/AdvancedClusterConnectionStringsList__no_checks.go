@@ -15,7 +15,7 @@ func (a *jsiiProxy_AdvancedClusterConnectionStringsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterConnectionStringsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterConnectionStringsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

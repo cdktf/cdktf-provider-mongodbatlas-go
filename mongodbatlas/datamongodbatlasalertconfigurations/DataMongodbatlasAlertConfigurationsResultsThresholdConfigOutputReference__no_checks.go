@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

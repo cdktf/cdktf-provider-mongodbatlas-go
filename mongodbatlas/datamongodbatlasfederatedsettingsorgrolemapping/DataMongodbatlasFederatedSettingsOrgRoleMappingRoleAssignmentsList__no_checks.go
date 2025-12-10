@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignment
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingRoleAssignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

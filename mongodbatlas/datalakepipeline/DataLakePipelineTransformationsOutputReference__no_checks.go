@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLakePipelineTransformationsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineTransformationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLakePipelineTransformationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineTransformationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLakePipelineTransformationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

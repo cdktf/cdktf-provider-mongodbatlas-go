@@ -43,11 +43,11 @@ func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupCompliancePolicyPolicyItemMonthlyList) validateGetParam
 	return nil
 }
 
-func (b *jsiiProxy_BackupCompliancePolicyPolicyItemMonthlyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupCompliancePolicyPolicyItemMonthlyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasSharedTierSnapshotsResultsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSharedTierSnapshotsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasSharedTierSnapshotsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

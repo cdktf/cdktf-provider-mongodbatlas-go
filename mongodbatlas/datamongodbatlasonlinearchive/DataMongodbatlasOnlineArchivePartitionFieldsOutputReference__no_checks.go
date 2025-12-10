@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

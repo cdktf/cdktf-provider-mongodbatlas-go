@@ -15,7 +15,7 @@ func (f *jsiiProxy_FederatedSettingsOrgConfigUserConflictsList) validateGetParam
 	return nil
 }
 
-func (f *jsiiProxy_FederatedSettingsOrgConfigUserConflictsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedSettingsOrgConfigUserConflictsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

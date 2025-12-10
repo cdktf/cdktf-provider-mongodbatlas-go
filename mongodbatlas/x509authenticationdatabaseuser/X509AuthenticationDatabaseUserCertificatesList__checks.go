@@ -27,9 +27,9 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateGetPa
 	return nil
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

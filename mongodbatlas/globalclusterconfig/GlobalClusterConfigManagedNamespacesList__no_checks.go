@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalClusterConfigManagedNamespacesList) validateGetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GlobalClusterConfigManagedNamespacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalClusterConfigManagedNamespacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

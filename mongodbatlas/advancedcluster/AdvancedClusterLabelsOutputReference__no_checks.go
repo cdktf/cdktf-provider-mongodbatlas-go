@@ -43,11 +43,11 @@ func (a *jsiiProxy_AdvancedClusterLabelsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AdvancedClusterLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

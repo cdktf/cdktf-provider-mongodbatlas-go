@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterLabelsList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (c *jsiiProxy_ClusterLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

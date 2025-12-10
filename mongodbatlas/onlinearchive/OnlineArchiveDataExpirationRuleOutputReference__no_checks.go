@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnlineArchiveDataExpirationRuleOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchiveDataExpirationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnlineArchiveDataExpirationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchiveDataExpirationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineArchiveDataExpirationRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

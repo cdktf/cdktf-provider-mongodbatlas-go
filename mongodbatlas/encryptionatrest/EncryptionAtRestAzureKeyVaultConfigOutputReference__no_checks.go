@@ -43,11 +43,11 @@ func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

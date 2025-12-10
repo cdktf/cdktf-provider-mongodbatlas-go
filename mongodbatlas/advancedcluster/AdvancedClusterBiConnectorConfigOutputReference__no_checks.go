@@ -43,11 +43,11 @@ func (a *jsiiProxy_AdvancedClusterBiConnectorConfigOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterBiConnectorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AdvancedClusterBiConnectorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterBiConnectorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterBiConnectorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

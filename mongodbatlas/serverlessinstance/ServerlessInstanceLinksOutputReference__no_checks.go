@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServerlessInstanceLinksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

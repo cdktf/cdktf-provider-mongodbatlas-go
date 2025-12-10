@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudProviderAccessSetupGcpConfigList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessSetupGcpConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudProviderAccessSetupGcpConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

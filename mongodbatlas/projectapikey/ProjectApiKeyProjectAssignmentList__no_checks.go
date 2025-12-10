@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectApiKeyProjectAssignmentList) validateGetParameters(ind
 	return nil
 }
 
-func (p *jsiiProxy_ProjectApiKeyProjectAssignmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectApiKeyProjectAssignmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

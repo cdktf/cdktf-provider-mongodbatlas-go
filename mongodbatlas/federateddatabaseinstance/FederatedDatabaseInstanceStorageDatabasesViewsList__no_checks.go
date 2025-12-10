@@ -15,7 +15,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesViewsList) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesViewsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceStorageDatabasesViewsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUserCertificatesLis
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasX509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

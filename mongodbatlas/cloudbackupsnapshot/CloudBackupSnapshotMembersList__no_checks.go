@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudBackupSnapshotMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

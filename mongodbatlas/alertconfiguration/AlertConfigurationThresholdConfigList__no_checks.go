@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlertConfigurationThresholdConfigList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfigurationThresholdConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertConfigurationThresholdConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudProviderAccessAuthorizationFeatureUsagesOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationFeatureUsagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationFeatureUsagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationFeatureUsagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationFeatureUsagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

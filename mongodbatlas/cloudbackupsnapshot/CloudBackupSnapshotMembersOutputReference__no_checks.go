@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudBackupSnapshotMembersOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSnapshotMembersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudBackupSnapshotMembersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSnapshotMembersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudBackupSnapshotMembersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

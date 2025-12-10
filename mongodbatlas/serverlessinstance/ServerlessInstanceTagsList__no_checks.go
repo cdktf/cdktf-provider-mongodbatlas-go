@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServerlessInstanceTagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (s *jsiiProxy_ServerlessInstanceTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServerlessInstanceTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validatePutAwsEve
 	return nil
 }
 
-func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventTriggerEventProcessorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

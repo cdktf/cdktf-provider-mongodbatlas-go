@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupGcpConfigOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupGcpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupGcpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupGcpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupGcpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

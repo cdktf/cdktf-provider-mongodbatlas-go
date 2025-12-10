@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigList
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasAlertConfigurationsResultsThresholdConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

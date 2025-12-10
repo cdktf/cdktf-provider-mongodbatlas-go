@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterTagsList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (c *jsiiProxy_ClusterTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemF
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsPemFileInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -39,7 +39,7 @@ type X509AuthenticationDatabaseUserCertificatesList interface {
 	Get(index *float64) X509AuthenticationDatabaseUserCertificatesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) Get(index *fl
 	return returns
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := x.validateResolveParameters(_context); err != nil {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := x.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) Resolve(_cont
 	_jsii_.Invoke(
 		x,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

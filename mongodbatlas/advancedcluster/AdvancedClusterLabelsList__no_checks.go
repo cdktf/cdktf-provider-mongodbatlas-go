@@ -15,7 +15,7 @@ func (a *jsiiProxy_AdvancedClusterLabelsList) validateGetParameters(index *float
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

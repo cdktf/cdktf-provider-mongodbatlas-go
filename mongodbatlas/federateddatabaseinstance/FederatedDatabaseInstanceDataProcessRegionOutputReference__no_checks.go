@@ -43,11 +43,11 @@ func (f *jsiiProxy_FederatedDatabaseInstanceDataProcessRegionOutputReference) va
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceDataProcessRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceDataProcessRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceDataProcessRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceDataProcessRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

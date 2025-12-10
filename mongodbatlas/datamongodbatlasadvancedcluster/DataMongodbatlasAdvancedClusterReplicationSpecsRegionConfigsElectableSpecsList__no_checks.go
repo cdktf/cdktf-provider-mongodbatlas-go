@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsE
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsElectableSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasAdvancedClusterReplicationSpecsRegionConfigsElectableSpecsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

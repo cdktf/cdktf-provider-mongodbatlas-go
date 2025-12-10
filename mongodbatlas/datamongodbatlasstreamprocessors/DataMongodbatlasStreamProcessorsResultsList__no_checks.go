@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasStreamProcessorsResultsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasStreamProcessorsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasStreamProcessorsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

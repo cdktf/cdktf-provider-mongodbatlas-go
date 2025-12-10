@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesAOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasProjectIpAddressesServicesAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

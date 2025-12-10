@@ -29,9 +29,9 @@ func (c *jsiiProxy_CloudBackupSchedulePolicyItemMonthlyList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSchedulePolicyItemMonthlyList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudBackupSchedulePolicyItemMonthlyList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

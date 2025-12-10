@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterTagsOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (c *jsiiProxy_ClusterTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

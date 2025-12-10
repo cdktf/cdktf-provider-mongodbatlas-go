@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnlineArchivePartitionFieldsOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchivePartitionFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnlineArchivePartitionFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchivePartitionFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineArchivePartitionFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

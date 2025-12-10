@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAs
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsOrgRoleMappingsResultsRoleAssignmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

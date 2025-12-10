@@ -43,7 +43,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) 
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) 
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

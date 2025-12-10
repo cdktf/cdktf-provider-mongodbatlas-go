@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectIpAddressesServicesClustersList) validateGetParameters
 	return nil
 }
 
-func (p *jsiiProxy_ProjectIpAddressesServicesClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectIpAddressesServicesClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

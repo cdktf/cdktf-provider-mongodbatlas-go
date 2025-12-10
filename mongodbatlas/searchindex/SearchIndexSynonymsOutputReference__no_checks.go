@@ -43,11 +43,11 @@ func (s *jsiiProxy_SearchIndexSynonymsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (s *jsiiProxy_SearchIndexSynonymsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SearchIndexSynonymsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SearchIndexSynonymsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SearchIndexSynonymsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

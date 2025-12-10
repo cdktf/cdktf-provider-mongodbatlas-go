@@ -43,11 +43,11 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) va
 	return nil
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OnlineArchiveCriteriaOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchiveCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OnlineArchiveCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OnlineArchiveCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnlineArchiveCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

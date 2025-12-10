@@ -43,11 +43,11 @@ func (l *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateGetS
 	return nil
 }
 
-func (l *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LdapConfigurationUserToDnMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

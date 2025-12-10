@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterConnectionStringsPrivateEndpointOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ClusterConnectionStringsPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterConnectionStringsPrivateEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterConnectionStringsPrivateEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterConnectionStringsPrivateEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

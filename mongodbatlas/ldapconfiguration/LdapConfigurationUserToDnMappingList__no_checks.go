@@ -15,7 +15,7 @@ func (l *jsiiProxy_LdapConfigurationUserToDnMappingList) validateGetParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_LdapConfigurationUserToDnMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LdapConfigurationUserToDnMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

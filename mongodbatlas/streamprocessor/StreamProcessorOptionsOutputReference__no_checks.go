@@ -43,7 +43,7 @@ func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validatePutDlqParamete
 	return nil
 }
 
-func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StreamProcessorOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

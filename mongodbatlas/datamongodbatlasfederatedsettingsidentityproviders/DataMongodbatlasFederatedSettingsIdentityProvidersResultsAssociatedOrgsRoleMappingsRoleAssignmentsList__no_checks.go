@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsAsso
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedSettingsIdentityProvidersResultsAssociatedOrgsRoleMappingsRoleAssignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

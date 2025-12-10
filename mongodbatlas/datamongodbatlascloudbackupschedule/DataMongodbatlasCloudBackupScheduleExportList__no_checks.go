@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupScheduleExportList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudBackupScheduleExportList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCloudBackupScheduleExportList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

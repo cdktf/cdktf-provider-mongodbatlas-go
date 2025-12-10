@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsCriteriaList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivesResultsCriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

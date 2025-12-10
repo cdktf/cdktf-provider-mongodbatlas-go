@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedDatabaseInstancesResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

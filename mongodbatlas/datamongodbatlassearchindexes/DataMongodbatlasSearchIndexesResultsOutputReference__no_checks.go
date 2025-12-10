@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasSearchIndexesResultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

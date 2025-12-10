@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasEventTriggerEventProcessorsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEventTriggerEventProcessorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasEventTriggerEventProcessorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

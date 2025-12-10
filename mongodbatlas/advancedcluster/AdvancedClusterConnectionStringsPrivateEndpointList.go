@@ -39,7 +39,7 @@ type AdvancedClusterConnectionStringsPrivateEndpointList interface {
 	Get(index *float64) AdvancedClusterConnectionStringsPrivateEndpointOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) Get(inde
 	return returns
 }
 
-func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) Resolve(
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

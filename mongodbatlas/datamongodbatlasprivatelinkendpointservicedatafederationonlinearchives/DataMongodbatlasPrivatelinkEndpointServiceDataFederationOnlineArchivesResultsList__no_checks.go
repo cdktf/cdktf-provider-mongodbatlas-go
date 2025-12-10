@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlin
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasPrivatelinkEndpointServiceDataFederationOnlineArchivesResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

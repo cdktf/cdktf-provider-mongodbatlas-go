@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasBackupCompliancePolicyPolicyItemMonthlyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

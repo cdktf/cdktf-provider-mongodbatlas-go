@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRunsResultsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRunsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasDataLakePipelineRunsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

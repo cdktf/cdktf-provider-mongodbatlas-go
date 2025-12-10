@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasDataLakePipelineSinkPartitionFieldsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasDataLakePipelineSinkPartitionFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasDataLakePipelineSinkPartitionFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

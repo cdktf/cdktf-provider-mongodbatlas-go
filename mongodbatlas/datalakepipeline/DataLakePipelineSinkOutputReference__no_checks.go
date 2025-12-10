@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validatePutPartitionFiel
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLakePipelineSinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

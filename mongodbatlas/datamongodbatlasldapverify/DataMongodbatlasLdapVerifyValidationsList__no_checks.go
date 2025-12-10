@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasLdapVerifyValidationsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasLdapVerifyValidationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasLdapVerifyValidationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

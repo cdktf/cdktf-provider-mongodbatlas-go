@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSchedulePolicyItemDailyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

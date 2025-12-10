@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasEncryptionAtRestAwsKmsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

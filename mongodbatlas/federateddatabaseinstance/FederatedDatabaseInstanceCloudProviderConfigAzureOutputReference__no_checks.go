@@ -43,11 +43,11 @@ func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigAzureOutputRefere
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedDatabaseInstanceCloudProviderConfigAzureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomDbRoleActionsResourcesList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CustomDbRoleActionsResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomDbRoleActionsResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

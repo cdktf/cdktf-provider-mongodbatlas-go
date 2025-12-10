@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlertConfigurationNotificationList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfigurationNotificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertConfigurationNotificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

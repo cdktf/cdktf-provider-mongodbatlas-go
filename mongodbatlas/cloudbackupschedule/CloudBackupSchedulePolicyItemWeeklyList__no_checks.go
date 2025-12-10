@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudBackupSchedulePolicyItemWeeklyList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudBackupSchedulePolicyItemWeeklyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudBackupSchedulePolicyItemWeeklyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

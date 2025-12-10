@@ -15,7 +15,7 @@ func (l *jsiiProxy_LdapVerifyLinksList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (l *jsiiProxy_LdapVerifyLinksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LdapVerifyLinksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

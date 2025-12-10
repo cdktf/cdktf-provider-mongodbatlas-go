@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalClusterConfigCustomZoneMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

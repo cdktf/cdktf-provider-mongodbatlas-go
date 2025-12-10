@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudProviderAccessAuthorizationAzureOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationAzureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationAzureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationAzureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationAzureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

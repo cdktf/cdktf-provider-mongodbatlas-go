@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourcePolicyPoliciesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (r *jsiiProxy_ResourcePolicyPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcePolicyPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

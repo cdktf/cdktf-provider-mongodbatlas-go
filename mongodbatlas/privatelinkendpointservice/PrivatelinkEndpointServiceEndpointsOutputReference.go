@@ -70,12 +70,12 @@ type PrivatelinkEndpointServiceEndpointsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetEndpointName()
 	ResetIpAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -483,8 +483,8 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Interpola
 	return returns
 }
 
-func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -492,7 +492,7 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -515,8 +515,8 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) ResetIpAd
 	)
 }
 
-func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -524,7 +524,7 @@ func (p *jsiiProxy_PrivatelinkEndpointServiceEndpointsOutputReference) Resolve(_
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

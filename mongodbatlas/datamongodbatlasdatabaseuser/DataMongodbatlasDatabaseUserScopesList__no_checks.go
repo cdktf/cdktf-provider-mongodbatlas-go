@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasDatabaseUserScopesList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasDatabaseUserScopesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasDatabaseUserScopesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

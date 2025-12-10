@@ -15,7 +15,7 @@ func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) validate
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterConnectionStringsPrivateEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

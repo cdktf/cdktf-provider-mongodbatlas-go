@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasClusterReplicationSpecsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasClusterReplicationSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasClusterReplicationSpecsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

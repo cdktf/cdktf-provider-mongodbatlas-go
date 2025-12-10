@@ -43,11 +43,11 @@ func (p *jsiiProxy_ProjectIpAddressesServicesClustersOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_ProjectIpAddressesServicesClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectIpAddressesServicesClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectIpAddressesServicesClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectIpAddressesServicesClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

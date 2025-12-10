@@ -43,11 +43,11 @@ func (m *jsiiProxy_MaintenanceWindowProtectedHoursOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceWindowProtectedHoursOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MaintenanceWindowProtectedHoursOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MaintenanceWindowProtectedHoursOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MaintenanceWindowProtectedHoursOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterSnapshotBackupPolicyPoliciesOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClusterSnapshotBackupPolicyPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterSnapshotBackupPolicyPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterSnapshotBackupPolicyPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterSnapshotBackupPolicyPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

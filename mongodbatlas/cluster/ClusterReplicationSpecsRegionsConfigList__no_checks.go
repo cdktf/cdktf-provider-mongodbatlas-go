@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterReplicationSpecsRegionsConfigList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ClusterReplicationSpecsRegionsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterReplicationSpecsRegionsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

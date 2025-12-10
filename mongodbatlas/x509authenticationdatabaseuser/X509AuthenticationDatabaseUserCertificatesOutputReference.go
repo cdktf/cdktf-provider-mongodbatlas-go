@@ -68,10 +68,10 @@ type X509AuthenticationDatabaseUserCertificatesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -457,8 +457,8 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) In
 	return returns
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := x.validateInterpolationForAttributeParameters(property); err != nil {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := x.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -466,15 +466,15 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) In
 	_jsii_.Invoke(
 		x,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := x.validateResolveParameters(_context); err != nil {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := x.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -482,7 +482,7 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesOutputReference) Re
 	_jsii_.Invoke(
 		x,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

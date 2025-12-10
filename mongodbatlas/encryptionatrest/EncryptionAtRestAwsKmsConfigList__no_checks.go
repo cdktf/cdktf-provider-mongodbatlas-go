@@ -15,7 +15,7 @@ func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

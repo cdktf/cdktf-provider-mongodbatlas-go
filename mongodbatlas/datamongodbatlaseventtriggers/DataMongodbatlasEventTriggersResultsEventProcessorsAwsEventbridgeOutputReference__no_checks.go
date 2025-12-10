@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbr
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

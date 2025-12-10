@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasFederatedQueryLimitsResultsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasFederatedQueryLimitsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasFederatedQueryLimitsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

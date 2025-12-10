@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterSnapshotBackupPolicyList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_ClusterSnapshotBackupPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterSnapshotBackupPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

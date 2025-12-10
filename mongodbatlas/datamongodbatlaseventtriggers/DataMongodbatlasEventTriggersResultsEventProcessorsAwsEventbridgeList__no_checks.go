@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbr
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasEventTriggersResultsEventProcessorsAwsEventbridgeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

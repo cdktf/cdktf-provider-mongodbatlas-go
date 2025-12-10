@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobsResultsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobsResultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobsResultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobsResultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasSharedTierRestoreJobsResultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

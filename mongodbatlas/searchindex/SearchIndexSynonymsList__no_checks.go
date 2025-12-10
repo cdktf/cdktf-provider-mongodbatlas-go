@@ -15,7 +15,7 @@ func (s *jsiiProxy_SearchIndexSynonymsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (s *jsiiProxy_SearchIndexSynonymsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SearchIndexSynonymsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

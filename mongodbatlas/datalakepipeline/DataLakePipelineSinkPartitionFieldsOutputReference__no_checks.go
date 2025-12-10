@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLakePipelineSinkPartitionFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

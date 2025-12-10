@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCloudProviderAccessSetupAzureConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

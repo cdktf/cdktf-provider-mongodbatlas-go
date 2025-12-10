@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasSearchIndexSynonymsList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasSearchIndexSynonymsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasSearchIndexSynonymsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

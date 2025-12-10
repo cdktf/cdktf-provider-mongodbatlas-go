@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasOnlineArchivePartitionFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

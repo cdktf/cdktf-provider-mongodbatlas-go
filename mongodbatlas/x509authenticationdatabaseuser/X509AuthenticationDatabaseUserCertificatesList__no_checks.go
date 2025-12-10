@@ -15,7 +15,7 @@ func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateGetPa
 	return nil
 }
 
-func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (x *jsiiProxy_X509AuthenticationDatabaseUserCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

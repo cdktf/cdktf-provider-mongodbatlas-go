@@ -43,11 +43,11 @@ func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOut
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AdvancedClusterReplicationSpecsRegionConfigsAnalyticsSpecsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasCustomDbRolesResultsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCustomDbRolesResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCustomDbRolesResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

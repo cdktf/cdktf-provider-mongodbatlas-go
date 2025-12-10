@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertConfigurationMetricThresholdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

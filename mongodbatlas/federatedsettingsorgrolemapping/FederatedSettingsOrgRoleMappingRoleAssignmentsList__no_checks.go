@@ -15,7 +15,7 @@ func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsList) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FederatedSettingsOrgRoleMappingRoleAssignmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

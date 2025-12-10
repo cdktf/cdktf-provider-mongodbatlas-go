@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCloudBackupSnapshotExportBucketsResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

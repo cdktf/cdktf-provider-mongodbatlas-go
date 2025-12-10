@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLakePipelineIngestionSchedulesList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataLakePipelineIngestionSchedulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLakePipelineIngestionSchedulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigList) validateGetParameter
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EncryptionAtRestAzureKeyVaultConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

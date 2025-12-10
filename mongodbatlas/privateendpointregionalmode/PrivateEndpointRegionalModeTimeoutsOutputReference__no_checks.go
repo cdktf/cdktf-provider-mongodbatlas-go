@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivateEndpointRegionalModeTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointRegionalModeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivateEndpointRegionalModeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpointRegionalModeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateEndpointRegionalModeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

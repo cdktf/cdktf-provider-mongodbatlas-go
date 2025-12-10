@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudProviderAccessAuthorizationGcpOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationGcpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationGcpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudProviderAccessAuthorizationGcpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudProviderAccessAuthorizationGcpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

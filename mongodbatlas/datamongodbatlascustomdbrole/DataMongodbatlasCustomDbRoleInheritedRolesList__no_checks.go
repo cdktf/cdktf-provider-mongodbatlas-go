@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataMongodbatlasCustomDbRoleInheritedRolesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataMongodbatlasCustomDbRoleInheritedRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataMongodbatlasCustomDbRoleInheritedRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

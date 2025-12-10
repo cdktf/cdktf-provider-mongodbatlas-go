@@ -29,9 +29,9 @@ func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EncryptionAtRestAwsKmsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
